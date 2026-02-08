@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Hero Section - Hostorio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.cssX">
+    <style>
+        /* CSS Variables from your stylesheet */
+:root {
+    /* Primary Colors */
+    --primary-blue: #0170B9;
+    --dark-blue: #0C379A;
+    --medium-blue: #1558a8;
+    --light-blue: #1368E7;
+    --navy-blue: #01257D;
+    --navy-dark: #1a1d4a;
+    
+    /* Secondary Colors */
+    --orange-primary: #FF7800;
+    --orange-light: #FF9000;
+    --orange-bright: #ff8c00;
+    --red-accent: #FF0000;
+    --neon-yellow: #D4FF00;
+    --bright-yellow: #e0ff00;
+    
+    /* Purple Shades */
+    --purple-primary: #6B46C1;
+    --purple-light: #7C3AED;
+    --purple-dark: #553C9A;
+    
+    /* Neutral Colors */
+    --color-dark: #3a3a3a;
+    --color-text: #4B4F58;
+    --color-gray: #808285;
+    --color-light-gray: #F5F5F5;
+    --color-white: #FFFFFF;
+    --color-border: #dddddd;
+    
+    /* Typography */
+    --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-rosario: "Rosario", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.44rem;
+    --spacing-sm: 0.67rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2.25rem;
+    
+    /* Border Radius */
+    --radius-sm: 3px;
+    --radius-md: 5px;
+    --radius-lg: 25px;
+    --radius-full: 50px;
+}
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-gray);
+    background: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+    font-family: var(--font-primary);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* Container */
+.container-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===========================
+   PRICING HERO SECTION
+   =========================== */
+.pricing-hero-section {
+    background: linear-gradient(135deg, #1a1d4a 0%, #01257D 50%, #2a1b5f 100%);
+    padding: 80px 0 120px;
+    position: relative;
+    overflow: visible;
+}
+
+/* Decorative Background Pattern */
+.pricing-hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 120, 0, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(255, 120, 0, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(107, 70, 193, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Decorative Geometric Pattern */
+.pricing-hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(30deg, rgba(255, 120, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 120, 0, 0.03) 87.5%, rgba(255, 120, 0, 0.03)),
+        linear-gradient(150deg, rgba(255, 120, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 120, 0, 0.03) 87.5%, rgba(255, 120, 0, 0.03)),
+        linear-gradient(30deg, rgba(255, 120, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 120, 0, 0.03) 87.5%, rgba(255, 120, 0, 0.03)),
+        linear-gradient(150deg, rgba(255, 120, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 120, 0, 0.03) 87.5%, rgba(255, 120, 0, 0.03)),
+        linear-gradient(60deg, rgba(107, 70, 193, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(107, 70, 193, 0.05) 75%, rgba(107, 70, 193, 0.05)),
+        linear-gradient(60deg, rgba(107, 70, 193, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(107, 70, 193, 0.05) 75%, rgba(107, 70, 193, 0.05));
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Floating Font Awesome Icons */
+.floating-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.icon-float {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.08);
+    font-size: 40px;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Icon Positions and Animations */
+.icon-1 {
+    top: 10%;
+    left: 8%;
+    font-size: 50px;
+    color: rgba(255, 120, 0, 0.12);
+    animation: float-diagonal-1 15s infinite;
+}
+
+.icon-2 {
+    top: 15%;
+    right: 12%;
+    font-size: 45px;
+    color: rgba(255, 255, 255, 0.1);
+    animation: float-vertical-1 12s infinite;
+}
+
+.icon-3 {
+    top: 25%;
+    left: 15%;
+    font-size: 35px;
+    color: rgba(255, 120, 0, 0.1);
+    animation: float-horizontal-1 18s infinite;
+}
+
+.icon-4 {
+    top: 30%;
+    right: 20%;
+    font-size: 42px;
+    color: rgba(255, 255, 255, 0.09);
+    animation: float-diagonal-2 14s infinite;
+}
+
+.icon-5 {
+    top: 40%;
+    left: 5%;
+    font-size: 48px;
+    color: rgba(255, 120, 0, 0.11);
+    animation: float-vertical-2 16s infinite;
+}
+
+.icon-6 {
+    top: 45%;
+    right: 8%;
+    font-size: 38px;
+    color: rgba(255, 255, 255, 0.08);
+    animation: pulse-float 10s infinite;
+}
+
+.icon-7 {
+    top: 55%;
+    left: 25%;
+    font-size: 44px;
+    color: rgba(255, 120, 0, 0.1);
+    animation: float-horizontal-2 20s infinite;
+}
+
+.icon-8 {
+    top: 60%;
+    right: 25%;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.09);
+    animation: float-diagonal-1 17s infinite;
+}
+
+.icon-9 {
+    top: 70%;
+    left: 10%;
+    font-size: 40px;
+    color: rgba(255, 120, 0, 0.12);
+    animation: float-vertical-1 13s infinite;
+}
+
+.icon-10 {
+    top: 75%;
+    right: 15%;
+    font-size: 46px;
+    color: rgba(255, 255, 255, 0.1);
+    animation: float-horizontal-1 19s infinite;
+}
+
+.icon-11 {
+    top: 20%;
+    left: 35%;
+    font-size: 34px;
+    color: rgba(255, 120, 0, 0.09);
+    animation: pulse-float 11s infinite;
+}
+
+.icon-12 {
+    top: 35%;
+    right: 35%;
+    font-size: 41px;
+    color: rgba(255, 255, 255, 0.08);
+    animation: float-diagonal-2 15s infinite;
+}
+
+.icon-13 {
+    top: 50%;
+    left: 40%;
+    font-size: 52px;
+    color: rgba(255, 120, 0, 0.11);
+    animation: float-vertical-2 14s infinite;
+}
+
+.icon-14 {
+    top: 65%;
+    right: 40%;
+    font-size: 37px;
+    color: rgba(255, 255, 255, 0.09);
+    animation: float-horizontal-2 16s infinite;
+}
+
+.icon-15 {
+    top: 12%;
+    left: 60%;
+    font-size: 43px;
+    color: rgba(255, 120, 0, 0.1);
+    animation: float-diagonal-1 18s infinite;
+}
+
+.icon-16 {
+    top: 38%;
+    right: 60%;
+    font-size: 39px;
+    color: rgba(255, 255, 255, 0.08);
+    animation: pulse-float 12s infinite;
+}
+
+.icon-17 {
+    top: 58%;
+    left: 65%;
+    font-size: 45px;
+    color: rgba(255, 120, 0, 0.12);
+    animation: float-vertical-1 17s infinite;
+}
+
+.icon-18 {
+    top: 78%;
+    right: 65%;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.1);
+    animation: float-horizontal-1 15s infinite;
+}
+
+/* Floating Animations */
+@keyframes float-vertical-1 {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(10deg);
+    }
+}
+
+@keyframes float-vertical-2 {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(35px) rotate(-10deg);
+    }
+}
+
+@keyframes float-horizontal-1 {
+    0%, 100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-25px) rotate(8deg);
+    }
+}
+
+@keyframes float-horizontal-2 {
+    0%, 100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(25px) rotate(-8deg);
+    }
+}
+
+@keyframes float-diagonal-1 {
+    0%, 100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    50% {
+        transform: translate(-20px, -20px) rotate(12deg);
+    }
+}
+
+@keyframes float-diagonal-2 {
+    0%, 100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    50% {
+        transform: translate(20px, 20px) rotate(-12deg);
+    }
+}
+
+@keyframes pulse-float {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.08;
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg);
+        opacity: 0.15;
+    }
+}
+
+/* Percentage Icons */
+.percentage-icon {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: var(--orange-primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 70px;
+    transform: rotate(-15deg);
+    box-shadow: 0 10px 40px rgba(255, 120, 0, 0.4);
+    z-index: 0;
+}
+
+.percentage-icon i {
+    font-size: 70px;
+}
+
+.percentage-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.left-icon {
+    top: 15%;
+    left: 5%;
+    animation: float-left 6s ease-in-out infinite;
+}
+
+.right-icon {
+    bottom: 15%;
+    right: 5%;
+    transform: rotate(15deg);
+    animation: float-right 6s ease-in-out infinite;
+}
+
+@keyframes float-left {
+    0%, 100% {
+        transform: rotate(-15deg) translateY(0px);
+    }
+    50% {
+        transform: rotate(-15deg) translateY(-20px);
+    }
+}
+
+@keyframes float-right {
+    0%, 100% {
+        transform: rotate(15deg) translateY(0px);
+    }
+    50% {
+        transform: rotate(15deg) translateY(20px);
+    }
+}
+
+/* Hero Content */
+.pricing-hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.pricing-hero-title {
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 50px;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+}
+
+/* Service Buttons */
+.service-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Mobile Dropdown - Hidden by default */
+.mobile-dropdown {
+    display: none;
+}
+
+/* Desktop Buttons - Visible by default */
+.desktop-buttons {
+    display: flex;
+}
+
+.button-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: var(--color-white);
+    color: var(--navy-blue);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-btn.active {
+    background: var(--orange-primary);
+    color: var(--color-white);
+    box-shadow: 0 6px 20px rgba(255, 120, 0, 0.4);
+}
+
+.service-btn:hover {
+    background: var(--orange-bright);
+    color: var(--color-white);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+}
+
+.service-btn.active:hover {
+    background: var(--orange-bright);
+}
+
+.btn-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.btn-text {
+    line-height: 1;
+}
+
+/* Mobile Dropdown Styles */
+.service-dropdown {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.dropdown-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    background: var(--color-white);
+    color: var(--navy-blue);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 100;
+}
+
+.dropdown-header:hover {
+    background: var(--color-light-gray);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.selected-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.selected-text {
+    flex: 1;
+    text-align: left;
+}
+
+.dropdown-arrow {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    color: var(--orange-primary);
+}
+
+.dropdown-arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.dropdown-menu.show {
+    max-height: 420px;
+    opacity: 1;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    color: var(--navy-blue);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background: var(--color-light-gray);
+    padding-left: 28px;
+}
+
+.dropdown-item.active {
+    background: var(--orange-primary);
+    color: var(--color-white);
+}
+
+.dropdown-item.active:hover {
+    background: var(--orange-bright);
+}
+
+.item-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.item-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Selection Styling */
+::selection {
+    background-color: var(--orange-primary);
+    color: var(--color-white);
+}
+
+::-moz-selection {
+    background-color: var(--orange-primary);
+    color: var(--color-white);
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 1024px) {
+    .percentage-icon {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .left-icon {
+        left: 3%;
+        top: 10%;
+    }
+    
+    .right-icon {
+        right: 3%;
+        bottom: 10%;
+    }
+    
+    .pricing-hero-title {
+        font-size: 42px;
+    }
+    
+    .icon-float {
+        font-size: 35px;
+    }
+    
+    .icon-1, .icon-5, .icon-13 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-hero-section {
+        padding: 60px 0 100px;
+        overflow: visible;
+    }
+    
+    .percentage-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        z-index: 0;
+    }
+    
+    .percentage-icon i {
+        font-size: 50px;
+    }
+    
+    .left-icon {
+        left: 2%;
+        top: 5%;
+    }
+    
+    .right-icon {
+        right: 2%;
+        bottom: 5%;
+    }
+    
+    .pricing-hero-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 5;
+    }
+    
+    /* Hide desktop buttons on tablet and below */
+    .desktop-buttons {
+        display: none !important;
+    }
+    
+    /* Show mobile dropdown on tablet and below */
+    .mobile-dropdown {
+        display: block;
+    }
+    
+    .service-buttons {
+        max-width: 600px;
+    }
+    
+    /* Reduce floating icons on tablet */
+    .icon-float {
+        font-size: 28px;
+        opacity: 0.6;
+    }
+    
+    .icon-11, .icon-12, .icon-16, .icon-17, .icon-18 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-hero-section {
+        padding: 50px 0 90px;
+        overflow: visible;
+    }
+    
+    .percentage-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        z-index: 0;
+    }
+    
+    .percentage-icon i {
+        font-size: 40px;
+    }
+    
+    .left-icon {
+        left: 5px;
+        top: 20px;
+    }
+    
+    .right-icon {
+        right: 5px;
+        bottom: 20px;
+    }
+    
+    .pricing-hero-title {
+        font-size: 26px;
+        margin-bottom: 35px;
+        position: relative;
+        z-index: 5;
+    }
+    
+    .service-dropdown {
+        max-width: 90%;
+    }
+    
+    .dropdown-header {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+    
+    .selected-icon {
+        font-size: 18px;
+    }
+    
+    .dropdown-item {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .item-icon {
+        font-size: 16px;
+    }
+    
+    /* Show only key icons on mobile */
+    .icon-float {
+        font-size: 24px;
+    }
+    
+    .icon-3, .icon-4, .icon-7, .icon-8, .icon-14, .icon-15 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-hero-section {
+        padding: 40px 0 80px;
+        overflow: visible;
+    }
+    
+    .percentage-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+        z-index: 0;
+    }
+    
+    .percentage-icon i {
+        font-size: 35px;
+    }
+    
+    .pricing-hero-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 5;
+    }
+    
+    .dropdown-header {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+    
+    .selected-icon {
+        font-size: 16px;
+    }
+    
+    .dropdown-item {
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+    
+    .item-icon {
+        font-size: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Pricing Hero Section -->
+    <section class="pricing-hero-section">
+        <!-- Floating Font Awesome Icons Background -->
+        <div class="floating-icons">
+            <i class="fas fa-server icon-float icon-1"></i>
+            <i class="fas fa-cloud icon-float icon-2"></i>
+            <i class="fas fa-database icon-float icon-3"></i>
+            <i class="fas fa-shield-halved icon-float icon-4"></i>
+            <i class="fas fa-rocket icon-float icon-5"></i>
+            <i class="fas fa-bolt icon-float icon-6"></i>
+            <i class="fas fa-globe icon-float icon-7"></i>
+            <i class="fas fa-envelope icon-float icon-8"></i>
+            <i class="fas fa-network-wired icon-float icon-9"></i>
+            <i class="fas fa-code icon-float icon-10"></i>
+            <i class="fas fa-lock icon-float icon-11"></i>
+            <i class="fas fa-wifi icon-float icon-12"></i>
+            <i class="fab fa-wordpress icon-float icon-13"></i>
+            <i class="fas fa-briefcase icon-float icon-14"></i>
+            <i class="fas fa-graduation-cap icon-float icon-15"></i>
+            <i class="fas fa-chart-line icon-float icon-16"></i>
+            <i class="fas fa-plug icon-float icon-17"></i>
+            <i class="fas fa-sitemap icon-float icon-18"></i>
+        </div>
+
+        <!-- Decorative Icon Left -->
+        <div class="percentage-icon left-icon">
+            <i class="fas fa-server"></i>
+        </div>
+
+        <!-- Decorative Icon Right -->
+        <div class="percentage-icon right-icon">
+            <i class="fas fa-database"></i>
+        </div>
+
+        <div class="container-wrapper">
+            <div class="pricing-hero-content">
+                <h1 class="pricing-hero-title">Choose a service – get online today</h1>
+                
+                <!-- Desktop Buttons -->
+                <div class="service-buttons desktop-buttons">
+                    <div class="button-row">
+                        <button class="service-btn active" data-service="wordpress">
+                            <span class="btn-icon">⚡</span>
+                            <span class="btn-text">WordPress Hosting</span>
+                        </button>
+                        <button class="service-btn" data-service="turbo">
+                            <span class="btn-icon">🚀</span>
+                            <span class="btn-text">Turbo Hosting</span>
+                        </button>
+                        <button class="service-btn" data-service="reseller">
+                            <span class="btn-icon">🔄</span>
+                            <span class="btn-text">Reseller Hosting</span>
+                        </button>
+                        <button class="service-btn" data-service="student">
+                            <span class="btn-icon">🎓</span>
+                            <span class="btn-text">Student Hosting</span>
+                        </button>
+                    </div>
+                    <div class="button-row">
+                        <button class="service-btn" data-service="vps">
+                            <span class="btn-icon">🖥️</span>
+                            <span class="btn-text">VPS</span>
+                        </button>
+                        <button class="service-btn" data-service="email">
+                            <span class="btn-icon">✉️</span>
+                            <span class="btn-text">Business Email</span>
+                        </button>
+                        <button class="service-btn" data-service="domain">
+                            <span class="btn-icon">🌐</span>
+                            <span class="btn-text">Domain</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Dropdown -->
+                <div class="service-dropdown mobile-dropdown">
+                    <div class="dropdown-header">
+                        <span class="selected-icon">⚡</span>
+                        <span class="selected-text">WordPress Hosting</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item active" data-service="wordpress">
+                            <span class="item-icon">⚡</span>
+                            <span class="item-text">WordPress Hosting</span>
+                        </div>
+                        <div class="dropdown-item" data-service="turbo">
+                            <span class="item-icon">🚀</span>
+                            <span class="item-text">Turbo Hosting</span>
+                        </div>
+                        <div class="dropdown-item" data-service="reseller">
+                            <span class="item-icon">🔄</span>
+                            <span class="item-text">Reseller Hosting</span>
+                        </div>
+                        <div class="dropdown-item" data-service="student">
+                            <span class="item-icon">🎓</span>
+                            <span class="item-text">Student Hosting</span>
+                        </div>
+                        <div class="dropdown-item" data-service="vps">
+                            <span class="item-icon">🖥️</span>
+                            <span class="item-text">VPS</span>
+                        </div>
+                        <div class="dropdown-item" data-service="email">
+                            <span class="item-icon">✉️</span>
+                            <span class="item-text">Business Email</span>
+                        </div>
+                        <div class="dropdown-item" data-service="domain">
+                            <span class="item-icon">🌐</span>
+                            <span class="item-text">Domain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile Dropdown Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownHeader = document.querySelector('.dropdown-header');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+            const dropdownItems = document.querySelectorAll('.dropdown-item');
+            const selectedIcon = document.querySelector('.selected-icon');
+            const selectedText = document.querySelector('.selected-text');
+            const dropdownArrow = document.querySelector('.dropdown-arrow');
+
+            // Toggle dropdown
+            if (dropdownHeader) {
+                dropdownHeader.addEventListener('click', function() {
+                    dropdownMenu.classList.toggle('show');
+                    dropdownArrow.classList.toggle('rotate');
+                });
+            }
+
+            // Select item
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Remove active class from all items
+                    dropdownItems.forEach(i => i.classList.remove('active'));
+                    
+                    // Add active class to clicked item
+                    this.classList.add('active');
+                    
+                    // Update header
+                    const icon = this.querySelector('.item-icon').textContent;
+                    const text = this.querySelector('.item-text').textContent;
+                    selectedIcon.textContent = icon;
+                    selectedText.textContent = text;
+                    
+                    // Close dropdown
+                    dropdownMenu.classList.remove('show');
+                    dropdownArrow.classList.remove('rotate');
+                });
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.service-dropdown')) {
+                    dropdownMenu.classList.remove('show');
+                    dropdownArrow.classList.remove('rotate');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

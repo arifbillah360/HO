@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Hero Section - Hostorio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="pricing.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="package-chooser.css">
 </head>
 <body>
 <div class="top-info-bar">
@@ -22,17 +22,17 @@
                     <span>1-855-984-6263</span>
                 </a>
                 <div class="language-selector">
-                    <img src="https://flagcdn.com/w40/us.png" alt="English" class="flag-icon">
+                    <img src="../assets/images/flags/us.png" alt="English" class="flag-icon">
                     <span>English</span>
                     <i class="fas fa-chevron-down"></i>
-                    
+
                     <div class="language-dropdown-menu">
-                        <button class="language-option active" data-language="en" data-flag="https://flagcdn.com/w40/us.png">
-                            <img src="https://flagcdn.com/w40/us.png" alt="English" class="flag-icon">
+                        <button class="language-option active" data-language="en" data-flag="../assets/images/flags/us.png">
+                            <img src="../assets/images/flags/us.png" alt="English" class="flag-icon">
                             <span>English</span>
                         </button>
-                        <button class="language-option" data-language="bn" data-flag="https://flagcdn.com/w40/bd.png">
-                            <img src="https://flagcdn.com/w40/bd.png" alt="Bangla" class="flag-icon">
+                        <button class="language-option" data-language="bn" data-flag="../assets/images/flags/bd.png">
+                            <img src="../assets/images/flags/bd.png" alt="Bangla" class="flag-icon">
                             <span>বাংলা</span>
                         </button>
                     </div>
@@ -51,7 +51,7 @@
                         <span>USD</span>
                     </button>
                 </div>
-                
+
                 <!-- Mobile Currency Dropdown -->
                 <div class="currency-dropdown mobile-currency">
                     <button class="currency-dropdown-btn" id="currencyDropdownBtn">
@@ -84,47 +84,51 @@
             <!-- Logo (Left) -->
             <div class="brand-logo">
                 <a href="#">
-                    <img src="https://hostorio.com/wp-content/uploads/2021/06/hostorio.com_-1024x239.png" alt="Hostorio" class="logo-image">
+                    <img src="../assets/images/logo/hostorio-logo.png" alt="Hostorio" class="logo-image">
                 </a>
             </div>
-            
+
             <!-- Desktop Navigation (Center on Desktop) -->
             <nav class="primary-nav desktop-nav">
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="../index.html" class="nav-item">Home</a></li>
                     <li class="nav-item-dropdown">
                         <a href="package.html" class="nav-item">
-                            Web Hosting 
+                            Web Hosting
                             <i class="fas fa-chevron-down dropdown-arrow"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">
+                            <li><a href="wordpress-hosting.html" class="dropdown-item">
                                 <i class="fab fa-wordpress"></i>
                                 <span>WordPress Hosting</span>
                             </a></li>
-                            <li><a href="#" class="dropdown-item">
-                                <i class="fas fa-briefcase"></i>
-                                <span>Business Hosting</span>
+                            <li><a href="turbo-hosting.html" class="dropdown-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Turbo Hosting</span>
                             </a></li>
-                            <li><a href="#" class="dropdown-item">
+                            <li><a href="reseller-hosting.html" class="dropdown-item">
+                                <i class="fas fa-store"></i>
+                                <span>Reseller Hosting</span>
+                            </a></li>
+                            <li><a href="student-hosting.html" class="dropdown-item">
                                 <i class="fas fa-graduation-cap"></i>
                                 <span>Student Hosting</span>
                             </a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="nav-item">Business Email</a></li>
-                    <li><a href="#" class="nav-item">VPS</a></li>
+                    <li><a href="business-email.html" class="nav-item">Business Email</a></li>
+                    <li><a href="vps-hosting.html" class="nav-item">VPS</a></li>
                     <li class="nav-item-dropdown">
-                        <a href="#" class="nav-item">
-                            Domain 
+                        <a href="domain-registration.html" class="nav-item">
+                            Domain
                             <i class="fas fa-chevron-down dropdown-arrow"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">
+                            <li><a href="domain-registration.html" class="dropdown-item">
                                 <i class="fas fa-search"></i>
                                 <span>Domain Search</span>
                             </a></li>
-                            <li><a href="#" class="dropdown-item">
+                            <li><a href="domain-registration.html" class="dropdown-item">
                                 <i class="fas fa-exchange-alt"></i>
                                 <span>Domain Transfer</span>
                             </a></li>
@@ -133,17 +137,17 @@
                     <li><a href="#" class="nav-item">Offer</a></li>
                 </ul>
             </nav>
-            
+
             <!-- Mobile My Account Button (Center on Mobile) -->
             <div class="mobile-account-center">
                 <a href="#" class="account-btn">My Account</a>
             </div>
-            
+
             <!-- Right Side -->
             <div class="header-right">
                 <!-- Desktop My Account Button -->
                 <a href="#" class="account-btn desktop-account">My Account</a>
-                
+
                 <!-- Mobile Menu Toggle -->
                 <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
                     <span class="hamburger-line"></span>
@@ -160,40 +164,44 @@
      =========================== -->
 <nav class="primary-nav mobile-nav" id="mobileNav">
     <ul class="nav-menu">
-        <li><a href="#" class="nav-item">Home</a></li>
+        <li><a href="../index.html" class="nav-item">Home</a></li>
         <li class="nav-item-dropdown">
             <a href="#" class="nav-item mobile-dropdown-trigger">
-                Web Hosting 
+                Web Hosting
                 <i class="fas fa-chevron-down dropdown-arrow"></i>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">
+                <li><a href="wordpress-hosting.html" class="dropdown-item">
                     <i class="fab fa-wordpress"></i>
                     <span>WordPress Hosting</span>
                 </a></li>
-                <li><a href="#" class="dropdown-item">
-                    <i class="fas fa-briefcase"></i>
-                    <span>Business Hosting</span>
+                <li><a href="turbo-hosting.html" class="dropdown-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Turbo Hosting</span>
                 </a></li>
-                <li><a href="#" class="dropdown-item">
+                <li><a href="reseller-hosting.html" class="dropdown-item">
+                    <i class="fas fa-store"></i>
+                    <span>Reseller Hosting</span>
+                </a></li>
+                <li><a href="student-hosting.html" class="dropdown-item">
                     <i class="fas fa-graduation-cap"></i>
                     <span>Student Hosting</span>
                 </a></li>
             </ul>
         </li>
-        <li><a href="#" class="nav-item">Business Email</a></li>
-        <li><a href="#" class="nav-item">VPS</a></li>
+        <li><a href="business-email.html" class="nav-item">Business Email</a></li>
+        <li><a href="vps-hosting.html" class="nav-item">VPS</a></li>
         <li class="nav-item-dropdown">
-            <a href="#" class="nav-item mobile-dropdown-trigger">
-                Domain 
+            <a href="domain-registration.html" class="nav-item mobile-dropdown-trigger">
+                Domain
                 <i class="fas fa-chevron-down dropdown-arrow"></i>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">
+                <li><a href="domain-registration.html" class="dropdown-item">
                     <i class="fas fa-search"></i>
                     <span>Domain Search</span>
                 </a></li>
-                <li><a href="#" class="dropdown-item">
+                <li><a href="domain-registration.html" class="dropdown-item">
                     <i class="fas fa-exchange-alt"></i>
                     <span>Domain Transfer</span>
                 </a></li>
@@ -204,131 +212,135 @@
 </nav>
 
 
-    <!-- Pricing Hero Section -->
-    <section class="pricing-hero-section">
-        <!-- Floating Font Awesome Icons Background -->
-        <div class="floating-icons">
-            <i class="fas fa-server icon-float icon-1"></i>
-            <i class="fas fa-cloud icon-float icon-2"></i>
-            <i class="fas fa-database icon-float icon-3"></i>
-            <i class="fas fa-shield-halved icon-float icon-4"></i>
-            <i class="fas fa-rocket icon-float icon-5"></i>
-            <i class="fas fa-bolt icon-float icon-6"></i>
-            <i class="fas fa-globe icon-float icon-7"></i>
-            <i class="fas fa-envelope icon-float icon-8"></i>
-            <i class="fas fa-network-wired icon-float icon-9"></i>
-            <i class="fas fa-code icon-float icon-10"></i>
-            <i class="fas fa-lock icon-float icon-11"></i>
-            <i class="fas fa-wifi icon-float icon-12"></i>
-            <i class="fab fa-wordpress icon-float icon-13"></i>
-            <i class="fas fa-briefcase icon-float icon-14"></i>
-            <i class="fas fa-graduation-cap icon-float icon-15"></i>
-            <i class="fas fa-chart-line icon-float icon-16"></i>
-            <i class="fas fa-plug icon-float icon-17"></i>
-            <i class="fas fa-sitemap icon-float icon-18"></i>
+    <!-- ===========================
+         PACKAGE CHOOSER SECTION
+         =========================== -->
+    <div class="package-chooser-wrapper">
+        <!-- Background Animation -->
+        <div class="motion-background">
+            <i class="fas fa-server motion-item item-1"></i>
+            <i class="fas fa-cloud motion-item item-2"></i>
+            <i class="fas fa-database motion-item item-3"></i>
+            <i class="fas fa-shield-halved motion-item item-4"></i>
+            <i class="fas fa-rocket motion-item item-5"></i>
+            <i class="fas fa-bolt motion-item item-6"></i>
+            <i class="fas fa-globe motion-item item-7"></i>
+            <i class="fas fa-envelope motion-item item-8"></i>
+            <i class="fas fa-network-wired motion-item item-9"></i>
+            <i class="fas fa-code motion-item item-10"></i>
+            <i class="fas fa-lock motion-item item-11"></i>
+            <i class="fas fa-wifi motion-item item-12"></i>
+            <i class="fab fa-wordpress motion-item item-13"></i>
+            <i class="fas fa-briefcase motion-item item-14"></i>
+            <i class="fas fa-graduation-cap motion-item item-15"></i>
+            <i class="fas fa-chart-line motion-item item-16"></i>
+            <i class="fas fa-plug motion-item item-17"></i>
+            <i class="fas fa-sitemap motion-item item-18"></i>
         </div>
 
-        <!-- Decorative Icon Left -->
-        <div class="percentage-icon left-icon">
+        <!-- Left Side Icon Box -->
+        <div class="side-icon-box left-side">
             <i class="fas fa-server"></i>
         </div>
 
-        <!-- Decorative Icon Right -->
-        <div class="percentage-icon right-icon">
+        <!-- Right Side Icon Box -->
+        <div class="side-icon-box right-side">
             <i class="fas fa-database"></i>
         </div>
 
-        <div class="container-wrapper">
-            <div class="pricing-hero-content">
-                <h1 class="pricing-hero-title">Choose a service – get online today</h1>
-                
-                <!-- Desktop Buttons -->
-                <div class="service-buttons desktop-buttons">
-                    <div class="button-row">
-                        <button class="service-btn active" data-service="wordpress">
-                            <span class="btn-icon">⚡</span>
-                            <span class="btn-text">WordPress Hosting</span>
-                        </button>
-                        <button class="service-btn" data-service="turbo">
-                            <span class="btn-icon">🚀</span>
-                            <span class="btn-text">Turbo Hosting</span>
-                        </button>
-                        <button class="service-btn" data-service="reseller">
-                            <span class="btn-icon">🔄</span>
-                            <span class="btn-text">Reseller Hosting</span>
-                        </button>
-                        <button class="service-btn" data-service="student">
-                            <span class="btn-icon">🎓</span>
-                            <span class="btn-text">Student Hosting</span>
-                        </button>
+        <div class="content-container">
+            <div class="chooser-inner">
+                <h1 class="section-headline">Everything You Need to Launch</h1>
+
+                <!-- Desktop Package Grid -->
+                <div class="packages-desktop">
+                    <div class="top-packages">
+                        <a href="wordpress-hosting.html" class="package-card highlighted">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-title-pricing-hero">WordPress Hosting</span>
+                        </a>
+                        <a href="turbo-hosting.html" class="package-card">
+                            <span class="card-icon">🚀</span>
+                            <span class="card-title-pricing-hero">Turbo Hosting</span>
+                        </a>
+                        <a href="reseller-hosting.html" class="package-card">
+                            <span class="card-icon">🔄</span>
+                            <span class="card-title-pricing-hero">Reseller Hosting</span>
+                        </a>
+                        <a href="student-hosting.html" class="package-card">
+                            <span class="card-icon">🎓</span>
+                            <span class="card-title-pricing-hero">Student Hosting</span>
+                        </a>
                     </div>
-                    <div class="button-row">
-                        <button class="service-btn" data-service="vps">
-                            <span class="btn-icon">🖥️</span>
-                            <span class="btn-text">VPS</span>
-                        </button>
-                        <button class="service-btn" data-service="email">
-                            <span class="btn-icon">✉️</span>
-                            <span class="btn-text">Business Email</span>
-                        </button>
-                        <button class="service-btn" data-service="domain">
-                            <span class="btn-icon">🌐</span>
-                            <span class="btn-text">Domain</span>
-                        </button>
+                    <div class="bottom-packages">
+                        <a href="vps-hosting.html" class="package-card">
+                            <span class="card-icon">🖥️</span>
+                            <span class="card-title-pricing-hero">VPS</span>
+                        </a>
+                        <a href="business-email.html" class="package-card">
+                            <span class="card-icon">✉️</span>
+                            <span class="card-title-pricing-hero">Business Email</span>
+                        </a>
+                        <a href="domain-registration.html" class="package-card">
+                            <span class="card-icon">🌐</span>
+                            <span class="card-title-pricing-hero">Domain</span>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Mobile Dropdown -->
-                <div class="service-dropdown mobile-dropdown">
-                    <div class="dropdown-header">
-                        <span class="selected-icon">⚡</span>
-                        <span class="selected-text">WordPress Hosting</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </div>
-                    <div class="dropdown-menu">
-                        <div class="dropdown-item active" data-service="wordpress">
-                            <span class="item-icon">⚡</span>
-                            <span class="item-text">WordPress Hosting</span>
-                        </div>
-                        <div class="dropdown-item" data-service="turbo">
-                            <span class="item-icon">🚀</span>
-                            <span class="item-text">Turbo Hosting</span>
-                        </div>
-                        <div class="dropdown-item" data-service="reseller">
-                            <span class="item-icon">🔄</span>
-                            <span class="item-text">Reseller Hosting</span>
-                        </div>
-                        <div class="dropdown-item" data-service="student">
-                            <span class="item-icon">🎓</span>
-                            <span class="item-text">Student Hosting</span>
-                        </div>
-                        <div class="dropdown-item" data-service="vps">
-                            <span class="item-icon">🖥️</span>
-                            <span class="item-text">VPS</span>
-                        </div>
-                        <div class="dropdown-item" data-service="email">
-                            <span class="item-icon">✉️</span>
-                            <span class="item-text">Business Email</span>
-                        </div>
-                        <div class="dropdown-item" data-service="domain">
-                            <span class="item-icon">🌐</span>
-                            <span class="item-text">Domain</span>
-                        </div>
+                <!-- Mobile Package Dropdown -->
+                <div class="packages-mobile">
+                    <div class="mobile-chooser">
+                        <button type="button" class="chooser-button" id="mobileChooserBtn">
+                            <span class="btn-icon" id="displayIcon">⚡</span>
+                            <span class="btn-label" id="displayLabel">WordPress Hosting</span>
+                            <i class="fas fa-chevron-down btn-chevron" id="chevronIcon"></i>
+                        </button>
+                        <nav class="chooser-list" id="packageList">
+                            <a href="wordpress-hosting.html" class="list-option selected" data-icon="⚡" data-label="WordPress Hosting">
+                                <span class="opt-icon">⚡</span>
+                                <span class="opt-label">WordPress Hosting</span>
+                            </a>
+                            <a href="turbo-hosting.html" class="list-option" data-icon="🚀" data-label="Turbo Hosting">
+                                <span class="opt-icon">🚀</span>
+                                <span class="opt-label">Turbo Hosting</span>
+                            </a>
+                            <a href="reseller-hosting.html" class="list-option" data-icon="🔄" data-label="Reseller Hosting">
+                                <span class="opt-icon">🔄</span>
+                                <span class="opt-label">Reseller Hosting</span>
+                            </a>
+                            <a href="student-hosting.html" class="list-option" data-icon="🎓" data-label="Student Hosting">
+                                <span class="opt-icon">🎓</span>
+                                <span class="opt-label">Student Hosting</span>
+                            </a>
+                            <a href="vps-hosting.html" class="list-option" data-icon="🖥️" data-label="VPS">
+                                <span class="opt-icon">🖥️</span>
+                                <span class="opt-label">VPS</span>
+                            </a>
+                            <a href="business-email.html" class="list-option" data-icon="✉️" data-label="Business Email">
+                                <span class="opt-icon">✉️</span>
+                                <span class="opt-label">Business Email</span>
+                            </a>
+                            <a href="domain-registration.html" class="list-option" data-icon="🌐" data-label="Domain">
+                                <span class="opt-icon">🌐</span>
+                                <span class="opt-label">Domain</span>
+                            </a>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
            <!-- Pricing Section -->
     <section class="pricing-section">
         <div class="container-wrapper">
-            
+
             <!-- Section Header -->
             <div class="pricing-header">
-                <h2 class="pricing-main-title">Find the Hosting Plan that's Right for Your Business</h2>
-                <p class="pricing-subtitle">We Have the Features and Service You Deserve!</p>
-                
+                <h2 class="pricing-main-title">Choose Your Perfect Hosting Plan</h2>
+                <p class="pricing-subtitle">Everything you need to launch, manage, and scale your website.</p>
+
                 <!-- Billing Toggle -->
                 <div class="billing-toggle">
                     <span class="toggle-label">Billed Monthly</span>
@@ -344,19 +356,19 @@
         <!-- Cloud Pricing Section -->
         <section class="cloud-pricing-section">
         <div class="container-wrapper">
-            
+
             <!-- Pricing Cards Grid -->
             <div class="cloud-pricing-cards">
-                
+
                 <!-- Card 1 - Starter Cloud -->
                 <div class="cloud-card">
                     <div class="cloud-icon">
-                        <img src="https://hostorio.com/wp-content/uploads/2026/02/data-server.png" alt="Starter Cloud">
+                        <img src="../assets/images/pricing/data-server.svg" alt="Starter Cloud">
                     </div>
-                    
+
                     <h3 class="cloud-plan-name">Starter Cloud</h3>
                     <p class="cloud-plan-desc">Ideal for beginner/personal websites</p>
-                    
+
                     <div class="cloud-pricing">
                         <div class="cloud-price-original">$8.95 <span class="cloud-save-badge">Save 75%</span></div>
                         <div class="cloud-price-current">
@@ -365,7 +377,7 @@
                             <span class="cloud-period">/mo</span>
                         </div>
                     </div>
-                    
+
                     <ul class="cloud-features">
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -431,20 +443,20 @@
                             <span><strong>30-Day</strong> Money-Back</span>
                         </li>
                     </ul>
-                    
+
                     <button class="cloud-order-btn">Order Now</button>
-                     
+
                 </div>
 
                 <!-- Card 2 - Plus Cloud -->
                 <div class="cloud-card">
                     <div class="cloud-icon">
-                        <img src="https://hostorio.com/wp-content/uploads/2026/02/data-server.png" alt="Plus Cloud">
+                        <img src="../assets/images/pricing/data-server.svg" alt="Plus Cloud">
                     </div>
-                    
+
                     <h3 class="cloud-plan-name">Plus Cloud</h3>
                     <p class="cloud-plan-desc">Best for average-sized websites</p>
-                    
+
                     <div class="cloud-pricing">
                         <div class="cloud-price-original">$12.95 <span class="cloud-save-badge">Save 70%</span></div>
                         <div class="cloud-price-current">
@@ -453,7 +465,7 @@
                             <span class="cloud-period">/mo</span>
                         </div>
                     </div>
-                    
+
                     <ul class="cloud-features">
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -519,22 +531,22 @@
                             <span><strong>30-Day</strong> Money-Back</span>
                         </li>
                     </ul>
-                    
+
                     <button class="cloud-order-btn">Order Now</button>
-                     
+
                 </div>
 
                 <!-- Card 3 - Turbo Cloud (Most Popular) -->
                 <div class="cloud-card popular">
                     <div class="cloud-popular-badge">Most Popular</div>
-                    
+
                     <div class="cloud-icon">
-                        <img src="https://hostorio.com/wp-content/uploads/2026/02/data-server.png" alt="Turbo Cloud">
+                        <img src="../assets/images/pricing/data-server.svg" alt="Turbo Cloud">
                     </div>
-                    
+
                     <h3 class="cloud-plan-name">Turbo Cloud</h3>
                     <p class="cloud-plan-desc">Most popular package</p>
-                    
+
                     <div class="cloud-pricing">
                         <div class="cloud-price-original">$19.95 <span class="cloud-save-badge">Save 70%</span></div>
                         <div class="cloud-price-current">
@@ -543,7 +555,7 @@
                             <span class="cloud-period">/mo</span>
                         </div>
                     </div>
-                    
+
                     <ul class="cloud-features">
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -623,20 +635,20 @@
                             <span><strong>30-Day</strong> Money-Back</span>
                         </li>
                     </ul>
-                    
+
                     <button class="cloud-order-btn">Order Now</button>
-                     
+
                 </div>
 
                 <!-- Card 4 - Business Cloud -->
                 <div class="cloud-card">
                     <div class="cloud-icon">
-                        <img src="https://hostorio.com/wp-content/uploads/2026/02/data-server.png" alt="Business Cloud">
+                        <img src="../assets/images/pricing/data-server.svg" alt="Business Cloud">
                     </div>
-                    
+
                     <h3 class="cloud-plan-name">Business Cloud</h3>
                     <p class="cloud-plan-desc">Ideal for eCommerce websites</p>
-                    
+
                     <div class="cloud-pricing">
                         <div class="cloud-price-original">$29.95 <span class="cloud-save-badge">Save 70%</span></div>
                         <div class="cloud-price-current">
@@ -645,7 +657,7 @@
                             <span class="cloud-period">/mo</span>
                         </div>
                     </div>
-                    
+
                     <ul class="cloud-features">
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -732,9 +744,9 @@
                             <span><strong>30-Day</strong> Money-Back</span>
                         </li>
                     </ul>
-                    
+
                     <button class="cloud-order-btn">Order Now</button>
-                     
+
                 </div>
 
             </div>
@@ -752,7 +764,7 @@
     <section class="advanced-features-section">
         <div class="container-wrapper">
             <h2 class="section-title">Enjoy all this. At no extra cost.</h2>
-            
+
             <div class="features-box">
                 <div class="features-columns">
                     <!-- Column 1 -->
@@ -761,166 +773,166 @@
                             <i class="fas fa-hand-holding-dollar feature-icon"></i>
                             <span class="feature-label"><strong>30</strong> Day Money Back Guarantee</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-server feature-icon"></i>
                             <span class="feature-label"><strong>99.9%</strong> Server Uptime Guarantee</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-clock feature-icon"></i>
                             <span class="feature-label"><strong>1</strong> Hour Response Time</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-headset feature-icon"></i>
                             <span class="feature-label"><strong>24/7</strong> Technical Support</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-network-wired feature-icon"></i>
                             <span class="feature-label"><strong>Clustered</strong> Failover DNS</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fab fa-linux feature-icon"></i>
                             <span class="feature-label"><strong>CloudLinux</strong> / CageFS</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-rocket feature-icon"></i>
                             <span class="feature-label"><strong>LiteSpeed</strong> Web Server</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-gauge-high feature-icon"></i>
                             <span class="feature-label"><strong>Latest</strong> cPanel</span>
                         </div>
                     </div>
-                    
+
                     <!-- Column 2 -->
                     <div class="feature-column">
                         <div class="feature-row">
                             <i class="fas fa-download feature-icon"></i>
                             <span class="feature-label"><strong>Softaculous</strong> Script Installer</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-shield-virus feature-icon"></i>
                             <span class="feature-label"><strong>Malware</strong> & Exploit Scanning</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fab fa-cloudflare feature-icon"></i>
                             <span class="feature-label"><strong>CloudFlare</strong> CDN</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-sitemap feature-icon"></i>
                             <span class="feature-label"><strong>Unlimited</strong> Sub Domains</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-gem feature-icon"></i>
                             <span class="feature-label"><strong>Ruby</strong> On Rails</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-database feature-icon"></i>
                             <span class="feature-label"><strong>Unlimited</strong> MySQL Databases</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-folder-open feature-icon"></i>
                             <span class="feature-label"><strong>Unlimited</strong> FTP Accounts</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-envelope feature-icon"></i>
                             <span class="feature-label"><strong>Unlimited</strong> E-Mail Accounts</span>
                         </div>
                     </div>
-                    
+
                     <!-- Column 3 -->
                     <div class="feature-column">
                         <div class="feature-row">
                             <i class="fas fa-shield-halved feature-icon"></i>
                             <span class="feature-label"><strong>20</strong> GBPS DDoS Protection</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-reply-all feature-icon"></i>
                             <span class="feature-label"><strong>Unlimited</strong> Auto Responders</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-ban feature-icon"></i>
                             <span class="feature-label"><strong>Spam</strong> Protection</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-terminal feature-icon"></i>
                             <span class="feature-label"><strong>SSH</strong> Access Available</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fab fa-node-js feature-icon"></i>
                             <span class="feature-label"><strong>Node.js</strong> Version Selector</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-lock feature-icon"></i>
                             <span class="feature-label"><strong>FREE</strong> Let's Encrypt SSL Certs</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-truck-fast feature-icon"></i>
                             <span class="feature-label"><strong>FREE</strong> cPanel Migration</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-table feature-icon"></i>
                             <span class="feature-label"><strong>Mariadb</strong> 10.x / phpMyAdmin</span>
                         </div>
                     </div>
-                    
+
                     <!-- Column 4 -->
                     <div class="feature-column">
                         <div class="feature-row">
                             <i class="fas fa-code feature-icon"></i>
                             <span class="feature-label"><strong>Server</strong> Side Includes</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-image feature-icon"></i>
                             <span class="feature-label"><strong>Curl</strong> / GD2 / ImageMagick</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fab fa-php feature-icon"></i>
                             <span class="feature-label"><strong>PHP</strong> Selector (5.6 - 8.x)</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fab fa-python feature-icon"></i>
                             <span class="feature-label"><strong>Python</strong> Version Selector</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fab fa-wordpress feature-icon"></i>
                             <span class="feature-label"><strong>Wordpress</strong> Manager</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-cube feature-icon"></i>
                             <span class="feature-label"><strong>ionCube</strong> PHP Loader</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-chart-bar feature-icon"></i>
                             <span class="feature-label"><strong>Awstats</strong> & Webalizer</span>
                         </div>
-                        
+
                         <div class="feature-row">
                             <i class="fas fa-z feature-icon"></i>
                             <span class="feature-label"><strong>Zend</strong> Guard Loader</span>
@@ -945,34 +957,34 @@
                         <h3>&nbsp;</h3>
                     </div>
                     <div class="feature-list">
-                        <div class="feature-item">Storage Space</div>
-                        <div class="feature-item">Inodes (Website Files) Allowed</div>
-                        <div class="feature-item">Websites Allowed</div>
-                        <div class="feature-item">Datacenter Locations</div>
-                        <div class="feature-item">CPU Cores</div>
-                        <div class="feature-item">RAM</div>
-                        <div class="feature-item">Free Domain Name</div>
-                        <div class="feature-item">SuperHero Optimized</div>
-                        <div class="feature-item">1-Click WordPress Hosting</div>
-                        <div class="feature-item">Free and Auto SSL (https)</div>
-                        <div class="feature-item">LiteSpeed Cache</div>
-                        <div class="feature-item">Monthly Bandwidth</div>
-                        <div class="feature-item">Parked Domains</div>
-                        <div class="feature-item">Sub Domains</div>
-                        <div class="feature-item">Email Accounts</div>
-                        <div class="feature-item">cPanel Mailbox Quota</div>
-                        <div class="feature-item">Dedicated IP Address</div>
-                        <div class="feature-item">cPanel</div>
-                        <div class="feature-item">Jailed SSH Access</div>
-                        <div class="feature-item">Quic.Cloud CDN</div>
-                        <div class="feature-item">Unlimited FTP Accounts</div>
-                        <div class="feature-item">Unlimited Databases</div>
-                        <div class="feature-item">Multiple PHP Versions</div>
-                        <div class="feature-item">Perl</div>
-                        <div class="feature-item">Web Mail</div>
-                        <div class="feature-item">Nightly/Weekly Backups</div>
-                        <div class="feature-item">Email Sending Limit<br>(Per Hour)</div>
-                        <div class="feature-item feature-item-cta">&nbsp;</div>
+                        <div class="feature-item-hosting">Storage Space</div>
+                        <div class="feature-item-hosting">Inodes (Website Files) Allowed</div>
+                        <div class="feature-item-hosting">Websites Allowed</div>
+                        <div class="feature-item-hosting">Datacenter Locations</div>
+                        <div class="feature-item-hosting">CPU Cores</div>
+                        <div class="feature-item-hosting">RAM</div>
+                        <div class="feature-item-hosting">Free Domain Name</div>
+                        <div class="feature-item-hosting">SuperHero Optimized</div>
+                        <div class="feature-item-hosting">1-Click WordPress Hosting</div>
+                        <div class="feature-item-hosting">Free and Auto SSL (https)</div>
+                        <div class="feature-item-hosting">LiteSpeed Cache</div>
+                        <div class="feature-item-hosting">Monthly Bandwidth</div>
+                        <div class="feature-item-hosting">Parked Domains</div>
+                        <div class="feature-item-hosting">Sub Domains</div>
+                        <div class="feature-item-hosting">Email Accounts</div>
+                        <div class="feature-item-hosting">cPanel Mailbox Quota</div>
+                        <div class="feature-item-hosting">Dedicated IP Address</div>
+                        <div class="feature-item-hosting">cPanel</div>
+                        <div class="feature-item-hosting">Jailed SSH Access</div>
+                        <div class="feature-item-hosting">Quic.Cloud CDN</div>
+                        <div class="feature-item-hosting">Unlimited FTP Accounts</div>
+                        <div class="feature-item-hosting">Unlimited Databases</div>
+                        <div class="feature-item-hosting">Multiple PHP Versions</div>
+                        <div class="feature-item-hosting">Perl</div>
+                        <div class="feature-item-hosting">Web Mail</div>
+                        <div class="feature-item-hosting">Nightly/Weekly Backups</div>
+                        <div class="feature-item-hosting">Email Sending Limit<br>(Per Hour)</div>
+                        <div class="feature-item-hosting feature-item-cta">&nbsp;</div>
                     </div>
                 </div>
 
@@ -1184,14 +1196,14 @@
 <!-- Testimonial Section - Horizontal Layout -->
 <section class="testimonial-horizontal-section">
     <div class="testimonial-horizontal-container">
-        
+
         <!-- Testimonial Item 1 -->
         <div class="testimonial-horizontal-item active">
             <div class="testimonial-horizontal-content">
                 <!-- Image Side -->
                 <div class="testimonial-image-side">
                     <div class="testimonial-video-wrapper">
-                        <img src="https://www.hostinger.com/cdn-cgi/imagedelivery/LqiWLm-3MGbYHtFuUbcBtA/aaa2e62e-becd-457c-a47d-8c96b0575800/w=320,sharpen=1" alt="Owen Phillips" class="testimonial-person-image">
+                        <img src="../assets/images/testimonials/owen-phillips.jpg" alt="Owen Phillips" class="testimonial-person-image">
                         <div class="video-play-button">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
                                 <path fill="currentColor" d="M8 5v14l11-7z"></path>
@@ -1199,7 +1211,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Text Side -->
                 <div class="testimonial-text-side">
                     <div class="quote-mark">
@@ -1207,19 +1219,19 @@
                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                         </svg>
                     </div>
-                    
+
                     <p class="testimonial-quote">
                         I could <span class="highlight-text">manage</span> the hosting, domain name, and SSL certificate <span class="highlight-text">in one place</span>, which was really refreshing.
                     </p>
-                    
+
                     <a href="#" class="testimonial-read-more">Read more</a>
-                    
+
                     <div class="testimonial-author-section">
                         <div class="author-details">
                             <p class="author-name-text">Owen Phillips</p>
                             <p class="author-site">gatefootforge.co.uk</p>
                         </div>
-                        
+
                         <div class="carousel-navigation">
                             <button class="carousel-btn carousel-prev" aria-label="Previous">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -1236,14 +1248,14 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Testimonial Item 2 -->
         <div class="testimonial-horizontal-item">
             <div class="testimonial-horizontal-content">
                 <!-- Image Side -->
                 <div class="testimonial-image-side">
                     <div class="testimonial-video-wrapper">
-                        <img src="\https://www.hostinger.com/cdn-cgi/imagedelivery/LqiWLm-3MGbYHtFuUbcBtA/0aa01771-e9e9-4105-09c1-b007fa94b100/w=1280,sharpen=1" alt="Client Name" class="testimonial-person-image">
+                        <img src="../assets/images/testimonials/client-testimonial.jpg" alt="Client Name" class="testimonial-person-image">
                         <div class="video-play-button">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
                                 <path fill="currentColor" d="M8 5v14l11-7z"></path>
@@ -1251,7 +1263,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Text Side -->
                 <div class="testimonial-text-side">
                     <div class="quote-mark">
@@ -1259,19 +1271,19 @@
                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                         </svg>
                     </div>
-                    
+
                     <p class="testimonial-quote">
                         We honestly reference <span class="highlight-text">Hostinger as the benchmark</span> for our engineers when providing support.
                     </p>
-                    
+
                     <a href="#" class="testimonial-read-more">Read more</a>
-                    
+
                     <div class="testimonial-author-section">
                         <div class="author-details">
                             <p class="author-name-text">Client Name</p>
                             <p class="author-site">clientwebsite.com</p>
                         </div>
-                        
+
                         <div class="carousel-navigation">
                             <button class="carousel-btn carousel-prev" aria-label="Previous">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -1288,7 +1300,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 </section>
 
@@ -1407,7 +1419,7 @@
     <section class="wordpress-section">
         <div class="container-wrapper">
             <div class="wordpress-content">
-                
+
                 <!-- Left Side - Graphic -->
                 <div class="wordpress-graphic">
                     <!-- Browser Window -->
@@ -1422,7 +1434,7 @@
                             <div class="wp-hero">
                                 <h3 class="wp-blog-title">Your Blog Title</h3>
                             </div>
-                            
+
                             <!-- Latest Post Section -->
                             <div class="wp-posts-section">
                                 <p class="wp-section-title">Latest Post</p>
@@ -1453,7 +1465,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Floating Elements -->
                     <div class="floating-element top-element">
                         <div class="theme-preview">
@@ -1480,7 +1492,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="floating-element left-element">
                         <div class="dashboard-menu">
                             <div class="menu-icon">
@@ -1505,7 +1517,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="floating-element bottom-element">
                         <div class="editor-toolbar">
                             <svg width="100%" height="40" viewBox="0 0 200 40" fill="none">
@@ -1519,14 +1531,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Right Side - Content -->
                 <div class="wordpress-text">
                     <h2 class="wordpress-title">WordPress Hosting Turbocharged</h2>
                     <p class="wordpress-description">
                        WordPress powers the web, but we power WordPress. We provide a managed environment that offers the perfect balance of raw power and complete control. Whether you are a solo blogger or a large-scale agency, our infrastructure is fine-tuned to ensure your WordPress site is faster, more secure, and easier to manage than ever before.
                     </p>
-                    
+
                     <!-- Features List -->
                     <div class="features-list">
                         <div class="feature-item">
@@ -1538,7 +1550,7 @@
                             </div>
                             <h3 class="feature-title">1-Click Script Deployment</h3>
                         </div>
-                        
+
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -1548,7 +1560,7 @@
                             </div>
                             <h3 class="feature-title">LiteSpeed-Optimized Stack</h3>
                         </div>
-                        
+
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -1560,523 +1572,235 @@
                             <h3 class="feature-title">Proactive Malware Defense</h3>
                         </div>
                     </div>
-                    
+
                     <!-- CTA Button -->
                     <div class="wordpress-cta">
                         <a href="#" class="cta-button">Get Started Now</a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
-       <!-- Support Section -->
-    <section class="support-section">
+<!-- Support Section -->
+<section class="support-section">
+    <div class="container-wrapper">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-main-title">Customer Success Focus</h2>
+            <p class="section-subtitle">We provide everything you need to succeed online</p>
+        </div>
+
+        <!-- Support Cards -->
+        <div class="support-cards">
+
+            <!-- Card 1 -->
+            <div class="support-card">
+                <div class="card-image-wrapper">
+                    <img src="https://hostorio.com/wp-content/uploads/2026/02/hostorio-support.png" alt="Onboarding Support" class="card-image">
+                    <div class="image-overlay blue-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Onboarding Support</h3>
+                    <p class="card-description">
+                        Don't know where to start? Our step-by-step tutorials and 24/7 support team walk you through domain setup, hosting configuration, and WordPress installation.
+                    </p>
+                    <a href="#" class="card-button">Get started</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="support-card">
+                <div class="card-image-wrapper">
+                    <img src="https://hostorio.com/wp-content/uploads/2026/02/hostorio-support.png" alt="Discover Resources" class="card-image">
+                    <div class="image-overlay green-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Discover our Resources</h3>
+                    <p class="card-description">
+                        Access our resource center for hosting best practices, security tips, performance optimization guides, and industry insights.
+                    </p>
+                    <a href="#" class="card-button">Get learning</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="support-card">
+                <div class="card-image-wrapper">
+                    <img src="https://hostorio.com/wp-content/uploads/2026/02/hostorio-support.png" alt="Hassle-Free Transfers" class="card-image">
+                    <div class="image-overlay orange-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Hassle-Free Transfers</h3>
+                    <p class="card-description">
+                        Move your domain and Hosting to Us. Switching hosts shouldn't feel like moving houses. With us, it's simple.
+                    </p>
+                    <a href="#" class="card-button">Transfer today</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+       <!-- Main Footer -->
+   <!-- Main Footer -->
+    <footer class="main-footer">
         <div class="container-wrapper">
-            <!-- Section Header -->
-            <div class="section-header">
-                <h2 class="section-main-title">Customer Success Focus</h2>
-                <p class="section-subtitle">We provide everything you need to succeed online</p>
-            </div>
+            <div class="footer-content">
 
-            <!-- Support Cards -->
-            <div class="support-cards">
-                
-                <!-- Card 1 -->
-                <div class="support-card">
-                    <div class="card-icon-wrapper blue-bg">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                                <circle cx="12" cy="8" r="3"></circle>
-                            </svg>
-                        </div>
+                <!-- Column 1: About -->
+                <div class="footer-column footer-about">
+                    <div class="footer-logo">
+                        <h3><span class="logo-host">HOST</span><span class="logo-orio">ORIO</span></h3>
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Onboarding Support</h3>
-                        <p class="card-description">
-                            Don't know where to start? Our step-by-step tutorials and 24/7 support team walk you through domain setup, hosting configuration, and WordPress installation. From zero to live in hours, not weeks. Check our detailed knowledge base.
-                        </p>
-                        <a href="#" class="card-button">Get started</a>
+                    <p class="footer-description">
+                        Hostorio is a popular web hosting services provider. Hostorio provides Shared Hosting, Business Hosting, Reseller Hosting, VPS, and domain Registration-Transfer services.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="support-card">
-                    <div class="card-icon-wrapper green-bg">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                                <path d="M6 8h12v5H6z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Discover our Resources</h3>
-                        <p class="card-description">
-                            Access our resource center for hosting best practices, security tips, performance optimization guides, and industry insights. Learn directly from our team's experience managing 500+ websites across Bangladesh.
-                        </p>
-                        <a href="#" class="card-button">Get learning</a>
-                    </div>
+                <!-- Column 2: Important -->
+                <div class="footer-column">
+                    <h4 class="footer-title">IMPORTANT</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Log In</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Terms & Conditions</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="support-card">
-                    <div class="card-icon-wrapper orange-bg">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Hassle-Free Transfers</h3>
-                        <p class="card-description">
-                            We guarantee: Free domain transfer, Free email migration, Free database transfer, Zero downtime. Switching hosts shouldn't feel like moving houses. With us, it's simple.
-                        </p>
-                        <a href="#" class="card-button">Transfer today</a>
+                <!-- Column 3: Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-title">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Shared Hosting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Business Hosting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Business Email</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>Reseller Hosting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span>VPS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Us -->
+                <div class="footer-column">
+                    <h4 class="footer-title">CONTACT US</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kanchan, Rupganj, Narayanganj</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>H-161, OABDA SOROK MATHBARIA</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+8801779440297</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>mail@hostorio.com</span>
+                        </li>
+                    </ul>
+                    <div class="payment-methods">
+                        <img src="./assets/images/payment/payment-gateway.svg" alt="Payment Methods">
                     </div>
                 </div>
 
             </div>
         </div>
-    </section>
+    </footer>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container-wrapper">
+            <div class="footer-bottom-content">
+                <p class="copyright">
+                    © 2026 Hostorio. All Rights Reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="../assets/js/header.js"></script>
+<script src="../assets/js/utils.js"></script>
+<script src="../assets/js/animations.js"></script>
+<script src="../assets/js/main.js"></script>
 
 
-
-
-
-
-
-
-
-
-
-    <script>
-        // Testimonial Carousel JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-    const testimonialItems = document.querySelectorAll('.testimonial-horizontal-item');
-    const prevButtons = document.querySelectorAll('.carousel-prev');
-    const nextButtons = document.querySelectorAll('.carousel-next');
-    
-    let currentIndex = 0;
-    
-    // Function to show specific testimonial
-    function showTestimonial(index) {
-        // Hide all testimonials
-        testimonialItems.forEach(item => {
-            item.classList.remove('active');
-        });
-        
-        // Show the selected testimonial
-        if (testimonialItems[index]) {
-            testimonialItems[index].classList.add('active');
-        }
-    }
-    
-    // Function to go to next testimonial
-    function nextTestimonial() {
-        currentIndex++;
-        if (currentIndex >= testimonialItems.length) {
-            currentIndex = 0; // Loop back to first
-        }
-        showTestimonial(currentIndex);
-    }
-    
-    // Function to go to previous testimonial
-    function prevTestimonial() {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = testimonialItems.length - 1; // Loop to last
-        }
-        showTestimonial(currentIndex);
-    }
-    
-    // Add click event to all next buttons
-    nextButtons.forEach(button => {
-        button.addEventListener('click', nextTestimonial);
-    });
-    
-    // Add click event to all prev buttons
-    prevButtons.forEach(button => {
-        button.addEventListener('click', prevTestimonial);
-    });
-    
-    // Optional: Auto-play carousel every 5 seconds
-    // Uncomment the lines below if you want auto-play
-    /*
-    setInterval(function() {
-        nextTestimonial();
-    }, 5000); // Change every 5 seconds
-    */
-    
-    // Optional: Keyboard navigation
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'ArrowLeft') {
-            prevTestimonial();
-        } else if (e.key === 'ArrowRight') {
-            nextTestimonial();
-        }
-    });
-    
-    // Show first testimonial on load
-    showTestimonial(currentIndex);
-});
-    </script>
-<script>
-(function() {
-    'use strict';
-    
-    // =============================
-    // MOBILE MENU FUNCTIONALITY
-    // =============================
-    const mobileNav = document.getElementById('mobileNav');
-    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-    
-    // Toggle mobile menu
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function(e) {
-            e.stopPropagation();
-            mobileNav.classList.toggle('active');
-            mobileMenuToggle.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-        });
-    }
-    
-    // =============================
-    // DESKTOP DROPDOWN FUNCTIONALITY
-    // =============================
-    const desktopDropdowns = document.querySelectorAll('.desktop-nav .nav-item-dropdown');
-    
-    desktopDropdowns.forEach(function(dropdown) {
-        const trigger = dropdown.querySelector('.nav-item');
-        
-        trigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            // Close other dropdowns
-            desktopDropdowns.forEach(function(otherDropdown) {
-                if (otherDropdown !== dropdown) {
-                    otherDropdown.classList.remove('active');
-                }
-            });
-            
-            // Toggle current dropdown
-            dropdown.classList.toggle('active');
-        });
-    });
-    
-    // =============================
-    // MOBILE DROPDOWN FUNCTIONALITY
-    // =============================
-    const mobileDropdowns = document.querySelectorAll('.mobile-nav .nav-item-dropdown');
-    
-    mobileDropdowns.forEach(function(dropdown) {
-        const trigger = dropdown.querySelector('.mobile-dropdown-trigger');
-        
-        trigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            // Toggle current dropdown
-            dropdown.classList.toggle('active');
-        });
-    });
-    
-    // =============================
-    // CLOSE MENUS ON OUTSIDE CLICK
-    // =============================
-    document.addEventListener('click', function(e) {
-        // Close mobile menu if clicking outside
-        if (mobileNav && !mobileNav.contains(e.target) && 
-            !mobileMenuToggle.contains(e.target) && 
-            mobileNav.classList.contains('active')) {
-            mobileNav.classList.remove('active');
-            mobileMenuToggle.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        }
-        
-        // Close desktop dropdowns if clicking outside
-        const desktopNav = document.querySelector('.desktop-nav');
-        if (desktopNav && !desktopNav.contains(e.target)) {
-            desktopDropdowns.forEach(function(dropdown) {
-                dropdown.classList.remove('active');
-            });
-        }
-    });
-    
-    // =============================
-    // CLOSE MOBILE MENU ON RESIZE
-    // =============================
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 968) {
-            if (mobileNav.classList.contains('active')) {
-                mobileNav.classList.remove('active');
-                mobileMenuToggle.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            }
-            
-            // Close all dropdowns
-            desktopDropdowns.forEach(function(dropdown) {
-                dropdown.classList.remove('active');
-            });
-            mobileDropdowns.forEach(function(dropdown) {
-                dropdown.classList.remove('active');
-            });
-        }
-    });
-    
-    // =============================
-    // LANGUAGE DROPDOWN FUNCTIONALITY
-    // =============================
-    const languageSelector = document.querySelector('.language-selector');
-    const languageDropdownMenu = document.querySelector('.language-dropdown-menu');
-    const languageOptions = document.querySelectorAll('.language-option');
-    const currentLanguageText = document.querySelector('.language-selector span');
-    const currentLanguageFlag = document.querySelector('.language-selector .flag-icon');
-    
-    if (languageSelector && languageDropdownMenu) {
-        // Toggle language dropdown
-        languageSelector.addEventListener('click', function(e) {
-            e.stopPropagation();
-            languageSelector.classList.toggle('active');
-            languageDropdownMenu.classList.toggle('show');
-            
-            // Close currency dropdown if open
-            if (currencyDropdownMenu) {
-                currencyDropdownMenu.classList.remove('show');
-                if (currencyDropdownBtn) {
-                    currencyDropdownBtn.classList.remove('active');
-                }
-            }
-        });
-        
-        // Select language option
-        languageOptions.forEach(function(option) {
-            option.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const selectedLanguage = this.getAttribute('data-language');
-                const selectedFlag = this.getAttribute('data-flag');
-                const languageText = this.querySelector('span').textContent;
-                
-                // Update button text and flag
-                if (currentLanguageText) {
-                    currentLanguageText.textContent = languageText;
-                }
-                if (currentLanguageFlag) {
-                    currentLanguageFlag.src = selectedFlag;
-                }
-                
-                // Update active state
-                languageOptions.forEach(function(opt) {
-                    opt.classList.remove('active');
-                });
-                this.classList.add('active');
-                
-                // Close dropdown
-                languageDropdownMenu.classList.remove('show');
-                languageSelector.classList.remove('active');
-                
-                updateLanguage(selectedLanguage);
-            });
-        });
-        
-        // Close language dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!languageSelector.contains(e.target) && 
-                !languageDropdownMenu.contains(e.target)) {
-                languageDropdownMenu.classList.remove('show');
-                languageSelector.classList.remove('active');
-            }
-        });
-    }
-    
-    // =============================
-    // CURRENCY SWITCHER - DESKTOP
-    // =============================
-    const currencyButtons = document.querySelectorAll('.currency-btn');
-    
-    currencyButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            currencyButtons.forEach(function(btn) {
-                btn.classList.remove('active');
-            });
-            this.classList.add('active');
-            
-            const selectedCurrency = this.getAttribute('data-currency');
-            updateCurrency(selectedCurrency);
-        });
-    });
-    
-    // =============================
-    // CURRENCY DROPDOWN - MOBILE
-    // =============================
-    const currencyDropdownBtn = document.getElementById('currencyDropdownBtn');
-    const currencyDropdownMenu = document.getElementById('currencyDropdownMenu');
-    const currencyOptions = document.querySelectorAll('.currency-option');
-    const currentCurrencyText = document.querySelector('.current-currency');
-    
-    if (currencyDropdownBtn && currencyDropdownMenu) {
-        // Toggle currency dropdown
-        currencyDropdownBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            currencyDropdownBtn.classList.toggle('active');
-            currencyDropdownMenu.classList.toggle('show');
-            
-            // Close language dropdown if open
-            if (languageDropdownMenu) {
-                languageDropdownMenu.classList.remove('show');
-                if (languageSelector) {
-                    languageSelector.classList.remove('active');
-                }
-            }
-        });
-        
-        // Select currency option
-        currencyOptions.forEach(function(option) {
-            option.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const selectedCurrency = this.getAttribute('data-currency');
-                const iconHTML = this.querySelector('i').outerHTML;
-                
-                // Update button text and icon
-                currentCurrencyText.textContent = selectedCurrency;
-                currencyDropdownBtn.querySelector('i:first-child').outerHTML = iconHTML;
-                
-                // Update active state
-                currencyOptions.forEach(function(opt) {
-                    opt.classList.remove('active');
-                });
-                this.classList.add('active');
-                
-                // Close dropdown
-                currencyDropdownMenu.classList.remove('show');
-                currencyDropdownBtn.classList.remove('active');
-                
-                updateCurrency(selectedCurrency);
-            });
-        });
-        
-        // Close currency dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!currencyDropdownBtn.contains(e.target) && 
-                !currencyDropdownMenu.contains(e.target)) {
-                currencyDropdownMenu.classList.remove('show');
-                currencyDropdownBtn.classList.remove('active');
-            }
-        });
-    }
-    
-    // =============================
-    // UPDATE LANGUAGE FUNCTION
-    // =============================
-    function updateLanguage(language) {
-        console.log('Selected language: ' + language);
-        
-        // Save to localStorage
-        try {
-            localStorage.setItem('selectedLanguage', language);
-        } catch (e) {
-            console.warn('localStorage not available');
-        }
-        
-        // Add your language change logic here
-        // changeWebsiteLanguage(language);
-    }
-    
-    // =============================
-    // UPDATE CURRENCY FUNCTION
-    // =============================
-    function updateCurrency(currency) {
-        console.log('Selected currency: ' + currency);
-        
-        // Save to localStorage
-        try {
-            localStorage.setItem('selectedCurrency', currency);
-        } catch (e) {
-            console.warn('localStorage not available');
-        }
-        
-        // Sync desktop buttons
-        currencyButtons.forEach(function(btn) {
-            if (btn.getAttribute('data-currency') === currency) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-            }
-        });
-        
-        // Sync mobile dropdown
-        if (currentCurrencyText) {
-            currentCurrencyText.textContent = currency;
-        }
-        currencyOptions.forEach(function(opt) {
-            if (opt.getAttribute('data-currency') === currency) {
-                opt.classList.add('active');
-            } else {
-                opt.classList.remove('active');
-            }
-        });
-        
-        // Add your price update logic here
-        // updatePrices(currency);
-    }
-    
-    // =============================
-    // LOAD SAVED PREFERENCES ON PAGE LOAD
-    // =============================
-    
-    // Load saved language
-    let savedLanguage = 'en';
-    try {
-        savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    } catch (e) {
-        console.warn('localStorage not available');
-    }
-    
-    // Initialize with saved language
-    if (savedLanguage && languageOptions) {
-        languageOptions.forEach(function(option) {
-            if (option.getAttribute('data-language') === savedLanguage) {
-                const languageText = option.querySelector('span').textContent;
-                const selectedFlag = option.getAttribute('data-flag');
-                
-                if (currentLanguageText) {
-                    currentLanguageText.textContent = languageText;
-                }
-                if (currentLanguageFlag) {
-                    currentLanguageFlag.src = selectedFlag;
-                }
-                
-                option.classList.add('active');
-            } else {
-                option.classList.remove('active');
-            }
-        });
-    }
-    
-    // Load saved currency
-    let savedCurrency = 'BDT';
-    try {
-        savedCurrency = localStorage.getItem('selectedCurrency') || 'BDT';
-    } catch (e) {
-        console.warn('localStorage not available');
-    }
-    
-    // Initialize with saved currency
-    updateCurrency(savedCurrency);
-    
-})();
-</script>
 </body>
 </html>
-
-
-
