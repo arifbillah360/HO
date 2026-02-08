@@ -5,12 +5,29 @@
 (function() {
     'use strict';
 
+    // Service URL mapping
+    var serviceUrls = {
+        'wordpress': '../pages/package.html',
+        'turbo': '#',
+        'reseller': '#',
+        'student': '#',
+        'vps': '#',
+        'email': '#',
+        'domain': '#'
+    };
+
     // Service buttons (desktop)
     var serviceButtons = document.querySelectorAll('.service-btn');
     serviceButtons.forEach(function(btn) {
         btn.addEventListener('click', function() {
             serviceButtons.forEach(function(b) { b.classList.remove('active'); });
             this.classList.add('active');
+
+            var service = this.getAttribute('data-service');
+            var url = this.getAttribute('data-url') || serviceUrls[service];
+            if (url && url !== '#') {
+                window.location.href = url;
+            }
         });
     });
 
@@ -42,6 +59,12 @@
                 serviceButtons.forEach(function(btn) {
                     btn.classList.toggle('active', btn.getAttribute('data-service') === service);
                 });
+
+                // Navigate to service page
+                var url = this.getAttribute('data-url') || serviceUrls[service];
+                if (url && url !== '#') {
+                    window.location.href = url;
+                }
             });
         });
 

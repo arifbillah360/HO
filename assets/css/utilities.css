@@ -1254,7 +1254,7 @@
 .wordpress-section .feature-item {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 40px;
 }
 
 .wordpress-section .feature-icon {
@@ -1394,15 +1394,20 @@
         line-height: 1.7;
     }
     
+    .feature-item {
+        font-size: 13px;
+        padding: 4px 15px;
+    }
+
     .wordpress-section .feature-title {
         font-size: 16px;
     }
-    
+
     .wordpress-section .cta-button {
         font-size: 16px;
         padding: 14px 36px;
     }
-    
+
     .floating-element.top-element {
         display: none;
     }
@@ -1451,9 +1456,9 @@
     }
     
     .wordpress-section .features-list {
-        gap: 20px;
+        gap: 0px;
     }
-    
+
     .wordpress-section .feature-icon svg {
         width: 40px;
         height: 40px;
