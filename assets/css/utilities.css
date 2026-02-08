@@ -1247,7 +1247,7 @@
 .wordpress-section .features-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 0;
     margin-bottom: 40px;
 }
 
