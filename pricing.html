@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Hero Section - Hostorio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="top-info-bar">
+    <div class="container-wrapper">
+        <div class="top-bar-content">
+            <div class="top-left-links">
+                <a href="#" class="info-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help Center</span>
+                </a>
+                <a href="#" class="info-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>1-855-984-6263</span>
+                </a>
+                <div class="language-selector">
+                    <img src="https://flagcdn.com/w40/us.png" alt="English" class="flag-icon">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                    
+                    <div class="language-dropdown-menu">
+                        <button class="language-option active" data-language="en" data-flag="https://flagcdn.com/w40/us.png">
+                            <img src="https://flagcdn.com/w40/us.png" alt="English" class="flag-icon">
+                            <span>English</span>
+                        </button>
+                        <button class="language-option" data-language="bn" data-flag="https://flagcdn.com/w40/bd.png">
+                            <img src="https://flagcdn.com/w40/bd.png" alt="Bangla" class="flag-icon">
+                            <span>বাংলা</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="top-right-links">
+                <!-- Desktop Currency Switcher -->
+                <div class="currency-switcher desktop-currency">
+                    <button class="currency-btn active" data-currency="BDT">
+                        <i class="fas fa-bangladeshi-taka-sign"></i>
+                        <span>BDT</span>
+                    </button>
+                    <span class="currency-divider">|</span>
+                    <button class="currency-btn" data-currency="USD">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>USD</span>
+                    </button>
+                </div>
+                
+                <!-- Mobile Currency Dropdown -->
+                <div class="currency-dropdown mobile-currency">
+                    <button class="currency-dropdown-btn" id="currencyDropdownBtn">
+                        <i class="fas fa-bangladeshi-taka-sign"></i>
+                        <span class="current-currency">BDT</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="currency-dropdown-menu" id="currencyDropdownMenu">
+                        <button class="currency-option active" data-currency="BDT">
+                            <i class="fas fa-bangladeshi-taka-sign"></i>
+                            <span>BDT</span>
+                        </button>
+                        <button class="currency-option" data-currency="USD">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>USD</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===========================
+     MAIN NAVIGATION HEADER
+     =========================== -->
+<header class="main-header">
+    <div class="container-wrapper">
+        <div class="header-content">
+            <!-- Logo (Left) -->
+            <div class="brand-logo">
+                <a href="#">
+                    <img src="https://hostorio.com/wp-content/uploads/2021/06/hostorio.com_-1024x239.png" alt="Hostorio" class="logo-image">
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation (Center on Desktop) -->
+            <nav class="primary-nav desktop-nav">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-item">Home</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="#" class="nav-item">
+                            Web Hosting 
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">
+                                <i class="fab fa-wordpress"></i>
+                                <span>WordPress Hosting</span>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Business Hosting</span>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Student Hosting</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-item">Business Email</a></li>
+                    <li><a href="#" class="nav-item">VPS</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="#" class="nav-item">
+                            Domain 
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">
+                                <i class="fas fa-search"></i>
+                                <span>Domain Search</span>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>Domain Transfer</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav-item">Offer</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile My Account Button (Center on Mobile) -->
+            <div class="mobile-account-center">
+                <a href="#" class="account-btn">My Account</a>
+            </div>
+            
+            <!-- Right Side -->
+            <div class="header-right">
+                <!-- Desktop My Account Button -->
+                <a href="#" class="account-btn desktop-account">My Account</a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ===========================
+     MOBILE NAVIGATION DRAWER
+     =========================== -->
+<nav class="primary-nav mobile-nav" id="mobileNav">
+    <ul class="nav-menu">
+        <li><a href="#" class="nav-item">Home</a></li>
+        <li class="nav-item-dropdown">
+            <a href="#" class="nav-item mobile-dropdown-trigger">
+                Web Hosting 
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">
+                    <i class="fab fa-wordpress"></i>
+                    <span>WordPress Hosting</span>
+                </a></li>
+                <li><a href="#" class="dropdown-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Business Hosting</span>
+                </a></li>
+                <li><a href="#" class="dropdown-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Student Hosting</span>
+                </a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="nav-item">Business Email</a></li>
+        <li><a href="#" class="nav-item">VPS</a></li>
+        <li class="nav-item-dropdown">
+            <a href="#" class="nav-item mobile-dropdown-trigger">
+                Domain 
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">
+                    <i class="fas fa-search"></i>
+                    <span>Domain Search</span>
+                </a></li>
+                <li><a href="#" class="dropdown-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Domain Transfer</span>
+                </a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="nav-item">Offer</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Pricing Hero Section -->
+    <section class="pricing-hero-section">
+        <!-- Floating Font Awesome Icons Background -->
+        <div class="floating-icons">
+            <i class="fas fa-server icon-float icon-1"></i>
+            <i class="fas fa-cloud icon-float icon-2"></i>
+            <i class="fas fa-database icon-float icon-3"></i>
+            <i class="fas fa-shield-halved icon-float icon-4"></i>
+            <i class="fas fa-rocket icon-float icon-5"></i>
+            <i class="fas fa-bolt icon-float icon-6"></i>
+            <i class="fas fa-globe icon-float icon-7"></i>
+            <i class="fas fa-envelope icon-float icon-8"></i>
+            <i class="fas fa-network-wired icon-float icon-9"></i>
+            <i class="fas fa-code icon-float icon-10"></i>
+            <i class="fas fa-lock icon-float icon-11"></i>
+            <i class="fas fa-wifi icon-float icon-12"></i>
+            <i class="fab fa-wordpress icon-float icon-13"></i>
+            <i class="fas fa-briefcase icon-float icon-14"></i>
+            <i class="fas fa-graduation-cap icon-float icon-15"></i>
+            <i class="fas fa-chart-line icon-float icon-16"></i>
+            <i class="fas fa-plug icon-float icon-17"></i>
+            <i class="fas fa-sitemap icon-float icon-18"></i>
+        </div>
+
+        <!-- Decorative Icon Left -->
+        <div class="percentage-icon left-icon">
+            <i class="fas fa-server"></i>
+        </div>
+
+        <!-- Decorative Icon Right -->
+        <div class="percentage-icon right-icon">
+            <i class="fas fa-database"></i>
+        </div>
+
+        <div class="container-wrapper">
+            <div class="pricing-hero-content">
+                <h1 class="pricing-hero-title">Choose a service – get online today</h1>
+                
+                <!-- Desktop Buttons -->
+                <div class="service-buttons desktop-buttons">
+                    <div class="button-row">
+                        <button class="service-btn active" data-service="wordpress">
+                            <span class="btn-icon">⚡</span>
+                            <span class="btn-text">WordPress Hosting</span>
+                        </button>
+                        <button class="service-btn" data-service="turbo">
+                            <span class="btn-icon">🚀</span>
+                            <span class="btn-text">Turbo Hosting</span>
+                        </button>
+                        <button class="service-btn" data-service="reseller">
+                            <span class="btn-icon">🔄</span>
+                            <span class="btn-text">Reseller Hosting</span>
+                        </button>
+                        <button class="service-btn" data-service="student">
+                            <span class="btn-icon">🎓</span>
+                            <span class="btn-text">Student Hosting</span>
+                        </button>
+                    </div>
+                    <div class="button-row">
+                        <button class="service-btn" data-service="vps">
+                            <span class="btn-icon">🖥️</span>
+                            <span class="btn-text">VPS</span>
+                        </button>
+                        <button class="service-btn" data-service="email">
+                            <span class="btn-icon">✉️</span>
+                            <span class="btn-text">Business Email</span>
+                        </button>
+                        <button class="service-btn" data-service="domain">
+                            <span class="btn-icon">🌐</span>
+                            <span class="btn-text">Domain</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Dropdown -->
+                <div class="service-dropdown mobile-dropdown">
+                    <div class="dropdown-header">
+                        <span class="selected-icon">⚡</span>
+                        <span class="selected-text">WordPress Hosting</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item active" data-service="wordpress">
+                            <span class="item-icon">⚡</span>
+                            <span class="item-text">WordPress Hosting</span>
+                        </div>
+                        <div class="dropdown-item" data-service="turbo">
+                            <span class="item-icon">🚀</span>
+                            <span class="item-text">Turbo Hosting</span>
+                        </div>
+                        <div class="dropdown-item" data-service="reseller">
+                            <span class="item-icon">🔄</span>
+                            <span class="item-text">Reseller Hosting</span>
+                        </div>
+                        <div class="dropdown-item" data-service="student">
+                            <span class="item-icon">🎓</span>
+                            <span class="item-text">Student Hosting</span>
+                        </div>
+                        <div class="dropdown-item" data-service="vps">
+                            <span class="item-icon">🖥️</span>
+                            <span class="item-text">VPS</span>
+                        </div>
+                        <div class="dropdown-item" data-service="email">
+                            <span class="item-icon">✉️</span>
+                            <span class="item-text">Business Email</span>
+                        </div>
+                        <div class="dropdown-item" data-service="domain">
+                            <span class="item-icon">🌐</span>
+                            <span class="item-text">Domain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+           <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container-wrapper">
+            
+            <!-- Section Header -->
+            <div class="pricing-header">
+                <h2 class="pricing-main-title">Find the Hosting Plan that's Right for Your Business</h2>
+                <p class="pricing-subtitle">We Have the Features and Service You Deserve!</p>
+                
+                <!-- Billing Toggle -->
+                <div class="billing-toggle">
+                    <span class="toggle-label">Billed Monthly</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="billingToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="toggle-label active">Billed Annually</span>
+                    <span class="save-badge">Save 15%!</span>
+                </div>
+            </div>
+
+        <!-- Cloud Pricing Section -->
+        <section class="cloud-pricing-section">
+        <div class="container-wrapper">
+            
+            <!-- Pricing Cards Grid -->
+            <div class="cloud-pricing-cards">
+                
+                <!-- Card 1 - Starter Cloud -->
+                <div class="cloud-card">
+                    <div class="cloud-icon">
+                        <img src="https://hostorio.com/wp-content/uploads/2026/02/data-server.png" alt="Starter Cloud">
+                    </div>
+                    
+                    <h3 class="cloud-plan-name">Starter Cloud</h3>
+                    <p class="cloud-plan-desc">Ideal for beginner/personal websites</p>
+                    
+                    <div class="cloud-pricing">
+                        <div class="cloud-price-original">$8.95 <span class="cloud-save-badge">Save 75%</span></div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency">$</span>
+                            <span class="cloud-amount">2.24</span>
+                            <span class="cloud-period">/mo</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>1</strong> Website</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>~10,000</strong> Visits Monthly</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>1 GB</strong> RAM</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>Unlimited</strong> NVMe Storage <span class="feature-badge new">NEW</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> cPanel</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> Website Migrations</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> LiteSpeed</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>30-Day</strong> Money-Back</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="cloud-order-btn">Order Now</button>
+                     
+                </div>
+
+                <!-- Card 2 - Plus Cloud -->
+                <div class="cloud-card">
+                    <div class="cloud-icon">
+                        <img src="https://hostorio.com/wp-content/uploads/2026/02/data-server.png" alt="Plus Cloud">
+                    </div>
+                    
+                    <h3 class="cloud-plan-name">Plus Cloud</h3>
+                    <p class="cloud-plan-desc">Best for average-sized websites</p>
+                    
+                    <div class="cloud-pricing">
+                        <div class="cloud-price-original">$12.95 <span class="cloud-save-badge">Save 70%</span></div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency">$</span>
+                            <span class="cloud-amount">3.89</span>
+                            <span class="cloud-period">/mo</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>7</strong> Websites</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>~25,000</strong> Visits Monthly</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>2 GB</strong> RAM</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>Unlimited</strong> NVMe Storage <span class="feature-badge new">NEW</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> cPanel</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> Website Migrations</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> LiteSpeed</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>30-Day</strong> Money-Back</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="cloud-order-btn">Order Now</button>
+                     
+                </div>
+
+                <!-- Card 3 - Turbo Cloud (Most Popular) -->
+                <div class="cloud-card popular">
+                    <div class="cloud-popular-badge">Most Popular</div>
+                    
+                    <div class="cloud-icon">
+                        <img src="https://hostorio.com/wp-content/uploads/2026/02/data-server.png" alt="Turbo Cloud">
+                    </div>
+                    
+                    <h3 class="cloud-plan-name">Turbo Cloud</h3>
+                    <p class="cloud-plan-desc">Most popular package</p>
+                    
+                    <div class="cloud-pricing">
+                        <div class="cloud-price-original">$19.95 <span class="cloud-save-badge">Save 70%</span></div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency">$</span>
+                            <span class="cloud-amount">5.99</span>
+                            <span class="cloud-period">/mo</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>Unlimited</strong> Websites</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>~50,000</strong> Visits Monthly</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>3 GB</strong> RAM</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>Unlimited</strong> NVMe Storage</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> Domain Name</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> cPanel</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> Website Migrations</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> Security Suite</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> LiteSpeed w/Turbo</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>30-Day</strong> Money-Back</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="cloud-order-btn">Order Now</button>
+                     
+                </div>
+
+                <!-- Card 4 - Business Cloud -->
+                <div class="cloud-card">
+                    <div class="cloud-icon">
+                        <img src="https://hostorio.com/wp-content/uploads/2026/02/data-server.png" alt="Business Cloud">
+                    </div>
+                    
+                    <h3 class="cloud-plan-name">Business Cloud</h3>
+                    <p class="cloud-plan-desc">Ideal for eCommerce websites</p>
+                    
+                    <div class="cloud-pricing">
+                        <div class="cloud-price-original">$29.95 <span class="cloud-save-badge">Save 70%</span></div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency">$</span>
+                            <span class="cloud-amount">8.99</span>
+                            <span class="cloud-period">/mo</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>Unlimited</strong> Websites</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>~100,000</strong> Visits Monthly</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>4 GB</strong> RAM</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>Unlimited</strong> NVMe Storage</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> Domain Name</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> cPanel</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> Website Migrations</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> Security Suite</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> Email Filtering</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>FREE</strong> LiteSpeed w/Turbo</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>30-Day</strong> Money-Back</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="cloud-order-btn">Order Now</button>
+                     
+                </div>
+
+            </div>
+
+        </div>
+        </section>
+
+        </div>
+    </section>
+
+
+
+           <!-- advanced-features-section -->
+
+    <section class="advanced-features-section">
+        <div class="container-wrapper">
+            <h2 class="section-title">Enjoy all this. At no extra cost.</h2>
+            
+            <div class="features-box">
+                <div class="features-columns">
+                    <!-- Column 1 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-hand-holding-dollar feature-icon"></i>
+                            <span class="feature-label"><strong>30</strong> Day Money Back Guarantee</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-server feature-icon"></i>
+                            <span class="feature-label"><strong>99.9%</strong> Server Uptime Guarantee</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-clock feature-icon"></i>
+                            <span class="feature-label"><strong>1</strong> Hour Response Time</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-headset feature-icon"></i>
+                            <span class="feature-label"><strong>24/7</strong> Technical Support</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-network-wired feature-icon"></i>
+                            <span class="feature-label"><strong>Clustered</strong> Failover DNS</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fab fa-linux feature-icon"></i>
+                            <span class="feature-label"><strong>CloudLinux</strong> / CageFS</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-rocket feature-icon"></i>
+                            <span class="feature-label"><strong>LiteSpeed</strong> Web Server</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-gauge-high feature-icon"></i>
+                            <span class="feature-label"><strong>Latest</strong> cPanel</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-download feature-icon"></i>
+                            <span class="feature-label"><strong>Softaculous</strong> Script Installer</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-shield-virus feature-icon"></i>
+                            <span class="feature-label"><strong>Malware</strong> & Exploit Scanning</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fab fa-cloudflare feature-icon"></i>
+                            <span class="feature-label"><strong>CloudFlare</strong> CDN</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-sitemap feature-icon"></i>
+                            <span class="feature-label"><strong>Unlimited</strong> Sub Domains</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-gem feature-icon"></i>
+                            <span class="feature-label"><strong>Ruby</strong> On Rails</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-database feature-icon"></i>
+                            <span class="feature-label"><strong>Unlimited</strong> MySQL Databases</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-folder-open feature-icon"></i>
+                            <span class="feature-label"><strong>Unlimited</strong> FTP Accounts</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-envelope feature-icon"></i>
+                            <span class="feature-label"><strong>Unlimited</strong> E-Mail Accounts</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Column 3 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-shield-halved feature-icon"></i>
+                            <span class="feature-label"><strong>20</strong> GBPS DDoS Protection</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-reply-all feature-icon"></i>
+                            <span class="feature-label"><strong>Unlimited</strong> Auto Responders</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-ban feature-icon"></i>
+                            <span class="feature-label"><strong>Spam</strong> Protection</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-terminal feature-icon"></i>
+                            <span class="feature-label"><strong>SSH</strong> Access Available</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fab fa-node-js feature-icon"></i>
+                            <span class="feature-label"><strong>Node.js</strong> Version Selector</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-lock feature-icon"></i>
+                            <span class="feature-label"><strong>FREE</strong> Let's Encrypt SSL Certs</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-truck-fast feature-icon"></i>
+                            <span class="feature-label"><strong>FREE</strong> cPanel Migration</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-table feature-icon"></i>
+                            <span class="feature-label"><strong>Mariadb</strong> 10.x / phpMyAdmin</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Column 4 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-code feature-icon"></i>
+                            <span class="feature-label"><strong>Server</strong> Side Includes</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-image feature-icon"></i>
+                            <span class="feature-label"><strong>Curl</strong> / GD2 / ImageMagick</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fab fa-php feature-icon"></i>
+                            <span class="feature-label"><strong>PHP</strong> Selector (5.6 - 8.x)</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fab fa-python feature-icon"></i>
+                            <span class="feature-label"><strong>Python</strong> Version Selector</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fab fa-wordpress feature-icon"></i>
+                            <span class="feature-label"><strong>Wordpress</strong> Manager</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-cube feature-icon"></i>
+                            <span class="feature-label"><strong>ionCube</strong> PHP Loader</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-chart-bar feature-icon"></i>
+                            <span class="feature-label"><strong>Awstats</strong> & Webalizer</span>
+                        </div>
+                        
+                        <div class="feature-row">
+                            <i class="fas fa-z feature-icon"></i>
+                            <span class="feature-label"><strong>Zend</strong> Guard Loader</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Web Hosting Plans Comparison Section -->
+    <section class="hosting-plans-section">
+        <div class="plans-container">
+            <div class="plans-header">
+                <h2 class="plans-title">Compare Our Web Hosting Packages</h2>
+            </div>
+
+            <div class="plans-wrapper">
+                <!-- Features Column (Left) -->
+                <div class="features-column">
+                    <div class="feature-header">
+                        <h3>&nbsp;</h3>
+                    </div>
+                    <div class="feature-list">
+                        <div class="feature-item">Storage Space</div>
+                        <div class="feature-item">Inodes (Website Files) Allowed</div>
+                        <div class="feature-item">Websites Allowed</div>
+                        <div class="feature-item">Datacenter Locations</div>
+                        <div class="feature-item">CPU Cores</div>
+                        <div class="feature-item">RAM</div>
+                        <div class="feature-item">Free Domain Name</div>
+                        <div class="feature-item">SuperHero Optimized</div>
+                        <div class="feature-item">1-Click WordPress Hosting</div>
+                        <div class="feature-item">Free and Auto SSL (https)</div>
+                        <div class="feature-item">LiteSpeed Cache</div>
+                        <div class="feature-item">Monthly Bandwidth</div>
+                        <div class="feature-item">Parked Domains</div>
+                        <div class="feature-item">Sub Domains</div>
+                        <div class="feature-item">Email Accounts</div>
+                        <div class="feature-item">cPanel Mailbox Quota</div>
+                        <div class="feature-item">Dedicated IP Address</div>
+                        <div class="feature-item">cPanel</div>
+                        <div class="feature-item">Jailed SSH Access</div>
+                        <div class="feature-item">Quic.Cloud CDN</div>
+                        <div class="feature-item">Unlimited FTP Accounts</div>
+                        <div class="feature-item">Unlimited Databases</div>
+                        <div class="feature-item">Multiple PHP Versions</div>
+                        <div class="feature-item">Perl</div>
+                        <div class="feature-item">Web Mail</div>
+                        <div class="feature-item">Nightly/Weekly Backups</div>
+                        <div class="feature-item">Email Sending Limit<br>(Per Hour)</div>
+                        <div class="feature-item feature-item-cta">&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- Plan 1: Starter Cloud -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Starter Cloud</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">25GB NVMe RAID 1 (US)</div>
+                        <div class="plan-feature">250,000</div>
+                        <div class="plan-feature">1</div>
+                        <div class="plan-feature">US</div>
+                        <div class="plan-feature">1</div>
+                        <div class="plan-feature">1GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature">Free LiteSpeed!</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">1GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">50</div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-old">
+                                    <span class="strikethrough">$8.95</span>
+                                    <span class="save-badge">Save 75%</span>
+                                </div>
+                                <div class="price-current">
+                                    <span class="price-amount">$2.24</span>
+                                    <span class="price-period">/mo</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 2: Plus Cloud -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Plus Cloud</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">50GB NVMe RAID 1 (US)</div>
+                        <div class="plan-feature">250,000</div>
+                        <div class="plan-feature">7</div>
+                        <div class="plan-feature">US</div>
+                        <div class="plan-feature">2</div>
+                        <div class="plan-feature">2GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature">Free LiteSpeed!</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">2GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">50</div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-old">
+                                    <span class="strikethrough">$12.95</span>
+                                    <span class="save-badge">Save 70%</span>
+                                </div>
+                                <div class="price-current">
+                                    <span class="price-amount">$3.89</span>
+                                    <span class="price-period">/mo</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 3: Turbo Cloud -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Turbo Cloud</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">75GB NVMe RAID 1 (US)</div>
+                        <div class="plan-feature">500,000</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">US</div>
+                        <div class="plan-feature">3</div>
+                        <div class="plan-feature">3GB</div>
+                        <div class="plan-feature">24 or 36 month term</div>
+                        <div class="plan-feature">Free LiteSpeed!</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">350</div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-old">
+                                    <span class="strikethrough">$19.95</span>
+                                    <span class="save-badge">Save 70%</span>
+                                </div>
+                                <div class="price-current">
+                                    <span class="price-amount">$5.99</span>
+                                    <span class="price-period">/mo</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 4: Business Cloud -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Business Cloud</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">100GB NVMe RAID 1 (US)</div>
+                        <div class="plan-feature">500,000</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">US</div>
+                        <div class="plan-feature">4</div>
+                        <div class="plan-feature">4GB</div>
+                        <div class="plan-feature">24 or 36 month term</div>
+                        <div class="plan-feature">Free LiteSpeed!</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">350</div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-old">
+                                    <span class="strikethrough">$29.95</span>
+                                    <span class="save-badge">Save 70%</span>
+                                </div>
+                                <div class="price-current">
+                                    <span class="price-amount">$8.99</span>
+                                    <span class="price-period">/mo</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plans-footer">
+                <p class="disclaimer">*The promotional price is for the first term only and renews at the regular rate.</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Testimonial Carousel Section -->
+<!-- Testimonial Section - Horizontal Layout -->
+<section class="testimonial-horizontal-section">
+    <div class="testimonial-horizontal-container">
+        
+        <!-- Testimonial Item 1 -->
+        <div class="testimonial-horizontal-item active">
+            <div class="testimonial-horizontal-content">
+                <!-- Image Side -->
+                <div class="testimonial-image-side">
+                    <div class="testimonial-video-wrapper">
+                        <img src="your-image.jpg" alt="Owen Phillips" class="testimonial-person-image">
+                        <div class="video-play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
+                                <path fill="currentColor" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text Side -->
+                <div class="testimonial-text-side">
+                    <div class="quote-mark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    
+                    <p class="testimonial-quote">
+                        I could <span class="highlight-text">manage</span> the hosting, domain name, and SSL certificate <span class="highlight-text">in one place</span>, which was really refreshing.
+                    </p>
+                    
+                    <a href="#" class="testimonial-read-more">Read more</a>
+                    
+                    <div class="testimonial-author-section">
+                        <div class="author-details">
+                            <p class="author-name-text">Owen Phillips</p>
+                            <p class="author-site">gatefootforge.co.uk</p>
+                        </div>
+                        
+                        <div class="carousel-navigation">
+                            <button class="carousel-btn carousel-prev" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonial Item 2 -->
+        <div class="testimonial-horizontal-item">
+            <div class="testimonial-horizontal-content">
+                <!-- Image Side -->
+                <div class="testimonial-image-side">
+                    <div class="testimonial-video-wrapper">
+                        <img src="your-image-2.jpg" alt="Client Name" class="testimonial-person-image">
+                        <div class="video-play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
+                                <path fill="currentColor" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text Side -->
+                <div class="testimonial-text-side">
+                    <div class="quote-mark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    
+                    <p class="testimonial-quote">
+                        We honestly reference <span class="highlight-text">Hostinger as the benchmark</span> for our engineers when providing support.
+                    </p>
+                    
+                    <a href="#" class="testimonial-read-more">Read more</a>
+                    
+                    <div class="testimonial-author-section">
+                        <div class="author-details">
+                            <p class="author-name-text">Client Name</p>
+                            <p class="author-site">clientwebsite.com</p>
+                        </div>
+                        
+                        <div class="carousel-navigation">
+                            <button class="carousel-btn carousel-prev" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+       <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container-wrapper">
+            <!-- Section Header -->
+            <div class="faq-header">
+                <span class="faq-tag">FAQ</span>
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <p class="faq-description">Find answers to common questions about our web hosting services</p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text">How can I buy web hosting?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It's easy – just watch the video <a href="https://youtu.be/FEFNkYCxN2M" target="_blank" class="faq-link">Youtube.com/FEFNkYCxN2M</a>, choose one of the packages, and click the buy hosting button.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text">Which web hosting plan do I need to choose?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It depends on your needs, but most of our customers start with the Professional 2 GB & Cheap SSD Gold (5GB) web hosting as it offers them lots of flexibility at a great price!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text">Can I upgrade hosting package?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can upgrade your web hosting package. For example: You buy 2 GB for 1000 tk. But you want to upgrade it to a 5GB package after 6 months. You'll get a refund of 500 tk from the old package. This 500 tk will be added to the new 5GB package.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text">Can you help me to get started?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Of course! You can join our community forum where you can find a variety of tips and tricks. <a href="#" class="faq-link">Click here</a> to join.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text">Can I transfer my website to your web hosting?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Of course! Just buy a web hosting package that interests you and let us know that you need to get your website moved to a new server. Our technicians will do it for you free of charge.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text">Will you help me if I have any problem with hosting?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Of course! We always make sure our customers don't have any problems. We will try our best. We are committed to your service. Feel free to connect with us.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact CTA -->
+            <div class="faq-cta">
+                <div class="faq-cta-content">
+                    <i class="fas fa-comments faq-cta-icon"></i>
+                    <div class="faq-cta-text">
+                        <h3>Still have questions?</h3>
+                        <p>Can't find the answer you're looking for? Please chat with our friendly team.</p>
+                    </div>
+                </div>
+                <a href="#" class="faq-cta-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+       <!-- WordPress Hosting Section -->
+    <section class="wordpress-section">
+        <div class="container-wrapper">
+            <div class="wordpress-content">
+                
+                <!-- Left Side - Graphic -->
+                <div class="wordpress-graphic">
+                    <!-- Browser Window -->
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                        </div>
+                        <div class="browser-content">
+                            <!-- Hero Section -->
+                            <div class="wp-hero">
+                                <h3 class="wp-blog-title">Your Blog Title</h3>
+                            </div>
+                            
+                            <!-- Latest Post Section -->
+                            <div class="wp-posts-section">
+                                <p class="wp-section-title">Latest Post</p>
+                                <div class="wp-posts-grid">
+                                    <div class="wp-post-card">
+                                        <div class="wp-post-image"></div>
+                                        <div class="wp-post-lines">
+                                            <span class="line"></span>
+                                            <span class="line short"></span>
+                                        </div>
+                                    </div>
+                                    <div class="wp-post-card">
+                                        <div class="wp-post-image"></div>
+                                        <div class="wp-post-lines">
+                                            <span class="line"></span>
+                                            <span class="line short"></span>
+                                        </div>
+                                    </div>
+                                    <div class="wp-post-card add-new">
+                                        <div class="wp-post-image faded"></div>
+                                        <div class="wp-post-lines">
+                                            <span class="line faded"></span>
+                                            <span class="line short faded"></span>
+                                        </div>
+                                        <div class="add-icon">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Elements -->
+                    <div class="floating-element top-element">
+                        <div class="theme-preview">
+                            <div class="theme-grid">
+                                <div class="theme-box orange"></div>
+                                <div class="theme-box-row">
+                                    <div class="theme-box small orange"></div>
+                                    <div class="theme-box small orange"></div>
+                                </div>
+                            </div>
+                            <div class="theme-grid">
+                                <div class="theme-box gray"></div>
+                                <div class="theme-box gray"></div>
+                            </div>
+                            <div class="theme-grid">
+                                <div class="theme-box-list">
+                                    <span class="theme-line gray"></span>
+                                    <span class="theme-line gray"></span>
+                                </div>
+                                <div class="theme-box-list">
+                                    <span class="theme-line gray"></span>
+                                    <span class="theme-line gray"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-element left-element">
+                        <div class="dashboard-menu">
+                            <div class="menu-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="3" width="7" height="7" fill="#FF7800"/>
+                                    <rect x="3" y="14" width="7" height="7" fill="#FF7800"/>
+                                    <rect x="14" y="3" width="7" height="7" fill="#FF7800"/>
+                                    <rect x="14" y="14" width="7" height="7" fill="#FF7800"/>
+                                </svg>
+                            </div>
+                            <ul class="menu-list">
+                                <li>Dashboard</li>
+                                <li>Posts</li>
+                                <li>Media</li>
+                                <li>Pages</li>
+                                <li>Comments</li>
+                                <li>Appearance</li>
+                                <li>Plugins</li>
+                                <li>Users</li>
+                                <li>Tools</li>
+                                <li>Settings</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-element bottom-element">
+                        <div class="editor-toolbar">
+                            <svg width="100%" height="40" viewBox="0 0 200 40" fill="none">
+                                <circle cx="20" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="50" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="80" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="110" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="140" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="170" cy="20" r="8" fill="#0170B9"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Content -->
+                <div class="wordpress-text">
+                    <h2 class="wordpress-title">WordPress Hosting Turbocharged</h2>
+                    <p class="wordpress-description">
+                       WordPress powers the web, but we power WordPress. We provide a managed environment that offers the perfect balance of raw power and complete control. Whether you are a solo blogger or a large-scale agency, our infrastructure is fine-tuned to ensure your WordPress site is faster, more secure, and easier to manage than ever before.
+                    </p>
+                    
+                    <!-- Features List -->
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="20" fill="#FF7800" opacity="0.2"/>
+                                    <path d="M17 20L22 28L32 18" stroke="#FF7800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">1-Click Script Deployment</h3>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="20" fill="#0170B9" opacity="0.2"/>
+                                    <path d="M24 12L28 20L36 21L30 27L32 36L24 31L16 36L18 27L12 21L20 20L24 12Z" stroke="#0170B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">LiteSpeed-Optimized Stack</h3>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="20" fill="#FF7800" opacity="0.2"/>
+                                    <path d="M24 8V16M24 32V40M35 24H27M21 24H13M33 13L28 18M28 30L33 35M13 13L18 18M18 30L13 35" stroke="#FF7800" stroke-width="2.5" stroke-linecap="round"/>
+                                    <circle cx="24" cy="24" r="6" stroke="#FF7800" stroke-width="2.5"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Proactive Malware Defense</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <div class="wordpress-cta">
+                        <a href="#" class="cta-button">Get Started Now</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+       <!-- Support Section -->
+    <section class="support-section">
+        <div class="container-wrapper">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-main-title">Customer Success Focus</h2>
+                <p class="section-subtitle">We provide everything you need to succeed online</p>
+            </div>
+
+            <!-- Support Cards -->
+            <div class="support-cards">
+                
+                <!-- Card 1 -->
+                <div class="support-card">
+                    <div class="card-icon-wrapper blue-bg">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                <circle cx="12" cy="8" r="3"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Onboarding Support</h3>
+                        <p class="card-description">
+                            Don't know where to start? Our step-by-step tutorials and 24/7 support team walk you through domain setup, hosting configuration, and WordPress installation. From zero to live in hours, not weeks. Check our detailed knowledge base.
+                        </p>
+                        <a href="#" class="card-button">Get started</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="support-card">
+                    <div class="card-icon-wrapper green-bg">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                                <path d="M6 8h12v5H6z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Discover our Resources</h3>
+                        <p class="card-description">
+                            Access our resource center for hosting best practices, security tips, performance optimization guides, and industry insights. Learn directly from our team's experience managing 500+ websites across Bangladesh.
+                        </p>
+                        <a href="#" class="card-button">Get learning</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="support-card">
+                    <div class="card-icon-wrapper orange-bg">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Hassle-Free Transfers</h3>
+                        <p class="card-description">
+                            We guarantee: Free domain transfer, Free email migration, Free database transfer, Zero downtime. Switching hosts shouldn't feel like moving houses. With us, it's simple.
+                        </p>
+                        <a href="#" class="card-button">Transfer today</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Testimonial Carousel JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const testimonialItems = document.querySelectorAll('.testimonial-horizontal-item');
+    const prevButtons = document.querySelectorAll('.carousel-prev');
+    const nextButtons = document.querySelectorAll('.carousel-next');
+    
+    let currentIndex = 0;
+    
+    // Function to show specific testimonial
+    function showTestimonial(index) {
+        // Hide all testimonials
+        testimonialItems.forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        // Show the selected testimonial
+        if (testimonialItems[index]) {
+            testimonialItems[index].classList.add('active');
+        }
+    }
+    
+    // Function to go to next testimonial
+    function nextTestimonial() {
+        currentIndex++;
+        if (currentIndex >= testimonialItems.length) {
+            currentIndex = 0; // Loop back to first
+        }
+        showTestimonial(currentIndex);
+    }
+    
+    // Function to go to previous testimonial
+    function prevTestimonial() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = testimonialItems.length - 1; // Loop to last
+        }
+        showTestimonial(currentIndex);
+    }
+    
+    // Add click event to all next buttons
+    nextButtons.forEach(button => {
+        button.addEventListener('click', nextTestimonial);
+    });
+    
+    // Add click event to all prev buttons
+    prevButtons.forEach(button => {
+        button.addEventListener('click', prevTestimonial);
+    });
+    
+    // Optional: Auto-play carousel every 5 seconds
+    // Uncomment the lines below if you want auto-play
+    /*
+    setInterval(function() {
+        nextTestimonial();
+    }, 5000); // Change every 5 seconds
+    */
+    
+    // Optional: Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+            prevTestimonial();
+        } else if (e.key === 'ArrowRight') {
+            nextTestimonial();
+        }
+    });
+    
+    // Show first testimonial on load
+    showTestimonial(currentIndex);
+});
+    </script>
+<script>
+(function() {
+    'use strict';
+    
+    // =============================
+    // MOBILE MENU FUNCTIONALITY
+    // =============================
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    
+    // Toggle mobile menu
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            mobileNav.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+    }
+    
+    // =============================
+    // DESKTOP DROPDOWN FUNCTIONALITY
+    // =============================
+    const desktopDropdowns = document.querySelectorAll('.desktop-nav .nav-item-dropdown');
+    
+    desktopDropdowns.forEach(function(dropdown) {
+        const trigger = dropdown.querySelector('.nav-item');
+        
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Close other dropdowns
+            desktopDropdowns.forEach(function(otherDropdown) {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+        });
+    });
+    
+    // =============================
+    // MOBILE DROPDOWN FUNCTIONALITY
+    // =============================
+    const mobileDropdowns = document.querySelectorAll('.mobile-nav .nav-item-dropdown');
+    
+    mobileDropdowns.forEach(function(dropdown) {
+        const trigger = dropdown.querySelector('.mobile-dropdown-trigger');
+        
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+        });
+    });
+    
+    // =============================
+    // CLOSE MENUS ON OUTSIDE CLICK
+    // =============================
+    document.addEventListener('click', function(e) {
+        // Close mobile menu if clicking outside
+        if (mobileNav && !mobileNav.contains(e.target) && 
+            !mobileMenuToggle.contains(e.target) && 
+            mobileNav.classList.contains('active')) {
+            mobileNav.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+        
+        // Close desktop dropdowns if clicking outside
+        const desktopNav = document.querySelector('.desktop-nav');
+        if (desktopNav && !desktopNav.contains(e.target)) {
+            desktopDropdowns.forEach(function(dropdown) {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+    
+    // =============================
+    // CLOSE MOBILE MENU ON RESIZE
+    // =============================
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 968) {
+            if (mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+            
+            // Close all dropdowns
+            desktopDropdowns.forEach(function(dropdown) {
+                dropdown.classList.remove('active');
+            });
+            mobileDropdowns.forEach(function(dropdown) {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+    
+    // =============================
+    // LANGUAGE DROPDOWN FUNCTIONALITY
+    // =============================
+    const languageSelector = document.querySelector('.language-selector');
+    const languageDropdownMenu = document.querySelector('.language-dropdown-menu');
+    const languageOptions = document.querySelectorAll('.language-option');
+    const currentLanguageText = document.querySelector('.language-selector span');
+    const currentLanguageFlag = document.querySelector('.language-selector .flag-icon');
+    
+    if (languageSelector && languageDropdownMenu) {
+        // Toggle language dropdown
+        languageSelector.addEventListener('click', function(e) {
+            e.stopPropagation();
+            languageSelector.classList.toggle('active');
+            languageDropdownMenu.classList.toggle('show');
+            
+            // Close currency dropdown if open
+            if (currencyDropdownMenu) {
+                currencyDropdownMenu.classList.remove('show');
+                if (currencyDropdownBtn) {
+                    currencyDropdownBtn.classList.remove('active');
+                }
+            }
+        });
+        
+        // Select language option
+        languageOptions.forEach(function(option) {
+            option.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const selectedLanguage = this.getAttribute('data-language');
+                const selectedFlag = this.getAttribute('data-flag');
+                const languageText = this.querySelector('span').textContent;
+                
+                // Update button text and flag
+                if (currentLanguageText) {
+                    currentLanguageText.textContent = languageText;
+                }
+                if (currentLanguageFlag) {
+                    currentLanguageFlag.src = selectedFlag;
+                }
+                
+                // Update active state
+                languageOptions.forEach(function(opt) {
+                    opt.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Close dropdown
+                languageDropdownMenu.classList.remove('show');
+                languageSelector.classList.remove('active');
+                
+                updateLanguage(selectedLanguage);
+            });
+        });
+        
+        // Close language dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!languageSelector.contains(e.target) && 
+                !languageDropdownMenu.contains(e.target)) {
+                languageDropdownMenu.classList.remove('show');
+                languageSelector.classList.remove('active');
+            }
+        });
+    }
+    
+    // =============================
+    // CURRENCY SWITCHER - DESKTOP
+    // =============================
+    const currencyButtons = document.querySelectorAll('.currency-btn');
+    
+    currencyButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            currencyButtons.forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            this.classList.add('active');
+            
+            const selectedCurrency = this.getAttribute('data-currency');
+            updateCurrency(selectedCurrency);
+        });
+    });
+    
+    // =============================
+    // CURRENCY DROPDOWN - MOBILE
+    // =============================
+    const currencyDropdownBtn = document.getElementById('currencyDropdownBtn');
+    const currencyDropdownMenu = document.getElementById('currencyDropdownMenu');
+    const currencyOptions = document.querySelectorAll('.currency-option');
+    const currentCurrencyText = document.querySelector('.current-currency');
+    
+    if (currencyDropdownBtn && currencyDropdownMenu) {
+        // Toggle currency dropdown
+        currencyDropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            currencyDropdownBtn.classList.toggle('active');
+            currencyDropdownMenu.classList.toggle('show');
+            
+            // Close language dropdown if open
+            if (languageDropdownMenu) {
+                languageDropdownMenu.classList.remove('show');
+                if (languageSelector) {
+                    languageSelector.classList.remove('active');
+                }
+            }
+        });
+        
+        // Select currency option
+        currencyOptions.forEach(function(option) {
+            option.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const selectedCurrency = this.getAttribute('data-currency');
+                const iconHTML = this.querySelector('i').outerHTML;
+                
+                // Update button text and icon
+                currentCurrencyText.textContent = selectedCurrency;
+                currencyDropdownBtn.querySelector('i:first-child').outerHTML = iconHTML;
+                
+                // Update active state
+                currencyOptions.forEach(function(opt) {
+                    opt.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Close dropdown
+                currencyDropdownMenu.classList.remove('show');
+                currencyDropdownBtn.classList.remove('active');
+                
+                updateCurrency(selectedCurrency);
+            });
+        });
+        
+        // Close currency dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!currencyDropdownBtn.contains(e.target) && 
+                !currencyDropdownMenu.contains(e.target)) {
+                currencyDropdownMenu.classList.remove('show');
+                currencyDropdownBtn.classList.remove('active');
+            }
+        });
+    }
+    
+    // =============================
+    // UPDATE LANGUAGE FUNCTION
+    // =============================
+    function updateLanguage(language) {
+        console.log('Selected language: ' + language);
+        
+        // Save to localStorage
+        try {
+            localStorage.setItem('selectedLanguage', language);
+        } catch (e) {
+            console.warn('localStorage not available');
+        }
+        
+        // Add your language change logic here
+        // changeWebsiteLanguage(language);
+    }
+    
+    // =============================
+    // UPDATE CURRENCY FUNCTION
+    // =============================
+    function updateCurrency(currency) {
+        console.log('Selected currency: ' + currency);
+        
+        // Save to localStorage
+        try {
+            localStorage.setItem('selectedCurrency', currency);
+        } catch (e) {
+            console.warn('localStorage not available');
+        }
+        
+        // Sync desktop buttons
+        currencyButtons.forEach(function(btn) {
+            if (btn.getAttribute('data-currency') === currency) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+        
+        // Sync mobile dropdown
+        if (currentCurrencyText) {
+            currentCurrencyText.textContent = currency;
+        }
+        currencyOptions.forEach(function(opt) {
+            if (opt.getAttribute('data-currency') === currency) {
+                opt.classList.add('active');
+            } else {
+                opt.classList.remove('active');
+            }
+        });
+        
+        // Add your price update logic here
+        // updatePrices(currency);
+    }
+    
+    // =============================
+    // LOAD SAVED PREFERENCES ON PAGE LOAD
+    // =============================
+    
+    // Load saved language
+    let savedLanguage = 'en';
+    try {
+        savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    } catch (e) {
+        console.warn('localStorage not available');
+    }
+    
+    // Initialize with saved language
+    if (savedLanguage && languageOptions) {
+        languageOptions.forEach(function(option) {
+            if (option.getAttribute('data-language') === savedLanguage) {
+                const languageText = option.querySelector('span').textContent;
+                const selectedFlag = option.getAttribute('data-flag');
+                
+                if (currentLanguageText) {
+                    currentLanguageText.textContent = languageText;
+                }
+                if (currentLanguageFlag) {
+                    currentLanguageFlag.src = selectedFlag;
+                }
+                
+                option.classList.add('active');
+            } else {
+                option.classList.remove('active');
+            }
+        });
+    }
+    
+    // Load saved currency
+    let savedCurrency = 'BDT';
+    try {
+        savedCurrency = localStorage.getItem('selectedCurrency') || 'BDT';
+    } catch (e) {
+        console.warn('localStorage not available');
+    }
+    
+    // Initialize with saved currency
+    updateCurrency(savedCurrency);
+    
+})();
+</script>
+</body>
+</html>
