@@ -1315,7 +1315,26 @@ ul {
 }
 
 .feature-item {
-    padding: 0;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-item{
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+.feature-item-hosting{
+    padding: 15px;
     font-size: 14px;
     font-weight: 600;
     color: #333;
@@ -4862,3 +4881,6 @@ ul {
         font-size: 12px;
     }
 }
+
+
+
