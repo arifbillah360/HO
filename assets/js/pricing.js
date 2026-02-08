@@ -1,134 +1,161 @@
 /**
  * Pricing Module
  * Handles service button selection, billing toggle, and mobile service dropdown
- * Uses event delegation for reliable mobile support
+ * Uses getElementById for reliable element targeting
  */
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
     'use strict';
 
-    // Service URL mapping (fallback if no href/data-url)
-    var serviceUrls = {
-        'wordpress': '../pages/package.html',
-        'turbo': '#',
-        'reseller': '#',
-        'student': '#',
-        'vps': '#',
-        'email': '#',
-        'domain': '#'
-    };
-
-    // --- Desktop Service Buttons ---
-    document.addEventListener('click', function(e) {
-        var btn = e.target.closest('.service-btn');
-        if (!btn) return;
-
-        var allBtns = document.querySelectorAll('.service-btn');
-        allBtns.forEach(function(b) { b.classList.remove('active'); });
-        btn.classList.add('active');
-
-        var service = btn.getAttribute('data-service');
-        var url = btn.getAttribute('data-url') || serviceUrls[service];
-        if (url && url !== '#') {
-            window.location.href = url;
-        }
-    });
-
-    // --- Mobile Service Dropdown ---
-    var dropdownOpen = false;
-
-    function toggleDropdown(show) {
-        var menu = document.querySelector('.service-dropdown .dropdown-menu');
-        var arrow = document.querySelector('.service-dropdown .dropdown-arrow');
-        if (!menu) return;
-
-        dropdownOpen = typeof show === 'boolean' ? show : !dropdownOpen;
-
-        if (dropdownOpen) {
-            menu.classList.add('show');
-            if (arrow) arrow.classList.add('rotate');
-        } else {
-            menu.classList.remove('show');
-            if (arrow) arrow.classList.remove('rotate');
-        }
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initPricingHero);
+    } else {
+        initPricingHero();
     }
 
-    // Use event delegation on document for all dropdown interactions
-    document.addEventListener('click', function(e) {
-        var header = document.querySelector('.service-dropdown .dropdown-header');
-        var menu = document.querySelector('.service-dropdown .dropdown-menu');
+    function initPricingHero() {
 
-        if (!header || !menu) return;
+        // =============================
+        // DESKTOP SERVICE BUTTONS
+        // =============================
+        var serviceButtons = document.querySelectorAll('.pricing-hero-section .service-btn');
 
-        // Click on dropdown header — toggle open/close
-        if (header.contains(e.target)) {
+        serviceButtons.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Remove active from all buttons
+                serviceButtons.forEach(function(b) {
+                    b.classList.remove('active');
+                });
+
+                // Add active to clicked button
+                this.classList.add('active');
+
+                // Get URL and navigate
+                var url = this.getAttribute('data-url');
+                if (url && url !== '#') {
+                    window.location.href = url;
+                }
+            });
+        });
+
+        // =============================
+        // MOBILE DROPDOWN
+        // =============================
+        var dropdownHeader = document.getElementById('pricingDropdownHeader');
+        var dropdownMenu = document.getElementById('pricingDropdownMenu');
+        var dropdownArrow = document.getElementById('pricingDropdownArrow');
+        var dropdownItems = document.querySelectorAll('.pricing-hero-section .dropdown-item');
+
+        if (!dropdownHeader || !dropdownMenu) {
+            return; // Exit if elements don't exist
+        }
+
+        // Toggle dropdown on header click
+        dropdownHeader.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            toggleDropdown();
-            return;
-        }
 
-        // Click on a dropdown item
-        var item = e.target.closest('.service-dropdown .dropdown-item');
-        if (item) {
-            // Update active state
-            var allItems = menu.querySelectorAll('.dropdown-item');
-            allItems.forEach(function(i) { i.classList.remove('active'); });
-            item.classList.add('active');
+            var isOpen = dropdownMenu.classList.contains('show');
 
-            // Update the header display
-            var iconEl = item.querySelector('.item-icon');
-            var textEl = item.querySelector('.item-text');
-            var selectedIcon = document.querySelector('.service-dropdown .selected-icon');
-            var selectedText = document.querySelector('.service-dropdown .selected-text');
-            if (selectedIcon && iconEl) selectedIcon.textContent = iconEl.textContent;
-            if (selectedText && textEl) selectedText.textContent = textEl.textContent;
-
-            // Close the dropdown
-            toggleDropdown(false);
-
-            // Sync with desktop buttons
-            var service = item.getAttribute('data-service');
-            var allBtns = document.querySelectorAll('.service-btn');
-            allBtns.forEach(function(btn) {
-                btn.classList.toggle('active', btn.getAttribute('data-service') === service);
-            });
-
-            // Navigation: <a> tags handle it natively via href.
-            // For items with href="#", prevent page jump.
-            var href = item.getAttribute('href');
-            if (href === '#') {
-                e.preventDefault();
-            }
-            // Items with real href (e.g. package.html) navigate naturally.
-            return;
-        }
-
-        // Click outside — close dropdown
-        if (!header.contains(e.target) && !menu.contains(e.target)) {
-            toggleDropdown(false);
-        }
-    });
-
-    // Also handle touchstart for faster mobile response
-    document.addEventListener('touchend', function(e) {
-        var header = document.querySelector('.service-dropdown .dropdown-header');
-        if (header && header.contains(e.target)) {
-            e.preventDefault();
-            toggleDropdown();
-        }
-    });
-
-    // --- Billing Toggle ---
-    var billingToggle = document.getElementById('billingToggle');
-    if (billingToggle) {
-        billingToggle.addEventListener('change', function() {
-            var labels = document.querySelectorAll('.toggle-label');
-            labels.forEach(function(label) { label.classList.remove('active'); });
-            if (this.checked) {
-                if (labels[1]) labels[1].classList.add('active');
+            if (isOpen) {
+                dropdownMenu.classList.remove('show');
+                dropdownArrow.classList.remove('rotate');
             } else {
-                if (labels[0]) labels[0].classList.add('active');
+                dropdownMenu.classList.add('show');
+                dropdownArrow.classList.add('rotate');
             }
         });
+
+        // Handle dropdown item clicks
+        dropdownItems.forEach(function(item) {
+            item.addEventListener('click', function(e) {
+                var href = this.getAttribute('href');
+
+                // Prevent default for # links
+                if (href === '#') {
+                    e.preventDefault();
+                }
+
+                // Update active state
+                dropdownItems.forEach(function(i) {
+                    i.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                // Update header text and icon
+                var iconText = this.querySelector('.item-icon').textContent;
+                var labelText = this.querySelector('.item-text').textContent;
+
+                var selectedIcon = document.querySelector('.pricing-hero-section .selected-icon');
+                var selectedText = document.querySelector('.pricing-hero-section .selected-text');
+
+                if (selectedIcon) selectedIcon.textContent = iconText;
+                if (selectedText) selectedText.textContent = labelText;
+
+                // Close dropdown
+                dropdownMenu.classList.remove('show');
+                dropdownArrow.classList.remove('rotate');
+
+                // Sync with desktop buttons
+                var service = this.getAttribute('data-service');
+                serviceButtons.forEach(function(btn) {
+                    if (btn.getAttribute('data-service') === service) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+
+                // Navigate if real URL
+                if (href && href !== '#') {
+                    setTimeout(function() {
+                        window.location.href = href;
+                    }, 200);
+                }
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!dropdownHeader.contains(e.target) &&
+                !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+                dropdownArrow.classList.remove('rotate');
+            }
+        });
+
+        // Touch support for mobile
+        dropdownHeader.addEventListener('touchend', function(e) {
+            e.preventDefault();
+
+            var isOpen = dropdownMenu.classList.contains('show');
+
+            if (isOpen) {
+                dropdownMenu.classList.remove('show');
+                dropdownArrow.classList.remove('rotate');
+            } else {
+                dropdownMenu.classList.add('show');
+                dropdownArrow.classList.add('rotate');
+            }
+        });
+
+        // =============================
+        // BILLING TOGGLE
+        // =============================
+        var billingToggle = document.getElementById('billingToggle');
+        if (billingToggle) {
+            billingToggle.addEventListener('change', function() {
+                var labels = document.querySelectorAll('.toggle-label');
+                labels.forEach(function(label) { label.classList.remove('active'); });
+                if (this.checked) {
+                    if (labels[1]) labels[1].classList.add('active');
+                } else {
+                    if (labels[0]) labels[0].classList.add('active');
+                }
+            });
+        }
     }
-});
+
+})();

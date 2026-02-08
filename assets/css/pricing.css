@@ -33,15 +33,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
+    background-image:
         linear-gradient(30deg, rgba(255, 120, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 120, 0, 0.03) 87.5%, rgba(255, 120, 0, 0.03)),
-        linear-gradient(150deg, rgba(255, 120, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 120, 0, 0.03) 87.5%, rgba(255, 120, 0, 0.03)),
-        linear-gradient(30deg, rgba(255, 120, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 120, 0, 0.03) 87.5%, rgba(255, 120, 0, 0.03)),
-        linear-gradient(150deg, rgba(255, 120, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 120, 0, 0.03) 87.5%, rgba(255, 120, 0, 0.03)),
-        linear-gradient(60deg, rgba(107, 70, 193, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(107, 70, 193, 0.05) 75%, rgba(107, 70, 193, 0.05)),
-        linear-gradient(60deg, rgba(107, 70, 193, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(107, 70, 193, 0.05) 75%, rgba(107, 70, 193, 0.05));
+        linear-gradient(150deg, rgba(255, 120, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 120, 0, 0.03) 87.5%, rgba(255, 120, 0, 0.03));
     background-size: 80px 140px;
-    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-position: 0 0, 40px 70px;
     opacity: 0.4;
     pointer-events: none;
     z-index: 0;
@@ -300,11 +296,6 @@
     font-size: 70px;
 }
 
-.percentage-icon svg {
-    width: 100%;
-    height: 100%;
-}
-
 .left-icon {
     top: 15%;
     left: 5%;
@@ -406,10 +397,6 @@
     color: var(--color-white);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
-}
-
-.service-btn.active:hover {
-    background: var(--orange-bright);
 }
 
 .btn-icon {
@@ -540,200 +527,78 @@
    RESPONSIVE DESIGN - PRICING HERO
    =========================== */
 
-@media (max-width: 1024px) {
-    .percentage-icon {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .left-icon {
-        left: 3%;
-        top: 10%;
-    }
-    
-    .right-icon {
-        right: 3%;
-        bottom: 10%;
-    }
-    
-    .pricing-hero-title {
-        font-size: 42px;
-    }
-    
-    .icon-float {
-        font-size: 35px;
-    }
-    
-    .icon-1, .icon-5, .icon-13 {
-        font-size: 42px;
-    }
-}
-
 @media (max-width: 768px) {
     .pricing-hero-section {
         padding: 60px 0 100px;
-        overflow: visible;
     }
-    
+
     .percentage-icon {
         width: 100px;
         height: 100px;
         font-size: 50px;
-        z-index: 1;
     }
-    
+
     .percentage-icon i {
         font-size: 50px;
     }
-    
+
     .left-icon {
         left: 2%;
         top: 5%;
     }
-    
+
     .right-icon {
         right: 2%;
         bottom: 5%;
     }
-    
+
     .pricing-hero-title {
         font-size: 32px;
         margin-bottom: 40px;
-        position: relative;
-        z-index: 5;
     }
-    
+
     /* Hide desktop buttons on tablet and below */
     .desktop-buttons {
         display: none !important;
     }
-    
+
     /* Show mobile dropdown on tablet and below */
     .mobile-dropdown {
         display: block;
     }
-    
-    .service-buttons {
-        max-width: 600px;
-    }
-    
+
     /* Reduce floating icons on tablet */
     .icon-float {
         font-size: 28px;
         opacity: 0.6;
     }
-    
-    .icon-11, .icon-12, .icon-16, .icon-17, .icon-18 {
-        display: none;
-    }
-}
 
-@media (max-width: 600px) {
-    .pricing-hero-section {
-        padding: 50px 0 90px;
-        overflow: visible;
-    }
-    
-    .percentage-icon {
-        width: 80px;
-        height: 80px;
-        font-size: 40px;
-        z-index: 1;
-    }
-    
-    .percentage-icon i {
-        font-size: 40px;
-    }
-    
-    .left-icon {
-        left: -12px;
-        top: -23px;
-    }
-    
-    .right-icon {
-        right: 5px;
-        bottom: 20px;
-    }
-    
-    .pricing-hero-title {
-        font-size: 26px;
-        margin-bottom: 35px;
-        position: relative;
-        z-index: 5;
-    }
-    
-    .service-dropdown {
-        max-width: 90%;
-    }
-    
-    .dropdown-header {
-        padding: 14px 20px;
-        font-size: 15px;
-    }
-    
-    .selected-icon {
-        font-size: 18px;
-    }
-    
-    .service-dropdown .dropdown-item {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-    
-    .item-icon {
-        font-size: 16px;
-    }
-    
-    /* Show only key icons on mobile */
-    .icon-float {
-        font-size: 24px;
-    }
-    
-    .icon-3, .icon-4, .icon-7, .icon-8, .icon-14, .icon-15 {
+    .icon-11, .icon-12, .icon-16, .icon-17, .icon-18 {
         display: none;
     }
 }
 
 @media (max-width: 480px) {
     .pricing-hero-section {
-        padding: 40px 0 80px;
-        overflow: visible;
+        padding: 50px 0 90px;
     }
-    
+
     .percentage-icon {
-        width: 70px;
-        height: 70px;
-        font-size: 35px;
-        z-index: 1;
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
     }
-    
+
     .percentage-icon i {
-        font-size: 35px;
+        font-size: 40px;
     }
-    
+
     .pricing-hero-title {
-        font-size: 22px;
-        margin-bottom: 30px;
-        position: relative;
-        z-index: 5;
+        font-size: 28px;
     }
-    
-    .dropdown-header {
-        padding: 12px 18px;
-        font-size: 14px;
-    }
-    
-    .selected-icon {
-        font-size: 16px;
-    }
-    
-    .service-dropdown .dropdown-item {
-        padding: 11px 18px;
-        font-size: 13px;
-    }
-    
-    .item-icon {
-        font-size: 15px;
+
+    .icon-3, .icon-4, .icon-7, .icon-8, .icon-14, .icon-15 {
+        display: none;
     }
 }
 
