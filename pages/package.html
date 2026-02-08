@@ -6,6 +6,7 @@
     <title>Pricing Hero Section - Hostorio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="package-chooser.css">
 </head>
 <body>
 <div class="top-info-bar">
@@ -211,121 +212,125 @@
 </nav>
 
 
-    <!-- Pricing Hero Section -->
-    <section class="pricing-hero-section">
-        <!-- Floating Font Awesome Icons Background -->
-        <div class="floating-icons">
-            <i class="fas fa-server icon-float icon-1"></i>
-            <i class="fas fa-cloud icon-float icon-2"></i>
-            <i class="fas fa-database icon-float icon-3"></i>
-            <i class="fas fa-shield-halved icon-float icon-4"></i>
-            <i class="fas fa-rocket icon-float icon-5"></i>
-            <i class="fas fa-bolt icon-float icon-6"></i>
-            <i class="fas fa-globe icon-float icon-7"></i>
-            <i class="fas fa-envelope icon-float icon-8"></i>
-            <i class="fas fa-network-wired icon-float icon-9"></i>
-            <i class="fas fa-code icon-float icon-10"></i>
-            <i class="fas fa-lock icon-float icon-11"></i>
-            <i class="fas fa-wifi icon-float icon-12"></i>
-            <i class="fab fa-wordpress icon-float icon-13"></i>
-            <i class="fas fa-briefcase icon-float icon-14"></i>
-            <i class="fas fa-graduation-cap icon-float icon-15"></i>
-            <i class="fas fa-chart-line icon-float icon-16"></i>
-            <i class="fas fa-plug icon-float icon-17"></i>
-            <i class="fas fa-sitemap icon-float icon-18"></i>
+    <!-- ===========================
+         PACKAGE CHOOSER SECTION
+         =========================== -->
+    <div class="package-chooser-wrapper">
+        <!-- Background Animation -->
+        <div class="motion-background">
+            <i class="fas fa-server motion-item item-1"></i>
+            <i class="fas fa-cloud motion-item item-2"></i>
+            <i class="fas fa-database motion-item item-3"></i>
+            <i class="fas fa-shield-halved motion-item item-4"></i>
+            <i class="fas fa-rocket motion-item item-5"></i>
+            <i class="fas fa-bolt motion-item item-6"></i>
+            <i class="fas fa-globe motion-item item-7"></i>
+            <i class="fas fa-envelope motion-item item-8"></i>
+            <i class="fas fa-network-wired motion-item item-9"></i>
+            <i class="fas fa-code motion-item item-10"></i>
+            <i class="fas fa-lock motion-item item-11"></i>
+            <i class="fas fa-wifi motion-item item-12"></i>
+            <i class="fab fa-wordpress motion-item item-13"></i>
+            <i class="fas fa-briefcase motion-item item-14"></i>
+            <i class="fas fa-graduation-cap motion-item item-15"></i>
+            <i class="fas fa-chart-line motion-item item-16"></i>
+            <i class="fas fa-plug motion-item item-17"></i>
+            <i class="fas fa-sitemap motion-item item-18"></i>
         </div>
 
-        <!-- Decorative Icon Left -->
-        <div class="percentage-icon left-icon">
+        <!-- Left Side Icon Box -->
+        <div class="side-icon-box left-side">
             <i class="fas fa-server"></i>
         </div>
 
-        <!-- Decorative Icon Right -->
-        <div class="percentage-icon right-icon">
+        <!-- Right Side Icon Box -->
+        <div class="side-icon-box right-side">
             <i class="fas fa-database"></i>
         </div>
 
-        <div class="container-wrapper">
-            <div class="pricing-hero-content">
-                <h1 class="pricing-hero-title">Launch Website with the Right Service</h1>
+        <div class="content-container">
+            <div class="chooser-inner">
+                <h1 class="section-headline">Launch Website with the Right Service</h1>
 
-                <!-- Desktop Buttons -->
-                <div class="service-buttons desktop-buttons">
-                    <div class="button-row">
-                        <button class="service-btn active" data-service="wordpress" data-url="package.html">
-                            <span class="btn-icon">⚡</span>
-                            <span class="btn-text">WordPress Hosting</span>
-                        </button>
-                        <button class="service-btn" data-service="turbo" data-url="#">
-                            <span class="btn-icon">🚀</span>
-                            <span class="btn-text">Turbo Hosting</span>
-                        </button>
-                        <button class="service-btn" data-service="reseller" data-url="#">
-                            <span class="btn-icon">🔄</span>
-                            <span class="btn-text">Reseller Hosting</span>
-                        </button>
-                        <button class="service-btn" data-service="student" data-url="#">
-                            <span class="btn-icon">🎓</span>
-                            <span class="btn-text">Student Hosting</span>
-                        </button>
+                <!-- Desktop Package Grid -->
+                <div class="packages-desktop">
+                    <div class="top-packages">
+                        <a href="wordpress-hosting.html" class="package-card highlighted">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-title">WordPress Hosting</span>
+                        </a>
+                        <a href="turbo-hosting.html" class="package-card">
+                            <span class="card-icon">🚀</span>
+                            <span class="card-title">Turbo Hosting</span>
+                        </a>
+                        <a href="reseller-hosting.html" class="package-card">
+                            <span class="card-icon">🔄</span>
+                            <span class="card-title">Reseller Hosting</span>
+                        </a>
+                        <a href="student-hosting.html" class="package-card">
+                            <span class="card-icon">🎓</span>
+                            <span class="card-title">Student Hosting</span>
+                        </a>
                     </div>
-                    <div class="button-row">
-                        <button class="service-btn" data-service="vps" data-url="#">
-                            <span class="btn-icon">🖥️</span>
-                            <span class="btn-text">VPS</span>
-                        </button>
-                        <button class="service-btn" data-service="email" data-url="#">
-                            <span class="btn-icon">✉️</span>
-                            <span class="btn-text">Business Email</span>
-                        </button>
-                        <button class="service-btn" data-service="domain" data-url="#">
-                            <span class="btn-icon">🌐</span>
-                            <span class="btn-text">Domain</span>
-                        </button>
+                    <div class="bottom-packages">
+                        <a href="vps-hosting.html" class="package-card">
+                            <span class="card-icon">🖥️</span>
+                            <span class="card-title">VPS</span>
+                        </a>
+                        <a href="business-email.html" class="package-card">
+                            <span class="card-icon">✉️</span>
+                            <span class="card-title">Business Email</span>
+                        </a>
+                        <a href="domain-registration.html" class="package-card">
+                            <span class="card-icon">🌐</span>
+                            <span class="card-title">Domain</span>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Mobile Dropdown -->
-                <div class="service-dropdown mobile-dropdown">
-                    <div class="dropdown-header" id="pricingDropdownHeader">
-                        <span class="selected-icon">⚡</span>
-                        <span class="selected-text">WordPress Hosting</span>
-                        <i class="fas fa-chevron-down dropdown-arrow" id="pricingDropdownArrow"></i>
-                    </div>
-                    <div class="dropdown-menu" id="pricingDropdownMenu">
-                        <a href="package.html" class="dropdown-item active" data-service="wordpress">
-                            <span class="item-icon">⚡</span>
-                            <span class="item-text">WordPress Hosting</span>
-                        </a>
-                        <a href="#" class="dropdown-item" data-service="turbo">
-                            <span class="item-icon">🚀</span>
-                            <span class="item-text">Turbo Hosting</span>
-                        </a>
-                        <a href="#" class="dropdown-item" data-service="reseller">
-                            <span class="item-icon">🔄</span>
-                            <span class="item-text">Reseller Hosting</span>
-                        </a>
-                        <a href="#" class="dropdown-item" data-service="student">
-                            <span class="item-icon">🎓</span>
-                            <span class="item-text">Student Hosting</span>
-                        </a>
-                        <a href="#" class="dropdown-item" data-service="vps">
-                            <span class="item-icon">🖥️</span>
-                            <span class="item-text">VPS</span>
-                        </a>
-                        <a href="#" class="dropdown-item" data-service="email">
-                            <span class="item-icon">✉️</span>
-                            <span class="item-text">Business Email</span>
-                        </a>
-                        <a href="#" class="dropdown-item" data-service="domain">
-                            <span class="item-icon">🌐</span>
-                            <span class="item-text">Domain</span>
-                        </a>
+                <!-- Mobile Package Dropdown -->
+                <div class="packages-mobile">
+                    <div class="mobile-chooser">
+                        <button type="button" class="chooser-button" id="mobileChooserBtn">
+                            <span class="btn-icon" id="displayIcon">⚡</span>
+                            <span class="btn-label" id="displayLabel">WordPress Hosting</span>
+                            <i class="fas fa-chevron-down btn-chevron" id="chevronIcon"></i>
+                        </button>
+                        <nav class="chooser-list" id="packageList">
+                            <a href="wordpress-hosting.html" class="list-option selected" data-icon="⚡" data-label="WordPress Hosting">
+                                <span class="opt-icon">⚡</span>
+                                <span class="opt-label">WordPress Hosting</span>
+                            </a>
+                            <a href="turbo-hosting.html" class="list-option" data-icon="🚀" data-label="Turbo Hosting">
+                                <span class="opt-icon">🚀</span>
+                                <span class="opt-label">Turbo Hosting</span>
+                            </a>
+                            <a href="reseller-hosting.html" class="list-option" data-icon="🔄" data-label="Reseller Hosting">
+                                <span class="opt-icon">🔄</span>
+                                <span class="opt-label">Reseller Hosting</span>
+                            </a>
+                            <a href="student-hosting.html" class="list-option" data-icon="🎓" data-label="Student Hosting">
+                                <span class="opt-icon">🎓</span>
+                                <span class="opt-label">Student Hosting</span>
+                            </a>
+                            <a href="vps-hosting.html" class="list-option" data-icon="🖥️" data-label="VPS">
+                                <span class="opt-icon">🖥️</span>
+                                <span class="opt-label">VPS</span>
+                            </a>
+                            <a href="business-email.html" class="list-option" data-icon="✉️" data-label="Business Email">
+                                <span class="opt-icon">✉️</span>
+                                <span class="opt-label">Business Email</span>
+                            </a>
+                            <a href="domain-registration.html" class="list-option" data-icon="🌐" data-label="Domain">
+                                <span class="opt-icon">🌐</span>
+                                <span class="opt-label">Domain</span>
+                            </a>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
            <!-- Pricing Section -->
     <section class="pricing-section">
@@ -1657,8 +1662,123 @@
 
 <script src="../assets/js/header.js"></script>
 <script src="../assets/js/utils.js"></script>
-<script src="../assets/js/pricing.js"></script>
 <script src="../assets/js/animations.js"></script>
 <script src="../assets/js/main.js"></script>
+
+<!-- Package Chooser + Billing Toggle -->
+<script>
+(function() {
+    'use strict';
+
+    function setupPackageChooser() {
+        // Get elements
+        var btn = document.getElementById('mobileChooserBtn');
+        var list = document.getElementById('packageList');
+        var chevron = document.getElementById('chevronIcon');
+        var displayIcon = document.getElementById('displayIcon');
+        var displayLabel = document.getElementById('displayLabel');
+        var options = document.querySelectorAll('.package-chooser-wrapper .list-option');
+
+        if (!btn || !list) return;
+
+        var isOpen = false;
+
+        // Toggle list
+        btn.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            isOpen = !isOpen;
+
+            if (isOpen) {
+                list.style.maxHeight = '450px';
+                list.style.opacity = '1';
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                list.style.maxHeight = '0';
+                list.style.opacity = '0';
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        };
+
+        // Handle option clicks
+        for (var i = 0; i < options.length; i++) {
+            options[i].onclick = function(e) {
+                var icon = this.getAttribute('data-icon');
+                var label = this.getAttribute('data-label');
+                var url = this.getAttribute('href');
+
+                // Update display
+                displayIcon.textContent = icon;
+                displayLabel.textContent = label;
+
+                // Remove all selected
+                for (var j = 0; j < options.length; j++) {
+                    options[j].classList.remove('selected');
+                }
+
+                // Add selected to this
+                this.classList.add('selected');
+
+                // Close list
+                isOpen = false;
+                list.style.maxHeight = '0';
+                list.style.opacity = '0';
+                chevron.style.transform = 'rotate(0deg)';
+
+                // Navigate
+                setTimeout(function() {
+                    window.location.href = url;
+                }, 200);
+
+                e.preventDefault();
+            };
+        }
+
+        // Close on outside click
+        document.onclick = function(e) {
+            if (!btn.contains(e.target) && !list.contains(e.target)) {
+                isOpen = false;
+                list.style.maxHeight = '0';
+                list.style.opacity = '0';
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        };
+
+        // Desktop cards
+        var cards = document.querySelectorAll('.package-chooser-wrapper .package-card');
+        for (var k = 0; k < cards.length; k++) {
+            cards[k].onclick = function() {
+                for (var m = 0; m < cards.length; m++) {
+                    cards[m].classList.remove('highlighted');
+                }
+                this.classList.add('highlighted');
+            };
+        }
+
+        // Billing Toggle
+        var billingToggle = document.getElementById('billingToggle');
+        if (billingToggle) {
+            billingToggle.addEventListener('change', function() {
+                var labels = document.querySelectorAll('.toggle-label');
+                labels.forEach(function(label) { label.classList.remove('active'); });
+                if (this.checked) {
+                    if (labels[1]) labels[1].classList.add('active');
+                } else {
+                    if (labels[0]) labels[0].classList.add('active');
+                }
+            });
+        }
+    }
+
+    // Init when ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupPackageChooser);
+    } else {
+        setupPackageChooser();
+    }
+
+})();
+</script>
 </body>
 </html>
