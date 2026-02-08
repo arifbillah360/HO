@@ -254,7 +254,7 @@
 .mobile-chooser {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -262,7 +262,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 8px 25px;
+    padding: 8px 40px;
     background: var(--white);
     color: var(--navy);
     font-size: 15px;
@@ -371,8 +371,8 @@
     }
 
     .left-side {
-        left: 2%;
-        top: 5%;
+        left: -5%;
+        top: -5%;
     }
 
     .right-side {
@@ -382,7 +382,7 @@
 
     .section-headline {
         font-size: 32px;
-        margin-bottom: 40px;
+        margin-bottom: 18px;
     }
 
     .packages-desktop {
@@ -419,7 +419,7 @@
     }
 
     .section-headline {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .item-3, .item-4, .item-7, .item-8, .item-14, .item-15 {
