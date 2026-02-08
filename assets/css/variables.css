@@ -1,0 +1,45 @@
+/* ===========================
+   CSS VARIABLES
+   =========================== */
+:root {
+    /* Primary Colors */
+    --primary-blue: #0170B9;
+    --dark-blue: #0C379A;
+    --medium-blue: #1558a8;
+    --light-blue: #1368E7;
+    --navy-blue: #01257D;
+    
+    /* Secondary Colors */
+    --orange-primary: #FF7800;
+    --orange-light: #FF9000;
+    --orange-bright: #ff8c00;
+    --red-accent: #FF0000;
+    
+    /* Neutral Colors */
+    --color-dark: #3a3a3a;
+    --color-text: #4B4F58;
+    --color-gray: #808285;
+    --color-light-gray: #F5F5F5;
+    --color-white: #FFFFFF;
+    --color-border: #dddddd;
+    --color-off-white: #fafafa;
+    
+    /* Typography */
+    --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-rosario: "Rosario", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.44rem;
+    --spacing-sm: 0.67rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2.25rem;
+    
+    /* Border Radius */
+    --radius-sm: 3px;
+    --radius-md: 5px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 50px;
+}
