@@ -1,0 +1,182 @@
+================================================================================
+  SAMPLE DATA — 3 Hosting Plans for hosting_plan CPT
+================================================================================
+
+Use this reference when entering plans via WP Admin > Hosting Plans > Add New.
+All ACF fields listed below map directly to the registered field names.
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 1: Starter Cloud
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        Starter Cloud
+  Post Excerpt:      Ideal beginner hosting plan with cPanel and NVMe storage.
+  Menu Order:        10
+
+  ACF — Basic Info:
+    plan_name:         Starter Cloud
+    plan_description:  Ideal for beginner/personal websites
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            250
+    price_usd:            2.24
+    price_original_bdt:   980
+    price_original_usd:   8.95
+    discount_badge:       Save 75%
+
+  ACF — Resources:
+    storage:              25GB NVMe RAID 1 (US)
+    bandwidth:            Unlimited
+    ram:                  1 GB
+    cpu_cores:            1
+    websites_allowed:     1
+    visits_monthly:       ~10,000
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               250,000
+    free_domain:          (empty — not included)
+
+  ACF — Features (repeater):
+    Row 1:  feature_item = "1 Website"                        is_available = true
+    Row 2:  feature_item = "~10,000 Visits Monthly"           is_available = true
+    Row 3:  feature_item = "1 GB RAM"                         is_available = true
+    Row 4:  feature_item = "Unlimited NVMe Storage"           is_available = true
+    Row 5:  feature_item = "FREE cPanel"                      is_available = true
+    Row 6:  feature_item = "FREE & Auto SSL Certificate"      is_available = true
+    Row 7:  feature_item = "FREE Website Migrations"          is_available = true
+    Row 8:  feature_item = "FREE LiteSpeed"                   is_available = true
+    Row 9:  feature_item = "30-Day Money-Back"                is_available = true
+
+  ACF — Order Link:
+    order_url:            https://hostorio.com/cart/?pid=starter
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 2: Turbo Cloud  (Most Popular)
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        Turbo Cloud
+  Post Excerpt:      Best-selling plan with turbo-powered LiteSpeed and NVMe.
+  Menu Order:        20
+
+  ACF — Basic Info:
+    plan_name:         Turbo Cloud
+    plan_description:  Most popular package
+    is_popular:        true        ← shows "Most Popular" badge
+
+  ACF — Pricing:
+    price_bdt:            660
+    price_usd:            5.99
+    price_original_bdt:   2195
+    price_original_usd:   19.95
+    discount_badge:       Save 70%
+
+  ACF — Resources:
+    storage:              75GB NVMe RAID 1 (US)
+    bandwidth:            Unlimited
+    ram:                  3 GB
+    cpu_cores:            3
+    websites_allowed:     Unlimited
+    visits_monthly:       ~50,000
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               500,000
+    free_domain:          24 or 36 month term
+
+  ACF — Features (repeater):
+    Row 1:  feature_item = "Unlimited Websites"               is_available = true
+    Row 2:  feature_item = "~50,000 Visits Monthly"           is_available = true
+    Row 3:  feature_item = "3 GB RAM"                         is_available = true
+    Row 4:  feature_item = "Unlimited NVMe Storage"           is_available = true
+    Row 5:  feature_item = "FREE Domain Name"                 is_available = true
+    Row 6:  feature_item = "FREE cPanel"                      is_available = true
+    Row 7:  feature_item = "FREE & Auto SSL Certificate"      is_available = true
+    Row 8:  feature_item = "FREE Website Migrations"          is_available = true
+    Row 9:  feature_item = "FREE Security Suite"              is_available = true
+    Row 10: feature_item = "FREE LiteSpeed w/Turbo"           is_available = true
+    Row 11: feature_item = "30-Day Money-Back"                is_available = true
+
+  ACF — Order Link:
+    order_url:            https://hostorio.com/cart/?pid=turbo
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 3: Business Cloud
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        Business Cloud
+  Post Excerpt:      Enterprise eCommerce hosting with maximum resources.
+  Menu Order:        30
+
+  ACF — Basic Info:
+    plan_name:         Business Cloud
+    plan_description:  Ideal for eCommerce websites
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            990
+    price_usd:            8.99
+    price_original_bdt:   3295
+    price_original_usd:   29.95
+    discount_badge:       Save 70%
+
+  ACF — Resources:
+    storage:              100GB NVMe RAID 1 (US)
+    bandwidth:            Unlimited
+    ram:                  4 GB
+    cpu_cores:            4
+    websites_allowed:     Unlimited
+    visits_monthly:       ~100,000
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               500,000
+    free_domain:          24 or 36 month term
+
+  ACF — Features (repeater):
+    Row 1:  feature_item = "Unlimited Websites"               is_available = true
+    Row 2:  feature_item = "~100,000 Visits Monthly"          is_available = true
+    Row 3:  feature_item = "4 GB RAM"                         is_available = true
+    Row 4:  feature_item = "Unlimited NVMe Storage"           is_available = true
+    Row 5:  feature_item = "FREE Domain Name"                 is_available = true
+    Row 6:  feature_item = "FREE cPanel"                      is_available = true
+    Row 7:  feature_item = "FREE & Auto SSL Certificate"      is_available = true
+    Row 8:  feature_item = "FREE Website Migrations"          is_available = true
+    Row 9:  feature_item = "FREE Security Suite"              is_available = true
+    Row 10: feature_item = "FREE Email Filtering"             is_available = true
+    Row 11: feature_item = "FREE LiteSpeed w/Turbo"           is_available = true
+    Row 12: feature_item = "30-Day Money-Back"                is_available = true
+
+  ACF — Order Link:
+    order_url:            https://hostorio.com/cart/?pid=business
+    order_button_text:    Order Now
+
+
+================================================================================
+  THEME SETTINGS (Options Page)
+================================================================================
+
+  Currency & Pricing:
+    exchange_rate:        0.0091
+    default_currency:     BDT
+
+  Company Info:
+    company_name:         Hostorio
+    company_description:  Hostorio is a popular web hosting services provider.
+                          Hostorio provides Shared Hosting, Business Hosting,
+                          Reseller Hosting, VPS, and domain Registration-Transfer
+                          services.
+
+  Contact Info:
+    contact_email:        mail@hostorio.com
+    contact_phone:        +8801779440297
+    address_line_1:       Kanchan, Rupganj, Narayanganj
+    address_line_2:       H-161, OABDA SOROK MATHBARIA
+
+  Social Media:
+    social_facebook:      https://facebook.com/hostorio
+    social_twitter:       https://twitter.com/hostorio
+    social_youtube:       https://youtube.com/@hostorio
+    social_linkedin:      https://linkedin.com/company/hostorio

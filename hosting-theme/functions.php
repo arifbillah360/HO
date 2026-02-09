@@ -18,6 +18,12 @@ define( 'HOSTING_THEME_DIR', get_template_directory() );
 define( 'HOSTING_THEME_URI', get_template_directory_uri() );
 
 /**
+ * Include theme modules.
+ */
+require_once HOSTING_THEME_DIR . '/inc/custom-post-types.php';
+require_once HOSTING_THEME_DIR . '/inc/acf-fields.php';
+
+/**
  * Theme setup.
  *
  * Sets up theme defaults and registers support for various WordPress features.
@@ -158,3 +164,54 @@ function hosting_theme_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'hosting_theme_widgets_init' );
+
+/**
+ * Register ACF Options page for global theme settings.
+ *
+ * Provides a "Theme Settings" submenu under the top-level
+ * Hosting Plans menu for managing exchange rate, company info,
+ * contact details, and social media links.
+ */
+function hosting_theme_acf_options_page() {
+	if ( ! function_exists( 'acf_add_options_page' ) ) {
+		return;
+	}
+
+	acf_add_options_page( array(
+		'page_title' => __( 'Theme Settings', 'hosting-theme' ),
+		'menu_title' => __( 'Theme Settings', 'hosting-theme' ),
+		'menu_slug'  => 'theme-settings',
+		'capability' => 'manage_options',
+		'redirect'   => false,
+		'icon_url'   => 'dashicons-admin-generic',
+		'position'   => 59,
+	) );
+}
+add_action( 'acf/init', 'hosting_theme_acf_options_page' );
+
+/**
+ * Helper: get USD price from BDT using the exchange rate.
+ *
+ * If a manual USD price is provided it is returned as-is.
+ * Otherwise the BDT amount is converted using the exchange
+ * rate stored in Theme Settings.
+ *
+ * @param  float      $bdt_price  Price in BDT.
+ * @param  float|null $usd_price  Manual USD override (or null/0).
+ * @return float
+ */
+function hosting_theme_get_usd_price( $bdt_price, $usd_price = null ) {
+	if ( ! empty( $usd_price ) ) {
+		return (float) $usd_price;
+	}
+
+	$rate = 0.0091; // Fallback default.
+	if ( function_exists( 'get_field' ) ) {
+		$saved_rate = get_field( 'exchange_rate', 'option' );
+		if ( ! empty( $saved_rate ) ) {
+			$rate = (float) $saved_rate;
+		}
+	}
+
+	return round( (float) $bdt_price * $rate, 2 );
+}
