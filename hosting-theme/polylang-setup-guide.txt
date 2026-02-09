@@ -1,0 +1,241 @@
+================================================================================
+  POLYLANG SETUP GUIDE — Hostorio Hosting Theme
+================================================================================
+
+
+1. INSTALL & ACTIVATE PLUGINS
+================================================================================
+
+   Required:
+     - Polylang (free) or Polylang Pro (for ACF options page sync)
+       https://wordpress.org/plugins/polylang/
+     - Advanced Custom Fields PRO (already required for Phase 2)
+
+   Optional but recommended:
+     - Polylang for WooCommerce (if adding WooCommerce later)
+     - ACF: Extended (adds useful ACF admin features)
+
+
+2. CONFIGURE LANGUAGES
+================================================================================
+
+   Go to: Languages > Languages > Add New
+
+   Language 1 (Default):
+     Full name:      English
+     Locale:         en_US
+     Language code:   en
+     Flag:           United States
+     Order:          1
+     Default:        Yes
+
+   Language 2:
+     Full name:      বাংলা
+     Locale:         bn_BD
+     Language code:   bn
+     Flag:           Bangladesh
+     Order:          2
+
+
+3. URL STRUCTURE (Languages > Settings)
+================================================================================
+
+   Recommended: "The language is set from the directory name in pretty permalinks"
+
+   Result:
+     English:  https://hostorio.com/            (default, no prefix)
+     Bangla:   https://hostorio.com/bn/
+
+   Settings:
+     - "Hide URL language info for default language" → YES
+     - "Detect browser language" → YES (auto-redirect first-time visitors)
+     - "Post types to translate" → Check: Pages, Hosting Plans
+     - "Taxonomies to translate" → Check all relevant
+
+   Alternative (subdomains):
+     English:  https://hostorio.com/
+     Bangla:   https://bn.hostorio.com/
+     (Requires DNS + SSL configuration)
+
+
+4. TRANSLATE THEME STRINGS
+================================================================================
+
+   Go to: Languages > Strings translations
+
+   All static UI strings are pre-registered in groups:
+     - Hosting Theme - Top Bar
+     - Hosting Theme - Navigation
+     - Hosting Theme - Hero
+     - Hosting Theme - Pricing
+     - Hosting Theme - Domain
+     - Hosting Theme - Services
+     - Hosting Theme - WordPress
+     - Hosting Theme - Support
+     - Hosting Theme - Features
+     - Hosting Theme - Comparison
+     - Hosting Theme - Testimonials
+     - Hosting Theme - FAQ
+     - Hosting Theme - Footer
+     - Hosting Theme - Currency
+     - Hosting Theme - Common
+     - Hosting Theme - Package Page
+
+   How to translate:
+     1. Use the "Group" dropdown at top to filter by section
+     2. Find the English string on the left
+     3. Enter the বাংলা translation on the right
+     4. Click "Save Changes" at the bottom
+
+   Example translations:
+     "Home"                         → "হোম"
+     "Web Hosting"                  → "ওয়েব হোস্টিং"
+     "Order Now"                    → "এখনই অর্ডার করুন"
+     "Get Started"                  → "শুরু করুন"
+     "Find your new domain name"    → "আপনার নতুন ডোমেইন নাম খুঁজুন"
+     "Search"                       → "সার্চ করুন"
+     "/mo"                          → "মাসে"
+     "All Rights Reserved."         → "সর্বস্বত্ব সংরক্ষিত।"
+
+
+5. TRANSLATE HOSTING PLANS (hosting_plan CPT)
+================================================================================
+
+   ACF fields have been configured with Polylang sync rules:
+
+   COPIED (same in all languages — auto-synced):
+     - price_bdt, price_usd
+     - price_original_bdt, price_original_usd
+     - is_popular
+     - order_url
+     - Featured Image (thumbnail)
+
+   TRANSLATED (enter separately per language):
+     - plan_name          → "Starter Cloud" / "স্টার্টার ক্লাউড"
+     - plan_description   → "Ideal for beginners" / "প্রাথমিক ওয়েবসাইটের জন্য"
+     - discount_badge     → "Save 75%" / "৭৫% সাশ্রয়"
+     - storage, bandwidth, ram, cpu_cores, etc.
+     - features (repeater) → each feature_item text
+     - order_button_text  → "Order Now" / "এখনই অর্ডার করুন"
+
+   Workflow:
+     1. Create the plan in English (default language)
+     2. Fill all ACF fields
+     3. Click the "+" icon next to the বাংলা flag in the Languages metabox
+     4. Polylang creates a linked translation post
+     5. Numeric/price fields are auto-copied
+     6. Fill in the Bangla text for translatable fields
+     7. Publish the translation
+
+
+6. TRANSLATE PAGES
+================================================================================
+
+   For each page (Homepage, Package page, etc.):
+
+     1. Edit the English version
+     2. In the Languages metabox (right sidebar), click "+"  next to বাংলা
+     3. Polylang creates a new linked page
+     4. Translate the page title and content
+     5. If using the "Hosting Package" template, select the same template
+     6. Publish
+
+   The language switcher in the header automatically links to the
+   translated version of each page.
+
+
+7. TRANSLATE NAVIGATION MENUS
+================================================================================
+
+   Option A: Use Polylang's menu sync (recommended)
+     1. Go to Appearance > Menus
+     2. Create your English menu and assign to "Primary Navigation"
+     3. Polylang shows language tabs at the top of the menu editor
+     4. Switch to বাংলা tab and create the Bangla menu
+     5. Assign the Bangla menu to "Primary Navigation" for that language
+
+   Option B: Use the static navigation in header.php
+     - Navigation items already use esc_html_e() with the 'hosting-theme'
+       text domain
+     - Go to Languages > Strings translations
+     - Filter by group "Hosting Theme - Navigation"
+     - Enter Bangla translations
+
+
+8. THEME SETTINGS (ACF OPTIONS PAGE)
+================================================================================
+
+   If using Polylang Pro:
+     - Options page fields can have different values per language
+     - Go to Theme Settings and use the language tabs
+
+   If using Polylang (free):
+     - Options page values are shared across languages
+     - company_description will be the same in both languages
+     - Use pll_register_string() for the strings that need translation
+       (already configured in polylang-strings.php)
+
+
+9. LANGUAGE SWITCHER
+================================================================================
+
+   Location: Top info bar (left side), replaces static dropdown
+
+   When Polylang is active:
+     - Automatically shows all configured languages
+     - Displays language flag + name
+     - Links to the translated version of the current page
+     - Current language is highlighted with 'active' class
+     - Uses existing .language-selector CSS (no extra styles needed)
+
+   When Polylang is NOT active:
+     - Falls back to the original static English/Bangla buttons
+     - No functionality change from Phase 1
+
+   Mobile:
+     - Inherits the same responsive styles from theme.css
+     - Hides language name on small screens, shows flag only
+     - Works in the mobile nav drawer
+
+
+10. DEVELOPER REFERENCE
+================================================================================
+
+    Using Polylang strings in templates:
+
+      // Echo translated string (with esc_html):
+      hosting_pll_esc_e( 'Get Started' );
+
+      // Return translated string (with esc_html):
+      $text = hosting_pll_esc( 'Order Now' );
+
+      // Use Polylang directly (when you need raw HTML):
+      if ( function_exists( 'pll_e' ) ) {
+          pll_e( 'Some string' );
+      }
+
+      // Get current language:
+      $lang = function_exists( 'pll_current_language' )
+          ? pll_current_language( 'slug' )
+          : 'en';
+
+    File structure:
+      inc/polylang-strings.php   — All pll_register_string() calls
+      inc/acf-fields.php         — Polylang ACF sync filter at bottom
+      header.php                 — Language switcher (Polylang-aware)
+
+
+11. TESTING CHECKLIST
+================================================================================
+
+    [ ] Both languages appear in Languages > Languages
+    [ ] URL structure works: /en/page and /bn/page (or / and /bn/)
+    [ ] Language switcher shows in top bar with correct flags
+    [ ] Switching languages changes the URL and content
+    [ ] Strings translations page shows all registered strings
+    [ ] Hosting Plan translations share prices but have separate text
+    [ ] Navigation menu switches per language
+    [ ] Footer text changes per language
+    [ ] Mobile language switcher works correctly
+    [ ] 404 page respects current language
+    [ ] Browser language detection redirects correctly

@@ -22,6 +22,7 @@ define( 'HOSTING_THEME_URI', get_template_directory_uri() );
  */
 require_once HOSTING_THEME_DIR . '/inc/custom-post-types.php';
 require_once HOSTING_THEME_DIR . '/inc/acf-fields.php';
+require_once HOSTING_THEME_DIR . '/inc/polylang-strings.php';
 
 /**
  * Theme setup.

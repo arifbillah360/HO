@@ -502,3 +502,70 @@ function hosting_theme_register_acf_fields() {
 	) );
 }
 add_action( 'acf/init', 'hosting_theme_register_acf_fields' );
+
+/**
+ * Configure Polylang translation preferences for ACF fields.
+ *
+ * Tells Polylang which hosting_plan ACF fields should be:
+ *   - 'translate' (1) → different value per language (text fields)
+ *   - 'copy'      (2) → same value across all languages (numbers, URLs)
+ *   - 'ignore'    (3) → left empty in translations
+ *
+ * This uses the 'pll_copy_post_metas' filter used by Polylang to decide
+ * which post meta keys to synchronise when creating translations.
+ *
+ * For the Options page fields, Polylang Pro handles them automatically
+ * when "Synchronize" is set to copy in Languages > Settings.
+ */
+function hosting_theme_polylang_acf_sync( $metas, $sync ) {
+
+	// Fields that should be COPIED (same value across languages).
+	// Prices and numeric resource values stay the same.
+	$copy_fields = array(
+		'price_bdt',
+		'price_usd',
+		'price_original_bdt',
+		'price_original_usd',
+		'is_popular',
+		'order_url',
+		'_thumbnail_id',
+	);
+
+	// Fields that should NEVER be synced (translated independently).
+	// Polylang copies all meta by default; remove these from the sync list.
+	$translate_fields = array(
+		'plan_name',
+		'plan_description',
+		'discount_badge',
+		'storage',
+		'bandwidth',
+		'ram',
+		'cpu_cores',
+		'websites_allowed',
+		'visits_monthly',
+		'databases',
+		'email_accounts',
+		'inodes',
+		'free_domain',
+		'order_button_text',
+		'features',
+	);
+
+	// Ensure copy fields are included.
+	foreach ( $copy_fields as $field ) {
+		if ( ! in_array( $field, $metas, true ) ) {
+			$metas[] = $field;
+		}
+	}
+
+	// Ensure translate fields are excluded from sync.
+	foreach ( $translate_fields as $field ) {
+		$key = array_search( $field, $metas, true );
+		if ( false !== $key ) {
+			unset( $metas[ $key ] );
+		}
+	}
+
+	return array_values( $metas );
+}
+add_filter( 'pll_copy_post_metas', 'hosting_theme_polylang_acf_sync', 10, 2 );
