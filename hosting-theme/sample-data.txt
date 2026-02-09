@@ -1,13 +1,22 @@
 ================================================================================
-  SAMPLE DATA — 3 Hosting Plans for hosting_plan CPT
+  SAMPLE DATA — 3 Hosting Plans (Bilingual: English + Bangla)
 ================================================================================
 
 Use this reference when entering plans via WP Admin > Hosting Plans > Add New.
 All ACF fields listed below map directly to the registered field names.
 
-────────────────────────────────────────────────────────────────────────────────
-PLAN 1: Starter Cloud
-────────────────────────────────────────────────────────────────────────────────
+IMPORTANT: For each plan, create the English version first, then click the "+"
+icon on the Bangla flag (in the Polylang languages column) to create its
+translation. Numerical fields (prices, resources) are synced automatically
+via the Polylang ACF sync filter — you only need to translate text fields.
+
+════════════════════════════════════════════════════════════════════════════════
+PLAN 1: Starter Cloud / স্টার্টার ক্লাউড
+════════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ENGLISH VERSION                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
 
   Post Title:        Starter Cloud
   Post Excerpt:      Ideal beginner hosting plan with cPanel and NVMe storage.
@@ -52,10 +61,61 @@ PLAN 1: Starter Cloud
     order_url:            https://hostorio.com/cart/?pid=starter
     order_button_text:    Order Now
 
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ BANGLA VERSION (বাংলা)                                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
 
-────────────────────────────────────────────────────────────────────────────────
-PLAN 2: Turbo Cloud  (Most Popular)
-────────────────────────────────────────────────────────────────────────────────
+  Post Title:        স্টার্টার ক্লাউড
+  Post Excerpt:      সিপ্যানেল এবং NVMe স্টোরেজ সহ আদর্শ শুরুর হোস্টিং প্ল্যান।
+  Menu Order:        10
+
+  ACF — Basic Info:
+    plan_name:         স্টার্টার ক্লাউড
+    plan_description:  ব্যক্তিগত/নতুন ওয়েবসাইটের জন্য আদর্শ
+    is_popular:        false  ← (synced automatically from English)
+
+  ACF — Pricing:    ← (all synced automatically from English)
+    price_bdt:            250
+    price_usd:            2.24
+    price_original_bdt:   980
+    price_original_usd:   8.95
+    discount_badge:       ৭৫% সাশ্রয়
+
+  ACF — Resources:
+    storage:              ২৫GB NVMe RAID 1 (US)
+    bandwidth:            আনলিমিটেড
+    ram:                  ১ GB
+    cpu_cores:            ১
+    websites_allowed:     ১
+    visits_monthly:       ~১০,০০০
+    databases:            আনলিমিটেড
+    email_accounts:       আনলিমিটেড
+    inodes:               ২৫০,০০০
+    free_domain:          (খালি — অন্তর্ভুক্ত নয়)
+
+  ACF — Features (repeater):
+    Row 1:  feature_item = "১টি ওয়েবসাইট"                         is_available = true
+    Row 2:  feature_item = "মাসিক ~১০,০০০ ভিজিট"                  is_available = true
+    Row 3:  feature_item = "১ GB RAM"                              is_available = true
+    Row 4:  feature_item = "আনলিমিটেড NVMe স্টোরেজ"               is_available = true
+    Row 5:  feature_item = "বিনামূল্যে cPanel"                      is_available = true
+    Row 6:  feature_item = "বিনামূল্যে ও অটো SSL সার্টিফিকেট"      is_available = true
+    Row 7:  feature_item = "বিনামূল্যে ওয়েবসাইট মাইগ্রেশন"        is_available = true
+    Row 8:  feature_item = "বিনামূল্যে LiteSpeed"                   is_available = true
+    Row 9:  feature_item = "৩০-দিনের মানি-ব্যাক গ্যারান্টি"        is_available = true
+
+  ACF — Order Link:
+    order_url:            https://hostorio.com/cart/?pid=starter  ← (synced)
+    order_button_text:    এখনই অর্ডার করুন
+
+
+════════════════════════════════════════════════════════════════════════════════
+PLAN 2: Turbo Cloud / টার্বো ক্লাউড  ★ Most Popular / সবচেয়ে জনপ্রিয় ★
+════════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ENGLISH VERSION                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
 
   Post Title:        Turbo Cloud
   Post Excerpt:      Best-selling plan with turbo-powered LiteSpeed and NVMe.
@@ -102,10 +162,63 @@ PLAN 2: Turbo Cloud  (Most Popular)
     order_url:            https://hostorio.com/cart/?pid=turbo
     order_button_text:    Order Now
 
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ BANGLA VERSION (বাংলা)                                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
 
-────────────────────────────────────────────────────────────────────────────────
-PLAN 3: Business Cloud
-────────────────────────────────────────────────────────────────────────────────
+  Post Title:        টার্বো ক্লাউড
+  Post Excerpt:      টার্বো-পাওয়ার্ড LiteSpeed এবং NVMe সহ সবচেয়ে বিক্রিত প্ল্যান।
+  Menu Order:        20
+
+  ACF — Basic Info:
+    plan_name:         টার্বো ক্লাউড
+    plan_description:  সবচেয়ে জনপ্রিয় প্যাকেজ
+    is_popular:        true  ← (synced automatically from English)
+
+  ACF — Pricing:    ← (all synced automatically from English)
+    price_bdt:            660
+    price_usd:            5.99
+    price_original_bdt:   2195
+    price_original_usd:   19.95
+    discount_badge:       ৭০% সাশ্রয়
+
+  ACF — Resources:
+    storage:              ৭৫GB NVMe RAID 1 (US)
+    bandwidth:            আনলিমিটেড
+    ram:                  ৩ GB
+    cpu_cores:            ৩
+    websites_allowed:     আনলিমিটেড
+    visits_monthly:       ~৫০,০০০
+    databases:            আনলিমিটেড
+    email_accounts:       আনলিমিটেড
+    inodes:               ৫০০,০০০
+    free_domain:          ২৪ বা ৩৬ মাসের মেয়াদে
+
+  ACF — Features (repeater):
+    Row 1:  feature_item = "আনলিমিটেড ওয়েবসাইট"                    is_available = true
+    Row 2:  feature_item = "মাসিক ~৫০,০০০ ভিজিট"                   is_available = true
+    Row 3:  feature_item = "৩ GB RAM"                               is_available = true
+    Row 4:  feature_item = "আনলিমিটেড NVMe স্টোরেজ"                is_available = true
+    Row 5:  feature_item = "বিনামূল্যে ডোমেইন নেম"                  is_available = true
+    Row 6:  feature_item = "বিনামূল্যে cPanel"                      is_available = true
+    Row 7:  feature_item = "বিনামূল্যে ও অটো SSL সার্টিফিকেট"      is_available = true
+    Row 8:  feature_item = "বিনামূল্যে ওয়েবসাইট মাইগ্রেশন"        is_available = true
+    Row 9:  feature_item = "বিনামূল্যে সিকিউরিটি স্যুট"            is_available = true
+    Row 10: feature_item = "বিনামূল্যে LiteSpeed w/Turbo"           is_available = true
+    Row 11: feature_item = "৩০-দিনের মানি-ব্যাক গ্যারান্টি"        is_available = true
+
+  ACF — Order Link:
+    order_url:            https://hostorio.com/cart/?pid=turbo  ← (synced)
+    order_button_text:    এখনই অর্ডার করুন
+
+
+════════════════════════════════════════════════════════════════════════════════
+PLAN 3: Business Cloud / বিজনেস ক্লাউড
+════════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ENGLISH VERSION                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
 
   Post Title:        Business Cloud
   Post Excerpt:      Enterprise eCommerce hosting with maximum resources.
@@ -153,6 +266,56 @@ PLAN 3: Business Cloud
     order_url:            https://hostorio.com/cart/?pid=business
     order_button_text:    Order Now
 
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ BANGLA VERSION (বাংলা)                                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+  Post Title:        বিজনেস ক্লাউড
+  Post Excerpt:      সর্বোচ্চ রিসোর্স সহ এন্টারপ্রাইজ ইকমার্স হোস্টিং।
+  Menu Order:        30
+
+  ACF — Basic Info:
+    plan_name:         বিজনেস ক্লাউড
+    plan_description:  ইকমার্স ওয়েবসাইটের জন্য আদর্শ
+    is_popular:        false  ← (synced automatically from English)
+
+  ACF — Pricing:    ← (all synced automatically from English)
+    price_bdt:            990
+    price_usd:            8.99
+    price_original_bdt:   3295
+    price_original_usd:   29.95
+    discount_badge:       ৭০% সাশ্রয়
+
+  ACF — Resources:
+    storage:              ১০০GB NVMe RAID 1 (US)
+    bandwidth:            আনলিমিটেড
+    ram:                  ৪ GB
+    cpu_cores:            ৪
+    websites_allowed:     আনলিমিটেড
+    visits_monthly:       ~১,০০,০০০
+    databases:            আনলিমিটেড
+    email_accounts:       আনলিমিটেড
+    inodes:               ৫০০,০০০
+    free_domain:          ২৪ বা ৩৬ মাসের মেয়াদে
+
+  ACF — Features (repeater):
+    Row 1:  feature_item = "আনলিমিটেড ওয়েবসাইট"                    is_available = true
+    Row 2:  feature_item = "মাসিক ~১,০০,০০০ ভিজিট"                 is_available = true
+    Row 3:  feature_item = "৪ GB RAM"                               is_available = true
+    Row 4:  feature_item = "আনলিমিটেড NVMe স্টোরেজ"                is_available = true
+    Row 5:  feature_item = "বিনামূল্যে ডোমেইন নেম"                  is_available = true
+    Row 6:  feature_item = "বিনামূল্যে cPanel"                      is_available = true
+    Row 7:  feature_item = "বিনামূল্যে ও অটো SSL সার্টিফিকেট"      is_available = true
+    Row 8:  feature_item = "বিনামূল্যে ওয়েবসাইট মাইগ্রেশন"        is_available = true
+    Row 9:  feature_item = "বিনামূল্যে সিকিউরিটি স্যুট"            is_available = true
+    Row 10: feature_item = "বিনামূল্যে ইমেইল ফিল্টারিং"            is_available = true
+    Row 11: feature_item = "বিনামূল্যে LiteSpeed w/Turbo"           is_available = true
+    Row 12: feature_item = "৩০-দিনের মানি-ব্যাক গ্যারান্টি"        is_available = true
+
+  ACF — Order Link:
+    order_url:            https://hostorio.com/cart/?pid=business  ← (synced)
+    order_button_text:    এখনই অর্ডার করুন
+
 
 ================================================================================
   THEME SETTINGS (Options Page)
@@ -180,3 +343,47 @@ PLAN 3: Business Cloud
     social_twitter:       https://twitter.com/hostorio
     social_youtube:       https://youtube.com/@hostorio
     social_linkedin:      https://linkedin.com/company/hostorio
+
+
+================================================================================
+  POLYLANG STRING TRANSLATIONS (বাংলা)
+================================================================================
+
+After creating plans, go to Languages > Strings translations and enter
+Bangla translations for all registered theme strings. Key translations:
+
+  Group: Hosting Theme - Navigation
+    "Home"                          → "হোম"
+    "Hosting"                       → "হোস্টিং"
+    "Domain"                        → "ডোমেইন"
+    "About Us"                      → "আমাদের সম্পর্কে"
+    "Contact"                       → "যোগাযোগ"
+    "Login"                         → "লগইন"
+    "Sign Up"                       → "সাইন আপ"
+
+  Group: Hosting Theme - Hero
+    "Best Cloud Hosting Provider"   → "সেরা ক্লাউড হোস্টিং প্রদানকারী"
+    "Starting at"                   → "শুরু হচ্ছে"
+    "/mo"                           → "/মাস"
+    "Get Started"                   → "শুরু করুন"
+
+  Group: Hosting Theme - Pricing
+    "Most Popular"                  → "সবচেয়ে জনপ্রিয়"
+    "Order Now"                     → "এখনই অর্ডার করুন"
+    "Save"                          → "সাশ্রয়"
+    "Billed Monthly"                → "মাসিক বিল"
+    "Billed Annually"               → "বার্ষিক বিল"
+    "Save 15%!"                     → "১৫% সাশ্রয়!"
+
+  Group: Hosting Theme - Footer
+    "About Company"                 → "কোম্পানি সম্পর্কে"
+    "Important Links"               → "গুরুত্বপূর্ণ লিংক"
+    "Quick Links"                   → "দ্রুত লিংক"
+    "Contact Us"                    → "যোগাযোগ করুন"
+    "All Rights Reserved"           → "সর্বস্বত্ব সংরক্ষিত"
+
+  Group: Hosting Theme - Currency
+    "BDT"                           → "টাকা"
+    "USD"                           → "ডলার"
+
+  (See polylang-setup-guide.txt for the complete list of all 70+ strings)
