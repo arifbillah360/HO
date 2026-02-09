@@ -1,0 +1,19 @@
+/*
+Theme Name: Hostorio Hosting Theme
+Theme URI: https://hostorio.com
+Author: Hostorio
+Author URI: https://hostorio.com
+Description: A custom WordPress theme for Hostorio web hosting services. Features cloud hosting pricing, domain search, services showcase, testimonials, FAQ, and full responsive design.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hosting-theme
+Tags: hosting, web-hosting, custom-menu, featured-images, threaded-comments, translation-ready
+
+Hostorio Hosting Theme - Phase 1: Static Foundation
+*/
+
+/* All styles are enqueued from assets/css/theme.css via functions.php */
