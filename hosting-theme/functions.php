@@ -147,6 +147,33 @@ function hosting_theme_scripts() {
 		HOSTING_THEME_VERSION,
 		true
 	);
+
+	// Currency switcher (BDT ↔ USD toggle without reload).
+	wp_enqueue_script(
+		'hosting-theme-currency',
+		HOSTING_THEME_URI . '/assets/js/currency-switcher.js',
+		array(),
+		HOSTING_THEME_VERSION,
+		true
+	);
+
+	// Pass exchange rate and default currency to JS.
+	$exchange_rate     = 0.0091;
+	$default_currency  = 'BDT';
+	if ( function_exists( 'get_field' ) ) {
+		$saved_rate = get_field( 'exchange_rate', 'option' );
+		if ( ! empty( $saved_rate ) ) {
+			$exchange_rate = (float) $saved_rate;
+		}
+		$saved_currency = get_field( 'default_currency', 'option' );
+		if ( ! empty( $saved_currency ) ) {
+			$default_currency = $saved_currency;
+		}
+	}
+	wp_localize_script( 'hosting-theme-currency', 'hostingCurrency', array(
+		'rate'            => $exchange_rate,
+		'defaultCurrency' => $default_currency,
+	) );
 }
 add_action( 'wp_enqueue_scripts', 'hosting_theme_scripts' );
 
