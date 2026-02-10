@@ -111,67 +111,65 @@ const translations = {
 
         // Services Section
         services: {
-            title: "Our Services",
-            subtitle: "Everything You Need to Succeed Online",
-
-            wordpress: {
-                title: "WordPress Hosting",
-                description: "Optimized hosting for WordPress websites with automatic updates and security"
+            sectionTitle: "Your Complete Roadmap to Digital Growth",
+            sectionSubtitle: "Hosting is just the engine—we provide the whole vehicle.",
+            item1: {
+                title: "Secure Your Digital Identity",
+                desc: "Grab the Perfect Domain Your domain is more than just an address; it's your brand's first impression. Use our lightning-fast search tool to find the perfect name that defines your business. Whether you're starting fresh or want to move an existing domain to a more reliable home, our seamless transfer process makes it effortless.",
+                link: "Explore Domain"
             },
-            vps: {
-                title: "VPS Hosting",
-                description: "Powerful virtual private servers for complete control and flexibility"
+            item2: {
+                title: "Performance-First Web Hosting",
+                desc: "The Right Foundation for Every Project Whether you need the simplicity of Shared Hosting, the raw power of a VPS, or a specialized WordPress environment, we've got you covered. Powered by NVMe storage and LiteSpeed Web Servers, our infrastructure is built to ensure your site stays fast, stable, and ready for high traffic.",
+                link: "Choose a hosting"
             },
-            email: {
-                title: "Business Email",
-                description: "Professional email hosting with your domain name"
+            item3: {
+                title: "Professional Email Solutions",
+                desc: "Build Trust with Every Inbox Move beyond generic email addresses and earn instant credibility with a custom address (name@yourdomain.com). Our secure, ad-free business email plans keep your communications organized, private, and professional, complete with integrated tools to keep your team in sync.",
+                link: "Business Email Plans"
             },
-            ssl: {
-                title: "SSL Certificates",
-                description: "Secure your website with free SSL certificates"
+            item4: {
+                title: "Bulletproof Security",
+                desc: "Protection for You and Your Visitors We take security seriously so you don't have to. Every Hostorio account comes standard with Free SSL certificates, BitNinja Server Security, and automated malware scanning. With 2-Factor Authentication (2FA) and premium DNS protection, your data—and your customers' trust—remains safe.",
+                link: "Secure yourself"
             },
-            backup: {
-                title: "Daily Backups",
-                description: "Automatic daily backups to keep your data safe"
-            },
-            support: {
-                title: "24/7 Support",
-                description: "Round-the-clock expert support whenever you need it"
+            item5: {
+                title: "Enterprise-Grade Security, Affordable Prices",
+                desc: "Security isn't luxury—it's essential. Every Hostorio account includes free SSL certificates, DDoS protection via BitNinja, automatic malware scanning, and daily automated backups. We take the stress out of security so you can focus on growing your business. Sleep soundly knowing your data and your customers' data are protected 24/7.",
+                link: "Learn about security"
             }
         },
 
         // WordPress Section
         wordpress: {
-            title: "WordPress Hosting Made Easy",
-            subtitle: "One-Click Installation & Automatic Updates",
-            description: "Get your WordPress site up and running in minutes with our optimized hosting platform.",
-            feature1: "Pre-installed WordPress",
-            feature2: "Automatic Updates",
-            feature3: "Enhanced Security",
-            feature4: "Expert Support",
-            learnMore: "Learn More"
+            title: "WordPress Hosting Turbocharged",
+            description: "WordPress powers the web, but we power WordPress. We provide a managed environment that offers the perfect balance of raw power and complete control. Whether you are a solo blogger or a large-scale agency, our infrastructure is fine-tuned to ensure your WordPress site is faster, more secure, and easier to manage than ever before.",
+            feature1: "1-Click Script Deployment",
+            feature2: "LiteSpeed-Optimized Stack",
+            feature3: "Proactive Malware Defense",
+            cta: "Get Started Now",
+            blogTitle: "Your Blog Title",
+            latestPost: "Latest Post"
         },
 
         // Support Section
         support: {
-            title: "24/7 Expert Support",
-            subtitle: "We're Here to Help You Succeed",
-
-            liveChat: {
-                title: "Live Chat",
-                description: "Get instant help from our support team"
+            sectionTitle: "Customer Success Focus",
+            sectionSubtitle: "We provide everything you need to succeed online",
+            card1: {
+                title: "Onboarding Support",
+                desc: "Don't know where to start? Our step-by-step tutorials and 24/7 support team walk you through domain setup, hosting configuration, and WordPress installation. From zero to live in hours, not weeks. Check our detailed knowledge base.",
+                btn: "Get started"
             },
-            ticketSystem: {
-                title: "Ticket System",
-                description: "Submit and track your support requests"
+            card2: {
+                title: "Discover our Resources",
+                desc: "Access our resource center for hosting best practices, security tips, performance optimization guides, and industry insights. Learn directly from our team's experience managing 500+ websites across Bangladesh.",
+                btn: "Get learning"
             },
-            knowledgeBase: {
-                title: "Knowledge Base",
-                description: "Find answers in our extensive documentation"
-            },
-            phoneSupport: {
-                title: "Phone Support",
-                description: "Talk to our experts directly"
+            card3: {
+                title: "Hassle-Free Transfers",
+                desc: "We guarantee: Free domain transfer, Free email migration, Free database transfer, Zero downtime. Switching hosts shouldn't feel like moving houses. With us, it's simple.",
+                btn: "Transfer today"
             }
         },
 
@@ -324,67 +322,65 @@ const translations = {
 
         // Services Section
         services: {
-            title: "আমাদের সেবা",
-            subtitle: "অনলাইনে সফল হওয়ার জন্য আপনার প্রয়োজনীয় সবকিছু",
-
-            wordpress: {
-                title: "ওয়ার্ডপ্রেস হোস্টিং",
-                description: "স্বয়ংক্রিয় আপডেট এবং নিরাপত্তা সহ ওয়ার্ডপ্রেস ওয়েবসাইটের জন্য অপ্টিমাইজড হোস্টিং"
+            sectionTitle: "ডিজিটাল প্রবৃদ্ধির সম্পূর্ণ রোডম্যাপ",
+            sectionSubtitle: "হোস্টিং শুধু ইঞ্জিন—আমরা পুরো গাড়িটাই দিই।",
+            item1: {
+                title: "আপনার ডিজিটাল পরিচয় সুরক্ষিত করুন",
+                desc: "নিখুঁত ডোমেইন নিন। আপনার ডোমেইন শুধু একটি ঠিকানা নয়; এটি আপনার ব্র্যান্ডের প্রথম ছাপ। আমাদের দ্রুত সার্চ টুল দিয়ে আপনার ব্যবসার জন্য সেরা নামটি খুঁজে নিন। নতুন শুরু করুন অথবা পুরনো ডোমেইন আরও নির্ভরযোগ্য জায়গায় স্থানান্তর করুন—আমাদের সহজ ট্রান্সফার প্রক্রিয়া সবকিছু সহজ করে দেয়।",
+                link: "ডোমেইন দেখুন"
             },
-            vps: {
-                title: "ভিপিএস হোস্টিং",
-                description: "সম্পূর্ণ নিয়ন্ত্রণ এবং নমনীয়তার জন্য শক্তিশালী ভার্চুয়াল প্রাইভেট সার্ভার"
+            item2: {
+                title: "পারফরম্যান্স-প্রথম ওয়েব হোস্টিং",
+                desc: "প্রতিটি প্রজেক্টের জন্য সঠিক ভিত্তি। শেয়ারড হোস্টিংয়ের সরলতা, ভিপিএসের শক্তি, বা বিশেষায়িত ওয়ার্ডপ্রেস পরিবেশ—যাই প্রয়োজন, আমরা আছি। NVMe স্টোরেজ ও LiteSpeed ওয়েব সার্ভার দিয়ে আমাদের অবকাঠামো নিশ্চিত করে আপনার সাইট সবসময় দ্রুত, স্থিতিশীল ও হাই ট্রাফিক-রেডি থাকবে।",
+                link: "হোস্টিং বেছে নিন"
             },
-            email: {
-                title: "বিজনেস ইমেইল",
-                description: "আপনার ডোমেইন নামের সাথে পেশাদার ইমেইল হোস্টিং"
+            item3: {
+                title: "পেশাদার ইমেইল সমাধান",
+                desc: "প্রতিটি ইনবক্সে বিশ্বাস তৈরি করুন। সাধারণ ইমেইল ঠিকানার বাইরে গিয়ে কাস্টম ঠিকানা (name@yourdomain.com) দিয়ে তাৎক্ষণিক বিশ্বাসযোগ্যতা অর্জন করুন। আমাদের নিরাপদ, বিজ্ঞাপন-মুক্ত বিজনেস ইমেইল প্ল্যান আপনার যোগাযোগ সুসংগঠিত, ব্যক্তিগত ও পেশাদার রাখে।",
+                link: "বিজনেস ইমেইল প্ল্যান"
             },
-            ssl: {
-                title: "SSL সার্টিফিকেট",
-                description: "ফ্রি SSL সার্টিফিকেট দিয়ে আপনার ওয়েবসাইট সুরক্ষিত করুন"
+            item4: {
+                title: "অটুট নিরাপত্তা",
+                desc: "আপনার এবং আপনার দর্শকদের সুরক্ষা। আমরা নিরাপত্তাকে গুরুত্ব দিই যাতে আপনাকে দিতে না হয়। প্রতিটি Hostorio অ্যাকাউন্টে বিনামূল্যে SSL সার্টিফিকেট, BitNinja সার্ভার সিকিউরিটি এবং স্বয়ংক্রিয় ম্যালওয়্যার স্ক্যানিং রয়েছে। ২-ফ্যাক্টর অথেনটিকেশন (2FA) ও প্রিমিয়াম DNS সুরক্ষা দিয়ে আপনার ডেটা সবসময় নিরাপদ।",
+                link: "নিজেকে সুরক্ষিত করুন"
             },
-            backup: {
-                title: "দৈনিক ব্যাকআপ",
-                description: "আপনার ডেটা নিরাপদ রাখতে স্বয়ংক্রিয় দৈনিক ব্যাকআপ"
-            },
-            support: {
-                title: "২৪/৭ সাপোর্ট",
-                description: "যখনই আপনার প্রয়োজন তখন বিশেষজ্ঞ সাপোর্ট"
+            item5: {
+                title: "এন্টারপ্রাইজ-গ্রেড নিরাপত্তা, সাশ্রয়ী মূল্য",
+                desc: "নিরাপত্তা বিলাসিতা নয়—এটি অপরিহার্য। প্রতিটি Hostorio অ্যাকাউন্টে বিনামূল্যে SSL সার্টিফিকেট, BitNinja DDoS সুরক্ষা, স্বয়ংক্রিয় ম্যালওয়্যার স্ক্যানিং এবং দৈনিক ব্যাকআপ অন্তর্ভুক্ত। নিরাপত্তার ঝামেলা আমাদের উপর ছেড়ে দিন, আপনি ব্যবসায় মনোযোগ দিন।",
+                link: "নিরাপত্তা সম্পর্কে জানুন"
             }
         },
 
         // WordPress Section
         wordpress: {
-            title: "ওয়ার্ডপ্রেস হোস্টিং সহজ করা হয়েছে",
-            subtitle: "ওয়ান-ক্লিক ইনস্টলেশন এবং স্বয়ংক্রিয় আপডেট",
-            description: "আমাদের অপ্টিমাইজড হোস্টিং প্ল্যাটফর্মের সাথে মিনিটের মধ্যে আপনার ওয়ার্ডপ্রেস সাইট চালু এবং চলমান করুন।",
-            feature1: "প্রি-ইনস্টলড ওয়ার্ডপ্রেস",
-            feature2: "স্বয়ংক্রিয় আপডেট",
-            feature3: "বর্ধিত নিরাপত্তা",
-            feature4: "বিশেষজ্ঞ সাপোর্ট",
-            learnMore: "আরও জানুন"
+            title: "ওয়ার্ডপ্রেস হোস্টিং টার্বোচার্জড",
+            description: "ওয়ার্ডপ্রেস ওয়েব চালায়, কিন্তু আমরা ওয়ার্ডপ্রেস চালাই। আমরা একটি ম্যানেজড পরিবেশ প্রদান করি যা কাঁচা শক্তি ও সম্পূর্ণ নিয়ন্ত্রণের নিখুঁত ভারসাম্য দেয়। একক ব্লগার হোন বা বড় এজেন্সি—আমাদের অবকাঠামো আপনার ওয়ার্ডপ্রেস সাইটকে আগের চেয়ে দ্রুততর, আরও নিরাপদ ও সহজে পরিচালনাযোগ্য করে তোলে।",
+            feature1: "১-ক্লিক স্ক্রিপ্ট ডেপ্লয়মেন্ট",
+            feature2: "LiteSpeed-অপ্টিমাইজড স্ট্যাক",
+            feature3: "প্রোঅ্যাকটিভ ম্যালওয়্যার ডিফেন্স",
+            cta: "এখনই শুরু করুন",
+            blogTitle: "আপনার ব্লগ শিরোনাম",
+            latestPost: "সর্বশেষ পোস্ট"
         },
 
         // Support Section
         support: {
-            title: "২৪/৭ বিশেষজ্ঞ সাপোর্ট",
-            subtitle: "আমরা আপনার সফলতায় সাহায্য করতে এখানে আছি",
-
-            liveChat: {
-                title: "লাইভ চ্যাট",
-                description: "আমাদের সাপোর্ট টিম থেকে তাৎক্ষণিক সাহায্য পান"
+            sectionTitle: "গ্রাহক সাফল্যে আমাদের মনোযোগ",
+            sectionSubtitle: "অনলাইনে সফল হতে যা যা দরকার সবকিছুই আমরা দিই",
+            card1: {
+                title: "অনবোর্ডিং সাপোর্ট",
+                desc: "কোথা থেকে শুরু করবেন জানেন না? আমাদের ধাপে-ধাপে টিউটোরিয়াল এবং ২৪/৭ সাপোর্ট টিম আপনাকে ডোমেইন সেটআপ, হোস্টিং কনফিগারেশন এবং ওয়ার্ডপ্রেস ইনস্টলেশনে সাহায্য করবে। সপ্তাহ নয়—ঘণ্টার মধ্যে লাইভ করুন।",
+                btn: "শুরু করুন"
             },
-            ticketSystem: {
-                title: "টিকেট সিস্টেম",
-                description: "আপনার সাপোর্ট অনুরোধ জমা দিন এবং ট্র্যাক করুন"
+            card2: {
+                title: "আমাদের রিসোর্স আবিষ্কার করুন",
+                desc: "হোস্টিং বেস্ট প্র্যাকটিস, নিরাপত্তা টিপস, পারফরম্যান্স অপ্টিমাইজেশন গাইড এবং ইন্ডাস্ট্রি ইনসাইটের জন্য আমাদের রিসোর্স সেন্টার ব্যবহার করুন। বাংলাদেশে ৫০০+ ওয়েবসাইট পরিচালনার অভিজ্ঞতা থেকে সরাসরি শিখুন।",
+                btn: "শিখতে শুরু করুন"
             },
-            knowledgeBase: {
-                title: "নলেজ বেস",
-                description: "আমাদের বিস্তৃত ডকুমেন্টেশনে উত্তর খুঁজুন"
-            },
-            phoneSupport: {
-                title: "ফোন সাপোর্ট",
-                description: "সরাসরি আমাদের বিশেষজ্ঞদের সাথে কথা বলুন"
+            card3: {
+                title: "ঝামেলামুক্ত ট্রান্সফার",
+                desc: "আমরা গ্যারান্টি দিই: বিনামূল্যে ডোমেইন ট্রান্সফার, বিনামূল্যে ইমেইল মাইগ্রেশন, বিনামূল্যে ডেটাবেস ট্রান্সফার, শূন্য ডাউনটাইম। হোস্ট পরিবর্তন করা বাড়ি বদলের মতো কঠিন হওয়া উচিত নয়। আমাদের সাথে এটি সহজ।",
+                btn: "আজই ট্রান্সফার করুন"
             }
         },
 
