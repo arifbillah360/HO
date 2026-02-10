@@ -1,251 +1,282 @@
-# Hostorio - Web Hosting Services Website
+# Hostorio
 
-Hostorio is a web hosting services provider offering Shared Hosting, Business Hosting, Reseller Hosting, VPS, and Domain Registration/Transfer services.
+A fast, lightweight web hosting services website built with pure HTML, CSS, and JavaScript — no frameworks, no build tools.
+
+---
+
+## Live Pages
+
+| Page | File | Description |
+|------|------|-------------|
+| Homepage | `index.html` | Hero, pricing cards, domain search, services, footer |
+| Packages | `pages/package.html` | Full hosting plans, comparison table, FAQ, testimonials |
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Markup | HTML5 (semantic) |
+| Styling | CSS3 — Custom Properties, Flexbox, Grid |
+| Scripting | Vanilla JavaScript (ES6+) |
+| Icons | Font Awesome 6 (CDN) |
+| Build Tools | None — static files only |
+
+---
 
 ## Project Structure
 
 ```
-hostorio/
-├── index.html                    # Homepage
+HO/
+├── index.html
 ├── pages/
-│   └── package.html              # Hosting packages & pricing page
+│   └── package.html
 ├── assets/
 │   ├── css/
-│   │   ├── main.css              # Entry point - imports all modules
-│   │   ├── variables.css         # CSS custom properties (colors, fonts, spacing)
-│   │   ├── base.css              # Reset, body defaults, container
-│   │   ├── header.css            # Top bar, navigation, mobile menu
-│   │   ├── hero.css              # Hero section styles
-│   │   ├── pricing.css           # Pricing cards, plans comparison, FAQ, testimonials
-│   │   └── utilities.css         # Domain search, services, WordPress, support, footer
+│   │   ├── styles.css            # Main stylesheet
+│   │   ├── variables.css         # Design tokens (colors, fonts, spacing)
+│   │   ├── base.css              # CSS reset & body defaults
+│   │   ├── header.css            # Top bar, nav, mobile menu
+│   │   ├── hero.css              # Hero section
+│   │   ├── pricing.css           # Pricing cards, comparison, FAQ, testimonials
+│   │   └── utilities.css         # Domain search, services, support, footer
 │   ├── js/
-│   │   ├── translations.js       # i18n translations (EN/BN)
-│   │   ├── i18n.js               # I18nManager class for language/currency
-│   │   ├── main.js               # Entry point / initialization
+│   │   ├── translations.js       # EN / BN translation strings
+│   │   ├── i18n.js               # I18nManager — language & currency logic
 │   │   ├── header.js             # Mobile menu, dropdown navigation
 │   │   ├── utils.js              # Language selector, currency switcher, localStorage
-│   │   ├── pricing.js            # Service buttons, billing toggle, plan interactions
-│   │   └── animations.js         # FAQ accordion, testimonial carousel
+│   │   ├── pricing.js            # Plan selection, billing toggle
+│   │   ├── animations.js         # FAQ accordion, testimonial carousel
+│   │   └── main.js               # Initialization entry point
 │   └── images/
-│       ├── logo/                 # Brand logos
-│       ├── hero/                 # Hero section images
-│       ├── pricing/              # Pricing card icons
-│       ├── services/             # Service section illustrations (SVG)
-│       ├── flags/                # Country flag icons
-│       ├── payment/              # Payment method logos
-│       ├── testimonials/         # Testimonial photos
-│       ├── icons/                # Misc icons
-│       └── backgrounds/          # Background images
+│       ├── logo/
+│       ├── hero/
+│       ├── pricing/
+│       ├── services/
+│       ├── flags/
+│       ├── payment/
+│       ├── testimonials/
+│       ├── icons/
+│       └── backgrounds/
 ├── .gitignore
 └── README.md
 ```
 
+---
+
 ## Getting Started
 
-### Prerequisites
+No installation or build step needed.
 
-No build tools required. This is a static HTML/CSS/JavaScript project.
-
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- A local web server for development (recommended for proper CSS @import loading)
-
-### Local Development
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/arifbillah360/HO.git
-   cd HO
-   ```
-
-2. **Start a local server** (choose one):
-   ```bash
-   # Python 3
-   python -m http.server 8000
-
-   # Node.js (if npx available)
-   npx serve .
-
-   # PHP
-   php -S localhost:8000
-   ```
-
-3. **Open in browser:**
-   ```
-   http://localhost:8000
-   ```
-
-### Direct File Access
-
-You can also open `index.html` directly in a browser, though some CSS @import features work best when served via HTTP.
-
-## Pages
-
-| Page | Path | Description |
-|------|------|-------------|
-| Homepage | `index.html` | Main landing page with hero, pricing cards, services, WordPress section |
-| Packages | `pages/package.html` | Detailed hosting plans, comparison table, FAQ, testimonials |
-
-## CSS Architecture
-
-The CSS uses a modular `@import` structure loaded through `main.css`:
-
-1. **variables.css** - Design tokens (colors, typography, spacing, border-radius)
-2. **base.css** - CSS reset, body defaults, container wrapper
-3. **header.css** - Top info bar, main navigation, mobile menu, language/currency selectors
-4. **hero.css** - Hero banner with CTA
-5. **pricing.css** - Cloud pricing cards, plan comparison table, floating icons, FAQ accordion, testimonials carousel
-6. **utilities.css** - Domain search, services section, WordPress hosting section, support cards, footer
-
-### Z-Index Hierarchy
-
+**Option 1 — Open directly:**
 ```
-Language/currency dropdowns:  1200
-Top info bar:                 1100
-Desktop dropdown menus:       1070
-Header brand/right:           1060
-Main header:                  1050
-Mobile nav drawer:            1045
-Mobile nav overlay:           1040
-Service dropdown (pricing):   1001
-Pricing hero content:         10
-Floating icons:               2
-Percentage icons:             1
+Open index.html in any modern browser
 ```
 
-## JavaScript Modules
+**Option 2 — Local server (recommended):**
+```bash
+# Python
+python -m http.server 8000
 
-All scripts load at the end of `<body>` for performance:
+# Node.js
+npx serve .
 
-- **translations.js** - Complete English (en) and Bengali (bn) translations for all text content
-- **i18n.js** - I18nManager class handling language switching, currency conversion, and DOM updates
-- **header.js** - Mobile hamburger menu toggle, desktop/mobile dropdown menus, outside-click closing, resize handling
-- **utils.js** - Language selector with flag updates, currency switcher (desktop buttons + mobile dropdown), localStorage persistence, i18n integration
-- **pricing.js** - Service button selection, mobile service dropdown, billing period toggle
-- **animations.js** - FAQ accordion with expand/collapse, testimonial carousel with keyboard navigation
+# PHP
+php -S localhost:8000
+```
+Then visit `http://localhost:8000`
 
-## Internationalization & Currency Support
+---
 
-### Supported Languages
-- **English (en)** - Default language
-- **Bengali (bn)** - বাংলা
+## Multi-Language Support (EN / BN)
 
-### Supported Currencies
-- **BDT (৳)** - Bangladeshi Taka (Default)
-- **USD ($)** - US Dollar
+The site supports **English** and **Bengali (বাংলা)** with instant switching — no page reload.
 
-### Features
-- ✅ **Manual Language Switching** - Click language selector in top bar (English/বাংলা)
-- ✅ **Manual Currency Switching** - Click currency buttons in top bar (BDT/USD)
-- ✅ **Automatic Price Conversion** - USD to BDT conversion (1 USD = 110 BDT)
-- ✅ **Localized Number Formatting** - Bengali numerals for BDT prices (e.g., ৳২৪৬)
-- ✅ **Persistent Settings** - Language and currency preferences saved in localStorage
-- ✅ **No Auto-Detection** - Full manual control, no timezone or location detection
+### How it works
 
-### Usage
+1. `translations.js` holds all string keys for both languages
+2. HTML elements use `data-i18n="key.path"` attributes
+3. `i18n.js` reads the attribute and swaps text on language change
+4. Preference is saved in `localStorage`
 
-#### For Users
-1. **Change Language:**
-   - Click the language selector in the top bar
-   - Choose between "English" or "বাংলা"
-   - All text instantly translates
+### HTML attributes
 
-2. **Change Currency:**
-   - Click the currency button in the top bar (USD/BDT)
-   - All prices automatically convert and format
-   - Currency symbols update
+```html
+<!-- Text content -->
+<h1 data-i18n="hero.title">Fastest Data Center Web Hosting</h1>
 
-3. **Settings Persist:**
-   - Your language and currency preferences are saved
-   - Refresh the page - settings remain
+<!-- Input placeholder -->
+<input data-i18n-placeholder="domain.searchPlaceholder" placeholder="Search domain...">
+```
 
-#### For Developers
+### Adding a new translation key
 
-**Adding Translations:**
+Open `assets/js/translations.js` and add the key to both `en` and `bn` objects:
+
 ```javascript
-// Edit assets/js/translations.js
 const translations = {
     en: {
-        nav: {
-            home: "Home",
-            // Add more keys
+        section: {
+            myKey: "My Text"
         }
     },
     bn: {
-        nav: {
-            home: "হোম",
-            // Add more keys
+        section: {
+            myKey: "আমার টেক্সট"
         }
     }
 };
 ```
 
-**Using in HTML:**
+Then use it in HTML:
 ```html
-<!-- Text Translation -->
-<h1 data-i18n="hero.title">Fastest Data Center Web Hosting</h1>
-
-<!-- Price Conversion -->
-<span data-auto-price="2.24">$2.24</span>
-
-<!-- Currency Symbol -->
-<span data-currency-symbol>$</span>
-
-<!-- Placeholder Translation -->
-<input data-i18n-placeholder="domain.searchPlaceholder" placeholder="Search for your domain">
+<p data-i18n="section.myKey">My Text</p>
 ```
 
-**Price Conversion Logic:**
-- Base prices are always in USD
-- `data-auto-price="2.24"` - Stores USD price
-- When BDT selected: 2.24 × 110 = ৳246
-- Formatting uses `Intl.NumberFormat` with locale
+### JavaScript API
 
-**API:**
 ```javascript
-// Change language
-window.i18n.setLanguage('bn'); // or 'en'
-
-// Change currency
-window.i18n.setCurrency('USD'); // or 'BDT'
-
-// Get translation
-window.i18n.translate('nav.home'); // Returns translated text
-
-// Format price
-window.i18n.formatPrice(2.24); // Returns formatted price in current currency
+window.i18n.setLanguage('bn');          // Switch to Bengali
+window.i18n.setLanguage('en');          // Switch to English
+window.i18n.translate('nav.home');      // Get translated string
 ```
 
-### Default Settings
-- **Language:** English (en)
-- **Currency:** BDT (৳)
-- **Exchange Rate:** 1 USD = 110 BDT
-- **Storage:** localStorage keys `selectedLanguage` and `selectedCurrency`
+### Defaults
 
-## Deployment
+| Setting | Value |
+|---------|-------|
+| Default language | English (`en`) |
+| localStorage key | `selectedLanguage` |
 
-Upload all files to any static hosting provider:
-- **GitHub Pages** - Push to repository and enable Pages in Settings
-- **Netlify** - Drag and drop project folder or connect Git repository
-- **Vercel** - Import project from Git
-- **Any Web Server** - Upload files via FTP/SFTP
+---
 
-No build step needed - this is a static site.
+## Multi-Currency Support (BDT / USD)
 
-## Tech Stack
+Prices on the site display in either **BDT (৳)** or **USD ($)** — switchable from the top bar.
 
-- **HTML5** - Semantic markup
-- **CSS3** - Custom properties, Flexbox, Grid, animations, gradients, media queries
-- **Vanilla JavaScript** - No frameworks or dependencies
-- **Font Awesome 6** - Icon library (loaded via CDN)
+### How it works
+
+1. All base prices are stored in USD via `data-auto-price`
+2. `i18n.js` converts and formats prices when currency changes
+3. BDT uses Bengali numeral formatting (`Intl.NumberFormat('bn-BD')`)
+4. Preference is saved in `localStorage`
+
+### HTML attributes
+
+```html
+<!-- Price amount (base value always in USD) -->
+<span class="cloud-amount" data-auto-price="2.24">2.24</span>
+
+<!-- Currency symbol (auto-updates to $ or ৳) -->
+<span class="cloud-currency" data-currency-symbol>$</span>
+```
+
+### Conversion
+
+| Currency | Format example | Logic |
+|----------|---------------|-------|
+| USD | `$2.24` | Base price as-is |
+| BDT | `৳২৪৬` | price × 110, Bengali numerals |
+
+Exchange rate: **1 USD = 110 BDT**
+
+### JavaScript API
+
+```javascript
+window.i18n.setCurrency('BDT');         // Switch to Taka
+window.i18n.setCurrency('USD');         // Switch to Dollar
+window.i18n.formatPrice(2.24);          // Returns formatted string in current currency
+window.i18n.convertPrice(2.24);         // Returns numeric value in current currency
+```
+
+### Defaults
+
+| Setting | Value |
+|---------|-------|
+| Default currency | BDT (`৳`) |
+| localStorage key | `selectedCurrency` |
+| No auto-detection | Manual switching only |
+
+---
+
+## Pricing Plans
+
+| Plan | Original Price | Current Price | Discount |
+|------|---------------|---------------|----------|
+| Starter Cloud | $8.95/mo | $2.24/mo | 75% off |
+| Plus Cloud | $12.95/mo | $3.89/mo | 70% off |
+| Turbo Cloud | $19.95/mo | $5.99/mo | 70% off |
+| Business Cloud | $29.95/mo | $8.99/mo | 70% off |
+
+---
+
+## Script Loading Order
+
+Scripts load at the end of `<body>`. Order matters — i18n scripts must load before `utils.js`:
+
+```html
+<script src="assets/js/translations.js"></script>  <!-- 1. Strings -->
+<script src="assets/js/i18n.js"></script>           <!-- 2. Logic -->
+<script src="assets/js/header.js"></script>         <!-- 3. Navigation -->
+<script src="assets/js/utils.js"></script>          <!-- 4. Selectors (calls i18n) -->
+<script src="assets/js/pricing.js"></script>        <!-- 5. Plan interactions -->
+<script src="assets/js/animations.js"></script>     <!-- 6. Animations -->
+<script src="assets/js/main.js"></script>           <!-- 7. Init -->
+```
+
+---
+
+## CSS Architecture
+
+Modular CSS loaded via `@import` in `styles.css`:
+
+```
+variables.css   →  Design tokens (colors, fonts, spacing)
+base.css        →  Reset, body, container
+header.css      →  Top bar, nav, mobile drawer, language/currency UI
+hero.css        →  Hero banner, CTA
+pricing.css     →  Cloud cards, comparison table, FAQ, testimonials
+utilities.css   →  Domain search, services, WordPress, support, footer
+```
+
+### Z-Index Scale
+
+```
+1200  Language / currency dropdowns
+1100  Top info bar
+1070  Desktop nav dropdowns
+1060  Header brand & right side
+1050  Main header
+1045  Mobile nav drawer
+1040  Mobile nav overlay
+1001  Service dropdown (pricing page)
+  10  Pricing hero content
+   2  Floating icons
+   1  Percentage icons
+```
+
+---
 
 ## Browser Support
 
-- Chrome 80+
-- Firefox 75+
-- Safari 13+
-- Edge 80+
-- Mobile browsers (iOS Safari, Chrome for Android)
+Chrome 80+, Firefox 75+, Safari 13+, Edge 80+, iOS Safari, Chrome for Android
+
+---
+
+## Deployment
+
+Upload all files as-is to any static host:
+
+- **GitHub Pages** — enable in repository Settings → Pages
+- **Netlify** — drag and drop the folder
+- **Vercel** — import from Git
+- **Any web server** — copy files via FTP / SFTP
+
+No build step. No dependencies to install.
+
+---
 
 ## License
 
-All rights reserved. Copyright 2026 Hostorio.
+All rights reserved. © 2026 Hostorio.
