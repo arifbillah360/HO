@@ -1,69 +1,53 @@
 window.translations = window.translations || { en: {}, bn: {} };
 
 window.translations.en.footer = {
-    description: "Hostorio provides reliable and affordable web hosting solutions for businesses of all sizes.",
-    company: {
-        title: "Company",
-        about: "About Us",
-        careers: "Careers",
-        blog: "Blog",
-        contact: "Contact"
-    },
-    hosting: {
-        title: "Hosting",
-        shared: "Shared Hosting",
-        wordpress: "WordPress Hosting",
-        vps: "VPS Hosting",
-        reseller: "Reseller Hosting"
-    },
-    support: {
-        title: "Support",
-        helpCenter: "Help Center",
-        documentation: "Documentation",
-        status: "Server Status",
-        contactSupport: "Contact Support"
-    },
-    legal: {
-        title: "Legal",
-        terms: "Terms of Service",
+    description: "Hostorio is a popular web hosting services provider. Hostorio provides Shared Hosting, Business Hosting, Reseller Hosting, VPS, and domain Registration-Transfer services.",
+    important: {
+        title: "IMPORTANT",
+        login: "Log In",
+        support: "Support",
+        contact: "Contact Us",
         privacy: "Privacy Policy",
-        refund: "Refund Policy",
-        dmca: "DMCA Policy"
+        terms: "Terms & Conditions"
     },
-    copyright: "© 2024 Hostorio. All rights reserved.",
-    followUs: "Follow Us"
+    quickLinks: {
+        title: "QUICK LINKS",
+        shared: "Shared Hosting",
+        business: "Business Hosting",
+        email: "Business Email",
+        reseller: "Reseller Hosting",
+        vps: "VPS"
+    },
+    contactUs: {
+        title: "CONTACT US"
+    },
+    copyright: "© 2026 Hostorio. All Rights Reserved.",
+    privacyPolicy: "Privacy Policy",
+    termsOfService: "Terms of Service"
 };
 
 window.translations.bn.footer = {
-    description: "Hostorio সব আকারের ব্যবসার জন্য নির্ভরযোগ্য এবং সাশ্রয়ী ওয়েব হোস্টিং সমাধান প্রদান করে।",
-    company: {
-        title: "কোম্পানি",
-        about: "আমাদের সম্পর্কে",
-        careers: "ক্যারিয়ার",
-        blog: "ব্লগ",
-        contact: "যোগাযোগ"
-    },
-    hosting: {
-        title: "হোস্টিং",
-        shared: "শেয়ারড হোস্টিং",
-        wordpress: "ওয়ার্ডপ্রেস হোস্টিং",
-        vps: "ভিপিএস হোস্টিং",
-        reseller: "রিসেলার হোস্টিং"
-    },
-    support: {
-        title: "সাপোর্ট",
-        helpCenter: "হেল্প সেন্টার",
-        documentation: "ডকুমেন্টেশন",
-        status: "সার্ভার স্ট্যাটাস",
-        contactSupport: "সাপোর্টের সাথে যোগাযোগ"
-    },
-    legal: {
-        title: "আইনি",
-        terms: "সেবার শর্তাবলী",
+    description: "Hostorio একটি জনপ্রিয় ওয়েব হোস্টিং সেবা প্রদানকারী। Hostorio শেয়ারড হোস্টিং, বিজনেস হোস্টিং, রিসেলার হোস্টিং, ভিপিএস এবং ডোমেইন রেজিস্ট্রেশন-ট্রান্সফার সেবা প্রদান করে।",
+    important: {
+        title: "গুরুত্বপূর্ণ",
+        login: "লগ ইন",
+        support: "সাপোর্ট",
+        contact: "যোগাযোগ করুন",
         privacy: "গোপনীয়তা নীতি",
-        refund: "রিফান্ড নীতি",
-        dmca: "DMCA নীতি"
+        terms: "শর্তাবলী"
     },
-    copyright: "© ২০২৪ Hostorio। সর্বস্বত্ব সংরক্ষিত।",
-    followUs: "আমাদের ফলো করুন"
+    quickLinks: {
+        title: "দ্রুত লিংক",
+        shared: "শেয়ারড হোস্টিং",
+        business: "বিজনেস হোস্টিং",
+        email: "বিজনেস ইমেইল",
+        reseller: "রিসেলার হোস্টিং",
+        vps: "ভিপিএস"
+    },
+    contactUs: {
+        title: "যোগাযোগ করুন"
+    },
+    copyright: "© ২০২৬ Hostorio। সর্বস্বত্ব সংরক্ষিত।",
+    privacyPolicy: "গোপনীয়তা নীতি",
+    termsOfService: "সেবার শর্তাবলী"
 };
