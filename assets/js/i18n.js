@@ -101,8 +101,8 @@ class I18nManager {
             const key = el.getAttribute('data-i18n');
             if (!key) return;
             const text = this.translate(key);
-            // Use innerHTML only when the translation deliberately contains <br>
-            if (text.includes('<br>')) {
+            // Use innerHTML when the translation contains any HTML tag
+            if (/<[a-z]/i.test(text)) {
                 el.innerHTML = text;
             } else {
                 el.textContent = text;

@@ -1,8 +1,8 @@
 window.translations = window.translations || { en: {}, bn: {} };
 
 window.translations.en.pricing = {
-    mainTitle: "Find the Hosting Plan that's Right for Your Business",
-    subtitle: "We Have the Features and Service You Deserve!",
+    mainTitle: "Choose Your Perfect Hosting Plan",
+    subtitle: "Everything you need to launch, manage, and scale your website.",
     billedMonthly: "Billed Monthly",
     billedAnnually: "Billed Annually",
     saveBadge: "Save 15%!",
@@ -53,8 +53,8 @@ window.translations.en.pricing = {
 };
 
 window.translations.bn.pricing = {
-    mainTitle: "আপনার ব্যবসার জন্য সঠিক হোস্টিং প্ল্যান খুঁজুন",
-    subtitle: "আমাদের কাছে আপনার প্রাপ্য বৈশিষ্ট্য এবং সেবা রয়েছে!",
+    mainTitle: "আপনার পারফেক্ট হোস্টিং প্ল্যান বেছে নিন",
+    subtitle: "আপনার ওয়েবসাইট লঞ্চ, ম্যানেজ ও স্কেল করতে যা যা দরকার সব এখানে।",
     billedMonthly: "মাসিক বিল",
     billedAnnually: "বার্ষিক বিল",
     saveBadge: "১৫% সাশ্রয়!",
