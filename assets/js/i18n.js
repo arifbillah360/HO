@@ -4,250 +4,141 @@
  */
 class I18nManager {
     constructor() {
-        // Default values
         this.defaultLanguage = 'en';
-        this.defaultCurrency = 'BDT';
+        this.defaultCurrency  = 'BDT';
+        this.exchangeRate     = 110;
 
-        // Exchange rate: 1 USD = 110 BDT
-        this.exchangeRate = 110;
+        this.currentLanguage = this._loadPref('selectedLanguage', this.defaultLanguage);
+        this.currentCurrency = this._loadPref('selectedCurrency', this.defaultCurrency);
 
-        // Load saved preferences or use defaults
-        this.currentLanguage = this.loadLanguage();
-        this.currentCurrency = this.loadCurrency();
-
-        // Initialize on DOM ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', () => this.init());
-        } else {
-            this.init();
-        }
+        // Always defer first render so every other script has fully executed first
+        setTimeout(() => this.init(), 0);
     }
 
-    /**
-     * Load language from localStorage
-     */
-    loadLanguage() {
-        try {
-            return localStorage.getItem('selectedLanguage') || this.defaultLanguage;
-        } catch (e) {
-            return this.defaultLanguage;
-        }
+    /* ─────────────────────────── private helpers ─────────────────────────── */
+
+    _loadPref(key, fallback) {
+        try { return localStorage.getItem(key) || fallback; } catch (_) { return fallback; }
     }
 
-    /**
-     * Load currency from localStorage
-     */
-    loadCurrency() {
-        try {
-            return localStorage.getItem('selectedCurrency') || this.defaultCurrency;
-        } catch (e) {
-            return this.defaultCurrency;
-        }
+    _savePref(key, value) {
+        try { localStorage.setItem(key, value); } catch (_) {}
     }
 
-    /**
-     * Initialize i18n system
-     */
+    /* ─────────────────────────── public API ───────────────────────────────── */
+
+    /** Called once on page load */
     init() {
-        // Apply initial language and currency
-        this.applyTranslations();
-        this.applyPrices();
-
-        console.log('I18n initialized:', {
-            language: this.currentLanguage,
-            currency: this.currentCurrency
-        });
+        this._applyAll();
     }
 
-    /**
-     * Get translation by key path (e.g., "nav.home")
-     */
+    /** Return translated string for a dot-path key, e.g. "nav.home" */
     translate(keyPath) {
-        if (!window.translations || !window.translations[this.currentLanguage]) {
-            console.warn('Translations not loaded');
-            return keyPath;
-        }
+        const tree = window.translations && window.translations[this.currentLanguage];
+        if (!tree) return keyPath;
 
-        const keys = keyPath.split('.');
-        let value = window.translations[this.currentLanguage];
+        const result = keyPath.split('.').reduce((node, k) => {
+            return (node && typeof node === 'object' && k in node) ? node[k] : undefined;
+        }, tree);
 
-        for (const key of keys) {
-            if (value && typeof value === 'object' && key in value) {
-                value = value[key];
-            } else {
-                console.warn(`Translation key not found: ${keyPath}`);
-                return keyPath;
-            }
-        }
-
-        return value;
+        // Always return a string — never return an object
+        return (result !== undefined && typeof result === 'string') ? result : keyPath;
     }
 
-    /**
-     * Set language and update DOM
-     */
+    /** Switch language and update every [data-i18n] element */
     setLanguage(lang) {
-        if (lang !== 'en' && lang !== 'bn') {
-            console.error('Unsupported language:', lang);
-            return;
-        }
-
+        if (lang !== 'en' && lang !== 'bn') return;
         this.currentLanguage = lang;
-
-        // Save to localStorage
-        try {
-            localStorage.setItem('selectedLanguage', lang);
-        } catch (e) {
-            console.error('Failed to save language:', e);
-        }
-
-        // Apply translations to DOM
-        this.applyTranslations();
-
-        console.log('Language changed to:', lang);
+        this._savePref('selectedLanguage', lang);
+        this._applyTranslations();
     }
 
-    /**
-     * Set currency and update prices
-     */
+    /** Switch currency and update every [data-auto-price] element */
     setCurrency(currency) {
-        if (currency !== 'USD' && currency !== 'BDT') {
-            console.error('Unsupported currency:', currency);
-            return;
-        }
-
+        if (currency !== 'USD' && currency !== 'BDT') return;
         this.currentCurrency = currency;
-
-        // Save to localStorage
-        try {
-            localStorage.setItem('selectedCurrency', currency);
-        } catch (e) {
-            console.error('Failed to save currency:', e);
-        }
-
-        // Apply prices to DOM
-        this.applyPrices();
-
-        console.log('Currency changed to:', currency);
+        this._savePref('selectedCurrency', currency);
+        this._applyPrices();
     }
 
-    /**
-     * Apply translations to all elements with data-i18n attribute
-     */
-    applyTranslations() {
-        // Translate text content
-        const elements = document.querySelectorAll('[data-i18n]');
-
-        elements.forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            if (key) {
-                const translation = this.translate(key);
-
-                // Check if translation contains HTML (like <br>)
-                if (translation.includes('<br>')) {
-                    element.innerHTML = translation;
-                } else {
-                    element.textContent = translation;
-                }
-            }
-        });
-
-        // Translate placeholders
-        const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
-
-        placeholderElements.forEach(element => {
-            const key = element.getAttribute('data-i18n-placeholder');
-            if (key) {
-                const translation = this.translate(key);
-                element.placeholder = translation;
-            }
-        });
-    }
-
-    /**
-     * Apply prices to all elements with data-auto-price attribute
-     */
-    applyPrices() {
-        // Update price amounts
-        const priceElements = document.querySelectorAll('[data-auto-price]');
-
-        priceElements.forEach(element => {
-            const usdPrice = parseFloat(element.getAttribute('data-auto-price'));
-            if (!isNaN(usdPrice)) {
-                const formattedPrice = this.formatPrice(usdPrice);
-
-                // Check if this is part of cloud-amount or regular price
-                if (element.classList.contains('cloud-amount')) {
-                    // For cloud-amount, only update the number
-                    element.textContent = formattedPrice.replace(/[^0-9০-৯.,]/g, '');
-                } else {
-                    // For regular prices, include currency symbol
-                    element.textContent = formattedPrice;
-                }
-            }
-        });
-
-        // Update currency symbols
-        const symbolElements = document.querySelectorAll('[data-currency-symbol]');
-
-        symbolElements.forEach(element => {
-            if (this.currentCurrency === 'USD') {
-                element.textContent = '$';
-            } else {
-                element.textContent = '৳';
-            }
-        });
-    }
-
-    /**
-     * Convert USD price to current currency
-     */
+    /** Convert a USD price to the current currency (numeric) */
     convertPrice(usdPrice) {
-        if (this.currentCurrency === 'BDT') {
-            return usdPrice * this.exchangeRate;
-        }
-        return usdPrice;
+        return this.currentCurrency === 'BDT' ? usdPrice * this.exchangeRate : usdPrice;
     }
 
     /**
-     * Format price based on current currency
-     * @param {number} usdPrice - Price in USD
-     * @param {string} fromCurrency - Source currency (default: 'USD')
+     * Format a price for display.
+     *   USD → "$2.24"
+     *   BDT → "৳২৪৬"  (Bengali numerals via bn-BD locale)
      */
-    formatPrice(usdPrice, fromCurrency = 'USD') {
-        let price = usdPrice;
-
-        // Convert if needed
-        if (fromCurrency === 'USD' && this.currentCurrency === 'BDT') {
-            price = this.convertPrice(usdPrice);
-        }
+    formatPrice(usdPrice) {
+        const price = this.convertPrice(usdPrice);
 
         if (this.currentCurrency === 'USD') {
-            // USD format: $2.24
             return new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
-                minimumFractionDigits: 2,
-                maximumFractionDigits: 2
+                style: 'currency', currency: 'USD',
+                minimumFractionDigits: 2, maximumFractionDigits: 2
             }).format(price);
-        } else {
-            // BDT format: ৳246 (with Bengali numerals)
-            const roundedPrice = Math.round(price);
-
-            // Format with Bengali locale
-            const formatted = new Intl.NumberFormat('bn-BD', {
-                style: 'currency',
-                currency: 'BDT',
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
-            }).format(roundedPrice);
-
-            return formatted;
         }
+
+        // BDT — round then format with Bengali locale
+        return new Intl.NumberFormat('bn-BD', {
+            style: 'currency', currency: 'BDT',
+            minimumFractionDigits: 0, maximumFractionDigits: 0
+        }).format(Math.round(price));
+    }
+
+    /* ─────────────────────────── DOM updaters ─────────────────────────────── */
+
+    _applyAll() {
+        this._applyTranslations();
+        this._applyPrices();
+    }
+
+    _applyTranslations() {
+        // Text elements
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (!key) return;
+            const text = this.translate(key);
+            // Use innerHTML only when the translation deliberately contains <br>
+            if (text.includes('<br>')) {
+                el.innerHTML = text;
+            } else {
+                el.textContent = text;
+            }
+        });
+
+        // Input placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (!key) return;
+            el.placeholder = this.translate(key);
+        });
+    }
+
+    _applyPrices() {
+        // Price numbers
+        document.querySelectorAll('[data-auto-price]').forEach(el => {
+            const usd = parseFloat(el.getAttribute('data-auto-price'));
+            if (isNaN(usd)) return;
+
+            const formatted = this.formatPrice(usd);
+
+            if (el.classList.contains('cloud-amount')) {
+                // Show only the numeric part (strip currency symbol / letters)
+                el.textContent = formatted.replace(/[^\d০-৯.,]/g, '');
+            } else {
+                el.textContent = formatted;
+            }
+        });
+
+        // Currency symbols
+        document.querySelectorAll('[data-currency-symbol]').forEach(el => {
+            el.textContent = this.currentCurrency === 'USD' ? '$' : '৳';
+        });
     }
 }
 
-// Create global instance
-if (typeof window !== 'undefined') {
-    window.i18n = new I18nManager();
-}
+// Single global instance
+window.i18n = new I18nManager();
