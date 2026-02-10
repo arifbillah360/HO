@@ -55,7 +55,7 @@ const translations = {
                 },
                 business: {
                     name: "Business Cloud",
-                    desc: "Best for heavy-traffic websites"
+                    desc: "Ideal for eCommerce websites"
                 }
             },
 
@@ -73,10 +73,14 @@ const translations = {
                 ram: "RAM",
                 storage: "Storage",
                 unlimitedStorage: "Unlimited NVMe Storage",
+                freeDomain: "FREE Domain Name",
                 freePanel: "FREE cPanel",
                 freeSSL: "FREE & Auto SSL Certificate",
                 freeMigrations: "FREE Website Migrations",
+                freeSecurity: "FREE Security Suite",
+                freeEmailFiltering: "FREE Email Filtering",
                 freeLiteSpeed: "FREE LiteSpeed",
+                freeLiteSpeedTurbo: "FREE LiteSpeed w/Turbo",
                 moneyBack: "30-Day Money-Back",
                 new: "NEW"
             },
@@ -264,7 +268,7 @@ const translations = {
                 },
                 business: {
                     name: "বিজনেস ক্লাউড",
-                    desc: "উচ্চ-ট্রাফিক ওয়েবসাইটের জন্য সেরা"
+                    desc: "ইকমার্স ওয়েবসাইটের জন্য আদর্শ"
                 }
             },
 
@@ -282,10 +286,14 @@ const translations = {
                 ram: "র‍্যাম",
                 storage: "স্টোরেজ",
                 unlimitedStorage: "সীমাহীন NVMe স্টোরেজ",
+                freeDomain: "ফ্রি ডোমেইন নাম",
                 freePanel: "ফ্রি cPanel",
                 freeSSL: "ফ্রি এবং অটো SSL সার্টিফিকেট",
                 freeMigrations: "ফ্রি ওয়েবসাইট মাইগ্রেশন",
+                freeSecurity: "ফ্রি সিকিউরিটি স্যুট",
+                freeEmailFiltering: "ফ্রি ইমেইল ফিল্টারিং",
                 freeLiteSpeed: "ফ্রি LiteSpeed",
+                freeLiteSpeedTurbo: "ফ্রি LiteSpeed w/Turbo",
                 moneyBack: "৩০-দিন মানি-ব্যাক",
                 new: "নতুন"
             },

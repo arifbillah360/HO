@@ -135,6 +135,7 @@ class I18nManager {
      * Apply translations to all elements with data-i18n attribute
      */
     applyTranslations() {
+        // Translate text content
         const elements = document.querySelectorAll('[data-i18n]');
 
         elements.forEach(element => {
@@ -148,6 +149,17 @@ class I18nManager {
                 } else {
                     element.textContent = translation;
                 }
+            }
+        });
+
+        // Translate placeholders
+        const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+
+        placeholderElements.forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            if (key) {
+                const translation = this.translate(key);
+                element.placeholder = translation;
             }
         });
     }
