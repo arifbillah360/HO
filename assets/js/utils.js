@@ -103,6 +103,10 @@
 
     function updateLanguage(language) {
         try { localStorage.setItem('selectedLanguage', language); } catch (e) {}
+        // Call i18n when language changes
+        if (window.i18n) {
+            window.i18n.setLanguage(language);
+        }
     }
 
     function updateCurrency(currency) {
@@ -114,6 +118,10 @@
         currencyOptions.forEach(function(opt) {
             opt.classList.toggle('active', opt.getAttribute('data-currency') === currency);
         });
+        // Call i18n when currency changes
+        if (window.i18n) {
+            window.i18n.setCurrency(currency);
+        }
     }
 
     // Load saved preferences
