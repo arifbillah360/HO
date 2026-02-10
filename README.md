@@ -19,6 +19,8 @@ hostorio/
 │   │   ├── pricing.css           # Pricing cards, plans comparison, FAQ, testimonials
 │   │   └── utilities.css         # Domain search, services, WordPress, support, footer
 │   ├── js/
+│   │   ├── translations.js       # i18n translations (EN/BN)
+│   │   ├── i18n.js               # I18nManager class for language/currency
 │   │   ├── main.js               # Entry point / initialization
 │   │   ├── header.js             # Mobile menu, dropdown navigation
 │   │   ├── utils.js              # Language selector, currency switcher, localStorage
@@ -34,9 +36,6 @@ hostorio/
 │       ├── testimonials/         # Testimonial photos
 │       ├── icons/                # Misc icons
 │       └── backgrounds/          # Background images
-├── .github/
-│   └── workflows/
-│       └── deploy.yml            # GitHub Pages auto-deploy
 ├── .gitignore
 └── README.md
 ```
@@ -117,25 +116,120 @@ Percentage icons:             1
 
 All scripts load at the end of `<body>` for performance:
 
+- **translations.js** - Complete English (en) and Bengali (bn) translations for all text content
+- **i18n.js** - I18nManager class handling language switching, currency conversion, and DOM updates
 - **header.js** - Mobile hamburger menu toggle, desktop/mobile dropdown menus, outside-click closing, resize handling
-- **utils.js** - Language selector with flag updates, currency switcher (desktop buttons + mobile dropdown), localStorage persistence
+- **utils.js** - Language selector with flag updates, currency switcher (desktop buttons + mobile dropdown), localStorage persistence, i18n integration
 - **pricing.js** - Service button selection, mobile service dropdown, billing period toggle
 - **animations.js** - FAQ accordion with expand/collapse, testimonial carousel with keyboard navigation
 
+## Internationalization & Currency Support
+
+### Supported Languages
+- **English (en)** - Default language
+- **Bengali (bn)** - বাংলা
+
+### Supported Currencies
+- **BDT (৳)** - Bangladeshi Taka (Default)
+- **USD ($)** - US Dollar
+
+### Features
+- ✅ **Manual Language Switching** - Click language selector in top bar (English/বাংলা)
+- ✅ **Manual Currency Switching** - Click currency buttons in top bar (BDT/USD)
+- ✅ **Automatic Price Conversion** - USD to BDT conversion (1 USD = 110 BDT)
+- ✅ **Localized Number Formatting** - Bengali numerals for BDT prices (e.g., ৳২৪৬)
+- ✅ **Persistent Settings** - Language and currency preferences saved in localStorage
+- ✅ **No Auto-Detection** - Full manual control, no timezone or location detection
+
+### Usage
+
+#### For Users
+1. **Change Language:**
+   - Click the language selector in the top bar
+   - Choose between "English" or "বাংলা"
+   - All text instantly translates
+
+2. **Change Currency:**
+   - Click the currency button in the top bar (USD/BDT)
+   - All prices automatically convert and format
+   - Currency symbols update
+
+3. **Settings Persist:**
+   - Your language and currency preferences are saved
+   - Refresh the page - settings remain
+
+#### For Developers
+
+**Adding Translations:**
+```javascript
+// Edit assets/js/translations.js
+const translations = {
+    en: {
+        nav: {
+            home: "Home",
+            // Add more keys
+        }
+    },
+    bn: {
+        nav: {
+            home: "হোম",
+            // Add more keys
+        }
+    }
+};
+```
+
+**Using in HTML:**
+```html
+<!-- Text Translation -->
+<h1 data-i18n="hero.title">Fastest Data Center Web Hosting</h1>
+
+<!-- Price Conversion -->
+<span data-auto-price="2.24">$2.24</span>
+
+<!-- Currency Symbol -->
+<span data-currency-symbol>$</span>
+
+<!-- Placeholder Translation -->
+<input data-i18n-placeholder="domain.searchPlaceholder" placeholder="Search for your domain">
+```
+
+**Price Conversion Logic:**
+- Base prices are always in USD
+- `data-auto-price="2.24"` - Stores USD price
+- When BDT selected: 2.24 × 110 = ৳246
+- Formatting uses `Intl.NumberFormat` with locale
+
+**API:**
+```javascript
+// Change language
+window.i18n.setLanguage('bn'); // or 'en'
+
+// Change currency
+window.i18n.setCurrency('USD'); // or 'BDT'
+
+// Get translation
+window.i18n.translate('nav.home'); // Returns translated text
+
+// Format price
+window.i18n.formatPrice(2.24); // Returns formatted price in current currency
+```
+
+### Default Settings
+- **Language:** English (en)
+- **Currency:** BDT (৳)
+- **Exchange Rate:** 1 USD = 110 BDT
+- **Storage:** localStorage keys `selectedLanguage` and `selectedCurrency`
+
 ## Deployment
 
-### GitHub Pages (Automatic)
+Upload all files to any static hosting provider:
+- **GitHub Pages** - Push to repository and enable Pages in Settings
+- **Netlify** - Drag and drop project folder or connect Git repository
+- **Vercel** - Import project from Git
+- **Any Web Server** - Upload files via FTP/SFTP
 
-The repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically deploys to GitHub Pages on push to `main`.
-
-To enable:
-1. Go to repository **Settings** > **Pages**
-2. Set Source to **GitHub Actions**
-3. Push to `main` branch
-
-### Manual Deployment
-
-Upload all files to any static hosting provider (Netlify, Vercel, any web server). No build step needed.
+No build step needed - this is a static site.
 
 ## Tech Stack
 
