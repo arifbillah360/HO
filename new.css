@@ -1,0 +1,985 @@
+/* ===========================
+   EMAIL FEATURES SECTION
+   Using existing stylesheet variables
+   =========================== */
+
+.email-features-section {
+    background: var(--color-white);
+    padding: 100px 0;
+    position: relative;
+}
+
+/* ===========================
+   SECTION HEADER
+   =========================== */
+
+.email-features-header {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-features-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.email-features-subtitle {
+    font-size: 17px;
+    color: var(--color-gray);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* ===========================
+   FEATURES GRID
+   =========================== */
+
+.email-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   FEATURE CARD
+   =========================== */
+
+.email-feature-card {
+    background: var(--color-light-gray);
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.email-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature Icon */
+.email-feature-icon {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-feature-icon svg {
+    width: 80px;
+    height: 80px;
+}
+
+/* Feature Name */
+.email-feature-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+/* Feature Description */
+.email-feature-desc {
+    font-size: 15px;
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 1024px) {
+    .email-features-section {
+        padding: 80px 0;
+    }
+    
+    .email-features-title {
+        font-size: 36px;
+    }
+    
+    .email-features-subtitle {
+        font-size: 16px;
+    }
+    
+    .email-features-grid {
+        gap: 25px;
+    }
+    
+    .email-feature-card {
+        padding: 35px 25px;
+    }
+    
+    .email-feature-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 968px) {
+    .email-features-section {
+        padding: 70px 0;
+    }
+    
+    .email-features-header {
+        margin-bottom: 50px;
+    }
+    
+    .email-features-title {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+    
+    .email-features-subtitle {
+        font-size: 15px;
+    }
+    
+    .email-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .email-feature-card {
+        padding: 32px 24px;
+    }
+    
+    .email-feature-icon {
+        margin-bottom: 20px;
+    }
+    
+    .email-feature-icon svg {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .email-feature-name {
+        font-size: 19px;
+        margin-bottom: 14px;
+    }
+    
+    .email-feature-desc {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .email-features-section {
+        padding: 60px 0;
+    }
+    
+    .email-features-header {
+        margin-bottom: 40px;
+    }
+    
+    .email-features-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    
+    .email-features-subtitle {
+        font-size: 15px;
+    }
+    
+    .email-features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 500px;
+    }
+    
+    .email-feature-card {
+        padding: 35px 28px;
+    }
+    
+    .email-feature-icon {
+        margin-bottom: 18px;
+    }
+    
+    .email-feature-icon svg {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .email-feature-name {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .email-feature-desc {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .email-features-section {
+        padding: 50px 0;
+    }
+    
+    .email-features-header {
+        margin-bottom: 35px;
+    }
+    
+    .email-features-title {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+    
+    .email-features-subtitle {
+        font-size: 14px;
+    }
+    
+    .email-features-grid {
+        gap: 18px;
+    }
+    
+    .email-feature-card {
+        padding: 30px 24px;
+    }
+    
+    .email-feature-icon {
+        margin-bottom: 16px;
+    }
+    
+    .email-feature-icon svg {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .email-feature-name {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .email-feature-desc {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+
+
+
+/* ===========================
+   JELLYFISH SECTION
+   Using existing stylesheet variables
+   =========================== */
+
+.jellyfish-section {
+    background: linear-gradient(135deg, var(--navy-blue) 0%, #01206b 100%);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.jellyfish-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(1, 104, 231, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 120, 0, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* ===========================
+   SECTION HEADER
+   =========================== */
+
+.jellyfish-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.jellyfish-main-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--color-white);
+    line-height: 1.3;
+}
+
+/* ===========================
+   CONTENT AREA
+   =========================== */
+
+.jellyfish-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===========================
+   IMAGE SIDE
+   =========================== */
+
+.jellyfish-image-wrapper {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jellyfish-image {
+    width: 100%;
+    max-width: 576px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* ===========================
+   TEXT SIDE
+   =========================== */
+
+.jellyfish-text {
+    order: 1;
+    color: var(--color-white);
+}
+
+.jellyfish-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.jellyfish-subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.jellyfish-badge {
+    display: inline-block;
+    background: var(--orange-primary);
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* Description */
+.jellyfish-description {
+    margin-bottom: 28px;
+}
+
+.jellyfish-description p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 16px;
+}
+
+.jellyfish-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* Link */
+.jellyfish-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--orange-light);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    transition: all 0.3s ease;
+}
+
+.jellyfish-link:hover {
+    color: var(--orange-bright);
+    gap: 12px;
+}
+
+.jellyfish-link .arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.jellyfish-link:hover .arrow-icon {
+    transform: translateX(4px);
+}
+
+/* ===========================
+   FEATURES LIST
+   =========================== */
+
+.jellyfish-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.jellyfish-features-col {
+    display: flex;
+}
+
+.jellyfish-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.jellyfish-features-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+    line-height: 1.5;
+}
+
+.feature-check {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 1024px) {
+    .jellyfish-section {
+        padding: 80px 0;
+    }
+    
+    .jellyfish-main-title {
+        font-size: 36px;
+    }
+    
+    .jellyfish-content {
+        gap: 50px;
+    }
+    
+    .jellyfish-subtitle {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 968px) {
+    .jellyfish-section {
+        padding: 70px 0;
+    }
+    
+    .jellyfish-header {
+        margin-bottom: 50px;
+    }
+    
+    .jellyfish-main-title {
+        font-size: 32px;
+    }
+    
+    .jellyfish-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .jellyfish-image-wrapper {
+        order: 1;
+    }
+    
+    .jellyfish-text {
+        order: 2;
+    }
+    
+    .jellyfish-subtitle {
+        font-size: 26px;
+    }
+    
+    .jellyfish-description p {
+        font-size: 15px;
+    }
+    
+    .jellyfish-link {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+    
+    .jellyfish-features {
+        gap: 25px;
+    }
+    
+    .jellyfish-features-list li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jellyfish-section {
+        padding: 60px 0;
+    }
+    
+    .jellyfish-header {
+        margin-bottom: 40px;
+    }
+    
+    .jellyfish-main-title {
+        font-size: 28px;
+    }
+    
+    .jellyfish-content {
+        gap: 35px;
+    }
+    
+    .jellyfish-title-wrapper {
+        margin-bottom: 18px;
+    }
+    
+    .jellyfish-subtitle {
+        font-size: 24px;
+    }
+    
+    .jellyfish-badge {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    
+    .jellyfish-description {
+        margin-bottom: 24px;
+    }
+    
+    .jellyfish-description p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 14px;
+    }
+    
+    .jellyfish-link {
+        margin-bottom: 26px;
+    }
+    
+    .jellyfish-features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .jellyfish-features-list {
+        gap: 14px;
+    }
+    
+    .jellyfish-features-list li {
+        font-size: 15px;
+    }
+    
+    .feature-check {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .jellyfish-section {
+        padding: 50px 0;
+    }
+    
+    .jellyfish-header {
+        margin-bottom: 35px;
+    }
+    
+    .jellyfish-main-title {
+        font-size: 24px;
+    }
+    
+    .jellyfish-content {
+        gap: 30px;
+    }
+    
+    .jellyfish-title-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+    
+    .jellyfish-subtitle {
+        font-size: 22px;
+    }
+    
+    .jellyfish-badge {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    
+    .jellyfish-description {
+        margin-bottom: 22px;
+    }
+    
+    .jellyfish-description p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .jellyfish-link {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    
+    .jellyfish-link .arrow-icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .jellyfish-features {
+        gap: 18px;
+    }
+    
+    .jellyfish-features-list {
+        gap: 12px;
+    }
+    
+    .jellyfish-features-list li {
+        font-size: 14px;
+        gap: 10px;
+    }
+    
+    .feature-check {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
+
+
+
+/* ===========================
+   BUSINESS EMAIL SECTION
+   Using existing stylesheet variables
+   =========================== */
+
+.business-email-section {
+    background: var(--color-white);
+    padding: 100px 0;
+    position: relative;
+}
+
+/* ===========================
+   SECTION HEADER
+   =========================== */
+
+.business-email-header {
+    text-align: center;
+    margin-bottom: 70px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.business-email-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.business-email-subtitle {
+    font-size: 17px;
+    color: var(--color-gray);
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* ===========================
+   FEATURES GRID
+   =========================== */
+
+.business-email-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.business-email-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* ===========================
+   FEATURE ITEM
+   =========================== */
+
+.business-feature-item {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* Feature Icon */
+.business-feature-icon {
+    flex-shrink: 0;
+}
+
+.business-feature-icon svg {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+/* Feature Content */
+.business-feature-content {
+    flex: 1;
+}
+
+.business-feature-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.business-feature-desc {
+    font-size: 15px;
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Feature Link */
+.business-feature-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--red-accent);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+}
+
+.business-feature-link:hover {
+    gap: 10px;
+    text-decoration: underline;
+}
+
+.business-feature-link svg {
+    transition: transform 0.3s ease;
+}
+
+.business-feature-link:hover svg {
+    transform: translateX(3px);
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 1024px) {
+    .business-email-section {
+        padding: 80px 0;
+    }
+    
+    .business-email-header {
+        margin-bottom: 60px;
+    }
+    
+    .business-email-title {
+        font-size: 36px;
+    }
+    
+    .business-email-subtitle {
+        font-size: 16px;
+    }
+    
+    .business-email-features {
+        gap: 60px;
+    }
+    
+    .business-email-column {
+        gap: 45px;
+    }
+    
+    .business-feature-item {
+        gap: 20px;
+    }
+    
+    .business-feature-icon svg {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .business-feature-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 968px) {
+    .business-email-section {
+        padding: 70px 0;
+    }
+    
+    .business-email-header {
+        margin-bottom: 50px;
+    }
+    
+    .business-email-title {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+    
+    .business-email-subtitle {
+        font-size: 15px;
+    }
+    
+    .business-email-features {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .business-email-column {
+        gap: 40px;
+    }
+    
+    .business-feature-item {
+        gap: 20px;
+    }
+    
+    .business-feature-icon svg {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .business-feature-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .business-feature-desc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .business-email-section {
+        padding: 60px 0;
+    }
+    
+    .business-email-header {
+        margin-bottom: 45px;
+    }
+    
+    .business-email-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    
+    .business-email-subtitle {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    
+    .business-email-features {
+        gap: 45px;
+    }
+    
+    .business-email-column {
+        gap: 35px;
+    }
+    
+    .business-feature-item {
+        gap: 18px;
+    }
+    
+    .business-feature-icon svg {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .business-feature-title {
+        font-size: 19px;
+    }
+    
+    .business-feature-desc {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .business-feature-link {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .business-email-section {
+        padding: 50px 0;
+    }
+    
+    .business-email-header {
+        margin-bottom: 40px;
+    }
+    
+    .business-email-title {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+    
+    .business-email-subtitle {
+        font-size: 14px;
+    }
+    
+    .business-email-features {
+        gap: 40px;
+    }
+    
+    .business-email-column {
+        gap: 32px;
+    }
+    
+    .business-feature-item {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    
+    .business-feature-icon {
+        margin: 0 auto;
+    }
+    
+    .business-feature-icon svg {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .business-feature-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .business-feature-desc {
+        font-size: 14px;
+    }
+    
+    .business-feature-link {
+        font-size: 14px;
+        justify-content: center;
+    }
+}
