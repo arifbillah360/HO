@@ -6,7 +6,7 @@ class I18nManager {
     constructor() {
         this.defaultLanguage = 'en';
         this.defaultCurrency  = 'BDT';
-        this.exchangeRate     = 110;
+        this.exchangeRate     = 125;
 
         this.currentLanguage = this._loadPref('selectedLanguage', this.defaultLanguage);
         this.currentCurrency = this._loadPref('selectedCurrency', this.defaultCurrency);
