@@ -70,7 +70,8 @@
             // data-yearly-price stores the BDT amount; convert to USD for calculations
             const yearlyBdt  = parseFloat(wrapper.getAttribute('data-yearly-price'));
             if (isNaN(yearlyBdt)) return;
-            const yearlyUsd  = yearlyBdt / 110;
+            const bdtRate    = (window.i18n && window.i18n.exchangeRate) ? window.i18n.exchangeRate : 125;
+            const yearlyUsd  = yearlyBdt / bdtRate;
 
             // Monthly base = yearly / (12 × (1 − discount))  →  yearly / 8.4
             const monthlyUsd = yearlyUsd / (12 * (1 - YEARLY_DISCOUNT));
