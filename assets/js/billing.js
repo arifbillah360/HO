@@ -67,8 +67,10 @@
         const sym = symbol();
 
         document.querySelectorAll('.cloud-pricing[data-yearly-price]').forEach(function (wrapper) {
-            const yearlyUsd  = parseFloat(wrapper.getAttribute('data-yearly-price'));
-            if (isNaN(yearlyUsd)) return;
+            // data-yearly-price stores the BDT amount; convert to USD for calculations
+            const yearlyBdt  = parseFloat(wrapper.getAttribute('data-yearly-price'));
+            if (isNaN(yearlyBdt)) return;
+            const yearlyUsd  = yearlyBdt / 110;
 
             // Monthly base = yearly / (12 × (1 − discount))  →  yearly / 8.4
             const monthlyUsd = yearlyUsd / (12 * (1 - YEARLY_DISCOUNT));
