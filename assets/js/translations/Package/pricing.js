@@ -8,19 +8,19 @@ window.translations.en.pricing = {
     saveBadge: "Save 30%!",
     plans: {
         starter: {
-            name: "Starter Cloud",
+            name: "Starter",
             desc: "Ideal for beginner/personal websites"
         },
         plus: {
-            name: "Plus Cloud",
-            desc: "Best for average-sized websites"
+            name: "Lite Starter",
+            desc: "Ideal for small business websites"
         },
         turbo: {
-            name: "Turbo Cloud",
+            name: "Standard",
             desc: "Most popular package"
         },
         business: {
-            name: "Business Cloud",
+            name: "Advanced",
             desc: "Ideal for eCommerce websites"
         }
     },
@@ -30,27 +30,18 @@ window.translations.en.pricing = {
     orderNow: "Order Now",
     save30: "Save 30%",
     features: {
-        website: "Website",
-        websites: "Websites",
-        unlimitedWebsites: "Unlimited Websites",
-        visitsMonthly: "Visits Monthly",
-        ram: "RAM",
-        storage: "Storage",
-        unlimitedStorage: "Unlimited NVMe Storage",
-        freeDomain: "FREE Domain Name",
-        freePanel: "FREE cPanel",
-        freeSSL: "FREE & Auto SSL Certificate",
-        freeMigrations: "FREE Website Migrations",
-        freeSecurity: "FREE Security Suite",
-        freeEmailFiltering: "FREE Email Filtering",
-        freeLiteSpeed: "FREE LiteSpeed",
-        freeLiteSpeedTurbo: "FREE LiteSpeed w/Turbo",
-        moneyBack: "30-Day Money-Back",
-        new: "NEW"
-    },
-    save: {
-        save70: "Save 70%",
-        save75: "Save 75%"
+        nvmeStorage: "NVMe Storage",
+        domain: "Domain",
+        bandwidth: "Bandwidth",
+        subDomain: "Sub Domain",
+        emailAccounts: "Email Accounts",
+        databases: "Databases",
+        cpuRamEp: "CPU Core / RAM / EP",
+        connectivity: "Connectivity",
+        freeSSL: "Free SSL Certificate",
+        liteSpeedServer: "LiteSpeed Server",
+        cpanelPanel: "cPanel",
+        unlimited: "Unlimited"
     }
 };
 
@@ -62,19 +53,19 @@ window.translations.bn.pricing = {
     saveBadge: "৩০% সাশ্রয়!",
     plans: {
         starter: {
-            name: "স্টার্টার ক্লাউড",
+            name: "স্টার্টার",
             desc: "নতুন/ব্যক্তিগত ওয়েবসাইটের জন্য আদর্শ"
         },
         plus: {
-            name: "প্লাস ক্লাউড",
-            desc: "গড় আকারের ওয়েবসাইটের জন্য সেরা"
+            name: "লাইট স্টার্টার",
+            desc: "ছোট ব্যবসায়িক ওয়েবসাইটের জন্য আদর্শ"
         },
         turbo: {
-            name: "টার্বো ক্লাউড",
+            name: "স্ট্যান্ডার্ড",
             desc: "সবচেয়ে জনপ্রিয় প্যাকেজ"
         },
         business: {
-            name: "বিজনেস ক্লাউড",
+            name: "অ্যাডভান্সড",
             desc: "ইকমার্স ওয়েবসাইটের জন্য আদর্শ"
         }
     },
@@ -84,26 +75,17 @@ window.translations.bn.pricing = {
     orderNow: "এখনই অর্ডার করুন",
     save30: "৩০% সাশ্রয়",
     features: {
-        website: "ওয়েবসাইট",
-        websites: "ওয়েবসাইট",
-        unlimitedWebsites: "সীমাহীন ওয়েবসাইট",
-        visitsMonthly: "মাসিক ভিজিট",
-        ram: "র‍্যাম",
-        storage: "স্টোরেজ",
-        unlimitedStorage: "সীমাহীন NVMe স্টোরেজ",
-        freeDomain: "ফ্রি ডোমেইন নাম",
-        freePanel: "ফ্রি cPanel",
-        freeSSL: "ফ্রি এবং অটো SSL সার্টিফিকেট",
-        freeMigrations: "ফ্রি ওয়েবসাইট মাইগ্রেশন",
-        freeSecurity: "ফ্রি সিকিউরিটি স্যুট",
-        freeEmailFiltering: "ফ্রি ইমেইল ফিল্টারিং",
-        freeLiteSpeed: "ফ্রি LiteSpeed",
-        freeLiteSpeedTurbo: "ফ্রি LiteSpeed w/Turbo",
-        moneyBack: "৩০-দিন মানি-ব্যাক",
-        new: "নতুন"
-    },
-    save: {
-        save70: "৭০% সাশ্রয়",
-        save75: "৭৫% সাশ্রয়"
+        nvmeStorage: "NVMe স্টোরেজ",
+        domain: "ডোমেইন",
+        bandwidth: "ব্যান্ডউইথ",
+        subDomain: "সাবডোমেইন",
+        emailAccounts: "ইমেইল অ্যাকাউন্ট",
+        databases: "ডেটাবেজ",
+        cpuRamEp: "CPU কোর / RAM / EP",
+        connectivity: "কানেক্টিভিটি",
+        freeSSL: "ফ্রি SSL সার্টিফিকেট",
+        liteSpeedServer: "LiteSpeed সার্ভার",
+        cpanelPanel: "cPanel",
+        unlimited: "সীমাহীন"
     }
 };
