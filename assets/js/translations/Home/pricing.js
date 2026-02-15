@@ -5,7 +5,7 @@ window.translations.en.pricing = {
     subtitle: "We Have the Features and Service You Deserve!",
     billedMonthly: "Billed Monthly",
     billedAnnually: "Billed Annually",
-    saveBadge: "Save 15%!",
+    saveBadge: "Save 30%!",
     plans: {
         starter: {
             name: "Starter",
@@ -28,6 +28,7 @@ window.translations.en.pricing = {
     perYear: "/yr",
     mostPopular: "Most Popular",
     orderNow: "Order Now",
+    save30: "Save 30%",
     features: {
         nvmeStorage: "NVMe Storage",
         domain: "Domain",
@@ -49,7 +50,7 @@ window.translations.bn.pricing = {
     subtitle: "আমাদের কাছে আপনার প্রাপ্য বৈশিষ্ট্য এবং সেবা রয়েছে!",
     billedMonthly: "মাসিক বিল",
     billedAnnually: "বার্ষিক বিল",
-    saveBadge: "১৫% সাশ্রয়!",
+    saveBadge: "৩০% সাশ্রয়!",
     plans: {
         starter: {
             name: "স্টার্টার",
@@ -72,6 +73,7 @@ window.translations.bn.pricing = {
     perYear: "/বছর",
     mostPopular: "সবচেয়ে জনপ্রিয়",
     orderNow: "এখনই অর্ডার করুন",
+    save30: "৩০% সাশ্রয়",
     features: {
         nvmeStorage: "NVMe স্টোরেজ",
         domain: "ডোমেইন",

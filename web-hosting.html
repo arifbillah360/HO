@@ -351,13 +351,13 @@
 
                 <!-- Billing Toggle -->
                 <div class="billing-toggle">
-                    <span class="toggle-label">Billed Monthly</span>
+                    <span class="toggle-label" data-i18n="pricing.billedMonthly">Billed Monthly</span>
                     <label class="toggle-switch">
-                        <input type="checkbox" id="billingToggle">
+                        <input type="checkbox" id="billingToggle" checked>
                         <span class="toggle-slider"></span>
                     </label>
-                    <span class="toggle-label active">Billed Annually</span>
-                    <span class="save-badge">Save 15%!</span>
+                    <span class="toggle-label active" data-i18n="pricing.billedAnnually">Billed Annually</span>
+                    <span class="save-badge" data-i18n="pricing.saveBadge">Save 30%!</span>
                 </div>
             </div>
 
@@ -377,10 +377,14 @@
                     <h3 class="cloud-plan-name" data-i18n="pricing.plans.starter.name">Starter</h3>
                     <p class="cloud-plan-desc" data-i18n="pricing.plans.starter.desc">Ideal for beginner/personal websites</p>
 
-                    <div class="cloud-pricing">
+                    <div class="cloud-pricing" data-yearly-price="27.27">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>$</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
+                        </div>
                         <div class="cloud-price-current">
                             <span class="cloud-currency" data-currency-symbol>$</span>
-                            <span class="cloud-amount" data-auto-price="27.27">27.27</span>
+                            <span class="cloud-amount">27.27</span>
                             <span class="cloud-period" data-i18n="pricing.perYear">/yr</span>
                         </div>
                     </div>
@@ -478,10 +482,14 @@
                     <h3 class="cloud-plan-name" data-i18n="pricing.plans.plus.name">Lite Starter</h3>
                     <p class="cloud-plan-desc" data-i18n="pricing.plans.plus.desc">Ideal for small business websites</p>
 
-                    <div class="cloud-pricing">
+                    <div class="cloud-pricing" data-yearly-price="38.18">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>$</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
+                        </div>
                         <div class="cloud-price-current">
                             <span class="cloud-currency" data-currency-symbol>$</span>
-                            <span class="cloud-amount" data-auto-price="38.18">38.18</span>
+                            <span class="cloud-amount">38.18</span>
                             <span class="cloud-period" data-i18n="pricing.perYear">/yr</span>
                         </div>
                     </div>
@@ -581,10 +589,14 @@
                     <h3 class="cloud-plan-name" data-i18n="pricing.plans.turbo.name">Standard</h3>
                     <p class="cloud-plan-desc" data-i18n="pricing.plans.turbo.desc">Most popular package</p>
 
-                    <div class="cloud-pricing">
+                    <div class="cloud-pricing" data-yearly-price="54.55">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>$</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
+                        </div>
                         <div class="cloud-price-current">
                             <span class="cloud-currency" data-currency-symbol>$</span>
-                            <span class="cloud-amount" data-auto-price="54.55">54.55</span>
+                            <span class="cloud-amount">54.55</span>
                             <span class="cloud-period" data-i18n="pricing.perYear">/yr</span>
                         </div>
                     </div>
@@ -682,10 +694,14 @@
                     <h3 class="cloud-plan-name" data-i18n="pricing.plans.business.name">Advanced</h3>
                     <p class="cloud-plan-desc" data-i18n="pricing.plans.business.desc">Ideal for eCommerce websites</p>
 
-                    <div class="cloud-pricing">
+                    <div class="cloud-pricing" data-yearly-price="109.09">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>$</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
+                        </div>
                         <div class="cloud-price-current">
                             <span class="cloud-currency" data-currency-symbol>$</span>
-                            <span class="cloud-amount" data-auto-price="109.09">109.09</span>
+                            <span class="cloud-amount">109.09</span>
                             <span class="cloud-period" data-i18n="pricing.perYear">/yr</span>
                         </div>
                     </div>
@@ -1837,6 +1853,7 @@
 <!-- Other scripts -->
 <script src="assets/js/header.js"></script>
 <script src="assets/js/utils.js"></script>
+<script src="assets/js/billing.js"></script>
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/main.js"></script>
 

@@ -5,7 +5,7 @@ window.translations.en.pricing = {
     subtitle: "Everything you need to launch, manage, and scale your website.",
     billedMonthly: "Billed Monthly",
     billedAnnually: "Billed Annually",
-    saveBadge: "Save 15%!",
+    saveBadge: "Save 30%!",
     plans: {
         starter: {
             name: "Starter Cloud",
@@ -25,8 +25,10 @@ window.translations.en.pricing = {
         }
     },
     perMonth: "/mo",
+    perYear: "/yr",
     mostPopular: "Most Popular",
     orderNow: "Order Now",
+    save30: "Save 30%",
     features: {
         website: "Website",
         websites: "Websites",
@@ -57,7 +59,7 @@ window.translations.bn.pricing = {
     subtitle: "আপনার ওয়েবসাইট লঞ্চ, ম্যানেজ ও স্কেল করতে যা যা দরকার সব এখানে।",
     billedMonthly: "মাসিক বিল",
     billedAnnually: "বার্ষিক বিল",
-    saveBadge: "১৫% সাশ্রয়!",
+    saveBadge: "৩০% সাশ্রয়!",
     plans: {
         starter: {
             name: "স্টার্টার ক্লাউড",
@@ -77,8 +79,10 @@ window.translations.bn.pricing = {
         }
     },
     perMonth: "/মাস",
+    perYear: "/বছর",
     mostPopular: "সবচেয়ে জনপ্রিয়",
     orderNow: "এখনই অর্ডার করুন",
+    save30: "৩০% সাশ্রয়",
     features: {
         website: "ওয়েবসাইট",
         websites: "ওয়েবসাইট",
