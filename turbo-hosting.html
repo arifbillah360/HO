@@ -346,18 +346,18 @@
 
             <!-- Section Header -->
             <div class="pricing-header">
-                <h2 class="pricing-main-title" data-i18n="pricing.mainTitle">Choose Your Perfect Hosting Plan</h2>
-                <p class="pricing-subtitle" data-i18n="pricing.subtitle">Everything you need to launch, manage, and scale your website.</p>
+                <h2 class="pricing-main-title" data-i18n="turboPricing.mainTitle">Choose Your Turbo Web Hosting Plan</h2>
+                <p class="pricing-subtitle" data-i18n="turboPricing.subtitle">Everything you need to launch, manage, and scale your website.</p>
 
                 <!-- Billing Toggle -->
                 <div class="billing-toggle">
-                    <span class="toggle-label">Billed Monthly</span>
+                    <span class="toggle-label" data-i18n="turboPricing.billedMonthly">Billed Monthly</span>
                     <label class="toggle-switch">
-                        <input type="checkbox" id="billingToggle">
+                        <input type="checkbox" id="billingToggle" checked>
                         <span class="toggle-slider"></span>
                     </label>
-                    <span class="toggle-label active">Billed Annually</span>
-                    <span class="save-badge">Save 15%!</span>
+                    <span class="toggle-label active" data-i18n="turboPricing.billedAnnually">Billed Annually</span>
+                    <span class="save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
                 </div>
             </div>
 
@@ -368,21 +368,24 @@
             <!-- Pricing Cards Grid -->
             <div class="cloud-pricing-cards">
 
-                <!-- Card 1 - Starter Cloud -->
+                <!-- Card 1 - Turbo Plus -->
                 <div class="cloud-card">
                     <div class="cloud-icon">
-                        <img src="assets/images/pricing/data-server.svg" alt="Starter Cloud">
+                        <img src="assets/images/pricing/data-server.svg" alt="Turbo Plus">
                     </div>
 
-                    <h3 class="cloud-plan-name">Starter Cloud</h3>
-                    <p class="cloud-plan-desc">Ideal for beginner/personal websites</p>
+                    <h3 class="cloud-plan-name" data-i18n="turboPricing.plans.turboPlus.name">Turbo Plus</h3>
+                    <p class="cloud-plan-desc" data-i18n="turboPricing.plans.turboPlus.desc">Start your website or WordPress journey here.</p>
 
-                    <div class="cloud-pricing">
-                        <div class="cloud-price-original">$8.95 <span class="cloud-save-badge">Save 75%</span></div>
+                    <div class="cloud-pricing" data-yearly-price="9.08">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>$</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
+                        </div>
                         <div class="cloud-price-current">
-                            <span class="cloud-currency">$</span>
-                            <span class="cloud-amount">2.24</span>
-                            <span class="cloud-period">/mo</span>
+                            <span class="cloud-currency" data-currency-symbol>$</span>
+                            <span class="cloud-amount">9.08</span>
+                            <span class="cloud-period" data-i18n="turboPricing.perMonth">/mo</span>
                         </div>
                     </div>
 
@@ -392,175 +395,97 @@
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>1</strong> Website</span>
+                            <span><strong>75 GB</strong> <span data-i18n="turboPricing.features.nvmeSpace">NVMe Space</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>~10,000</strong> Visits Monthly</span>
+                            <span><strong>250 GB</strong> <span data-i18n="turboPricing.features.bandwidth">Bandwidth</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>1 GB</strong> RAM</span>
+                            <span><strong>25</strong> <span data-i18n="turboPricing.features.hostWebsite">Host Website</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> NVMe Storage <span class="feature-badge new">NEW</span></span>
+                            <span data-i18n="turboPricing.features.unlimitedSubDomain">Unlimited Sub Domain</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> cPanel</span>
+                            <span data-i18n="turboPricing.features.unlimitedDatabase">Unlimited Database</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
+                            <span data-i18n="turboPricing.features.unlimitedEmail">Unlimited Email</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Website Migrations</span>
+                            <span><strong>3</strong> <span data-i18n="turboPricing.features.coreCpu">Core CPU</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> LiteSpeed</span>
+                            <span><strong>3</strong> <span data-i18n="turboPricing.features.gbRam">GB RAM</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>30-Day</strong> Money-Back</span>
+                            <span><strong>75</strong> <span data-i18n="turboPricing.features.entryProcess">Entry Process</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>20</strong> <span data-i18n="turboPricing.features.mbIO">MB I/O</span></span>
                         </li>
                     </ul>
 
-                    <button class="cloud-order-btn">Order Now</button>
+                    <button class="cloud-order-btn" data-i18n="turboPricing.orderNow">Order Now</button>
 
                 </div>
 
-                <!-- Card 2 - Plus Cloud -->
-                <div class="cloud-card">
-                    <div class="cloud-icon">
-                        <img src="assets/images/pricing/data-server.svg" alt="Plus Cloud">
-                    </div>
-
-                    <h3 class="cloud-plan-name">Plus Cloud</h3>
-                    <p class="cloud-plan-desc">Best for average-sized websites</p>
-
-                    <div class="cloud-pricing">
-                        <div class="cloud-price-original">$12.95 <span class="cloud-save-badge">Save 70%</span></div>
-                        <div class="cloud-price-current">
-                            <span class="cloud-currency">$</span>
-                            <span class="cloud-amount">3.89</span>
-                            <span class="cloud-period">/mo</span>
-                        </div>
-                    </div>
-
-                    <ul class="cloud-features">
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>7</strong> Websites</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>~25,000</strong> Visits Monthly</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>2 GB</strong> RAM</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>Unlimited</strong> NVMe Storage <span class="feature-badge new">NEW</span></span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> cPanel</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> Website Migrations</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> LiteSpeed</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>30-Day</strong> Money-Back</span>
-                        </li>
-                    </ul>
-
-                    <button class="cloud-order-btn">Order Now</button>
-
-                </div>
-
-                <!-- Card 3 - Turbo Cloud (Most Popular) -->
+                <!-- Card 2 - Turbo Power (Recommended) -->
                 <div class="cloud-card popular">
-                    <div class="cloud-popular-badge">Most Popular</div>
+                    <div class="cloud-popular-badge" data-i18n="turboPricing.recommended">Recommended</div>
 
                     <div class="cloud-icon">
-                        <img src="assets/images/pricing/data-server.svg" alt="Turbo Cloud">
+                        <img src="assets/images/pricing/data-server.svg" alt="Turbo Power">
                     </div>
 
-                    <h3 class="cloud-plan-name">Turbo Cloud</h3>
-                    <p class="cloud-plan-desc">Most popular package</p>
+                    <h3 class="cloud-plan-name" data-i18n="turboPricing.plans.turboPower.name">Turbo Power</h3>
+                    <p class="cloud-plan-desc" data-i18n="turboPricing.plans.turboPower.desc">That little extra as your website grows, business or personal.</p>
 
-                    <div class="cloud-pricing">
-                        <div class="cloud-price-original">$19.95 <span class="cloud-save-badge">Save 70%</span></div>
+                    <div class="cloud-pricing" data-yearly-price="10.90">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>$</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
+                        </div>
                         <div class="cloud-price-current">
-                            <span class="cloud-currency">$</span>
-                            <span class="cloud-amount">5.99</span>
-                            <span class="cloud-period">/mo</span>
+                            <span class="cloud-currency" data-currency-symbol>$</span>
+                            <span class="cloud-amount">10.90</span>
+                            <span class="cloud-period" data-i18n="turboPricing.perMonth">/mo</span>
                         </div>
                     </div>
 
@@ -570,99 +495,95 @@
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> Websites</span>
+                            <span><strong>100 GB</strong> <span data-i18n="turboPricing.features.nvmeSpace">NVMe Space</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>~50,000</strong> Visits Monthly</span>
+                            <span><strong>500 GB</strong> <span data-i18n="turboPricing.features.bandwidth">Bandwidth</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>3 GB</strong> RAM</span>
+                            <span><strong>50</strong> <span data-i18n="turboPricing.features.hostWebsite">Host Website</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> NVMe Storage</span>
+                            <span data-i18n="turboPricing.features.unlimitedSubDomain">Unlimited Sub Domain</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Domain Name</span>
+                            <span data-i18n="turboPricing.features.unlimitedDatabase">Unlimited Database</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> cPanel</span>
+                            <span data-i18n="turboPricing.features.unlimitedEmail">Unlimited Email</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
+                            <span><strong>4</strong> <span data-i18n="turboPricing.features.coreCpu">Core CPU</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Website Migrations</span>
+                            <span><strong>4</strong> <span data-i18n="turboPricing.features.gbRam">GB RAM</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Security Suite</span>
+                            <span><strong>100</strong> <span data-i18n="turboPricing.features.entryProcess">Entry Process</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> LiteSpeed w/Turbo</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>30-Day</strong> Money-Back</span>
+                            <span><strong>30</strong> <span data-i18n="turboPricing.features.mbIO">MB I/O</span></span>
                         </li>
                     </ul>
 
-                    <button class="cloud-order-btn">Order Now</button>
+                    <button class="cloud-order-btn" data-i18n="turboPricing.orderNow">Order Now</button>
 
                 </div>
 
-                <!-- Card 4 - Business Cloud -->
+                <!-- Card 3 - Turbo Enterprise -->
                 <div class="cloud-card">
                     <div class="cloud-icon">
-                        <img src="assets/images/pricing/data-server.svg" alt="Business Cloud">
+                        <img src="assets/images/pricing/data-server.svg" alt="Turbo Enterprise">
                     </div>
 
-                    <h3 class="cloud-plan-name">Business Cloud</h3>
-                    <p class="cloud-plan-desc">Ideal for eCommerce websites</p>
+                    <h3 class="cloud-plan-name" data-i18n="turboPricing.plans.turboEnterprise.name">Turbo Enterprise</h3>
+                    <p class="cloud-plan-desc" data-i18n="turboPricing.plans.turboEnterprise.desc">Go further with Rapid for more power and resources.</p>
 
-                    <div class="cloud-pricing">
-                        <div class="cloud-price-original">$29.95 <span class="cloud-save-badge">Save 70%</span></div>
+                    <div class="cloud-pricing" data-yearly-price="13.63">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>$</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
+                        </div>
                         <div class="cloud-price-current">
-                            <span class="cloud-currency">$</span>
-                            <span class="cloud-amount">8.99</span>
-                            <span class="cloud-period">/mo</span>
+                            <span class="cloud-currency" data-currency-symbol>$</span>
+                            <span class="cloud-amount">13.63</span>
+                            <span class="cloud-period" data-i18n="turboPricing.perMonth">/mo</span>
                         </div>
                     </div>
 
@@ -672,88 +593,172 @@
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> Websites</span>
+                            <span><strong>125 GB</strong> <span data-i18n="turboPricing.features.nvmeSpace">NVMe Space</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>~100,000</strong> Visits Monthly</span>
+                            <span><strong>1000 GB</strong> <span data-i18n="turboPricing.features.bandwidth">Bandwidth</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>4 GB</strong> RAM</span>
+                            <span><strong>75</strong> <span data-i18n="turboPricing.features.hostWebsite">Host Website</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> NVMe Storage</span>
+                            <span data-i18n="turboPricing.features.unlimitedSubDomain">Unlimited Sub Domain</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Domain Name</span>
+                            <span data-i18n="turboPricing.features.unlimitedDatabase">Unlimited Database</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> cPanel</span>
+                            <span data-i18n="turboPricing.features.unlimitedEmail">Unlimited Email</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
+                            <span><strong>6</strong> <span data-i18n="turboPricing.features.coreCpu">Core CPU</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Website Migrations</span>
+                            <span><strong>6</strong> <span data-i18n="turboPricing.features.gbRam">GB RAM</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Security Suite</span>
+                            <span><strong>125</strong> <span data-i18n="turboPricing.features.entryProcess">Entry Process</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Email Filtering</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> LiteSpeed w/Turbo</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>30-Day</strong> Money-Back</span>
+                            <span><strong>50</strong> <span data-i18n="turboPricing.features.mbIO">MB I/O</span></span>
                         </li>
                     </ul>
 
-                    <button class="cloud-order-btn">Order Now</button>
+                    <button class="cloud-order-btn" data-i18n="turboPricing.orderNow">Order Now</button>
+
+                </div>
+
+                <!-- Card 4 - Turbo Rapid -->
+                <div class="cloud-card">
+                    <div class="cloud-icon">
+                        <img src="assets/images/pricing/data-server.svg" alt="Turbo Rapid">
+                    </div>
+
+                    <h3 class="cloud-plan-name" data-i18n="turboPricing.plans.turboRapid.name">Turbo Rapid</h3>
+                    <p class="cloud-plan-desc" data-i18n="turboPricing.plans.turboRapid.desc">Going beyond with expanded resources for thriving websites.</p>
+
+                    <div class="cloud-pricing" data-yearly-price="16.35">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>$</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
+                        </div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency" data-currency-symbol>$</span>
+                            <span class="cloud-amount">16.35</span>
+                            <span class="cloud-period" data-i18n="turboPricing.perMonth">/mo</span>
+                        </div>
+                    </div>
+
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>150 GB</strong> <span data-i18n="turboPricing.features.nvmeSpace">NVMe Space</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>1000 GB</strong> <span data-i18n="turboPricing.features.bandwidth">Bandwidth</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>100</strong> <span data-i18n="turboPricing.features.hostWebsite">Host Website</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedSubDomain">Unlimited Sub Domain</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedDatabase">Unlimited Database</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedEmail">Unlimited Email</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>8</strong> <span data-i18n="turboPricing.features.coreCpu">Core CPU</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>8</strong> <span data-i18n="turboPricing.features.gbRam">GB RAM</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>150</strong> <span data-i18n="turboPricing.features.entryProcess">Entry Process</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>50</strong> <span data-i18n="turboPricing.features.mbIO">MB I/O</span></span>
+                        </li>
+                    </ul>
+
+                    <button class="cloud-order-btn" data-i18n="turboPricing.orderNow">Order Now</button>
 
                 </div>
 
@@ -1750,7 +1755,7 @@
 <script src="assets/js/translations.js"></script>
 <script src="assets/js/translations/header-footer/header.js"></script>
 <script src="assets/js/translations/Package/hero.js"></script>
-<script src="assets/js/translations/Package/pricing.js"></script>
+<script src="assets/js/translations/turbo-hosting/pricing.js"></script>
 <script src="assets/js/translations/Package/features.js"></script>
 <script src="assets/js/translations/Package/comparison.js"></script>
 <script src="assets/js/translations/Package/testimonial.js"></script>
@@ -1761,6 +1766,7 @@
 <script src="assets/js/i18n.js"></script>
 <!-- Other scripts -->
 <script src="assets/js/header.js"></script>
+<script src="assets/js/billing.js"></script>
 <script src="assets/js/utils.js"></script>
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/main.js"></script>
