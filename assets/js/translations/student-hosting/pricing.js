@@ -1,0 +1,87 @@
+window.translations = window.translations || { en: {}, bn: {} };
+
+window.translations.en.studentPricing = {
+    mainTitle: "Our Special Student Web Hosting Plans",
+    subtitle: "Affordable hosting plans designed specially for students.",
+    billedMonthly: "Billed Monthly",
+    billedAnnually: "Billed Annually",
+    saveBadge: "Save 30%!",
+    mostPopular: "Most Popular",
+    orderNow: "Order Now",
+    perYear: "/yr",
+    perMonth: "/mo",
+    plans: {
+        plan1: {
+            name: "SH Plan 1",
+            desc: "1 GB SSD Disk | 5 GB Monthly Bandwidth"
+        },
+        plan2: {
+            name: "SH Plan 2",
+            desc: "2 GB SSD Disk Space | 15 GB Monthly Bandwidth"
+        },
+        plan3: {
+            name: "SH Plan 3",
+            desc: "3 GB SSD Disk Space | 25 GB Monthly Bandwidth"
+        }
+    },
+    features: {
+        ssdDiskSpace: "SSD Disk Space",
+        website: "Website",
+        monthlyBandwidth: "Monthly Bandwidth",
+        phpMysqlSupport: "PHP, MySQL, Perl Support",
+        mysqlDatabase: "MySQL Database",
+        mysqlDatabases: "MySQL Databases",
+        phpMyAdmin: "phpMyAdmin",
+        emailAccounts: "E-mail Accounts",
+        subdomains: "Subdomains",
+        ftpAccount: "FTP Account",
+        ftpAccounts: "FTP Accounts",
+        dnsZoneEditor: "DNS Zone Editor",
+        softaculous: "Softaculous One-Click Installer",
+        limited: "Limited",
+        unlimited: "Unlimited"
+    }
+};
+
+window.translations.bn.studentPricing = {
+    mainTitle: "আমাদের বিশেষ স্টুডেন্ট ওয়েব হোস্টিং প্ল্যান",
+    subtitle: "শিক্ষার্থীদের জন্য বিশেষভাবে তৈরি সাশ্রয়ী হোস্টিং প্ল্যান।",
+    billedMonthly: "মাসিক বিল",
+    billedAnnually: "বার্ষিক বিল",
+    saveBadge: "৩০% সাশ্রয়!",
+    mostPopular: "সবচেয়ে জনপ্রিয়",
+    orderNow: "এখনই অর্ডার করুন",
+    perYear: "/বছর",
+    perMonth: "/মাস",
+    plans: {
+        plan1: {
+            name: "SH প্ল্যান ১",
+            desc: "১ GB SSD ডিস্ক | ৫ GB মাসিক ব্যান্ডউইথ"
+        },
+        plan2: {
+            name: "SH প্ল্যান ২",
+            desc: "২ GB SSD ডিস্ক স্পেস | ১৫ GB মাসিক ব্যান্ডউইথ"
+        },
+        plan3: {
+            name: "SH প্ল্যান ৩",
+            desc: "৩ GB SSD ডিস্ক স্পেস | ২৫ GB মাসিক ব্যান্ডউইথ"
+        }
+    },
+    features: {
+        ssdDiskSpace: "SSD ডিস্ক স্পেস",
+        website: "ওয়েবসাইট",
+        monthlyBandwidth: "মাসিক ব্যান্ডউইথ",
+        phpMysqlSupport: "PHP, MySQL, Perl সাপোর্ট",
+        mysqlDatabase: "MySQL ডেটাবেস",
+        mysqlDatabases: "MySQL ডেটাবেস",
+        phpMyAdmin: "phpMyAdmin",
+        emailAccounts: "ই-মেইল অ্যাকাউন্ট",
+        subdomains: "সাবডোমেইন",
+        ftpAccount: "FTP অ্যাকাউন্ট",
+        ftpAccounts: "FTP অ্যাকাউন্ট",
+        dnsZoneEditor: "DNS জোন এডিটর",
+        softaculous: "Softaculous ওয়ান-ক্লিক ইন্সটলার",
+        limited: "সীমিত",
+        unlimited: "সীমাহীন"
+    }
+};
