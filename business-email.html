@@ -346,18 +346,18 @@
 
             <!-- Section Header -->
             <div class="pricing-header">
-                <h2 class="pricing-main-title" data-i18n="pricing.mainTitle">Choose Your Perfect Hosting Plan</h2>
-                <p class="pricing-subtitle" data-i18n="pricing.subtitle">Everything you need to launch, manage, and scale your website.</p>
+                <h2 class="pricing-main-title" data-i18n="emailPricing.mainTitle">Choose Your Business Email Plan</h2>
+                <p class="pricing-subtitle" data-i18n="emailPricing.subtitle">Professional email hosting to keep your business communication secure and reliable.</p>
 
                 <!-- Billing Toggle -->
                 <div class="billing-toggle">
-                    <span class="toggle-label">Billed Monthly</span>
+                    <span class="toggle-label" data-i18n="emailPricing.billedMonthly">Billed Monthly</span>
                     <label class="toggle-switch">
-                        <input type="checkbox" id="billingToggle">
+                        <input type="checkbox" id="billingToggle" checked>
                         <span class="toggle-slider"></span>
                     </label>
-                    <span class="toggle-label active">Billed Annually</span>
-                    <span class="save-badge">Save 15%!</span>
+                    <span class="toggle-label active" data-i18n="emailPricing.billedAnnually">Billed Annually</span>
+                    <span class="save-badge" data-i18n="emailPricing.saveBadge">Save 30%!</span>
                 </div>
             </div>
 
@@ -368,21 +368,24 @@
             <!-- Pricing Cards Grid -->
             <div class="cloud-pricing-cards">
 
-                <!-- Card 1 - Starter Cloud -->
+                <!-- Card 1 - Starter Mailboxes -->
                 <div class="cloud-card">
                     <div class="cloud-icon">
-                        <img src="assets/images/pricing/data-server.svg" alt="Starter Cloud">
+                        <img src="assets/images/pricing/data-server.svg" alt="Starter Mailboxes">
                     </div>
 
-                    <h3 class="cloud-plan-name">Starter Cloud</h3>
-                    <p class="cloud-plan-desc">Ideal for beginner/personal websites</p>
+                    <h3 class="cloud-plan-name" data-i18n="emailPricing.plans.starter.name">Starter Mailboxes</h3>
+                    <p class="cloud-plan-desc" data-i18n="emailPricing.plans.starter.mailboxes">1 Mailbox</p>
 
-                    <div class="cloud-pricing">
-                        <div class="cloud-price-original">$8.95 <span class="cloud-save-badge">Save 75%</span></div>
+                    <div class="cloud-pricing" data-yearly-price="1680">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="emailPricing.saveBadge">Save 30%!</span>
+                        </div>
                         <div class="cloud-price-current">
-                            <span class="cloud-currency">$</span>
-                            <span class="cloud-amount">2.24</span>
-                            <span class="cloud-period">/mo</span>
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">200</span>
+                            <span class="cloud-period" data-i18n="emailPricing.perMonth">/mo</span>
                         </div>
                     </div>
 
@@ -392,175 +395,62 @@
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>1</strong> Website</span>
+                            <span><strong>1</strong> <span data-i18n="emailPricing.features.mailboxIncluded">Mailbox Included</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>~10,000</strong> Visits Monthly</span>
+                            <span><strong>5</strong> <span data-i18n="emailPricing.features.gbForEmails">GB for Emails</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>1 GB</strong> RAM</span>
+                            <span><strong>10</strong> <span data-i18n="emailPricing.features.aliasesPerMailbox">Aliases per Mailbox</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> NVMe Storage <span class="feature-badge new">NEW</span></span>
+                            <span data-i18n="emailPricing.features.calendarContactsTasks">Calendar, Contacts &amp; Tasks</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> cPanel</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> Website Migrations</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> LiteSpeed</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>30-Day</strong> Money-Back</span>
+                            <span data-i18n="emailPricing.features.twoFA">2FA Protection</span>
                         </li>
                     </ul>
 
-                    <button class="cloud-order-btn">Order Now</button>
+                    <button class="cloud-order-btn" data-i18n="emailPricing.getStarted">Get Started</button>
 
                 </div>
 
-                <!-- Card 2 - Plus Cloud -->
-                <div class="cloud-card">
-                    <div class="cloud-icon">
-                        <img src="assets/images/pricing/data-server.svg" alt="Plus Cloud">
-                    </div>
-
-                    <h3 class="cloud-plan-name">Plus Cloud</h3>
-                    <p class="cloud-plan-desc">Best for average-sized websites</p>
-
-                    <div class="cloud-pricing">
-                        <div class="cloud-price-original">$12.95 <span class="cloud-save-badge">Save 70%</span></div>
-                        <div class="cloud-price-current">
-                            <span class="cloud-currency">$</span>
-                            <span class="cloud-amount">3.89</span>
-                            <span class="cloud-period">/mo</span>
-                        </div>
-                    </div>
-
-                    <ul class="cloud-features">
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>7</strong> Websites</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>~25,000</strong> Visits Monthly</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>2 GB</strong> RAM</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>Unlimited</strong> NVMe Storage <span class="feature-badge new">NEW</span></span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> cPanel</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> Website Migrations</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> LiteSpeed</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>30-Day</strong> Money-Back</span>
-                        </li>
-                    </ul>
-
-                    <button class="cloud-order-btn">Order Now</button>
-
-                </div>
-
-                <!-- Card 3 - Turbo Cloud (Most Popular) -->
+                <!-- Card 2 - Pro Mailboxes (Most Popular) -->
                 <div class="cloud-card popular">
-                    <div class="cloud-popular-badge">Most Popular</div>
+                    <div class="cloud-popular-badge" data-i18n="emailPricing.mostPopular">Most Popular</div>
 
                     <div class="cloud-icon">
-                        <img src="assets/images/pricing/data-server.svg" alt="Turbo Cloud">
+                        <img src="assets/images/pricing/data-server.svg" alt="Pro Mailboxes">
                     </div>
 
-                    <h3 class="cloud-plan-name">Turbo Cloud</h3>
-                    <p class="cloud-plan-desc">Most popular package</p>
+                    <h3 class="cloud-plan-name" data-i18n="emailPricing.plans.pro.name">Pro Mailboxes</h3>
+                    <p class="cloud-plan-desc" data-i18n="emailPricing.plans.pro.mailboxes">3 Mailboxes</p>
 
-                    <div class="cloud-pricing">
-                        <div class="cloud-price-original">$19.95 <span class="cloud-save-badge">Save 70%</span></div>
+                    <div class="cloud-pricing" data-yearly-price="7140">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="emailPricing.saveBadge">Save 30%!</span>
+                        </div>
                         <div class="cloud-price-current">
-                            <span class="cloud-currency">$</span>
-                            <span class="cloud-amount">5.99</span>
-                            <span class="cloud-period">/mo</span>
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">850</span>
+                            <span class="cloud-period" data-i18n="emailPricing.perMonth">/mo</span>
                         </div>
                     </div>
 
@@ -570,99 +460,67 @@
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> Websites</span>
+                            <span><strong>3</strong> <span data-i18n="emailPricing.features.mailboxesIncluded">Mailboxes Included</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>~50,000</strong> Visits Monthly</span>
+                            <span><strong>30</strong> <span data-i18n="emailPricing.features.gbForEmails">GB for Emails</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>3 GB</strong> RAM</span>
+                            <span><strong>50</strong> <span data-i18n="emailPricing.features.aliasesPerMailbox">Aliases per Mailbox</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> NVMe Storage</span>
+                            <span data-i18n="emailPricing.features.sharedCalendarContactsTasks">Shared Calendar, Contacts &amp; Tasks</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Domain Name</span>
+                            <span data-i18n="emailPricing.features.twoFA">2FA Protection</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> cPanel</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> Website Migrations</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> Security Suite</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> LiteSpeed w/Turbo</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>30-Day</strong> Money-Back</span>
+                            <span data-i18n="emailPricing.features.mobileSyncSupport">Full Mobile Sync Support</span>
                         </li>
                     </ul>
 
-                    <button class="cloud-order-btn">Order Now</button>
+                    <button class="cloud-order-btn" data-i18n="emailPricing.getStarted">Get Started</button>
 
                 </div>
 
-                <!-- Card 4 - Business Cloud -->
+                <!-- Card 3 - Ultimate Mailboxes -->
                 <div class="cloud-card">
                     <div class="cloud-icon">
-                        <img src="assets/images/pricing/data-server.svg" alt="Business Cloud">
+                        <img src="assets/images/pricing/data-server.svg" alt="Ultimate Mailboxes">
                     </div>
 
-                    <h3 class="cloud-plan-name">Business Cloud</h3>
-                    <p class="cloud-plan-desc">Ideal for eCommerce websites</p>
+                    <h3 class="cloud-plan-name" data-i18n="emailPricing.plans.ultimate.name">Ultimate Mailboxes</h3>
+                    <p class="cloud-plan-desc" data-i18n="emailPricing.plans.ultimate.mailboxes">5 Mailboxes</p>
 
-                    <div class="cloud-pricing">
-                        <div class="cloud-price-original">$29.95 <span class="cloud-save-badge">Save 70%</span></div>
+                    <div class="cloud-pricing" data-yearly-price="10080">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="emailPricing.saveBadge">Save 30%!</span>
+                        </div>
                         <div class="cloud-price-current">
-                            <span class="cloud-currency">$</span>
-                            <span class="cloud-amount">8.99</span>
-                            <span class="cloud-period">/mo</span>
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">1200</span>
+                            <span class="cloud-period" data-i18n="emailPricing.perMonth">/mo</span>
                         </div>
                     </div>
 
@@ -672,88 +530,53 @@
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> Websites</span>
+                            <span><strong>5</strong> <span data-i18n="emailPricing.features.mailboxesIncluded">Mailboxes Included</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>~100,000</strong> Visits Monthly</span>
+                            <span><strong>75</strong> <span data-i18n="emailPricing.features.gbForEmails">GB for Emails</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>4 GB</strong> RAM</span>
+                            <span><strong data-i18n="emailPricing.features.unlimited">Unlimited</strong> <span data-i18n="emailPricing.features.aliasesPerMailbox">Aliases per Mailbox</span></span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>Unlimited</strong> NVMe Storage</span>
+                            <span data-i18n="emailPricing.features.sharedCalendarContactsTasks">Shared Calendar, Contacts &amp; Tasks</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> Domain Name</span>
+                            <span data-i18n="emailPricing.features.twoFA">2FA Protection</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> cPanel</span>
+                            <span data-i18n="emailPricing.features.mobileSyncSupport">Full Mobile Sync Support</span>
                         </li>
                         <li>
                             <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
                                 <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span><strong>FREE</strong> & Auto SSL Certificate</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> Website Migrations</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> Security Suite</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> Email Filtering</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>FREE</strong> LiteSpeed w/Turbo</span>
-                        </li>
-                        <li>
-                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
-                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span><strong>30-Day</strong> Money-Back</span>
+                            <span data-i18n="emailPricing.features.docsSheetsPresentations">Docs, Sheets &amp; Presentations</span>
                         </li>
                     </ul>
 
-                    <button class="cloud-order-btn">Order Now</button>
+                    <button class="cloud-order-btn" data-i18n="emailPricing.getStarted">Get Started</button>
 
                 </div>
 
@@ -761,124 +584,6 @@
 
         </div>
         </section>
-
-        </div>
-    </section>
-
-   <!-- Email Features Section -->
-    <section class="email-features-section">
-        <div class="container-wrapper">
-            
-            <!-- Section Header -->
-            <div class="email-features-header">
-                <h2 class="email-features-title">Look more pro and make your brand an inbox favorite</h2>
-                <p class="email-features-subtitle">Create your vibe with a custom email address — get ultra-secure email hosting with simple to use, ad-free webmail</p>
-            </div>
-
-            <!-- Features Grid -->
-            <div class="email-features-grid">
-                
-                <!-- Feature Card 1 -->
-                <div class="email-feature-card">
-                    <div class="email-feature-icon">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M60 25L40 40L20 25V20L40 35L60 20V25Z" fill="#1E88E5"/>
-                            <path d="M60 20H20C17.24 20 15 22.24 15 25V55C15 57.76 17.24 60 20 60H60C62.76 60 65 57.76 65 55V25C65 22.24 62.76 20 60 20Z" fill="#42A5F5"/>
-                            <circle cx="45" cy="32" r="6" fill="#FFA726"/>
-                        </svg>
-                    </div>
-                    <h3 class="email-feature-name">Build trust & customize</h3>
-                    <p class="email-feature-desc">Start off the right way when your business email address matches your website brand</p>
-                </div>
-
-                <!-- Feature Card 2 -->
-                <div class="email-feature-card">
-                    <div class="email-feature-icon">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="20" y="25" width="40" height="30" rx="2" fill="#42A5F5"/>
-                            <path d="M25 30H55V35L40 42L25 35V30Z" fill="#1E88E5"/>
-                            <circle cx="45" cy="32" r="4" fill="#FFA726"/>
-                            <rect x="22" y="40" width="36" height="2" fill="#1565C0"/>
-                            <rect x="22" y="45" width="30" height="2" fill="#1565C0"/>
-                            <rect x="22" y="50" width="25" height="2" fill="#1565C0"/>
-                        </svg>
-                    </div>
-                    <h3 class="email-feature-name">Manage your email flow like a pro</h3>
-                    <p class="email-feature-desc">Add all your existing personal and professional email accounts into one unified inbox. No more switching accounts to get or send emails.</p>
-                </div>
-
-                <!-- Feature Card 3 -->
-                <div class="email-feature-card">
-                    <div class="email-feature-icon">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="20" y="15" width="40" height="50" rx="2" fill="#E3F2FD"/>
-                            <rect x="25" y="20" width="30" height="3" rx="1" fill="#42A5F5"/>
-                            <circle cx="28" cy="28" r="2" fill="#1E88E5"/>
-                            <rect x="32" y="27" width="20" height="2" fill="#90CAF9"/>
-                            <circle cx="28" cy="35" r="2" fill="#1E88E5"/>
-                            <rect x="32" y="34" width="20" height="2" fill="#90CAF9"/>
-                            <circle cx="28" cy="42" r="2" fill="#1E88E5"/>
-                            <rect x="32" y="41" width="20" height="2" fill="#90CAF9"/>
-                            <circle cx="28" cy="49" r="2" fill="#1E88E5"/>
-                            <rect x="32" y="48" width="15" height="2" fill="#90CAF9"/>
-                            <circle cx="50" cy="25" r="8" fill="#FFA726"/>
-                            <path d="M48 25L50 27L53 23" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3 class="email-feature-name">Enjoy seamless control</h3>
-                    <p class="email-feature-desc">Organize your email hosting to fit your business goals. Share and synchronize emails, appointments, calendars, and tasks with your contacts.</p>
-                </div>
-
-                <!-- Feature Card 4 -->
-                <div class="email-feature-card">
-                    <div class="email-feature-icon">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="22" y="20" width="36" height="45" rx="2" fill="#42A5F5"/>
-                            <rect x="25" y="23" width="30" height="20" fill="#1E88E5"/>
-                            <rect x="27" y="46" width="10" height="3" rx="1" fill="#E3F2FD"/>
-                            <rect x="27" y="51" width="10" height="3" rx="1" fill="#E3F2FD"/>
-                            <rect x="27" y="56" width="10" height="3" rx="1" fill="#E3F2FD"/>
-                            <rect x="40" y="46" width="15" height="3" rx="1" fill="#E3F2FD"/>
-                            <rect x="40" y="51" width="15" height="3" rx="1" fill="#E3F2FD"/>
-                            <rect x="40" y="56" width="12" height="3" rx="1" fill="#E3F2FD"/>
-                        </svg>
-                    </div>
-                    <h3 class="email-feature-name">Do business on the go</h3>
-                    <p class="email-feature-desc">Access all your professional and personal email accounts in portal view. Stay on top of social, news feeds, emails, and your busy schedule from any Windows, Android, or Apple device.</p>
-                </div>
-
-                <!-- Feature Card 5 -->
-                <div class="email-feature-card">
-                    <div class="email-feature-icon">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="35" cy="32" r="10" fill="#42A5F5"/>
-                            <path d="M35 27C32.24 27 30 29.24 30 32C30 34.76 32.24 37 35 37C37.76 37 40 34.76 40 32C40 29.24 37.76 27 35 27Z" fill="#1E88E5"/>
-                            <circle cx="50" cy="38" r="8" fill="#90CAF9"/>
-                            <path d="M50 34C48.34 34 47 35.34 47 37C47 38.66 48.34 40 50 40C51.66 40 53 38.66 53 37C53 35.34 51.66 34 50 34Z" fill="#64B5F6"/>
-                            <path d="M25 50C25 45 29 42 35 42C41 42 45 45 45 50V55H25V50Z" fill="#42A5F5"/>
-                            <path d="M42 52C42 48.5 45 46 50 46C55 46 58 48.5 58 52V56H42V52Z" fill="#90CAF9"/>
-                        </svg>
-                    </div>
-                    <h3 class="email-feature-name">Fire up your team</h3>
-                    <p class="email-feature-desc">Grow with full support for sharing emails, docs, spreadsheets, calendars, tasks, and more with Pro and Ultimate plans.</p>
-                </div>
-
-                <!-- Feature Card 6 -->
-                <div class="email-feature-card">
-                    <div class="email-feature-icon">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="40" cy="35" r="15" fill="#FFA726"/>
-                            <circle cx="40" cy="35" r="12" fill="#FFB74D"/>
-                            <path d="M35 35L38 38L45 31" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M30 52C30 52 32 48 40 48C48 48 50 52 50 52" stroke="#42A5F5" stroke-width="3" stroke-linecap="round"/>
-                            <circle cx="40" cy="35" r="18" stroke="#1E88E5" stroke-width="2" fill="none"/>
-                        </svg>
-                    </div>
-                    <h3 class="email-feature-name">Feel you belong</h3>
-                    <p class="email-feature-desc">We don't just guarantee our Professional Business Email service — we use it. Our 2000 Namecheap staff across 23 countries and three continents are happily connected.</p>
-                </div>
-
-            </div>
 
         </div>
     </section>
@@ -1504,7 +1209,7 @@
 <script src="assets/js/translations.js"></script>
 <script src="assets/js/translations/header-footer/header.js"></script>
 <script src="assets/js/translations/Package/hero.js"></script>
-<script src="assets/js/translations/Package/pricing.js"></script>
+<script src="assets/js/translations/business-email/pricing.js"></script>
 <script src="assets/js/translations/Package/features.js"></script>
 <script src="assets/js/translations/Package/comparison.js"></script>
 <script src="assets/js/translations/Package/testimonial.js"></script>
@@ -1515,6 +1220,7 @@
 <script src="assets/js/i18n.js"></script>
 <!-- Other scripts -->
 <script src="assets/js/header.js"></script>
+<script src="assets/js/billing.js"></script>
 <script src="assets/js/utils.js"></script>
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/main.js"></script>
