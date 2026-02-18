@@ -34,9 +34,7 @@ window.translations.bn.footer = {
         contact: "যোগাযোগ করুন",
         login: "লগ ইন",
         support: "সাপোর্ট",
-        knowledgebase: "নলেজবেস",
-        privacy: "গোপনীয়তা নীতি",
-        terms: "শর্তাবলী"
+        knowledgebase: "আর্টিকেল"
     },
     quickLinks: {
         title: "আমাদের সেবা",
@@ -45,7 +43,6 @@ window.translations.bn.footer = {
         email: "বিজনেস ইমেইল",
         reseller: "রিসেলার হোস্টিং",
         offer: "অফার (ডিলস)",
-        vps: "ভিপিএস"
     },
     contactUs: {
         title: "যোগাযোগ করুন"
