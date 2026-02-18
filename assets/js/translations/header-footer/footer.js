@@ -3,19 +3,22 @@ window.translations = window.translations || { en: {}, bn: {} };
 window.translations.en.footer = {
     description: "Hostorio is a popular web hosting services provider. Hostorio provides Shared Hosting, Business Hosting, Reseller Hosting, VPS, and domain Registration-Transfer services.",
     important: {
-        title: "IMPORTANT",
+        title: "QUICK LINKS",
+        aboutUs: "About Us",
+        contact: "Contact Us",
         login: "Log In",
         support: "Support",
-        contact: "Contact Us",
+        knowledgebase: "Knowledgebase",
         privacy: "Privacy Policy",
         terms: "Terms & Conditions"
     },
     quickLinks: {
-        title: "QUICK LINKS",
-        shared: "Shared Hosting",
-        business: "Business Hosting",
+        title: "OUR SERVICES",
+        shared: "Web Hosting",
+        business: "Turbo Hosting",
         email: "Business Email",
         reseller: "Reseller Hosting",
+        offer: "Offer (Deals)",
         vps: "VPS"
     },
     contactUs: {
@@ -29,19 +32,22 @@ window.translations.en.footer = {
 window.translations.bn.footer = {
     description: "Hostorio একটি জনপ্রিয় ওয়েব হোস্টিং সেবা প্রদানকারী। Hostorio শেয়ারড হোস্টিং, বিজনেস হোস্টিং, রিসেলার হোস্টিং, ভিপিএস এবং ডোমেইন রেজিস্ট্রেশন-ট্রান্সফার সেবা প্রদান করে।",
     important: {
-        title: "গুরুত্বপূর্ণ",
+        title: "গুরুত্বপূর্ণ লিঙ্ক",
+        aboutUs: "আমাদের সম্পর্কে",
+        contact: "যোগাযোগ করুন",
         login: "লগ ইন",
         support: "সাপোর্ট",
-        contact: "যোগাযোগ করুন",
+        knowledgebase: "নলেজবেস",
         privacy: "গোপনীয়তা নীতি",
         terms: "শর্তাবলী"
     },
     quickLinks: {
-        title: "দ্রুত লিংক",
-        shared: "শেয়ারড হোস্টিং",
-        business: "বিজনেস হোস্টিং",
+        title: "আমাদের সেবা",
+        shared: "ওয়েব হোস্টিং",
+        business: "টার্বো হোস্টিং",
         email: "বিজনেস ইমেইল",
         reseller: "রিসেলার হোস্টিং",
+        offer: "অফার (ডিলস)",
         vps: "ভিপিএস"
     },
     contactUs: {
