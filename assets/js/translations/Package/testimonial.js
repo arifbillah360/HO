@@ -3,19 +3,20 @@ window.translations = window.translations || { en: {}, bn: {} };
 window.translations.en.testimonial = {
     readMore: "Read more",
     item1: {
-        quote: "I could <span class=\"highlight-text\">manage</span> the hosting, domain name, and SSL certificate <span class=\"highlight-text\">in one place</span>, which was really refreshing."
+        quote: "Having my <span class=\"highlight-text\">hosting, domain, and security</span> all managed <span class=\"highlight-text\">under one dashboard</span> made everything incredibly simple."
     },
     item2: {
-        quote: "We honestly reference <span class=\"highlight-text\">Hostinger as the benchmark</span> for our engineers when providing support."
+        quote: "The speed improvements were <span class=\"highlight-text\">instantly noticeable</span>, and our downtime has been <span class=\"highlight-text\">practically zero</span>."
     }
 };
 
 window.translations.bn.testimonial = {
     readMore: "আরও পড়ুন",
     item1: {
-        quote: "আমি হোস্টিং, ডোমেইন নাম এবং SSL সার্টিফিকেট <span class=\"highlight-text\">একই জায়গায়</span> <span class=\"highlight-text\">ম্যানেজ</span> করতে পেরেছি, যা সত্যিই অসাধারণ ছিল।"
+        quote: "আমার <span class=\"highlight-text\">হোস্টিং, ডোমেইন ও সিকিউরিটি</span> সবকিছু <span class=\"highlight-text\">একটি ড্যাশবোর্ডে পরিচালনা</span> করতে পারায় পুরো প্রক্রিয়াটি অসাধারণভাবে সহজ হয়ে গেছে।"
     },
     item2: {
-        quote: "আমরা সৎভাবে বলতে পারি, সাপোর্ট দেওয়ার সময় আমাদের ইঞ্জিনিয়ারদের জন্য <span class=\"highlight-text\">Hostorio-কে বেঞ্চমার্ক হিসেবে</span> উল্লেখ করি।"
+        quote: "গতির উন্নতি ছিল <span class=\"highlight-text\">তাৎক্ষণিকভাবে লক্ষ্য করার মতো</span>, এবং আমাদের ডাউনটাইম এখন <span class=\"highlight-text\">প্রায় শূন্যের কাছাকাছি</span>।"
     }
+
 };
