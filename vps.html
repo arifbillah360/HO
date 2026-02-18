@@ -343,7 +343,7 @@
 
 
 <!-- VPS Pricing Section -->
-<section class="vps-plan-pricing-section" style="padding: 60px 0; background: #f8fafc;">
+<section class="vps-plan-pricing-section" id="#vps-section-id" style="padding: 60px 0; background: #f8fafc;">
     <div class="container-wrapper">
 
         <!-- Section Header -->
@@ -584,99 +584,8 @@
 
         </div><!-- /.cloud-pricing-cards -->
     </div><!-- /.container-wrapper -->
-
-    <script>
-    (function () {
-        var VPS_DISCOUNT = 0.30;
-
-        function getBdtRate() {
-            return (window.i18n && window.i18n.exchangeRate) ? window.i18n.exchangeRate : 125;
-        }
-        function isUsd() {
-            return window.i18n && window.i18n.currentCurrency === 'USD';
-        }
-        function sym() { return isUsd() ? '$' : '৳'; }
-        function fmt(bdt) {
-            var val = isUsd() ? (bdt / getBdtRate()) : bdt;
-            if (isUsd()) return val.toFixed(2);
-            return Math.round(val).toLocaleString('en-BD');
-        }
-
-        var vpsYearly = true;
-
-        function updateVpsPrices() {
-            var s = sym();
-            document.querySelectorAll('.cloud-pricing[data-vps-monthly]').forEach(function (card) {
-                var monthly = parseFloat(card.getAttribute('data-vps-monthly'));
-                var discounted = monthly * (1 - VPS_DISCOUNT);
-                var yearly = discounted * 12;
-
-                var origBlock = card.querySelector('.cloud-price-original');
-                var symEls    = card.querySelectorAll('.vps-sym');
-                var origSymEls = card.querySelectorAll('.vps-orig-sym');
-                var origAmtEl = card.querySelector('.vps-orig-amt');
-                var amtEl     = card.querySelector('.vps-amt');
-                var periodEl  = card.querySelector('.vps-period');
-
-                symEls.forEach(function(el) { el.textContent = s; });
-                origSymEls.forEach(function(el) { el.textContent = s; });
-
-                if (vpsYearly) {
-                    // Yearly: show discounted monthly, strikethrough original monthly
-                    if (amtEl) amtEl.textContent = fmt(discounted);
-                    if (origAmtEl) origAmtEl.textContent = fmt(monthly);
-                    if (periodEl) periodEl.textContent = '/mo';
-                    if (origBlock) origBlock.style.display = '';
-                } else {
-                    // Monthly: show original price, hide strikethrough
-                    if (amtEl) amtEl.textContent = fmt(monthly);
-                    if (periodEl) periodEl.textContent = '/mo';
-                    if (origBlock) origBlock.style.display = 'none';
-                }
-            });
-
-            // Sync label active states
-            var lm = document.getElementById('vpsLabelMonthly');
-            var ly = document.getElementById('vpsLabelYearly');
-            if (lm) lm.classList.toggle('active', !vpsYearly);
-            if (ly) ly.classList.toggle('active', vpsYearly);
-        }
-
-        function initVpsPricing() {
-            var toggle = document.getElementById('vpsBillingToggle');
-            if (!toggle) return;
-
-            // Default: yearly
-            toggle.checked = true;
-            vpsYearly = true;
-            updateVpsPrices();
-
-            toggle.addEventListener('change', function () {
-                vpsYearly = toggle.checked;
-                updateVpsPrices();
-            });
-
-            // Re-render when global currency/language changes
-            if (window.i18n) {
-                var origCurrency = window.i18n.setCurrency.bind(window.i18n);
-                window.i18n.setCurrency = function (currency) {
-                    origCurrency(currency);
-                    updateVpsPrices();
-                };
-            }
-        }
-
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', function () { setTimeout(initVpsPricing, 80); });
-        } else {
-            setTimeout(initVpsPricing, 80);
-        }
-    })();
-    </script>
 </section>
 
-
-    
 
 <!-- ===========================
      VPS SECTION
@@ -721,9 +630,7 @@
                     <div>
                         <h3 class="vps-card-title">Powerful Security</h3>
                         <p class="vps-card-desc">Enterprise-grade DDoS protection and proactive threat monitoring keeps your VPS locked down 24/7.</p>
-                        <a href="#" class="vps-card-link">
-                            Learn more <i class="fas fa-arrow-right"></i>
-                        </a>
+
                     </div>
                 </div>
 
@@ -745,9 +652,7 @@
                     <div>
                         <h3 class="vps-card-title">Managed VPS</h3>
                         <p class="vps-card-desc">Free cPanel, automated updates, and round-the-clock monitoring. We handle everything operational.</p>
-                        <a href="#" class="vps-card-link">
-                            Learn more <i class="fas fa-arrow-right"></i>
-                        </a>
+
                     </div>
                 </div>
 
@@ -766,9 +671,7 @@
                     <div>
                         <h3 class="vps-card-title">Deploy Instantly</h3>
                         <p class="vps-card-desc">Server goes live in under 60 seconds from signup. Full root access granted immediately—no delays.</p>
-                        <a href="#" class="vps-card-link">
-                            Learn more <i class="fas fa-arrow-right"></i>
-                        </a>
+
                     </div>
                 </div>
 
@@ -788,9 +691,7 @@
                     <div>
                         <h3 class="vps-card-title">99.9% Uptime Guarantee</h3>
                         <p class="vps-card-desc">Redundant infrastructure across multiple data centers ensures your applications stay online always.</p>
-                        <a href="#" class="vps-card-link">
-                            Learn more <i class="fas fa-arrow-right"></i>
-                        </a>
+
                     </div>
                 </div>
 
@@ -862,12 +763,12 @@
 
                         <!-- CTA Buttons -->
                         <div class="vps-banner-cta">
-                            <a href="#" class="vps-btn-primary">
-                                See More VPS
+                            <a href="#vps-section-id" class="vps-btn-primary">
+                                Get Start
                                 <i class="fas fa-arrow-right"></i>
                             </a>
-                            <a href="#" class="vps-btn-secondary">
-                                Learn more <i class="fas fa-chevron-right"></i>
+                            <a href="https://my.hostorio.com/submitticket.php" class="vps-btn-secondary">
+                                Support <i class="fas fa-chevron-right"></i>
                             </a>
                         </div>
 
@@ -1055,8 +956,7 @@
 
 
 
-       <!-- Main Footer -->
-   <!-- Main Footer -->
+    <!-- Main Footer -->
     <footer class="main-footer">
         <div class="container-wrapper">
             <div class="footer-content">
@@ -1070,90 +970,90 @@
                         Hostorio is a popular web hosting services provider. Hostorio provides Shared Hosting, Business Hosting, Reseller Hosting, VPS, and domain Registration-Transfer services.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-icon" aria-label="Facebook">
+                        <a href="https://www.facebook.com/hostorio" class="social-icon" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="social-icon" aria-label="Twitter">
+                        <a href="https://x.com/hostorio" class="social-icon" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="social-icon" aria-label="YouTube">
+                        <a href="https://www.youtube.com/@arifbillahcse" class="social-icon" aria-label="YouTube">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/company/hostorio/" class="social-icon" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Column 2: Important -->
+                <!-- Column 2: Quick Links -->
                 <div class="footer-column">
-                    <h4 class="footer-title" data-i18n="footer.important.title">IMPORTANT</h4>
+                    <h4 class="footer-title" data-i18n="footer.important.title">QUICK LINKS</h4>
                     <ul class="footer-links">
                         <li>
-                            <a href="#">
+                            <a href="about-us.html">
                                 <i class="fas fa-caret-right"></i>
-                                <span data-i18n="footer.important.login">Log In</span>
+                                <span data-i18n="footer.important.aboutUs">About Us</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fas fa-caret-right"></i>
-                                <span data-i18n="footer.important.support">Support</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="https://my.hostorio.com/supporttickets.php">
                                 <i class="fas fa-caret-right"></i>
                                 <span data-i18n="footer.important.contact">Contact Us</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://my.hostorio.com/login">
                                 <i class="fas fa-caret-right"></i>
-                                <span data-i18n="footer.important.privacy">Privacy Policy</span>
+                                <span data-i18n="footer.important.login">Log In</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://my.hostorio.com/submitticket.php">
                                 <i class="fas fa-caret-right"></i>
-                                <span data-i18n="footer.important.terms">Terms & Conditions</span>
+                                <span data-i18n="footer.important.support">Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://my.hostorio.com/knowledgebase">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.important.knowledgebase">Knowledgebase</span>
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Column 3: Quick Links -->
+                <!-- Column 3: Our Services -->
                 <div class="footer-column">
-                    <h4 class="footer-title" data-i18n="footer.quickLinks.title">QUICK LINKS</h4>
+                    <h4 class="footer-title" data-i18n="footer.quickLinks.title">OUR SERVICES</h4>
                     <ul class="footer-links">
                         <li>
-                            <a href="#">
+                            <a href="web-hosting.html">
                                 <i class="fas fa-caret-right"></i>
-                                <span data-i18n="footer.quickLinks.shared">Shared Hosting</span>
+                                <span data-i18n="footer.quickLinks.shared">Web Hosting</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="turbo-hosting.html">
                                 <i class="fas fa-caret-right"></i>
-                                <span data-i18n="footer.quickLinks.business">Business Hosting</span>
+                                <span data-i18n="footer.quickLinks.business">Turbo Hosting</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="business-email.html">
                                 <i class="fas fa-caret-right"></i>
                                 <span data-i18n="footer.quickLinks.email">Business Email</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="reseller-hosting.html">
                                 <i class="fas fa-caret-right"></i>
                                 <span data-i18n="footer.quickLinks.reseller">Reseller Hosting</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="offer.html">
                                 <i class="fas fa-caret-right"></i>
-                                <span data-i18n="footer.quickLinks.vps">VPS</span>
+                                <span data-i18n="footer.quickLinks.offer">Offer (Deals)</span>
                             </a>
                         </li>
                     </ul>
