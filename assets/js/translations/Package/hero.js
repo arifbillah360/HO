@@ -13,7 +13,7 @@ window.translations.en.packageHero = {
 
 window.translations.bn.packageHero = {
     headline: "লঞ্চ করতে যা যা দরকার সব এখানে",
-    wordpress: "ওয়ে হোস্টিং",
+    wordpress: "ওয়েব হোস্টিং",
     turbo: "টার্বো হোস্টিং",
     reseller: "রিসেলার হোস্টিং",
     student: "স্টুডেন্ট হোস্টিং",
