@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostorio - Fastest Data Center Web Hosting</title> 
+       <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="top-info-bar">
+    <div class="container-wrapper">
+        <div class="top-bar-content">
+            <div class="top-left-links">
+                <a href="https://my.hostorio.com/submitticket.php" class="info-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span data-i18n="nav.helpCenter">Help Center</span>
+                </a>
+                <a href="#" class="info-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+8801779440297</span>
+                </a>
+                <div class="language-selector">
+                    <img src="./assets/images/flags/us.png" alt="English" class="flag-icon">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+
+                    <div class="language-dropdown-menu">
+                        <button class="language-option active" data-language="en" data-flag="./assets/images/flags/us.png">
+                            <img src="./assets/images/flags/us.png" alt="English" class="flag-icon">
+                            <span>English</span>
+                        </button>
+                        <button class="language-option" data-language="bn" data-flag="./assets/images/flags/bd.png">
+                            <img src="./assets/images/flags/bd.png" alt="Bangla" class="flag-icon">
+                            <span>বাংলা</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="top-right-links">
+                <!-- Desktop Currency Switcher -->
+                <div class="currency-switcher desktop-currency">
+                    <button class="currency-btn active" data-currency="BDT">
+                        <i class="fas fa-bangladeshi-taka-sign"></i>
+                        <span>BDT</span>
+                    </button>
+                    <span class="currency-divider">|</span>
+                    <button class="currency-btn" data-currency="USD">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>USD</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Currency Dropdown -->
+                <div class="currency-dropdown mobile-currency">
+                    <button class="currency-dropdown-btn" id="currencyDropdownBtn">
+                        <i class="fas fa-bangladeshi-taka-sign"></i>
+                        <span class="current-currency">BDT</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="currency-dropdown-menu" id="currencyDropdownMenu">
+                        <button class="currency-option active" data-currency="BDT">
+                            <i class="fas fa-bangladeshi-taka-sign"></i>
+                            <span>BDT</span>
+                        </button>
+                        <button class="currency-option" data-currency="USD">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>USD</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===========================
+     MAIN NAVIGATION HEADER
+     =========================== -->
+<header class="main-header">
+    <div class="container-wrapper">
+        <div class="header-content">
+            <!-- Logo (Left) -->
+            <div class="brand-logo">
+                <a href="#">
+                    <img src="./assets/images/logo/hostorio-logo.png" alt="Hostorio" class="logo-image">
+                </a>
+            </div>
+
+            <!-- Desktop Navigation (Center on Desktop) -->
+            <nav class="primary-nav desktop-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item" data-i18n="nav.home">Home</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="#" class="nav-item">
+                            <span data-i18n="nav.webHosting">Web Hosting</span>
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="web-hosting.html" class="dropdown-item">
+                                <i class="fas fa-server"></i>
+                                <span data-i18n="nav.wordpressHosting">Web Hosting</span>
+                            </a></li>
+                            <li><a href="turbo-hosting.html" class="dropdown-item">
+                                <i class="fas fa-bolt"></i>
+                                <span data-i18n="nav.turboHosting">Turbo Hosting</span>
+                            </a></li>
+                            <li><a href="reseller-hosting.html" class="dropdown-item">
+                                <i class="fas fa-store"></i>
+                                <span data-i18n="nav.resellerHosting">Reseller Hosting</span>
+                            </a></li>
+                            <li><a href="student-hosting.html" class="dropdown-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span data-i18n="nav.studentHosting">Student Hosting</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="business-email.html" class="nav-item" data-i18n="nav.businessEmail">Business Email</a></li>
+                    <li><a href="vps.html" class="nav-item" data-i18n="nav.vps">VPS</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="domain.html" class="nav-item">
+                            <span data-i18n="nav.domain">Domain</span>
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=register" class="dropdown-item">
+                                <i class="fas fa-globe"></i>
+                                <span data-i18n="nav.domainRegistration">Domain Registration</span>
+                            </a></li>
+                            <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=register" class="dropdown-item">
+                                <i class="fas fa-tags"></i>
+                                <span data-i18n="nav.domainPricing">Domain Pricing</span>
+                            </a></li>
+                            <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=transfer" class="dropdown-item">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span data-i18n="nav.domainTransfer">Domain Transfer</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="offer.html" class="nav-item" data-i18n="nav.offer">Offer</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile My Account Button (Center on Mobile) -->
+            <div class="mobile-account-center">
+                <a href="#" class="account-btn" data-i18n="nav.myAccount">My Account</a>
+            </div>
+
+            <!-- Right Side -->
+            <div class="header-right">
+                <!-- Desktop My Account Button -->
+                <a href="#" class="account-btn desktop-account" data-i18n="nav.myAccount">My Account</a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ===========================
+     MOBILE NAVIGATION DRAWER
+     =========================== -->
+<nav class="primary-nav mobile-nav" id="mobileNav">
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-item" data-i18n="nav.home">Home</a></li>
+        <li class="nav-item-dropdown">
+            <a href="#" class="nav-item mobile-dropdown-trigger">
+                <span data-i18n="nav.webHosting">Web Hosting</span>
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="web-hosting.html" class="dropdown-item">
+                    <i class="fas fa-server"></i>
+                    <span data-i18n="nav.wordpressHosting">Web Hosting</span>
+                </a></li>
+                <li><a href="turbo-hosting.html" class="dropdown-item">
+                    <i class="fas fa-bolt"></i>
+                    <span data-i18n="nav.turboHosting">Turbo Hosting</span>
+                </a></li>
+                <li><a href="reseller-hosting.html" class="dropdown-item">
+                    <i class="fas fa-store"></i>
+                    <span data-i18n="nav.resellerHosting">Reseller Hosting</span>
+                </a></li>
+                <li><a href="student-hosting.html" class="dropdown-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span data-i18n="nav.studentHosting">Student Hosting</span>
+                </a></li>
+            </ul>
+        </li>
+        <li><a href="business-email.html" class="nav-item" data-i18n="nav.businessEmail">Business Email</a></li>
+        <li><a href="vps.html" class="nav-item" data-i18n="nav.vps">VPS</a></li>
+        <li class="nav-item-dropdown">
+            <a href="domain.html" class="nav-item mobile-dropdown-trigger">
+                <span data-i18n="nav.domain">Domain</span>
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=register" class="dropdown-item">
+                    <i class="fas fa-globe"></i>
+                    <span data-i18n="nav.domainRegistration">Domain Registration</span>
+                </a></li>
+                <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=register" class="dropdown-item">
+                    <i class="fas fa-tags"></i>
+                    <span data-i18n="nav.domainPricing">Domain Pricing</span>
+                </a></li>
+                <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=transfer" class="dropdown-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span data-i18n="nav.domainTransfer">Domain Transfer</span>
+                </a></li>
+            </ul>
+        </li>
+        <li><a href="offer.html" class="nav-item" data-i18n="nav.offer">Offer</a></li>
+    </ul>
+</nav>
+
+<!-- ===========================
+     PRIVACY POLICY PAGE
+     =========================== */
+<div class="privacy-page-wrapper">
+    
+    <!-- Hero Header -->
+    <section class="privacy-hero-section">
+        <div class="privacy-page-container">
+            <div class="privacy-hero-content">
+                <div class="hero-icon-box">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h1 class="privacy-hero-title">Privacy Policy</h1>
+                <p class="privacy-hero-subtitle">Your Privacy Matters to Us</p>
+                <div class="last-updated">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Last Updated: January 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="privacy-content-section">
+        <div class="privacy-page-container">
+            <div class="privacy-content-wrapper">
+                
+                <!-- Introduction -->
+                <div class="privacy-intro-box">
+                    <div class="intro-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="intro-text-content">
+                        <h2 class="intro-heading">About This Policy</h2>
+                        <p class="intro-description">
+                            This is Hostorio Privacy Policy. It discusses how we will collect, use, maintain and disclose the information which we will collect from our website visitors and customers. Our privacy policy is part of our contracts. It is incorporated into our TOS and any other contract we have with users.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Information Collection Section -->
+                <div class="privacy-section-block">
+                    <div class="section-header-block">
+                        <div class="section-number-badge collection-badge">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="section-title-text">What Information Do We Collect?</h3>
+                    </div>
+
+                    <div class="privacy-subsection">
+                        <h4 class="subsection-title">
+                            <i class="fas fa-user-circle"></i>
+                            Visitor Information
+                        </h4>
+                        <p class="subsection-text">
+                            When a visitor visits our website, our web server collects basic user information about you, including your ISP's domain, the time you accessed our website, and the pages from within our website that you visit. This information is not personally identifiable except as needed to prevent fraud or abuse of the system.
+                        </p>
+                    </div>
+
+                    <div class="privacy-subsection">
+                        <h4 class="subsection-title">
+                            <i class="fas fa-shopping-cart"></i>
+                            Customer Information
+                        </h4>
+                        <p class="subsection-text">When a customer orders our service, we collect the following information:</p>
+                        
+                        <div class="info-list-box">
+                            <div class="info-list-item">
+                                <div class="list-icon">
+                                    <i class="fas fa-address-card"></i>
+                                </div>
+                                <div class="list-content">
+                                    <h5>Traditional Contact Information</h5>
+                                    <p>Mailing address, phone number, and fax number</p>
+                                </div>
+                            </div>
+
+                            <div class="info-list-item">
+                                <div class="list-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="list-content">
+                                    <h5>Internet Contact Information</h5>
+                                    <p>Email addresses and online contact details</p>
+                                </div>
+                            </div>
+
+                            <div class="info-list-item">
+                                <div class="list-icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <div class="list-content">
+                                    <h5>Payment Information</h5>
+                                    <p>Credit card information for billing purposes</p>
+                                </div>
+                            </div>
+
+                            <div class="info-list-item">
+                                <div class="list-icon">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="list-content">
+                                    <h5>Technical Information</h5>
+                                    <p>Web browser type, IP address, and operating system</p>
+                                </div>
+                            </div>
+
+                            <div class="info-list-item">
+                                <div class="list-icon">
+                                    <i class="fas fa-user-lock"></i>
+                                </div>
+                                <div class="list-content">
+                                    <h5>Account Credentials</h5>
+                                    <p>Username and password combinations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Purpose Section -->
+                <div class="privacy-section-block">
+                    <div class="section-header-block">
+                        <div class="section-number-badge purpose-badge">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="section-title-text">Why We Collect This Information</h3>
+                    </div>
+
+                    <div class="purpose-grid">
+                        <div class="purpose-card">
+                            <div class="purpose-icon">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                            </div>
+                            <h4 class="purpose-title">Billing & Support</h4>
+                            <p class="purpose-description">For processing payments and providing customer support services</p>
+                        </div>
+
+                        <div class="purpose-card">
+                            <div class="purpose-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h4 class="purpose-title">Domain Registration</h4>
+                            <p class="purpose-description">For establishing and managing domain registration accounts</p>
+                        </div>
+
+                        <div class="purpose-card">
+                            <div class="purpose-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h4 class="purpose-title">Website Administration</h4>
+                            <p class="purpose-description">For managing and maintaining our website infrastructure</p>
+                        </div>
+
+                        <div class="purpose-card">
+                            <div class="purpose-icon">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <h4 class="purpose-title">Personalization</h4>
+                            <p class="purpose-description">To customize the website experience for your multiple visits</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How We Use Information Section -->
+                <div class="privacy-section-block">
+                    <div class="section-header-block">
+                        <div class="section-number-badge usage-badge">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="section-title-text">How We Use Your Information</h3>
+                    </div>
+
+                    <div class="guarantee-box">
+                        <div class="guarantee-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="guarantee-content">
+                            <h4 class="guarantee-title">Your Privacy is Protected</h4>
+                            <p class="guarantee-text">We do not share, rent, sell, or release your personal information to any individual, entity, or third party.</p>
+                        </div>
+                    </div>
+
+                    <div class="usage-info-box">
+                        <h4 class="usage-heading">Hostorio may use personally identifiable information for:</h4>
+                        
+                        <div class="usage-points">
+                            <div class="usage-point">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Contacting users regarding products and services offered by Hostorio and its trusted affiliates, independent contractors, and business partners</p>
+                            </div>
+
+                            <div class="usage-point">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Enhancing customers' experience with Hostorio and such affiliates, independent contractors, and business partners</p>
+                            </div>
+
+                            <div class="usage-point">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Research regarding the effectiveness of the website and the marketing, advertising, and sales efforts</p>
+                            </div>
+
+                            <div class="usage-point">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Providing you with information about products that might be of interest to you</p>
+                            </div>
+
+                            <div class="usage-point">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Enabling you to take advantage of special partner programs or Hostorio specials</p>
+                            </div>
+
+                            <div class="usage-point">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Providing customers with system information or information about new or upgraded products</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disclosure Section -->
+                <div class="privacy-section-block">
+                    <div class="section-header-block">
+                        <div class="section-number-badge disclosure-badge">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="section-title-text">Information Disclosure</h3>
+                    </div>
+
+                    <div class="disclosure-card standard-disclosure">
+                        <div class="disclosure-header">
+                            <i class="fas fa-comments"></i>
+                            <h4>Testimonials</h4>
+                        </div>
+                        <p>We may disclose contact information with your permission when gathering and posting testimonials.</p>
+                    </div>
+
+                    <div class="disclosure-card important-disclosure">
+                        <div class="disclosure-header">
+                            <i class="fas fa-gavel"></i>
+                            <h4>Legal Requirements</h4>
+                        </div>
+                        <p>We will not otherwise disclose customer personal and account information unless we have reason to believe that disclosing such information is necessary to:</p>
+                        <ul>
+                            <li>Identify, make contact with, or bring legal action against someone who may be causing harm or interfering with the rights or property of Hostorio, our customers, or others</li>
+                            <li>Provide information to regulatory authorities and law enforcement officials in accordance with applicable laws</li>
+                            <li>Comply with legal obligations where Hostorio has a good faith belief that the law requires such disclosure</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concerns Section -->
+                <div class="privacy-section-block">
+                    <div class="section-header-block">
+                        <div class="section-number-badge concerns-badge">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3 class="section-title-text">Privacy Concerns</h3>
+                    </div>
+
+                    <div class="concerns-box">
+                        <div class="concerns-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="concerns-content">
+                            <h4 class="concerns-title">Think We're Not Following This Policy?</h4>
+                            <p class="concerns-text">If you believe we are not handling your information in accordance with our privacy policy, please contact us immediately. If, for some reason, we have violated our privacy policy, we will correct the error as soon as you notify us.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy Changes Section -->
+                <div class="privacy-section-block">
+                    <div class="section-header-block">
+                        <div class="section-number-badge changes-badge">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3 class="section-title-text">Changes to Our Privacy Policy</h3>
+                    </div>
+
+                    <div class="changes-notice-box">
+                        <div class="changes-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <p class="changes-text">From time to time, we may change our Privacy Policy. We will post those changes on this page so that our customers will always be aware of what information we collect, how we use it, and under what circumstances we share the information with others.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="privacy-contact-box">
+                    <div class="contact-icon-circle">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h3 class="contact-heading">Have Questions About Privacy?</h3>
+                    <p class="contact-description">If you have any questions or concerns about our privacy policy, our support team is here to help you</p>
+                    <a href="#contact" class="contact-support-button">
+                        <span>Contact Support Team</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container-wrapper">
+            <div class="footer-content">
+
+                <!-- Column 1: About -->
+                <div class="footer-column footer-about">
+                    <div class="footer-logo">
+                        <h3><span class="logo-host">HOST</span><span class="logo-orio">ORIO</span></h3>
+                    </div>
+                    <p class="footer-description" data-i18n="footer.description">
+                        Hostorio is a popular web hosting services provider. Hostorio provides Shared Hosting, Business Hosting, Reseller Hosting, VPS, and domain Registration-Transfer services.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Important -->
+                <div class="footer-column">
+                    <h4 class="footer-title" data-i18n="footer.important.title">IMPORTANT</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.important.login">Log In</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.important.support">Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.important.contact">Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.important.privacy">Privacy Policy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.important.terms">Terms & Conditions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-title" data-i18n="footer.quickLinks.title">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.quickLinks.shared">Shared Hosting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.quickLinks.business">Business Hosting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.quickLinks.email">Business Email</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.quickLinks.reseller">Reseller Hosting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                                <span data-i18n="footer.quickLinks.vps">VPS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Us -->
+                <div class="footer-column">
+                    <h4 class="footer-title" data-i18n="footer.contactUs.title">CONTACT US</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kanchan, Rupganj, Narayanganj</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>H-161, OABDA SOROK MATHBARIA</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+8801779440297</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>mail@hostorio.com</span>
+                        </li>
+                    </ul>
+                    <div class="payment-methods">
+                        <img src="./assets/images/payment/payment-gateway.svg" alt="Payment Methods">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container-wrapper">
+            <div class="footer-bottom-content">
+                <p class="copyright" data-i18n="footer.copyright">
+                    © 2026 Hostorio. All Rights Reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#" data-i18n="footer.privacyPolicy">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="#" data-i18n="footer.termsOfService">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <!-- i18n and translation scripts (load first) -->
+    <script src="./assets/js/translations.js"></script>
+    <script src="./assets/js/translations/header-footer/header.js"></script>
+    <script src="./assets/js/translations/Home/hero.js"></script>
+    <script src="./assets/js/translations/Home/pricing.js"></script>
+    <script src="./assets/js/translations/Home/domain.js"></script>
+    <script src="./assets/js/translations/Home/services.js"></script>
+    <script src="./assets/js/translations/Home/wordpress.js"></script>
+    <script src="./assets/js/translations/Home/support.js"></script>
+    <script src="./assets/js/translations/header-footer/footer.js"></script>
+    <script src="./assets/js/i18n.js"></script>
+    <!-- Other scripts -->
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/pricing.js"></script>
+    <script src="./assets/js/billing.js"></script>
+    <script src="./assets/js/animations.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
