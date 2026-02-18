@@ -351,14 +351,14 @@
             <h2 class="pricing-main-title" data-i18n="vpsPricing.heading">Choose Your VPS Hosting Plan</h2>
 
             <!-- VPS Billing Toggle -->
-            <div class="billing-toggle" id="vpsBillingToggleWrapper">
-                <span class="toggle-label" id="vpsLabelMonthly" data-i18n="vpsPricing.billedMonthly">Billed Monthly</span>
+            <div class="billing-toggle" data-billing-default="monthly">
+                <span class="toggle-label active" data-i18n="pricing.billedMonthly">Billed Monthly</span>
                 <label class="toggle-switch">
-                    <input type="checkbox" id="vpsBillingToggle" checked>
+                    <input type="checkbox" id="billingToggle">
                     <span class="toggle-slider"></span>
                 </label>
-                <span class="toggle-label active" id="vpsLabelYearly" data-i18n="vpsPricing.billedAnnually">Billed Annually</span>
-                <span class="save-badge" data-i18n="vpsPricing.save30">Save 30%!</span>
+                <span class="toggle-label" data-i18n="pricing.billedAnnually">Billed Annually</span>
+                <span class="save-badge" data-i18n="pricing.saveBadge">Save 30%!</span>
             </div>
         </div>
 
@@ -373,15 +373,15 @@
                 <h3 class="cloud-plan-name" data-i18n="vpsPricing.plans.enhanced.name">Enhanced VPS</h3>
                 <p class="cloud-plan-desc">4 Cores · 4 GB RAM · 50 GB SSD</p>
 
-                <div class="cloud-pricing" id="vps-card-enhanced" data-vps-monthly="2100">
-                    <div class="cloud-price-original" id="vps-orig-enhanced">
-                        <span class="orig-currency vps-orig-sym">৳</span><span class="orig-amount vps-orig-amt">2,100</span>
-                        <span class="cloud-save-badge" data-i18n="vpsPricing.save30">Save 30%</span>
+                <div class="cloud-pricing" data-yearly-price="17640">
+                    <div class="cloud-price-original">
+                        <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                        <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
                     </div>
                     <div class="cloud-price-current">
-                        <span class="cloud-currency vps-sym">৳</span>
-                        <span class="cloud-amount vps-amt">1,470</span>
-                        <span class="cloud-period vps-period" data-i18n="vpsPricing.perMonth">/mo</span>
+                        <span class="cloud-currency" data-currency-symbol>৳</span>
+                        <span class="cloud-amount">2,100</span>
+                        <span class="cloud-period" data-i18n="pricing.perMonth">/mo</span>
                     </div>
                 </div>
 
@@ -427,15 +427,15 @@
                 <h3 class="cloud-plan-name" data-i18n="vpsPricing.plans.premium.name">Premium VPS</h3>
                 <p class="cloud-plan-desc">6 Cores · 8 GB RAM · 100 GB SSD</p>
 
-                <div class="cloud-pricing" id="vps-card-premium" data-vps-monthly="4200">
-                    <div class="cloud-price-original" id="vps-orig-premium">
-                        <span class="orig-currency vps-orig-sym">৳</span><span class="orig-amount vps-orig-amt">4,200</span>
-                        <span class="cloud-save-badge" data-i18n="vpsPricing.save30">Save 30%</span>
+                <div class="cloud-pricing" data-yearly-price="35280">
+                    <div class="cloud-price-original">
+                        <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                        <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
                     </div>
                     <div class="cloud-price-current">
-                        <span class="cloud-currency vps-sym">৳</span>
-                        <span class="cloud-amount vps-amt">2,940</span>
-                        <span class="cloud-period vps-period" data-i18n="vpsPricing.perMonth">/mo</span>
+                        <span class="cloud-currency" data-currency-symbol>৳</span>
+                        <span class="cloud-amount">4,200</span>
+                        <span class="cloud-period" data-i18n="pricing.perMonth">/mo</span>
                     </div>
                 </div>
 
@@ -482,15 +482,15 @@
                 <h3 class="cloud-plan-name" data-i18n="vpsPricing.plans.elite.name">Elite VPS</h3>
                 <p class="cloud-plan-desc">8 Cores · 16 GB RAM · 150 GB SSD</p>
 
-                <div class="cloud-pricing" id="vps-card-elite" data-vps-monthly="8400">
-                    <div class="cloud-price-original" id="vps-orig-elite">
-                        <span class="orig-currency vps-orig-sym">৳</span><span class="orig-amount vps-orig-amt">8,400</span>
-                        <span class="cloud-save-badge" data-i18n="vpsPricing.save30">Save 30%</span>
+                <div class="cloud-pricing" data-yearly-price="70560">
+                    <div class="cloud-price-original">
+                        <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                        <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
                     </div>
                     <div class="cloud-price-current">
-                        <span class="cloud-currency vps-sym">৳</span>
-                        <span class="cloud-amount vps-amt">5,880</span>
-                        <span class="cloud-period vps-period" data-i18n="vpsPricing.perMonth">/mo</span>
+                        <span class="cloud-currency" data-currency-symbol>৳</span>
+                        <span class="cloud-amount">8,400</span>
+                        <span class="cloud-period" data-i18n="pricing.perMonth">/mo</span>
                     </div>
                 </div>
 
@@ -536,15 +536,15 @@
                 <h3 class="cloud-plan-name" data-i18n="vpsPricing.plans.ultimate.name">Ultimate VPS</h3>
                 <p class="cloud-plan-desc">16 Cores · 32 GB RAM · 300 GB SSD</p>
 
-                <div class="cloud-pricing" id="vps-card-ultimate" data-vps-monthly="16800">
-                    <div class="cloud-price-original" id="vps-orig-ultimate">
-                        <span class="orig-currency vps-orig-sym">৳</span><span class="orig-amount vps-orig-amt">16,800</span>
-                        <span class="cloud-save-badge" data-i18n="vpsPricing.save30">Save 30%</span>
+                <div class="cloud-pricing" data-yearly-price="141120">
+                    <div class="cloud-price-original">
+                        <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                        <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
                     </div>
                     <div class="cloud-price-current">
-                        <span class="cloud-currency vps-sym">৳</span>
-                        <span class="cloud-amount vps-amt">11,760</span>
-                        <span class="cloud-period vps-period" data-i18n="vpsPricing.perMonth">/mo</span>
+                        <span class="cloud-currency" data-currency-symbol>৳</span>
+                        <span class="cloud-amount">16,800</span>
+                        <span class="cloud-period" data-i18n="pricing.perMonth">/mo</span>
                     </div>
                 </div>
 

@@ -17,8 +17,15 @@
     function loadPref() {
         try {
             const saved = localStorage.getItem(STORAGE_KEY);
-            // anything other than an explicit 'monthly' save → yearly
-            isYearly = (saved !== 'monthly');
+            if (saved !== null) {
+                // User has an explicit saved preference — honour it
+                isYearly = (saved !== 'monthly');
+            } else {
+                // No saved pref — check for page-specific default via data attribute
+                const toggleWrapper = document.querySelector('.billing-toggle');
+                const pageDefault   = toggleWrapper && toggleWrapper.getAttribute('data-billing-default');
+                isYearly = (pageDefault !== 'monthly');
+            }
         } catch (_) {
             isYearly = true;
         }
