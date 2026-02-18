@@ -1,0 +1,10 @@
+// ── privacy-policy.html bundle ────────────────────
+import '../../assets/js/translations.js'
+import '../../assets/js/translations/header-footer/header.js'
+import '../../assets/js/translations/privacy-policy/privacy.js'
+import '../../assets/js/translations/header-footer/footer.js'
+import '../../assets/js/i18n.js'
+import '../../assets/js/header.js'
+import '../../assets/js/utils.js'
+import '../../assets/js/animations.js'
+import '../../assets/js/main.js'
