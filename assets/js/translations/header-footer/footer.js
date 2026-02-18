@@ -8,9 +8,7 @@ window.translations.en.footer = {
         contact: "Contact Us",
         login: "Log In",
         support: "Support",
-        knowledgebase: "Knowledgebase",
-        privacy: "Privacy Policy",
-        terms: "Terms & Conditions"
+        knowledgebase: "Knowledgebase"
     },
     quickLinks: {
         title: "OUR SERVICES",
@@ -18,8 +16,7 @@ window.translations.en.footer = {
         business: "Turbo Hosting",
         email: "Business Email",
         reseller: "Reseller Hosting",
-        offer: "Offer (Deals)",
-        vps: "VPS"
+        offer: "Offer (Deals)"
     },
     contactUs: {
         title: "CONTACT US"
