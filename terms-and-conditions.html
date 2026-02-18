@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Hostorio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="new.css">
+    <style>
+        /* =============================================
+           TERMS & CONDITIONS PAGE — PAGE-SPECIFIC CSS
+           ============================================= */
+
+        /* ── Hero Section ───────────────────────────── */
+        .terms-hero-section {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2d4f 50%, #0d2137 100%);
+            padding: 100px 20px 70px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .terms-hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(0, 123, 255, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .terms-hero-section .terms-hero-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .terms-hero-section .terms-hero-icon {
+            font-size: 3rem;
+            color: #4da8ff;
+            margin-bottom: 18px;
+            display: inline-block;
+        }
+
+        .terms-hero-section h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin: 0 0 16px;
+            line-height: 1.2;
+        }
+
+        .terms-hero-section p {
+            font-size: 1.1rem;
+            color: #a8c0d8;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* ── Content Section ────────────────────────── */
+        .terms-content-section {
+            background: #f4f7fb;
+            padding: 60px 20px 80px;
+        }
+
+        .terms-content-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* ── Intro Box ──────────────────────────────── */
+        .terms-intro-box {
+            background: #ffffff;
+            border-left: 5px solid #007bff;
+            border-radius: 8px;
+            padding: 28px 32px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .terms-intro-box .terms-effective-date {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #007bff;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+        }
+
+        .terms-intro-box p {
+            font-size: 1rem;
+            color: #4a5568;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* ── Section Block ──────────────────────────── */
+        .terms-section-block {
+            margin-bottom: 44px;
+        }
+
+        .terms-section-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #0a1628;
+            margin: 0 0 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #007bff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .terms-section-title i {
+            color: #007bff;
+            font-size: 1.3rem;
+        }
+
+        /* ── Item Card ──────────────────────────────── */
+        .terms-item-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 22px 26px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #e8eef5;
+            transition: box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+
+        .terms-item-card:hover {
+            box-shadow: 0 4px 18px rgba(0, 123, 255, 0.1);
+            border-color: #cce0ff;
+        }
+
+        .terms-item-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a2d4f;
+            margin: 0 0 10px;
+        }
+
+        .terms-item-card p {
+            font-size: 0.95rem;
+            color: #5a6a7e;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* ── Privacy Box ────────────────────────────── */
+        .terms-privacy-box {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e8f3ff 100%);
+            border: 1px solid #cce0ff;
+            border-radius: 10px;
+            padding: 30px 32px;
+            margin-bottom: 44px;
+        }
+
+        .terms-privacy-box .terms-section-title {
+            border-bottom-color: #4da8ff;
+        }
+
+        .terms-privacy-box p {
+            font-size: 0.95rem;
+            color: #3a5070;
+            line-height: 1.85;
+            margin: 0;
+        }
+
+        /* ── Contact Box ────────────────────────────── */
+        .terms-contact-box {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2d4f 100%);
+            border-radius: 12px;
+            padding: 36px 40px;
+            color: #ffffff;
+        }
+
+        .terms-contact-box .terms-section-title {
+            color: #ffffff;
+            border-bottom-color: #4da8ff;
+        }
+
+        .terms-contact-box .terms-section-title i {
+            color: #4da8ff;
+        }
+
+        .terms-contact-box p {
+            font-size: 0.95rem;
+            color: #a8c0d8;
+            line-height: 1.8;
+            margin: 0 0 18px;
+        }
+
+        .terms-contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 18px;
+        }
+
+        .terms-contact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            color: #c8d8e8;
+        }
+
+        .terms-contact-list li i {
+            color: #4da8ff;
+            margin-top: 3px;
+            flex-shrink: 0;
+            width: 16px;
+        }
+
+        .terms-contact-list li a {
+            color: #7ec8ff;
+            text-decoration: none;
+        }
+
+        .terms-contact-list li a:hover {
+            text-decoration: underline;
+        }
+
+        .terms-contact-note {
+            font-size: 0.88rem;
+            color: #7090a8;
+            margin: 0;
+            font-style: italic;
+        }
+
+        /* ── Responsive ─────────────────────────────── */
+        @media (max-width: 768px) {
+            .terms-hero-section {
+                padding: 80px 16px 50px;
+            }
+
+            .terms-hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .terms-hero-section p {
+                font-size: 1rem;
+            }
+
+            .terms-content-section {
+                padding: 40px 16px 60px;
+            }
+
+            .terms-intro-box {
+                padding: 20px 20px;
+            }
+
+            .terms-item-card {
+                padding: 18px 20px;
+            }
+
+            .terms-contact-box {
+                padding: 26px 22px;
+            }
+
+            .terms-section-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .terms-hero-section h1 {
+                font-size: 1.6rem;
+            }
+
+            .terms-hero-section .terms-hero-icon {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===========================
+     TOP INFO BAR
+     =========================== -->
+<div class="top-info-bar">
+    <div class="container-wrapper">
+        <div class="top-bar-content">
+            <div class="top-left-links">
+                <a href="https://my.hostorio.com/submitticket.php" class="info-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help Center</span>
+                </a>
+                <a href="#" class="info-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+8801779440297</span>
+                </a>
+                <div class="language-selector">
+                    <img src="assets/images/flags/us.png" alt="English" class="flag-icon">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+
+                    <div class="language-dropdown-menu">
+                        <button class="language-option active" data-language="en" data-flag="assets/images/flags/us.png">
+                            <img src="assets/images/flags/us.png" alt="English" class="flag-icon">
+                            <span>English</span>
+                        </button>
+                        <button class="language-option" data-language="bn" data-flag="assets/images/flags/bd.png">
+                            <img src="assets/images/flags/bd.png" alt="Bangla" class="flag-icon">
+                            <span>বাংলা</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="top-right-links">
+                <!-- Desktop Currency Switcher -->
+                <div class="currency-switcher desktop-currency">
+                    <button class="currency-btn active" data-currency="BDT">
+                        <i class="fas fa-bangladeshi-taka-sign"></i>
+                        <span>BDT</span>
+                    </button>
+                    <span class="currency-divider">|</span>
+                    <button class="currency-btn" data-currency="USD">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>USD</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Currency Dropdown -->
+                <div class="currency-dropdown mobile-currency">
+                    <button class="currency-dropdown-btn" id="currencyDropdownBtn">
+                        <i class="fas fa-bangladeshi-taka-sign"></i>
+                        <span class="current-currency">BDT</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="currency-dropdown-menu" id="currencyDropdownMenu">
+                        <button class="currency-option active" data-currency="BDT">
+                            <i class="fas fa-bangladeshi-taka-sign"></i>
+                            <span>BDT</span>
+                        </button>
+                        <button class="currency-option" data-currency="USD">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>USD</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===========================
+     MAIN NAVIGATION HEADER
+     =========================== -->
+<header class="main-header">
+    <div class="container-wrapper">
+        <div class="header-content">
+            <!-- Logo (Left) -->
+            <div class="brand-logo">
+                <a href="#">
+                    <img src="assets/images/logo/hostorio-logo.png" alt="Hostorio" class="logo-image">
+                </a>
+            </div>
+
+            <!-- Desktop Navigation (Center on Desktop) -->
+            <nav class="primary-nav desktop-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="package.html" class="nav-item">
+                            Web Hosting
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="web-hosting.html" class="dropdown-item">
+                                <i class="fas fa-server"></i>
+                                <span>Web Hosting</span>
+                            </a></li>
+                            <li><a href="turbo-hosting.html" class="dropdown-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Turbo Hosting</span>
+                            </a></li>
+                            <li><a href="reseller-hosting.html" class="dropdown-item">
+                                <i class="fas fa-store"></i>
+                                <span>Reseller Hosting</span>
+                            </a></li>
+                            <li><a href="student-hosting.html" class="dropdown-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Student Hosting</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="business-email.html" class="nav-item">Business Email</a></li>
+                    <li><a href="vps.html" class="nav-item">VPS</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="domain.html" class="nav-item">
+                            Domain
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=register" class="dropdown-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Domain Registration</span>
+                            </a></li>
+                            <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=register" class="dropdown-item">
+                                <i class="fas fa-tags"></i>
+                                <span>Domain Pricing</span>
+                            </a></li>
+                            <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=transfer" class="dropdown-item">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>Domain Transfer</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="offer.html" class="nav-item">Offer</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile My Account Button (Center on Mobile) -->
+            <div class="mobile-account-center">
+                <a href="#" class="account-btn">My Account</a>
+            </div>
+
+            <!-- Right Side -->
+            <div class="header-right">
+                <!-- Desktop My Account Button -->
+                <a href="#" class="account-btn desktop-account">My Account</a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ===========================
+     MOBILE NAVIGATION DRAWER
+     =========================== -->
+<nav class="primary-nav mobile-nav" id="mobileNav">
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li class="nav-item-dropdown">
+            <a href="#" class="nav-item mobile-dropdown-trigger">
+                Web Hosting
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="web-hosting.html" class="dropdown-item">
+                    <i class="fas fa-server"></i>
+                    <span>Web Hosting</span>
+                </a></li>
+                <li><a href="turbo-hosting.html" class="dropdown-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Turbo Hosting</span>
+                </a></li>
+                <li><a href="reseller-hosting.html" class="dropdown-item">
+                    <i class="fas fa-store"></i>
+                    <span>Reseller Hosting</span>
+                </a></li>
+                <li><a href="student-hosting.html" class="dropdown-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Student Hosting</span>
+                </a></li>
+            </ul>
+        </li>
+        <li><a href="business-email.html" class="nav-item">Business Email</a></li>
+        <li><a href="vps.html" class="nav-item">VPS</a></li>
+        <li class="nav-item-dropdown">
+            <a href="domain.html" class="nav-item mobile-dropdown-trigger">
+                Domain
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=register" class="dropdown-item">
+                    <i class="fas fa-globe"></i>
+                    <span>Domain Registration</span>
+                </a></li>
+                <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=register" class="dropdown-item">
+                    <i class="fas fa-tags"></i>
+                    <span>Domain Pricing</span>
+                </a></li>
+                <li><a href="https://my.hostorio.com/cart.php?a=add&amp;domain=transfer" class="dropdown-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Domain Transfer</span>
+                </a></li>
+            </ul>
+        </li>
+        <li><a href="offer.html" class="nav-item">Offer</a></li>
+    </ul>
+</nav>
+
+<!-- ===========================
+     HERO SECTION
+     =========================== -->
+<section class="terms-hero-section">
+    <div class="terms-hero-inner">
+        <i class="fas fa-file-contract terms-hero-icon"></i>
+        <h1 data-i18n="termsConditions.hero.title">Terms &amp; Conditions</h1>
+        <p data-i18n="termsConditions.hero.subtitle">Please read these terms carefully before using our services. By accessing or using Hostorio's services, you agree to be bound by these terms.</p>
+    </div>
+</section>
+
+<!-- ===========================
+     MAIN CONTENT SECTION
+     =========================== -->
+<section class="terms-content-section">
+    <div class="terms-content-inner">
+
+        <!-- Intro Box -->
+        <div class="terms-intro-box">
+            <div class="terms-effective-date" data-i18n="termsConditions.intro.effectiveDate">Effective Date: January 1, 2026</div>
+            <p data-i18n="termsConditions.intro.text">Welcome to Hostorio. These Terms and Conditions govern your use of our website and services. By purchasing or using any of our hosting services, domain registration, or related products, you acknowledge that you have read, understood, and agree to be bound by these terms. If you do not agree to these terms, please do not use our services.</p>
+        </div>
+
+        <!-- ── 1. Service Delivery ─────────────────── -->
+        <div class="terms-section-block">
+            <h2 class="terms-section-title">
+                <i class="fas fa-server"></i>
+                <span data-i18n="termsConditions.sections.serviceDelivery.title">Service Delivery</span>
+            </h2>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.serviceDelivery.item1.title">1. Service Activation</h3>
+                <p data-i18n="termsConditions.sections.serviceDelivery.item1.body">After successful payment verification, hosting services will be activated within 24 hours. For most orders, activation occurs immediately upon payment confirmation. VPS and dedicated server setups may require up to 48 hours. You will receive login credentials and account details via email once your service is activated. Hostorio reserves the right to delay activation for orders that require manual review for security or compliance reasons.</p>
+            </div>
+        </div>
+
+        <!-- ── 2–7. Refund Policy ──────────────────── -->
+        <div class="terms-section-block">
+            <h2 class="terms-section-title">
+                <i class="fas fa-rotate-left"></i>
+                <span data-i18n="termsConditions.sections.refundPolicy.title">Refund Policy</span>
+            </h2>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.refundPolicy.item2.title">2. Money-Back Guarantee</h3>
+                <p data-i18n="termsConditions.sections.refundPolicy.item2.body">Hostorio offers a 30-day money-back guarantee for new shared hosting accounts. If you are not satisfied with our service within the first 30 days of purchase, you may request a full refund. This guarantee applies to first-time purchases only and does not apply to renewals, upgrades, or additional services added after the initial order.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.refundPolicy.item3.title">3. Non-Refundable Services</h3>
+                <p data-i18n="termsConditions.sections.refundPolicy.item3.body">Domain name registrations, renewals, and transfers are strictly non-refundable once processed. SSL certificates, dedicated IP addresses, and add-on services are also non-refundable. VPS hosting plans are eligible for a refund only within the first 7 days of the initial purchase. Any service used beyond the stated refund window is not eligible for a refund.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.refundPolicy.item4.title">4. Refund Request Process</h3>
+                <p data-i18n="termsConditions.sections.refundPolicy.item4.body">To request a refund, you must submit a support ticket through our client portal at my.hostorio.com within the applicable refund window. Please provide your account details, order number, and reason for the refund request. Refund requests submitted after the applicable window will not be processed. Our team will review your request and respond within 3 business days.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.refundPolicy.item5.title">5. Partial Refunds</h3>
+                <p data-i18n="termsConditions.sections.refundPolicy.item5.body">For annual or multi-year plans cancelled after the refund window but before the end of the billing period, a partial refund may be issued at Hostorio's sole discretion. The refund amount will be calculated based on the unused portion of the service, minus any applicable setup fees, discounts received, or transaction costs. Hostorio is not obligated to offer partial refunds.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.refundPolicy.item6.title">6. Refund Processing</h3>
+                <p data-i18n="termsConditions.sections.refundPolicy.item6.body">Approved refunds will be credited back to the original payment method used for the purchase. Processing time may vary depending on your bank or payment provider, typically taking 5–10 business days to appear in your account. For bKash or mobile banking transactions, refunds will be processed to the same account number used during payment. Hostorio does not issue refunds via cash or alternative payment methods.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.refundPolicy.item7.title">7. Refund Exceptions</h3>
+                <p data-i18n="termsConditions.sections.refundPolicy.item7.body">Accounts that have been suspended or terminated due to violation of our Terms of Service, Acceptable Use Policy, or involvement in fraudulent activity are not eligible for any refund. Accounts with chargebacks filed against them will be immediately suspended and are ineligible for refund consideration. Hostorio reserves the right to deny any refund request at its sole discretion if abuse of the refund policy is suspected.</p>
+            </div>
+        </div>
+
+        <!-- ── 8–10. Cancellation Policy ─────────── -->
+        <div class="terms-section-block">
+            <h2 class="terms-section-title">
+                <i class="fas fa-ban"></i>
+                <span data-i18n="termsConditions.sections.cancellationPolicy.title">Cancellation Policy</span>
+            </h2>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.cancellationPolicy.item8.title">8. Account Cancellation</h3>
+                <p data-i18n="termsConditions.sections.cancellationPolicy.item8.body">You may cancel your hosting account at any time by submitting a cancellation request through the client portal at my.hostorio.com. Cancellations requested via phone, email, or live chat will not be processed. Upon cancellation, your account will remain active until the end of the current billing period. No refund will be issued for the remaining unused time unless the request falls within the money-back guarantee window.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.cancellationPolicy.item9.title">9. Data After Cancellation</h3>
+                <p data-i18n="termsConditions.sections.cancellationPolicy.item9.body">Upon account cancellation, Hostorio will retain your account data for a period of 7 days. After this period, all data including files, databases, emails, and backups will be permanently deleted and cannot be recovered. It is your sole responsibility to back up all data before submitting a cancellation request. Hostorio is not liable for any data loss resulting from account cancellation.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.cancellationPolicy.item10.title">10. Auto-Renewal Cancellation</h3>
+                <p data-i18n="termsConditions.sections.cancellationPolicy.item10.body">All hosting services are set to auto-renew by default to prevent service interruption. To disable auto-renewal, you must update your account settings in the client portal at least 72 hours before the renewal date. Cancellation requests submitted less than 72 hours before the renewal date may not be processed in time, and the renewal charge will not be refunded. You will receive renewal reminder emails 30, 15, and 7 days before the renewal date.</p>
+            </div>
+        </div>
+
+        <!-- ── 11–19. Domain Policy ────────────────── -->
+        <div class="terms-section-block">
+            <h2 class="terms-section-title">
+                <i class="fas fa-globe"></i>
+                <span data-i18n="termsConditions.sections.domainPolicy.title">Domain Policy</span>
+            </h2>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.domainPolicy.item11.title">11. Domain Registration</h3>
+                <p data-i18n="termsConditions.sections.domainPolicy.item11.body">Domain names are registered on a first-come, first-served basis and are subject to availability. Hostorio acts as a domain registrar agent and registers domains through accredited registrars. By registering a domain, you agree to the terms and conditions of the respective registry. Domain registration fees are non-refundable once the registration process is completed.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.domainPolicy.item12.title">12. Domain Ownership</h3>
+                <p data-i18n="termsConditions.sections.domainPolicy.item12.body">The registered domain owner (registrant) retains full ownership of the domain name. Hostorio does not claim ownership of any domain registered through its platform. You are responsible for ensuring that your domain registration details (WHOIS information) are accurate and up to date. Providing false or inaccurate information may result in domain suspension by the registry.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.domainPolicy.item13.title">13. Domain Renewal</h3>
+                <p data-i18n="termsConditions.sections.domainPolicy.item13.body">Domains must be renewed before their expiration date to maintain ownership. Hostorio will send renewal reminder emails 60, 30, and 7 days before expiration. If a domain is not renewed before expiration, it will enter a redemption grace period during which recovery may be possible at an additional cost. After the grace period, the domain becomes available for public registration and cannot be recovered.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.domainPolicy.item14.title">14. Domain Transfer</h3>
+                <p data-i18n="termsConditions.sections.domainPolicy.item14.body">Domain transfers to or from Hostorio are subject to registry rules and may take up to 7 days to complete. To initiate an outbound transfer, you must obtain the EPP/authorization code from your account panel and disable the domain lock. Domains that were registered or previously transferred within the last 60 days may not be eligible for transfer per ICANN policy. Transfer fees, if applicable, are non-refundable.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.domainPolicy.item15.title">15. Domain Suspension</h3>
+                <p data-i18n="termsConditions.sections.domainPolicy.item15.body">Hostorio reserves the right to suspend or cancel a domain registration if it is found to be used for illegal activities, spam, phishing, copyright infringement, or any other activity that violates our Acceptable Use Policy. Domain suspensions may also occur due to non-payment of renewal fees or at the request of law enforcement authorities. Suspended domains will not resolve until the issue is resolved.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.domainPolicy.item16.title">16. WHOIS Privacy</h3>
+                <p data-i18n="termsConditions.sections.domainPolicy.item16.body">Hostorio offers WHOIS privacy protection to hide your personal contact information from public domain lookup tools. This service replaces your personal details with proxy information provided by the privacy service provider. WHOIS privacy is subject to registry support and may not be available for all domain extensions. Enabling WHOIS privacy does not affect your legal ownership of the domain.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.domainPolicy.item17.title">17. Domain Disputes</h3>
+                <p data-i18n="termsConditions.sections.domainPolicy.item17.body">Disputes regarding domain name ownership or trademark infringement are handled according to the Uniform Domain-Name Dispute-Resolution Policy (UDRP). Hostorio will cooperate with legal authorities and arbitration panels in resolving domain disputes. If a domain is subject to a legal dispute, Hostorio may lock the domain to prevent transfers until the dispute is resolved. We are not responsible for the outcome of domain disputes between third parties.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.domainPolicy.item18.title">18. Prohibited Domain Use</h3>
+                <p data-i18n="termsConditions.sections.domainPolicy.item18.body">Domains registered through Hostorio must not be used for illegal activities including but not limited to phishing, malware distribution, spam, copyright infringement, or promotion of illegal goods and services. Any domain found in violation of this policy will be immediately suspended without prior notice. Hostorio reserves the right to report such activities to relevant legal authorities and will not issue refunds for suspended domains.</p>
+            </div>
+
+            <div class="terms-item-card">
+                <h3 data-i18n="termsConditions.sections.domainPolicy.item19.title">19. Domain Pricing</h3>
+                <p data-i18n="termsConditions.sections.domainPolicy.item19.body">Domain registration, renewal, and transfer prices are subject to change without prior notice. Price increases by the respective registry will be passed on to the customer. Promotional pricing offered at the time of registration applies only to the initial registration term and does not guarantee the same price upon renewal. Hostorio will notify customers of significant price changes with at least 30 days' notice where possible.</p>
+            </div>
+        </div>
+
+        <!-- ── Privacy Policy ─────────────────────── -->
+        <div class="terms-privacy-box">
+            <h2 class="terms-section-title">
+                <i class="fas fa-shield-halved"></i>
+                <span data-i18n="termsConditions.sections.privacyPolicy.title">Privacy Policy</span>
+            </h2>
+            <p data-i18n="termsConditions.sections.privacyPolicy.body">Hostorio is committed to protecting your personal information. We collect information necessary to provide our services, including your name, email address, billing information, and contact details. This information is used solely for account management, service delivery, and communication purposes. We do not sell, trade, or share your personal information with third parties except as required to provide our services (e.g., payment processors, domain registries) or as required by law. We implement industry-standard security measures to protect your data. For detailed information about how we handle your personal data, please review our full Privacy Policy.</p>
+        </div>
+
+        <!-- ── Contact ─────────────────────────────── -->
+        <div class="terms-contact-box">
+            <h2 class="terms-section-title">
+                <i class="fas fa-headset"></i>
+                <span data-i18n="termsConditions.sections.contact.title">Contact Us</span>
+            </h2>
+            <p data-i18n="termsConditions.sections.contact.body">If you have any questions, concerns, or disputes regarding these Terms and Conditions, please contact our support team. We are available to assist you through our support portal, email, or phone.</p>
+
+            <ul class="terms-contact-list">
+                <li>
+                    <i class="fas fa-life-ring"></i>
+                    <span>
+                        <strong data-i18n="termsConditions.sections.contact.supportLabel">Support Portal:</strong>
+                        <a href="https://my.hostorio.com/submitticket.php" data-i18n="termsConditions.sections.contact.supportLink">my.hostorio.com/submitticket.php</a>
+                    </span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <strong data-i18n="termsConditions.sections.contact.emailLabel">Email:</strong>
+                        <a href="mailto:mail@hostorio.com" data-i18n="termsConditions.sections.contact.email">mail@hostorio.com</a>
+                    </span>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>
+                        <strong data-i18n="termsConditions.sections.contact.phoneLabel">Phone:</strong>
+                        <span data-i18n="termsConditions.sections.contact.phone">+8801779440297</span>
+                    </span>
+                </li>
+            </ul>
+
+            <p class="terms-contact-note" data-i18n="termsConditions.sections.contact.note">Our support team is available Saturday through Thursday, 9:00 AM – 9:00 PM (BST).</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===========================
+     FOOTER
+     =========================== -->
+<footer class="main-footer">
+    <div class="container-wrapper">
+        <div class="footer-content">
+
+            <!-- Column 1: About -->
+            <div class="footer-column footer-about">
+                <div class="footer-logo">
+                    <h3><span class="logo-host">HOST</span><span class="logo-orio">ORIO</span></h3>
+                </div>
+                <p class="footer-description" data-i18n="footer.description">
+                    Hostorio is a popular web hosting services provider. Hostorio provides Shared Hosting, Business Hosting, Reseller Hosting, VPS, and domain Registration-Transfer services.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Important -->
+            <div class="footer-column">
+                <h4 class="footer-title" data-i18n="footer.important.title">IMPORTANT</h4>
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.important.login">Log In</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.important.support">Support</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.important.contact">Contact Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.important.privacy">Privacy Policy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.important.terms">Terms &amp; Conditions</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Quick Links -->
+            <div class="footer-column">
+                <h4 class="footer-title" data-i18n="footer.quickLinks.title">QUICK LINKS</h4>
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.quickLinks.shared">Shared Hosting</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.quickLinks.business">Business Hosting</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.quickLinks.email">Business Email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.quickLinks.reseller">Reseller Hosting</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            <span data-i18n="footer.quickLinks.vps">VPS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Us -->
+            <div class="footer-column">
+                <h4 class="footer-title" data-i18n="footer.contactUs.title">CONTACT US</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kanchan, Rupganj, Narayanganj</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>H-161, OABDA SOROK MATHBARIA</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+8801779440297</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>mail@hostorio.com</span>
+                    </li>
+                </ul>
+                <div class="payment-methods">
+                    <img src="./assets/images/payment/payment-gateway.svg" alt="Payment Methods">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+    <div class="container-wrapper">
+        <div class="footer-bottom-content">
+            <p class="copyright" data-i18n="footer.copyright">
+                © 2026 Hostorio. All Rights Reserved.
+            </p>
+            <div class="footer-bottom-links">
+                <a href="#" data-i18n="footer.privacyPolicy">Privacy Policy</a>
+                <span class="separator">|</span>
+                <a href="#" data-i18n="footer.termsOfService">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- i18n and translation scripts (load first) -->
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/translations/header-footer/header.js"></script>
+<script src="assets/js/translations/terms-and-conditions/terms.js"></script>
+<script src="assets/js/translations/header-footer/footer.js"></script>
+<script src="assets/js/i18n.js"></script>
+<!-- Other scripts -->
+<script src="assets/js/header.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
