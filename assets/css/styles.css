@@ -2968,11 +2968,15 @@ ul {
         padding: 12px 18px;
     }
 }
+
+
+
 /* ===========================
-   DOMAIN SEARCH SECTION
+   DYNAMIC DOMAIN SEARCH SECTION
    =========================== */
+
 .domain-search-section {
-    background: linear-gradient(135deg, #01257D 0%, #011d5f 100%);
+    background: linear-gradient(135deg, var(--navy-blue) 0%, #011d5f 100%);
     padding: 80px 0;
     position: relative;
     overflow: hidden;
@@ -3007,7 +3011,7 @@ ul {
 }
 
 /* ===========================
-   SEARCH BOX
+   SEARCH BOX FORM
    =========================== */
 .search-box-wrapper {
     display: flex;
@@ -3027,11 +3031,13 @@ ul {
     align-items: center;
     padding: 0 24px;
     background: var(--color-white);
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: all 0.3s ease;
+    position: relative;
 }
 
-.search-input-container:focus-within {
+/* Logic for JS focus state */
+.search-input-container.focused {
     border-color: var(--orange-primary);
 }
 
@@ -3039,6 +3045,7 @@ ul {
     color: var(--orange-primary);
     font-size: 18px;
     margin-right: 12px;
+    flex-shrink: 0;
 }
 
 .domain-input {
@@ -3046,7 +3053,7 @@ ul {
     padding: 20px 0;
     font-size: 16px;
     font-family: var(--font-primary);
-    color: var(--color-text);
+    color: var(--color-dark);
     border: none;
     outline: none;
     background: transparent;
@@ -3054,7 +3061,18 @@ ul {
 
 .domain-input::placeholder {
     color: var(--color-gray);
-    opacity: 0.6;
+    opacity: 0.8;
+}
+
+/* Input Error Animation */
+.domain-input.input-error {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
 }
 
 .search-button {
@@ -3094,11 +3112,14 @@ ul {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 4px 0;
+    padding: 8px 16px;
     transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: var(--radius-md);
 }
 
 .extension-item:hover {
+    background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
 }
 
@@ -3115,54 +3136,22 @@ ul {
 }
 
 /* ===========================
-   RESPONSIVE DESIGN - DOMAIN SEARCH
+   RESPONSIVE DESIGN
    =========================== */
 
 @media (max-width: 968px) {
-    .domain-search-section {
-        padding: 60px 0;
-    }
-    
     .section-heading {
         font-size: 36px;
-        margin-bottom: 40px;
     }
     
     .search-box-wrapper {
         max-width: 600px;
     }
-    
-    .domain-input {
-        padding: 18px 0;
-        font-size: 15px;
-    }
-    
-    .search-button {
-        padding: 18px 40px;
-        font-size: 15px;
-    }
-    
-    .extension-item {
-        gap: 6px;
-    }
-    
-    .extension-name {
-        font-size: 16px;
-    }
-    
-    .extension-price {
-        font-size: 14px;
-    }
 }
 
 @media (max-width: 768px) {
-    .domain-search-section {
-        padding: 50px 0;
-    }
-    
     .section-heading {
         font-size: 30px;
-        margin-bottom: 35px;
         padding: 0 10px;
     }
     
@@ -3170,90 +3159,57 @@ ul {
         flex-direction: column;
         max-width: 500px;
     }
+
+    /* HIDES THE DOMAIN EXTENSIONS SECTION ON MOBILE/TABLET */
+    .domain-extensions {
+        display: none;
+    }
     
     .search-input-container {
         padding: 16px 24px;
         border-bottom: 1px solid var(--color-border);
+        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     }
     
     .search-button {
         padding: 18px 24px;
         width: 100%;
-    }
-    
-    .domain-extensions {
-        gap: 30px;
-    }
-    
-    .extension-name {
-        font-size: 16px;
-    }
-    
-    .extension-price {
-        font-size: 14px;
+        border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     }
 }
 
 @media (max-width: 480px) {
-    .domain-search-section {
-        padding: 40px 0;
-    }
-    
     .section-heading {
         font-size: 24px;
-        margin-bottom: 30px;
-    }
-    
-    .search-box-wrapper {
-        max-width: 100%;
-    }
-    
-    .search-input-container {
-        padding: 14px 20px;
-    }
-    
-    .search-icon {
-        font-size: 16px;
-        margin-right: 10px;
-    }
-    
-    .domain-input {
-        padding: 16px 0;
-        font-size: 14px;
-    }
-    
-    .search-button {
-        padding: 16px 20px;
-        font-size: 14px;
-    }
-    
-    .domain-extensions {
-        gap: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 20px;
-    }
-    
-    .extension-item {
-        width: 100%;
-        justify-content: space-between;
-        padding: 8px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    .extension-item:last-child {
-        border-bottom: none;
-    }
-    
-    .extension-name {
-        font-size: 16px;
-    }
-    
-    .extension-price {
-        font-size: 14px;
     }
 }
 
+/* ===========================
+   LOADING STATE
+   =========================== */
+.search-button.loading {
+    position: relative;
+    color: transparent;
+    pointer-events: none;
+}
+
+.search-button.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: var(--color-white);
+    border-radius: var(--radius-full);
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
 
 /* ===========================
    SERVICES SECTION
