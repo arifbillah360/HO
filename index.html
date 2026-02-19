@@ -712,44 +712,55 @@
 
 
 
-   <!-- Domain Search Section -->
-    <section class="domain-search-section">
-        <div class="container-wrapper">
-            <div class="domain-search-content">
-                <h2 class="section-heading" data-i18n="domain.title">Find Your Perfect Domain Name</h2>
-
-                <!-- Search Box -->
-                <div class="search-box-wrapper">
-                    <div class="search-input-container">
-                        <i class="fas fa-search search-icon"></i>
-                        <input
-                            type="text"
-                            class="domain-input"
-                            data-i18n-placeholder="domain.searchPlaceholder"
-                            placeholder="Search for your domain name"
-                        >
-                    </div>
-                    <button class="search-button" data-i18n="domain.searchButton">Search</button>
+<!-- ===========================
+     DYNAMIC DOMAIN SEARCH SECTION
+     =========================== -->
+<section class="domain-search-section">
+    <div class="container-wrapper">
+        <div class="domain-search-content">
+            <h2 class="section-heading">Find Your Perfect Domain Name</h2>
+            
+            <!-- Dynamic Search Box Form -->
+            <form method="post" action="https://my.hostorio.com/cart.php?a=add&domain=register" id="domain-searchform" class="search-box-wrapper">
+                <!-- Hidden Token Field -->
+                <input type="hidden" name="token" value="310831da269f185aeff91e84768ddf9e675287bc">
+                
+                <div class="search-input-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input
+                        type="text"
+                        name="sld"
+                        id="sld"
+                        class="domain-input"
+                        placeholder="Search for your domain name"
+                        required
+                        autocomplete="off"
+                    >
                 </div>
-
-                <!-- Domain Extensions with Prices -->
-                <div class="domain-extensions">
-                    <div class="extension-item">
-                        <span class="extension-name" data-i18n="domain.extensions.com">.com</span>
-                    <!--   <span class="extension-price" data-auto-price="17.98">$17.98</span>-->
-                    </div>
-                    <div class="extension-item">
-                        <span class="extension-name" data-i18n="domain.extensions.net">.net</span>
-                     <!--   <span class="extension-price" data-auto-price="19.98">$19.98</span> -->
-                    </div>
-                    <div class="extension-item">
-                        <span class="extension-name" data-i18n="domain.extensions.org">.org</span>
-                       <!-- <span class="extension-price" data-auto-price="15.08">$15.08</span> -->
-                    </div>
+                <button type="submit" class="search-button">Search</button>
+            </form>
+            
+            <!-- Domain Extensions -->
+            <div class="domain-extensions">
+                <div class="extension-item">
+                    <span class="extension-name">.COM</span>
+                </div>
+                <div class="extension-item">
+                    <span class="extension-name">.XYX</span>
+                </div>
+                <div class="extension-item">
+                    <span class="extension-name">.TOP</span>
+                </div>                
+                <div class="extension-item">
+                    <span class="extension-name">.SHOP</span>
+                </div>
+                <div class="extension-item">
+                    <span class="extension-name">.INFO</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
         <!-- Services Section -->
