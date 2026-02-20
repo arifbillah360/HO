@@ -1,0 +1,32 @@
+# robots.txt for Hostorio (https://hostorio.com)
+# Last updated: 2026
+
+User-agent: *
+Allow: /
+
+# Block admin and client area
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Block WHMCS client portal (handled separately)
+Disallow: /my.hostorio.com/
+
+# Allow important pages
+Allow: /index.html
+Allow: /web-hosting.html
+Allow: /turbo-hosting.html
+Allow: /reseller-hosting.html
+Allow: /student-hosting.html
+Allow: /business-email.html
+Allow: /vps.html
+Allow: /offer.html
+Allow: /about-us.html
+Allow: /privacy-policy.html
+Allow: /terms-and-conditions.html
+Allow: /package.html
+
+# Allow assets needed for rendering
+Allow: /assets/images/
+
+# Sitemap
+Sitemap: https://hostorio.com/sitemap.xml
