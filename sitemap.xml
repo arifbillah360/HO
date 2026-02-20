@@ -53,18 +53,12 @@
   </url>
 
   <!-- Pricing & Offers -->
-  <url>
-    <loc>https://hostorio.com/package.html</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
 
   <url>
     <loc>https://hostorio.com/offer.html</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.97</priority>
   </url>
 
   <!-- Company Information Pages -->
