@@ -27,6 +27,7 @@ window.translations.en.turboPricing = {
             desc: "Going beyond with expanded resources for thriving websites."
         }
     },
+    enterpriseHeading: "Highly Available Enterprise Solutions",
     features: {
         nvmeSpace: "NVMe Space",
         bandwidth: "Bandwidth",
@@ -68,6 +69,7 @@ window.translations.bn.turboPricing = {
             desc: "উন্নত রিসোর্স সহ সফল ওয়েবসাইটের জন্য আরও বেশি সুবিধা পান।"
         }
     },
+    enterpriseHeading: "উচ্চ-প্রাপ্যতাসম্পন্ন এন্টারপ্রাইজ সমাধান",
     features: {
         nvmeSpace: "NVMe স্পেস",
         bandwidth: "ব্যান্ডউইথ",
