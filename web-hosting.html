@@ -74,7 +74,7 @@
       "@type": "Product",
       "name": "Starter Web Hosting Plan",
       "description": "Ideal for beginner and personal websites. Includes 5GB NVMe storage, 1 domain, 1TB bandwidth, 10 email accounts, free SSL certificate, and LiteSpeed server.",
-      "image": "https://hostorio.com/assets/images/pricing/data-server.svg",
+      "image": "https://hostorio.com/assets/images/og-web-hosting-1200x630.jpg",
       "brand": {
         "@type": "Brand",
         "name": "Hostorio"
@@ -83,35 +83,51 @@
         "@type": "Offer",
         "url": "https://hostorio.com/web-hosting.html",
         "priceCurrency": "BDT",
-        "price": "3000",
+        "price": 3000,
         "priceValidUntil": "2026-12-31",
         "availability": "https://schema.org/InStock",
         "shippingDetails": {
-          "@type": "ShippingDetails",
+          "@type": "OfferShippingDetails",
           "shippingDestination": {
-            "@type": "DeliveryTimeSettings",
-            "areaServed": "BD",
-            "deliveryTime": {
-              "@type": "ShippingRateSettings",
-              "minTime": {"@type": "QuantitativeValue", "unitCode": "DAY", "value": "0"},
-              "maxTime": {"@type": "QuantitativeValue", "unitCode": "DAY", "value": "0"}
+            "@type": "DefinedRegion",
+            "addressCountry": "BD"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
             }
           },
-          "shippingRate": {"@type": "PriceSpecification", "priceCurrency": "BDT", "price": "0"}
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "BDT"
+          }
         },
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
-          "returnable": true,
-          "returnPolicyCategory": "FullRefund",
+          "applicableCountry": "BD",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 30,
-          "returnMethod": "ReturnMailIn",
-          "returnFees": "FreeReturn"
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
         }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "500"
+        "ratingValue": 4.8,
+        "reviewCount": 500,
+        "bestRating": 5,
+        "worstRating": 1
       }
     }
     </script>
@@ -123,7 +139,7 @@
       "@type": "Product",
       "name": "Lite Starter Web Hosting Plan",
       "description": "Ideal for small business websites. Includes 10GB NVMe storage, 5 domains, 2TB bandwidth, unlimited email accounts and databases, free SSL certificate, and LiteSpeed server.",
-      "image": "https://hostorio.com/assets/images/pricing/data-server.svg",
+      "image": "https://hostorio.com/assets/images/og-web-hosting-1200x630.jpg",
       "brand": {
         "@type": "Brand",
         "name": "Hostorio"
@@ -132,35 +148,51 @@
         "@type": "Offer",
         "url": "https://hostorio.com/web-hosting.html",
         "priceCurrency": "BDT",
-        "price": "4200",
+        "price": 4200,
         "priceValidUntil": "2026-12-31",
         "availability": "https://schema.org/InStock",
         "shippingDetails": {
-          "@type": "ShippingDetails",
+          "@type": "OfferShippingDetails",
           "shippingDestination": {
-            "@type": "DeliveryTimeSettings",
-            "areaServed": "BD",
-            "deliveryTime": {
-              "@type": "ShippingRateSettings",
-              "minTime": {"@type": "QuantitativeValue", "unitCode": "DAY", "value": "0"},
-              "maxTime": {"@type": "QuantitativeValue", "unitCode": "DAY", "value": "0"}
+            "@type": "DefinedRegion",
+            "addressCountry": "BD"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
             }
           },
-          "shippingRate": {"@type": "PriceSpecification", "priceCurrency": "BDT", "price": "0"}
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "BDT"
+          }
         },
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
-          "returnable": true,
-          "returnPolicyCategory": "FullRefund",
+          "applicableCountry": "BD",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 30,
-          "returnMethod": "ReturnMailIn",
-          "returnFees": "FreeReturn"
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
         }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "500"
+        "ratingValue": 4.8,
+        "reviewCount": 500,
+        "bestRating": 5,
+        "worstRating": 1
       }
     }
     </script>
@@ -172,7 +204,7 @@
       "@type": "Product",
       "name": "Standard Web Hosting Plan",
       "description": "Most popular hosting plan. Includes 20GB NVMe storage, 10 domains, 5TB bandwidth, unlimited email accounts and databases, free SSL certificate, and LiteSpeed server.",
-      "image": "https://hostorio.com/assets/images/pricing/data-server.svg",
+      "image": "https://hostorio.com/assets/images/og-web-hosting-1200x630.jpg",
       "brand": {
         "@type": "Brand",
         "name": "Hostorio"
@@ -181,35 +213,51 @@
         "@type": "Offer",
         "url": "https://hostorio.com/web-hosting.html",
         "priceCurrency": "BDT",
-        "price": "6000",
+        "price": 6000,
         "priceValidUntil": "2026-12-31",
         "availability": "https://schema.org/InStock",
         "shippingDetails": {
-          "@type": "ShippingDetails",
+          "@type": "OfferShippingDetails",
           "shippingDestination": {
-            "@type": "DeliveryTimeSettings",
-            "areaServed": "BD",
-            "deliveryTime": {
-              "@type": "ShippingRateSettings",
-              "minTime": {"@type": "QuantitativeValue", "unitCode": "DAY", "value": "0"},
-              "maxTime": {"@type": "QuantitativeValue", "unitCode": "DAY", "value": "0"}
+            "@type": "DefinedRegion",
+            "addressCountry": "BD"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
             }
           },
-          "shippingRate": {"@type": "PriceSpecification", "priceCurrency": "BDT", "price": "0"}
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "BDT"
+          }
         },
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
-          "returnable": true,
-          "returnPolicyCategory": "FullRefund",
+          "applicableCountry": "BD",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 30,
-          "returnMethod": "ReturnMailIn",
-          "returnFees": "FreeReturn"
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
         }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "500"
+        "ratingValue": 4.8,
+        "reviewCount": 500,
+        "bestRating": 5,
+        "worstRating": 1
       }
     }
     </script>
@@ -221,7 +269,7 @@
       "@type": "Product",
       "name": "Advanced Web Hosting Plan",
       "description": "Ideal for eCommerce websites. Includes unlimited NVMe storage, unlimited domains and bandwidth, unlimited email accounts, 16 CPU cores, 16GB RAM, free SSL certificate, and LiteSpeed server.",
-      "image": "https://hostorio.com/assets/images/pricing/data-server.svg",
+      "image": "https://hostorio.com/assets/images/og-web-hosting-1200x630.jpg",
       "brand": {
         "@type": "Brand",
         "name": "Hostorio"
@@ -230,35 +278,51 @@
         "@type": "Offer",
         "url": "https://hostorio.com/web-hosting.html",
         "priceCurrency": "BDT",
-        "price": "12000",
+        "price": 12000,
         "priceValidUntil": "2026-12-31",
         "availability": "https://schema.org/InStock",
         "shippingDetails": {
-          "@type": "ShippingDetails",
+          "@type": "OfferShippingDetails",
           "shippingDestination": {
-            "@type": "DeliveryTimeSettings",
-            "areaServed": "BD",
-            "deliveryTime": {
-              "@type": "ShippingRateSettings",
-              "minTime": {"@type": "QuantitativeValue", "unitCode": "DAY", "value": "0"},
-              "maxTime": {"@type": "QuantitativeValue", "unitCode": "DAY", "value": "0"}
+            "@type": "DefinedRegion",
+            "addressCountry": "BD"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
             }
           },
-          "shippingRate": {"@type": "PriceSpecification", "priceCurrency": "BDT", "price": "0"}
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "BDT"
+          }
         },
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
-          "returnable": true,
-          "returnPolicyCategory": "FullRefund",
+          "applicableCountry": "BD",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 30,
-          "returnMethod": "ReturnMailIn",
-          "returnFees": "FreeReturn"
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
         }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "500"
+        "ratingValue": 4.8,
+        "reviewCount": 500,
+        "bestRating": 5,
+        "worstRating": 1
       }
     }
     </script>
@@ -324,8 +388,8 @@
       "servesCuisine": "Web Hosting, VPS, Domain Registration",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "500"
+        "ratingValue": 4.8,
+        "reviewCount": 500
       }
     }
     </script>
@@ -337,6 +401,7 @@
       "@type": "Product",
       "name": "Web Hosting Service",
       "description": "Reliable shared web hosting with free SSL, cPanel, NVMe storage, unlimited email, 99.9% uptime. Perfect for WordPress, blogs and small business websites.",
+      "image": "https://hostorio.com/assets/images/og-web-hosting-1200x630.jpg",
       "brand": {
         "@type": "Brand",
         "name": "Hostorio"
@@ -345,17 +410,17 @@
         "@type": "AggregateOffer",
         "url": "https://hostorio.com/web-hosting.html",
         "priceCurrency": "BDT",
-        "lowPrice": "3000",
-        "highPrice": "12000",
-        "offerCount": "4",
+        "lowPrice": 3000,
+        "highPrice": 12000,
+        "offerCount": 4,
         "availability": "https://schema.org/InStock"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "500",
-        "bestRating": "5",
-        "worstRating": "1"
+        "ratingValue": 4.8,
+        "reviewCount": 500,
+        "bestRating": 5,
+        "worstRating": 1
       },
       "review": [
         {
@@ -366,8 +431,8 @@
           },
           "reviewRating": {
             "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
+            "ratingValue": 5,
+            "bestRating": 5
           },
           "reviewBody": "Excellent web hosting service with great support and reliable uptime."
         }
