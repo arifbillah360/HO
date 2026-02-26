@@ -9,9 +9,6 @@ Disallow: /assets/js/
 Disallow: /assets/css/
 Disallow: /package.html
 
-# Block WHMCS client portal (handled separately)
-Disallow: /my.hostorio.com/
-
 # Allow important pages
 Allow: /index.html
 Allow: /web-hosting.html
