@@ -7,6 +7,7 @@ Allow: /
 # Block admin and client area
 Disallow: /assets/js/
 Disallow: /assets/css/
+Disallow: /package.html
 
 # Block WHMCS client portal (handled separately)
 Disallow: /my.hostorio.com/
@@ -23,10 +24,15 @@ Allow: /offer.html
 Allow: /about-us.html
 Allow: /privacy-policy.html
 Allow: /terms-and-conditions.html
-Allow: /package.html
 
 # Allow assets needed for rendering
 Allow: /assets/images/
+
+# Block CMS artifacts
+Disallow: /elementor-hf/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
 
 # Sitemap
 Sitemap: https://hostorio.com/sitemap.xml
