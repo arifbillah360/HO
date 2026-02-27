@@ -8,16 +8,16 @@ window.translations.en.offerPricing = {
 
     plans: {
         plan1: {
-            name: "2GB",
+            name: "2GB+.SHOP domain",
             desc: "Ideal for beginner/personal websites",
             f1: "100% Pure 2GB NVMe",
             f2: "Host 1 Domain",
             f3: "2 GB NVMe Storage",
             f4: "Unlimited Bandwidth",
             f5: "10 Email Accounts",
-            f6: "Unlimited Sub Domain",
-            f7: "Unlimited Databases",
-            f8: "1 Core / 1GB RAM / 30 EP",
+            f6: "10 Sub Domain",
+            f7: "10 Databases",
+            f8: "1 Core / 1GB RAM / 20 EP",
             f9: "Free SSL Certificate",
             f10: "100% Uptime Guarantee",
             f11: "1Gbps Connectivity",
@@ -25,7 +25,7 @@ window.translations.en.offerPricing = {
             f13: "cPanel"
         },
         plan2: {
-            name: "5GB Only",
+            name: "5GB+XYZ",
             desc: "Recommended hosting for beginner. Best Speed 100% guarantee.",
             f1: "100% Pure 5GB NVMe",
             f2: "Host 1 Domain",
@@ -85,16 +85,16 @@ window.translations.bn.offerPricing = {
 
     plans: {
         plan1: {
-            name: "২ জিবি",
+            name: "২ জিবি+.SHOP domain",
             desc: "শিক্ষার্থী/ব্যক্তিগত ওয়েবসাইটের জন্য আদর্শ",
             f1: "১০০% বিশুদ্ধ ২ জিবি NVMe",
             f2: "১টি ডোমেইন হোস্ট",
             f3: "২ জিবি NVMe স্টোরেজ",
             f4: "আনলিমিটেড ব্যান্ডউইথ",
             f5: "১০টি ইমেইল অ্যাকাউন্ট",
-            f6: "আনলিমিটেড সাব ডোমেইন",
-            f7: "আনলিমিটেড ডেটাবেজ",
-            f8: "১ কোর / ১ জিবি র‍্যাম / ৩০ EP",
+            f6: "১০ সাব ডোমেইন",
+            f7: "১০ ডেটাবেজ",
+            f8: "১ কোর / ১ জিবি র‍্যাম / ২০ EP",
             f9: "বিনামূল্যে SSL সার্টিফিকেট",
             f10: "১০০% আপটাইম গ্যারান্টি",
             f11: "১ জিবিপিএস কানেক্টিভিটি",
@@ -102,7 +102,7 @@ window.translations.bn.offerPricing = {
             f13: "cPanel"
         },
         plan2: {
-            name: "৫ জিবি অনলি",
+            name: "৫ জিবি+XYZ",
             desc: "শিক্ষার্থীদের জন্য প্রস্তাবিত হোস্টিং। সেরা গতি ১০০% নিশ্চিত।",
             f1: "১০০% বিশুদ্ধ ৫ জিবি NVMe",
             f2: "১টি ডোমেইন হোস্ট",
