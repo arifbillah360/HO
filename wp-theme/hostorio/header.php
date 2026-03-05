@@ -8,6 +8,72 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<div class="top-info-bar">
+    <div class="container-wrapper">
+        <div class="top-bar-content">
+            <div class="top-left-links">
+                <a href="<?php echo esc_url( hostorio_get( 'client_area_url', 'https://my.hostorio.com/' ) ); ?>submitticket.php" class="info-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span data-i18n="nav.helpCenter">Help Center</span>
+                </a>
+                <a href="#" class="info-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span><?php echo esc_html( hostorio_get( 'business_phone', '+8801779440297' ) ); ?></span>
+                </a>
+                <div class="language-selector">
+                    <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/flags/us.png" alt="English" class="flag-icon">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+
+                    <div class="language-dropdown-menu">
+                        <button class="language-option active" data-language="en" data-flag="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/flags/us.png">
+                            <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/flags/us.png" alt="English" class="flag-icon">
+                            <span>English</span>
+                        </button>
+                        <button class="language-option" data-language="bn" data-flag="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/flags/bd.png">
+                            <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/flags/bd.png" alt="Bangla" class="flag-icon">
+                            <span>বাংলা</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="top-right-links">
+                <!-- Desktop Currency Switcher -->
+                <div class="currency-switcher desktop-currency">
+                    <button class="currency-btn active" data-currency="BDT">
+                        <i class="fas fa-bangladeshi-taka-sign"></i>
+                        <span>BDT</span>
+                    </button>
+                    <span class="currency-divider">|</span>
+                    <button class="currency-btn" data-currency="USD">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>USD</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Currency Dropdown -->
+                <div class="currency-dropdown mobile-currency">
+                    <button class="currency-dropdown-btn" id="currencyDropdownBtn">
+                        <i class="fas fa-bangladeshi-taka-sign"></i>
+                        <span class="current-currency">BDT</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="currency-dropdown-menu" id="currencyDropdownMenu">
+                        <button class="currency-option active" data-currency="BDT">
+                            <i class="fas fa-bangladeshi-taka-sign"></i>
+                            <span>BDT</span>
+                        </button>
+                        <button class="currency-option" data-currency="USD">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>USD</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <header class="main-header">
     <div class="container-wrapper">
         <div class="header-content">
