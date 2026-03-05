@@ -1,0 +1,217 @@
+window.translations = window.translations || { en: {}, bn: {} };
+
+window.translations.en.privacyPolicy = {
+    hero: {
+        title: "Privacy Policy",
+        subtitle: "Your Privacy Matters to Us",
+        lastUpdated: "Last Updated: January 2025"
+    },
+    intro: {
+        heading: "About This Policy",
+        text: "This is Hostorio Privacy Policy. It discusses how we will collect, use, maintain and disclose the information which we will collect from our website visitors and customers. Our privacy policy is part of our contracts. It is incorporated into our TOS and any other contract we have with users."
+    },
+    infoCollection: {
+        title: "What Information Do We Collect?",
+        visitor: {
+            title: "Visitor Information",
+            text: "When a visitor visits our website, our web server collects basic user information about you, including your ISP's domain, the time you accessed our website, and the pages from within our website that you visit. This information is not personally identifiable except as needed to prevent fraud or abuse of the system."
+        },
+        customer: {
+            title: "Customer Information",
+            intro: "When a customer orders our service, we collect the following information:",
+            items: {
+                contact: {
+                    title: "Traditional Contact Information",
+                    desc: "Mailing address, phone number, and fax number"
+                },
+                internet: {
+                    title: "Internet Contact Information",
+                    desc: "Email addresses and online contact details"
+                },
+                payment: {
+                    title: "Payment Information",
+                    desc: "Credit card information for billing purposes"
+                },
+                technical: {
+                    title: "Technical Information",
+                    desc: "Web browser type, IP address, and operating system"
+                },
+                credentials: {
+                    title: "Account Credentials",
+                    desc: "Username and password combinations"
+                }
+            }
+        }
+    },
+    purpose: {
+        title: "Why We Collect This Information",
+        billing: {
+            title: "Billing & Support",
+            desc: "For processing payments and providing customer support services"
+        },
+        domain: {
+            title: "Domain Registration",
+            desc: "For establishing and managing domain registration accounts"
+        },
+        website: {
+            title: "Website Administration",
+            desc: "For managing and maintaining our website infrastructure"
+        },
+        personalization: {
+            title: "Personalization",
+            desc: "To customize the website experience for your multiple visits"
+        }
+    },
+    usage: {
+        title: "How We Use Your Information",
+        guarantee: {
+            title: "Your Privacy is Protected",
+            text: "We do not share, rent, sell, or release your personal information to any individual, entity, or third party."
+        },
+        heading: "Hostorio may use personally identifiable information for:",
+        points: {
+            p1: "Contacting users regarding products and services offered by Hostorio and its trusted affiliates, independent contractors, and business partners",
+            p2: "Enhancing customers' experience with Hostorio and such affiliates, independent contractors, and business partners",
+            p3: "Research regarding the effectiveness of the website and the marketing, advertising, and sales efforts",
+            p4: "Providing you with information about products that might be of interest to you",
+            p5: "Enabling you to take advantage of special partner programs or Hostorio specials",
+            p6: "Providing customers with system information or information about new or upgraded products"
+        }
+    },
+    disclosure: {
+        title: "Information Disclosure",
+        testimonials: {
+            heading: "Testimonials",
+            text: "We may disclose contact information with your permission when gathering and posting testimonials."
+        },
+        legal: {
+            heading: "Legal Requirements",
+            intro: "We will not otherwise disclose customer personal and account information unless we have reason to believe that disclosing such information is necessary to:",
+            li1: "Identify, make contact with, or bring legal action against someone who may be causing harm or interfering with the rights or property of Hostorio, our customers, or others",
+            li2: "Provide information to regulatory authorities and law enforcement officials in accordance with applicable laws",
+            li3: "Comply with legal obligations where Hostorio has a good faith belief that the law requires such disclosure"
+        }
+    },
+    concerns: {
+        title: "Privacy Concerns",
+        boxTitle: "Think We're Not Following This Policy?",
+        boxText: "If you believe we are not handling your information in accordance with our privacy policy, please contact us immediately. If, for some reason, we have violated our privacy policy, we will correct the error as soon as you notify us."
+    },
+    changes: {
+        title: "Changes to Our Privacy Policy",
+        text: "From time to time, we may change our Privacy Policy. We will post those changes on this page so that our customers will always be aware of what information we collect, how we use it, and under what circumstances we share the information with others."
+    },
+    contact: {
+        heading: "Have Questions About Privacy?",
+        description: "If you have any questions or concerns about our privacy policy, our support team is here to help you",
+        button: "Contact Support Team"
+    }
+};
+
+window.translations.bn.privacyPolicy = {
+    hero: {
+        title: "গোপনীয়তা নীতি",
+        subtitle: "আপনার গোপনীয়তা আমাদের কাছে গুরুত্বপূর্ণ",
+        lastUpdated: "সর্বশেষ আপডেট: জানুয়ারি ২০২৫"
+    },
+    intro: {
+        heading: "এই নীতি সম্পর্কে",
+        text: "এটি Hostorio-এর গোপনীয়তা নীতি। এটি আলোচনা করে যে আমরা আমাদের ওয়েবসাইট ভিজিটর এবং গ্রাহকদের কাছ থেকে সংগৃহীত তথ্য কীভাবে সংগ্রহ, ব্যবহার, রক্ষণাবেক্ষণ এবং প্রকাশ করব। আমাদের গোপনীয়তা নীতি আমাদের চুক্তির অংশ। এটি আমাদের ToS এবং ব্যবহারকারীদের সাথে যেকোনো অন্য চুক্তিতে অন্তর্ভুক্ত।"
+    },
+    infoCollection: {
+        title: "আমরা কী তথ্য সংগ্রহ করি?",
+        visitor: {
+            title: "ভিজিটরের তথ্য",
+            text: "কোনো ভিজিটর আমাদের ওয়েবসাইট পরিদর্শন করলে আমাদের ওয়েব সার্ভার আপনার সম্পর্কে মৌলিক তথ্য সংগ্রহ করে, যার মধ্যে আপনার আইএসপির ডোমেইন, আমাদের ওয়েবসাইটে প্রবেশের সময় এবং ভিজিট করা পেজগুলো অন্তর্ভুক্ত। প্রতারণা বা সিস্টেমের অপব্যবহার প্রতিরোধের প্রয়োজন ছাড়া এই তথ্য ব্যক্তিগতভাবে শনাক্তযোগ্য নয়।"
+        },
+        customer: {
+            title: "গ্রাহকের তথ্য",
+            intro: "কোনো গ্রাহক আমাদের সেবা অর্ডার করলে আমরা নিম্নলিখিত তথ্য সংগ্রহ করি:",
+            items: {
+                contact: {
+                    title: "প্রচলিত যোগাযোগের তথ্য",
+                    desc: "ডাক ঠিকানা, ফোন নম্বর এবং ফ্যাক্স নম্বর"
+                },
+                internet: {
+                    title: "ইন্টারনেট যোগাযোগের তথ্য",
+                    desc: "ইমেইল ঠিকানা এবং অনলাইন যোগাযোগের বিবরণ"
+                },
+                payment: {
+                    title: "পেমেন্টের তথ্য",
+                    desc: "বিলিংয়ের উদ্দেশ্যে ক্রেডিট কার্ডের তথ্য"
+                },
+                technical: {
+                    title: "কারিগরি তথ্য",
+                    desc: "ওয়েব ব্রাউজারের ধরন, আইপি ঠিকানা এবং অপারেটিং সিস্টেম"
+                },
+                credentials: {
+                    title: "অ্যাকাউন্টের পরিচয়পত্র",
+                    desc: "ব্যবহারকারীর নাম ও পাসওয়ার্ডের সমন্বয়"
+                }
+            }
+        }
+    },
+    purpose: {
+        title: "আমরা কেন এই তথ্য সংগ্রহ করি",
+        billing: {
+            title: "বিলিং ও সাপোর্ট",
+            desc: "পেমেন্ট প্রক্রিয়াকরণ এবং গ্রাহক সেবা সহায়তার জন্য"
+        },
+        domain: {
+            title: "ডোমেইন রেজিস্ট্রেশন",
+            desc: "ডোমেইন রেজিস্ট্রেশন অ্যাকাউন্ট স্থাপন ও পরিচালনার জন্য"
+        },
+        website: {
+            title: "ওয়েবসাইট পরিচালনা",
+            desc: "আমাদের ওয়েবসাইট অবকাঠামো পরিচালনা ও রক্ষণাবেক্ষণের জন্য"
+        },
+        personalization: {
+            title: "ব্যক্তিগতকরণ",
+            desc: "আপনার একাধিক পরিদর্শনে ওয়েবসাইটের অভিজ্ঞতা কাস্টমাইজ করতে"
+        }
+    },
+    usage: {
+        title: "আমরা আপনার তথ্য কীভাবে ব্যবহার করি",
+        guarantee: {
+            title: "আপনার গোপনীয়তা সুরক্ষিত",
+            text: "আমরা আপনার ব্যক্তিগত তথ্য কোনো ব্যক্তি, প্রতিষ্ঠান বা তৃতীয় পক্ষের সাথে শেয়ার, ভাড়া, বিক্রি বা প্রকাশ করি না।"
+        },
+        heading: "Hostorio ব্যক্তিগতভাবে শনাক্তযোগ্য তথ্য নিম্নলিখিত কাজে ব্যবহার করতে পারে:",
+        points: {
+            p1: "Hostorio এবং এর বিশ্বস্ত অ্যাফিলিয়েট, স্বাধীন ঠিকাদার এবং ব্যবসায়িক অংশীদারদের পণ্য ও সেবা সম্পর্কে ব্যবহারকারীদের সাথে যোগাযোগ করা",
+            p2: "Hostorio এবং অ্যাফিলিয়েট, স্বাধীন ঠিকাদার ও ব্যবসায়িক অংশীদারদের সাথে গ্রাহকদের অভিজ্ঞতা উন্নত করা",
+            p3: "ওয়েবসাইট এবং বিপণন, বিজ্ঞাপন ও বিক্রয় প্রচেষ্টার কার্যকারিতা নিয়ে গবেষণা",
+            p4: "আপনার আগ্রহের হতে পারে এমন পণ্য সম্পর্কে তথ্য প্রদান",
+            p5: "বিশেষ পার্টনার প্রোগ্রাম বা Hostorio-এর বিশেষ সুবিধা গ্রহণে আপনাকে সক্ষম করা",
+            p6: "সিস্টেম তথ্য বা নতুন বা আপগ্রেড করা পণ্য সম্পর্কে গ্রাহকদের অবহিত করা"
+        }
+    },
+    disclosure: {
+        title: "তথ্য প্রকাশ",
+        testimonials: {
+            heading: "প্রশংসাপত্র",
+            text: "প্রশংসাপত্র সংগ্রহ ও প্রকাশের সময় আমরা আপনার অনুমতিতে যোগাযোগের তথ্য প্রকাশ করতে পারি।"
+        },
+        legal: {
+            heading: "আইনি প্রয়োজনীয়তা",
+            intro: "আমরা গ্রাহকের ব্যক্তিগত ও অ্যাকাউন্ট তথ্য অন্যথায় প্রকাশ করব না, যদি না আমাদের বিশ্বাস করার কারণ থাকে যে তথ্য প্রকাশ করা প্রয়োজন:",
+            li1: "Hostorio, আমাদের গ্রাহক বা অন্যদের অধিকার বা সম্পদের ক্ষতি করতে পারে এমন কাউকে শনাক্ত করতে, যোগাযোগ করতে বা আইনি পদক্ষেপ নিতে",
+            li2: "প্রযোজ্য আইন অনুযায়ী নিয়ন্ত্রক কর্তৃপক্ষ ও আইন প্রয়োগকারী কর্মকর্তাদের তথ্য প্রদান করতে",
+            li3: "আইনি বাধ্যবাধকতা মেনে চলতে যেখানে Hostorio সৎ বিশ্বাসে মনে করে আইন এই প্রকাশ দাবি করে"
+        }
+    },
+    concerns: {
+        title: "গোপনীয়তা উদ্বেগ",
+        boxTitle: "মনে করছেন আমরা এই নীতি মানছি না?",
+        boxText: "আপনি যদি বিশ্বাস করেন যে আমরা আমাদের গোপনীয়তা নীতি অনুযায়ী আপনার তথ্য পরিচালনা করছি না, তাহলে অবিলম্বে আমাদের সাথে যোগাযোগ করুন। কোনো কারণে আমরা গোপনীয়তা নীতি লঙ্ঘন করলে, আপনি আমাদের জানানোর সাথে সাথে আমরা ত্রুটি সংশোধন করব।"
+    },
+    changes: {
+        title: "আমাদের গোপনীয়তা নীতিতে পরিবর্তন",
+        text: "সময়ে সময়ে আমরা আমাদের গোপনীয়তা নীতি পরিবর্তন করতে পারি। আমরা সেই পরিবর্তনগুলো এই পেজে প্রকাশ করব যাতে আমাদের গ্রাহকরা সর্বদা জানতে পারেন আমরা কী তথ্য সংগ্রহ করি, কীভাবে ব্যবহার করি এবং কোন পরিস্থিতিতে অন্যদের সাথে শেয়ার করি।"
+    },
+    contact: {
+        heading: "গোপনীয়তা নিয়ে প্রশ্ন আছে?",
+        description: "আমাদের গোপনীয়তা নীতি সম্পর্কে কোনো প্রশ্ন বা উদ্বেগ থাকলে আমাদের সাপোর্ট টিম আপনাকে সহায়তা করতে প্রস্তুত",
+        button: "সাপোর্ট টিমে যোগাযোগ করুন"
+    }
+};

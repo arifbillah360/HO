@@ -1,0 +1,915 @@
+<?php
+/**
+ * Template Name: VPS
+ * Description: VPS page template for Hostorio theme.
+ *
+ * @package Hostorio
+ */
+
+// Register SEO meta and schema markup before get_header() fires wp_head
+add_action( 'wp_head', function() {
+    if ( ! defined( 'WPSEO_VERSION' ) && ! class_exists( 'RankMath' ) ) {
+        echo '<meta name="description" content="VPS hosting from ৳1470/mo with full root access. 4-16 CPU cores, 4-32GB RAM, SSD storage. Perfect for enterprises &amp; developers. 99.9% uptime.">' . "\n";
+        echo '<link rel="canonical" href="https://hostorio.com/vps.html">' . "\n";
+        echo '<meta name="robots" content="index, follow">' . "\n";
+        echo '<meta property="og:type" content="website">' . "\n";
+        echo '<meta property="og:title" content="🖥️ VPS Hosting – Dedicated Resources & Full Control | Hostorio">' . "\n";
+        echo '<meta property="og:description" content="Enterprise VPS hosting with full root access. 4-16 CPU cores, 4-32GB RAM, SSD storage. Scalable, powerful, reliable. Perfect for high-traffic sites &amp; applications.">' . "\n";
+        echo '<meta property="og:image" content="https://hostorio.com/assets/images/logo/hostorio-logo.png">' . "\n";
+        echo '<meta property="og:image:width" content="1024">' . "\n";
+        echo '<meta property="og:image:height" content="239">' . "\n";
+        echo '<meta property="og:site_name" content="Hostorio">' . "\n";
+        echo '<meta property="og:locale" content="en_US">' . "\n";
+        echo '<meta property="og:url" content="https://hostorio.com/vps.html">' . "\n";
+        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        echo '<meta name="twitter:site" content="@hostorio">' . "\n";
+        echo '<meta name="twitter:title" content="🖥️ VPS Hosting – Dedicated Resources & Full Control | Hostorio">' . "\n";
+        echo '<meta name="twitter:description" content="VPS hosting with dedicated CPU, RAM &amp; SSD. Full root access, scalable resources. From ৳1470/mo. Perfect for enterprises.">' . "\n";
+        echo '<meta name="twitter:image" content="https://hostorio.com/assets/images/logo/hostorio-logo.png">' . "\n";
+    }
+    ?>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Hostorio",
+      "url": "https://hostorio.com",
+      "logo": "https://hostorio.com/assets/images/logo/hostorio-logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+8801779440297",
+        "contactType": "customer service",
+        "email": "mail@hostorio.com",
+        "areaServed": "BD",
+        "availableLanguage": ["English", "Bengali"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/hostorio",
+        "https://x.com/hostorio",
+        "https://www.youtube.com/@arifbillahcse",
+        "https://www.linkedin.com/company/hostorio/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Virtual Private Server Hosting",
+      "name": "VPS Hosting Plans",
+      "description": "Enterprise-grade VPS hosting with dedicated CPU cores, RAM, and SSD storage. Full root access for complete server control. Scalable resources from 4 to 16 CPU cores and 4GB to 32GB RAM. Perfect for high-traffic websites, applications, and developers requiring dedicated resources with 99.9% uptime guarantee.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Hostorio",
+        "url": "https://hostorio.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Bangladesh"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://hostorio.com/vps.html",
+        "priceCurrency": "BDT",
+        "lowPrice": "17640",
+        "highPrice": "141120",
+        "offerCount": "4",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "500",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hostorio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hosting Services",
+          "item": "https://hostorio.com/#hosting"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "VPS Hosting",
+          "item": "https://hostorio.com/vps.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is VPS hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VPS (Virtual Private Server) hosting provides dedicated resources including CPU cores, RAM, and SSD storage within a virtualized environment. Unlike shared hosting, you get guaranteed resources, full root access, and complete control over your server environment. Perfect for high-traffic sites and applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which VPS hosting plan should I choose?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For small to medium applications, Enhanced VPS (4 cores, 4GB RAM) is ideal. For growing businesses, Premium VPS (6 cores, 8GB RAM) offers more power. Our most popular Elite VPS (8 cores, 16GB RAM) suits high-traffic sites. For enterprise applications, Ultimate VPS (16 cores, 32GB RAM) provides maximum resources."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I get root access with VPS hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! All our VPS hosting plans include full root access, giving you complete control over your server. You can install any software, configure settings, and manage your server environment exactly as you need."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I upgrade my VPS hosting plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! VPS hosting is designed to be scalable. You can easily upgrade to a higher plan as your resource needs grow. Your data will be migrated seamlessly, and the remaining value from your current plan will be prorated toward the upgrade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between VPS and shared hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VPS hosting provides dedicated CPU cores, RAM, and storage that are not shared with other users, unlike shared hosting. You get guaranteed resources, full root access, better performance, enhanced security, and the ability to run custom software. VPS is ideal when you outgrow shared hosting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide managed VPS hosting support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Our VPS hosting includes 24/7 technical support. Our team can assist with server management, security updates, performance optimization, and troubleshooting to ensure your VPS runs smoothly at all times."
+          }
+        }
+      ]
+    }
+    </script>
+    <?php
+}, 1 );
+
+get_header();
+?>
+
+
+    <!-- ===========================
+         PACKAGE CHOOSER SECTION
+         =========================== -->
+    <div class="package-chooser-wrapper">
+        <!-- Background Animation -->
+        <div class="motion-background">
+            <i class="fas fa-server motion-item item-1"></i>
+            <i class="fas fa-cloud motion-item item-2"></i>
+            <i class="fas fa-database motion-item item-3"></i>
+            <i class="fas fa-shield-halved motion-item item-4"></i>
+            <i class="fas fa-rocket motion-item item-5"></i>
+            <i class="fas fa-bolt motion-item item-6"></i>
+            <i class="fas fa-globe motion-item item-7"></i>
+            <i class="fas fa-envelope motion-item item-8"></i>
+            <i class="fas fa-network-wired motion-item item-9"></i>
+            <i class="fas fa-code motion-item item-10"></i>
+            <i class="fas fa-lock motion-item item-11"></i>
+            <i class="fas fa-wifi motion-item item-12"></i>
+            <i class="fab fa-wordpress motion-item item-13"></i>
+            <i class="fas fa-briefcase motion-item item-14"></i>
+            <i class="fas fa-graduation-cap motion-item item-15"></i>
+            <i class="fas fa-chart-line motion-item item-16"></i>
+            <i class="fas fa-plug motion-item item-17"></i>
+            <i class="fas fa-sitemap motion-item item-18"></i>
+        </div>
+
+        <!-- Left Side Icon Box -->
+        <div class="side-icon-box left-side">
+            <i class="fas fa-server"></i>
+        </div>
+
+        <!-- Right Side Icon Box -->
+        <div class="side-icon-box right-side">
+            <i class="fas fa-database"></i>
+        </div>
+
+        <div class="content-container">
+            <div class="chooser-inner">
+                <h1 class="section-headline" data-i18n="vpsHero.headline">Powerful VPS Hosting for Your Business</h1>
+
+                <!-- Desktop Package Grid -->
+                <div class="packages-desktop">
+                    <div class="top-packages">
+                        <a href="<?php echo esc_url( hostorio_page_url( 'web-hosting' ) ); ?>" class="package-card ">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.wordpress">WordPress Hosting</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'turbo-hosting' ) ); ?>" class="package-card">
+                            <span class="card-icon">🚀</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.turbo">Turbo Hosting</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'reseller-hosting' ) ); ?>" class="package-card">
+                            <span class="card-icon">🔄</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.reseller">Reseller Hosting</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'student-hosting' ) ); ?>" class="package-card">
+                            <span class="card-icon">🎓</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.student">Student Hosting</span>
+                        </a>
+                    </div>
+                    <div class="bottom-packages">
+                        <a href="<?php echo esc_url( hostorio_page_url( 'vps' ) ); ?>" class="package-card highlighted">
+                            <span class="card-icon">🖥️</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.vps">VPS</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'business-email' ) ); ?>" class="package-card">
+                            <span class="card-icon">✉️</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.email">Business Email</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'offer' ) ); ?>" class="package-card">
+                            <span class="card-icon">🌐</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.offer">Offer</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Package Dropdown -->
+                <div class="packages-mobile">
+                    <div class="mobile-chooser">
+                        <button type="button" class="chooser-button" id="mobileChooserBtn">
+                            <span class="btn-icon" id="displayIcon">⚡</span>
+                            <span class="btn-label" id="displayLabel">Web Hosting</span>
+                            <i class="fas fa-chevron-down btn-chevron" id="chevronIcon"></i>
+                        </button>
+                        <nav class="chooser-list" id="packageList">
+                            <a href="<?php echo esc_url( hostorio_page_url( 'web-hosting' ) ); ?>" class="list-option selected" data-icon="⚡" data-label="WordPress Hosting">
+                                <span class="opt-icon">⚡</span>
+                                <span class="opt-label" data-i18n="packageHero.wordpress">Web Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'turbo-hosting' ) ); ?>" class="list-option" data-icon="🚀" data-label="Turbo Hosting">
+                                <span class="opt-icon">🚀</span>
+                                <span class="opt-label" data-i18n="packageHero.turbo">Turbo Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'reseller-hosting' ) ); ?>" class="list-option" data-icon="🔄" data-label="Reseller Hosting">
+                                <span class="opt-icon">🔄</span>
+                                <span class="opt-label" data-i18n="packageHero.reseller">Reseller Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'student-hosting' ) ); ?>" class="list-option" data-icon="🎓" data-label="Student Hosting">
+                                <span class="opt-icon">🎓</span>
+                                <span class="opt-label" data-i18n="packageHero.student">Student Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'vps' ) ); ?>" class="list-option" data-icon="🖥️" data-label="VPS">
+                                <span class="opt-icon">🖥️</span>
+                                <span class="opt-label" data-i18n="packageHero.vps">VPS</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'business-email' ) ); ?>" class="list-option" data-icon="✉️" data-label="Business Email">
+                                <span class="opt-icon">✉️</span>
+                                <span class="opt-label" data-i18n="packageHero.email">Business Email</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'offer' ) ); ?>" class="list-option" data-icon="🌐" data-label="Domain">
+                                <span class="opt-icon">🌐</span>
+                                <span class="opt-label" data-i18n="packageHero.offer">Offer</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- VPS Pricing Section -->
+<section class="vps-plan-pricing-section" id="#vps-section-id" style="padding: 60px 0; background: #f8fafc;">
+    <div class="container-wrapper">
+
+        <!-- Section Header -->
+        <div class="pricing-header" style="margin-bottom: 40px;">
+            <h2 class="pricing-main-title" data-i18n="vpsPricing.heading">Choose Your VPS Hosting Plan</h2>
+
+            <!-- VPS Billing Toggle -->
+            <div class="billing-toggle" data-billing-default="monthly">
+                <span class="toggle-label active" data-i18n="pricing.billedMonthly">Billed Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" data-i18n="pricing.billedAnnually">Billed Annually</span>
+                <span class="save-badge" data-i18n="pricing.saveBadge">Save 30%!</span>
+            </div>
+        </div>
+
+        <!-- VPS Plan Cards -->
+        <div class="cloud-pricing-cards" style="justify-content: center;">
+
+            <!-- Plan 1: Enhanced VPS -->
+            <div class="cloud-card">
+                <div class="cloud-icon">
+                    <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="Enhanced VPS hosting – 4 core CPU, 4GB RAM virtual private server">
+                </div>
+                <h3 class="cloud-plan-name" data-i18n="vpsPricing.plans.enhanced.name">Enhanced VPS</h3>
+                <p class="cloud-plan-desc" data-i18n="vpsPricing.plans.enhanced.specs">4 Cores · 4 GB RAM · 50 GB SSD</p>
+
+                <div class="cloud-pricing" data-yearly-price="17640">
+                    <div class="cloud-price-original">
+                        <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                        <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
+                    </div>
+                    <div class="cloud-price-current">
+                        <span class="cloud-currency" data-currency-symbol>৳</span>
+                        <span class="cloud-amount">2,100</span>
+                        <span class="cloud-period" data-i18n="pricing.perMonth">/mo</span>
+                    </div>
+                </div>
+
+                <ul class="cloud-features">
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.enhanced.cpu">4 Core CPU</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.enhanced.ram">4 GB RAM</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.enhanced.storage">50 GB SSD Storage</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.enhanced.bandwidth">2 TB Bandwidth</span>
+                    </li>
+                </ul>
+
+                <button class="cloud-order-btn" data-i18n="vpsPricing.deployNow">DEPLOY NOW</button>
+            </div>
+
+            <!-- Plan 2: Premium VPS -->
+            <div class="cloud-card">
+                <div class="cloud-icon">
+                    <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="Premium VPS hosting – 6 core CPU, 8GB RAM dedicated virtual server">
+                </div>
+                <h3 class="cloud-plan-name" data-i18n="vpsPricing.plans.premium.name">Premium VPS</h3>
+                <p class="cloud-plan-desc" data-i18n="vpsPricing.plans.premium.specs">6 Cores · 8 GB RAM · 100 GB SSD</p>
+
+                <div class="cloud-pricing" data-yearly-price="35280">
+                    <div class="cloud-price-original">
+                        <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                        <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
+                    </div>
+                    <div class="cloud-price-current">
+                        <span class="cloud-currency" data-currency-symbol>৳</span>
+                        <span class="cloud-amount">4,200</span>
+                        <span class="cloud-period" data-i18n="pricing.perMonth">/mo</span>
+                    </div>
+                </div>
+
+                <ul class="cloud-features">
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.premium.cpu">6 Core CPU</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.premium.ram">8 GB RAM</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.premium.storage">100 GB SSD Storage</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.premium.bandwidth">4 TB Bandwidth</span>
+                    </li>
+                </ul>
+
+                <button class="cloud-order-btn" data-i18n="vpsPricing.deployNow">DEPLOY NOW</button>
+            </div>
+
+            <!-- Plan 3: Elite VPS (Most Popular) -->
+            <div class="cloud-card popular">
+                <div class="cloud-popular-badge" data-i18n="vpsPricing.mostPopular">Most Popular</div>
+                <div class="cloud-icon">
+                    <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="Elite VPS hosting – 8 core CPU, 16GB RAM high-performance server">
+                </div>
+                <h3 class="cloud-plan-name" data-i18n="vpsPricing.plans.elite.name">Elite VPS</h3>
+                <p class="cloud-plan-desc" data-i18n="vpsPricing.plans.elite.specs">8 Cores · 16 GB RAM · 150 GB SSD</p>
+
+                <div class="cloud-pricing" data-yearly-price="70560">
+                    <div class="cloud-price-original">
+                        <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                        <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
+                    </div>
+                    <div class="cloud-price-current">
+                        <span class="cloud-currency" data-currency-symbol>৳</span>
+                        <span class="cloud-amount">8,400</span>
+                        <span class="cloud-period" data-i18n="pricing.perMonth">/mo</span>
+                    </div>
+                </div>
+
+                <ul class="cloud-features">
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.elite.cpu">8 Core CPU</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.elite.ram">16 GB RAM</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.elite.storage">150 GB SSD Storage</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.elite.bandwidth">6 TB Bandwidth</span>
+                    </li>
+                </ul>
+
+                <button class="cloud-order-btn" data-i18n="vpsPricing.deployNow">DEPLOY NOW</button>
+            </div>
+
+            <!-- Plan 4: Ultimate VPS -->
+            <div class="cloud-card">
+                <div class="cloud-icon">
+                    <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="Ultimate VPS hosting – 16 core CPU, 32GB RAM enterprise virtual server">
+                </div>
+                <h3 class="cloud-plan-name" data-i18n="vpsPricing.plans.ultimate.name">Ultimate VPS</h3>
+                <p class="cloud-plan-desc" data-i18n="vpsPricing.plans.ultimate.specs">16 Cores · 32 GB RAM · 300 GB SSD</p>
+
+                <div class="cloud-pricing" data-yearly-price="141120">
+                    <div class="cloud-price-original">
+                        <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                        <span class="cloud-save-badge" data-i18n="pricing.save30">Save 30%</span>
+                    </div>
+                    <div class="cloud-price-current">
+                        <span class="cloud-currency" data-currency-symbol>৳</span>
+                        <span class="cloud-amount">16,800</span>
+                        <span class="cloud-period" data-i18n="pricing.perMonth">/mo</span>
+                    </div>
+                </div>
+
+                <ul class="cloud-features">
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.ultimate.cpu">16 Core CPU</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.ultimate.ram">32 GB RAM</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.ultimate.storage">300 GB SSD Storage</span>
+                    </li>
+                    <li>
+                        <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                            <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span data-i18n="vpsPricing.plans.ultimate.bandwidth">8 TB Bandwidth</span>
+                    </li>
+                </ul>
+
+                <button class="cloud-order-btn" data-i18n="vpsPricing.deployNow">DEPLOY NOW</button>
+            </div>
+
+        </div><!-- /.cloud-pricing-cards -->
+    </div><!-- /.container-wrapper -->
+</section>
+
+
+<!-- ===========================
+     VPS SECTION
+     =========================== -->
+<section class="vps-section">
+    <!-- Background elements -->
+    <div class="vps-bg-element vps-bg-1"></div>
+    <div class="vps-bg-element vps-bg-2"></div>
+
+    <div class="container-wrapper">
+        <div class="vps-content">
+
+            <!-- Section Header -->
+            <div class="vps-header">
+                <div class="vps-tag">
+                    <i class="fas fa-server"></i>
+                    <span data-i18n="vpsPricing.sectionTag">VPS Infrastructure</span>
+                </div>
+                <h2 class="vps-title">
+                    <span data-i18n="vpsPricing.sectionTitle">Power, Performance, and </span><span data-i18n="vpsPricing.sectionTitleAccent">Reliability</span>
+                </h2>
+                <p class="vps-subtitle" data-i18n="vpsPricing.sectionSubtitle">
+                    Enterprise-grade virtual servers designed for developers who demand speed, security, and complete control over their hosting environment.
+                </p>
+            </div>
+
+            <!-- 4 Feature Cards Grid -->
+            <div class="vps-grid">
+
+                <!-- Card 1 -->
+                <div class="vps-card">
+                    <span class="vps-card-number">01</span>
+                    <div class="vps-card-icon">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#144FC4" d="M59.1,50.1c-1.9,1.4-5.5,3.6-9.3,6c0,0,4.3-3.2,2.7-10.3c-1.4-6.1-4.7-11.8-11.1-15.2c0,0-4.2-18.7-18.8-22.9c-11.8-2.9-11.5,8.7-11.5,8.7s-2.9-3.5-8.4-2.1C4.4,13.2,8,11.1,9,10.6c1.3-0.3,2.7-0.6,4-0.1c0.6,0.2,1.6-2.6,1.6-2.6s6.1-3.8,8.1-4.4c2.7-0.8,6.8-0.4,10.5,1.7c7.2,4.1,13.4,13,15.4,21.7c0.2,0.1,0.5,0.2,0.7,0.4c5.9,3.4,10.7,11.6,10.8,18.4C60.1,47.2,59.8,48.7,59.1,50.1z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#144FC4" d="M52.1,53.4c-1.9,2.8-5.6,3.7-8.5,2.2L41,54.1L40.8,54c0,0-0.1-0.1-0.1-0.1L10,36.2l-0.1-0.1l-0.2-0.1L9,35.7c-2-1.3-3.7-3-4.9-5.1c-2.1-3-3.3-6.5-3.5-10.2c-0.1-5.8,4-8.2,9-5.3c0.4,0.2,0.8,0.5,1.2,0.8c1-8.3,7.6-11.4,15.7-6.8c7.1,4.1,13.1,12.8,15.1,21.3c0.2,0.1,0.5,0.2,0.7,0.4c5.8,3.3,10.5,11.4,10.6,18.2C53,50.5,52.8,52.2,52.1,53.4z"/>
+                            <circle fill="#FF7800" cx="22.6" cy="31.1" r="2.2"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#FF7800" stroke="#FF7800" stroke-linecap="round" stroke-linejoin="round" d="M21.8,29.5l5.9-4.2l-3.5,6.4L21.8,29.5z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#FF7800" d="M33.9,33c0-6.3-4.4-13.2-9.8-16.6c-4.3-2.6-9.6-1-9.6,5.2c-0.3,0-0.6,0-0.8,0c0-6.4,4.8-10.1,11.2-6.6s12,12.7,11.9,19.8C36.4,34.6,33.9,33,33.9,33"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="vps-card-title" data-i18n="vpsPricing.features.security.title">Powerful Security</h3>
+                        <p class="vps-card-desc" data-i18n="vpsPricing.features.security.desc">Enterprise-grade DDoS protection and proactive threat monitoring keeps your VPS locked down 24/7.</p>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="vps-card">
+                    <span class="vps-card-number">02</span>
+                    <div class="vps-card-icon">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                            <style>.st0{fill:none;stroke:#144FC4;stroke-linecap:round;stroke-linejoin:round}.st1{fill:none;stroke:#144FC4}.st2{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#144FC4}.st3{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FF7800}.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#FF7800}</style>
+                            <path class="st0" d="M11.3,23.9c-2.4-0.3-7,1-7,1c1.6-1.2,3.6-2.4,5.5-3.5L11.3,23.9"/>
+                            <path class="st0" d="M24.8,26.6c0.5-0.8,1.1-3.6,1.1-3.6c7.5,4.2,15.9,15.6,15.9,23.9v8.6l-6.2,3.9l-0.3-10.2c0,0,0.1-5.4-4.4-11.6c-1.8-2.5-7.1-7.6-7.1-7.6s-0.5-0.3-1.3-0.7C22.6,29.3,23.5,28.6,24.8,26.6z"/>
+                            <path class="st1" d="M23.4,29.8c6.2,5.1,12,14,12,20.6v8.4l-34-18.5V32c0-5.8,4.4-8.5,9.6-8"/>
+                            <path class="st2" d="M25.4,24.9l3.2-0.3c9.4-0.5,14.5,14.3,20,20.6c5.3,6,10,3,10,3s-1.7,14.3-16.4,7.1C42,40.4,33.5,28.5,28.7,27.1c-1.2-0.4-3.3,1.9-3.8,2.2c-3,2.4-7.3,2.3-10.1-0.2c-1.3-0.9-1.9-2.2-2.1-3.3c0-0.2,0.8,0.9,2.4,1.9C18.4,30.9,24.3,31.1,25.4,24.9z"/>
+                            <path class="st3" d="M23.4,44.9c-0.5,0.7-1.4,0.9-2.1,0.5L20.6,45l0,0l0,0L13,40.7l0,0c0,0,0,0-0.1,0l-0.2-0.1c-0.5-0.3-0.9-0.7-1.2-1.2c-0.5-0.7-0.8-1.6-0.9-2.5c0-1.4,1-2,2.2-1.3c0.1,0.1,0.2,0.1,0.3,0.2c0.2-2,1.9-2.8,3.9-1.7c1.9,1.2,3.2,3,3.8,5.2l0.2,0.1c1.5,1,2.5,2.6,2.6,4.4C23.6,44.2,23.5,44.5,23.4,44.9z"/>
+                            <path class="st0" d="M22,2.2c5.6,3.1,10.1,10.7,10.1,17c0.2,2.1-0.6,4.2-2.1,5.8c-1.8,1.4-5.3,3.7-7.4,4.6c-0.7-0.2,5.3-2.8,2.6-10.1c-2.7-7.6-3.8-9.1-7.3-12.3C14,3.7,9.3,3.8,7.4,6.6c0-1.5,5.5-3.9,7.3-5C16.6,0.5,19.2,0.7,22,2.2z"/>
+                            <path class="st4" d="M16.1,5.9c5.2,3.1,9.5,10.6,9.5,16.8s-4.3,8.7-9.5,5.6S6.6,17.7,6.6,11.5S10.8,2.8,16.1,5.9z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="vps-card-title" data-i18n="vpsPricing.features.managed.title">Managed VPS</h3>
+                        <p class="vps-card-desc" data-i18n="vpsPricing.features.managed.desc">Free cPanel, automated updates, and round-the-clock monitoring. We handle everything operational.</p>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="vps-card">
+                    <span class="vps-card-number">03</span>
+                    <div class="vps-card-icon">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#144FC4" d="M3,25.3c0,1.1,0,6.4,0,7.4c0,2.1,1.1,4,2.9,5.1L8.3,39c0.1,0,0.1,0.1,0.2,0.1c0,0,0.1,0,0.1,0.1l28.2,15.5c0,0,0.1,0.1,0.1,0.1s0.1,0.1,0.2,0.1l0.6,0.3c1.9,1,4.1,1.5,6.3,1.4c3.3,0.2,6.6-0.5,9.6-2c2.2-1.3,3.4-3,3.4-4.6c0.1-1.8,0-5.8,0-8.5c0-0.4-0.7,6-10.6,6.5c-1.5,0.1-2.4,0.6-7.5-0.7C38.7,47,5.6,29.1,5.6,29.1S3.8,27.9,3,25.3z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#144FC4" d="M7.5,19.3c-0.1,0.1-0.3,0.1-0.4,0.2c-1.2,0.6-2.2,1.6-3,2.7c-1.3,2.7-0.3,5.9,2.3,7.4l2.3,1.3c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0,0.1,0.1l27.7,15.1c0,0,0.1,0,0.1,0.1l0.2,0.1l0.6,0.3c1.9,1,4,1.4,6.2,1.3c3.3,0.2,6.5-0.5,9.4-2c4.5-2.6,4.4-6.7-0.1-9.2c-0.4-0.2-0.7-0.4-1.1-0.5c1.7-1.3,2.9-2.9,3.4-4.5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#144FC4" d="M3,12.3c0,1.1,0,6.4,0,7.4c0,2.1,1.1,4,2.9,5.1L8.3,26c0.1,0,0.1,0.1,0.2,0.1c0,0,0.1,0,0.1,0.1l28.2,15.5c0,0,0.1,0.1,0.1,0.1s0.1,0.1,0.2,0.1l0.6,0.3c1.9,1,4.1,1.5,6.3,1.4c3.3,0.2,6.6-0.5,9.6-2c2.2-1.3,3.4-3,3.4-4.6c0.1-1.8,0-5.8,0-8.5c0-0.4-1.5-0.8-1.3-1.5c0.3-0.9,0.4-1.9,0.4-3c-0.2-2.9,0.1-6.8,0.1-6.8s-0.5,1.9-2.1,4.3c-0.6,0.9-2.3,2.2-2.1,2.3c4.2,2.1,4.8,6.1,3.4,7.6c-2.6,3-9.7,5-16,3.3C39.3,34.5,5,15.8,5,15.8S4,15.3,3,12.3z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#144FC4" d="M4.1,9.5c-1.3,2.7-0.3,5.9,2.3,7.4l2.3,1.3c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0,0.1,0.1l27.7,15.1c0,0,0.1,0,0.1,0.1l0.2,0.1l0.6,0.3c1.9,1,4,1.4,6.2,1.3c3.3,0.2,6.5-0.5,9.4-2c4.5-2.6,4.4-6.7-0.1-9.2c-0.4-0.2-0.7-0.4-1.1-0.5c5.9-4.5,4.6-11.2-2.1-14.9c-6.4-3.5-15.9-4.1-23.3-1.7c-0.2-0.1-0.4-0.3-0.6-0.4C20.6,3.7,12.2,3.8,7,6.8C5.9,7.4,4.8,8.4,4.1,9.5z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#FF7800" d="M28,19.1l6.4-3.8l-2.6-1.5l11.2-1l-1.6,6.7l-2.6-1.5l-6.4,3.8L28,19.1z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="vps-card-title" data-i18n="vpsPricing.features.deploy.title">Deploy Instantly</h3>
+                        <p class="vps-card-desc" data-i18n="vpsPricing.features.deploy.desc">Server goes live in under 60 seconds from signup. Full root access granted immediately—no delays.</p>
+
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="vps-card">
+                    <span class="vps-card-number">04</span>
+                    <div class="vps-card-icon">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#144FC4" d="M3,32.5l1.1,1.4l23.7,13.9c1.8,0.8,2.6,0.8,4.4,0l21.4-12.3L57,33c0.1,3.7,0,7.9,0,8.6c0.1,0.9-0.4,1.8-1.2,2.2L33.1,57.1c-2.2,1-4.7,0.9-6.7-0.3L4.7,44.2c-1-0.5-1.7-1.4-1.7-2.5C3,41.1,3,34.5,3,32.5z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#144FC4" d="M48.3,26.7l6.5,3.8c2,1.1,2.2,2.9,0.5,3.8L33.1,47.3c-2.1,1-4.6,0.9-6.6-0.3L5.1,34.6c-2-1.1-2.2-2.9-0.5-3.8l7.4-4.3"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#144FC4" d="M3.1,18.2l1.2,1.6L26.8,33c2.3,0.9,3.9,1.1,5.3,0.4l23.3-13.3l1.6-1.7c0,3.9,0,9,0,9.7c0,0.8-0.5,1.6-1.2,2L33.1,43.3c-2.2,1-4.7,0.9-6.7-0.3L4.7,30.4C3.8,30,3.2,29.2,3,28.2C3,27.5,3,19.5,3.1,18.2z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#144FC4" d="M4.6,16.4L26.9,3.4c2.1-1,4.6-0.9,6.6,0.3l21.3,12.4c2,1.1,2.2,2.9,0.5,3.8L33.1,32.9c-2.1,1-4.6,0.9-6.6-0.3L5.1,20.2C3.1,19.1,2.9,17.4,4.6,16.4z"/>
+                            <path fill="none" stroke="#FF7800" d="M39.2,23.9c-4.9,2.7-12.9,2.5-17.7-0.3s-4.7-7.2,0.3-9.9s12.9-2.5,17.7,0.3S44.2,21.2,39.2,23.9z"/>
+                            <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FF7800" points="36.1,16.7 34.5,15.8 30.5,17.9 26.5,15.7 24.8,16.6 28.9,18.7 24.7,20.9 26.4,21.8 30.5,19.6 34.5,21.7 36.1,20.8 32.2,18.7"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="vps-card-title" data-i18n="vpsPricing.features.uptime.title">99.9% Uptime Guarantee</h3>
+                        <p class="vps-card-desc" data-i18n="vpsPricing.features.uptime.desc">Redundant infrastructure across multiple data centers ensures your applications stay online always.</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Hero Banner -->
+            <div class="vps-banner">
+                <div class="vps-banner-accent"></div>
+                <div class="vps-banner-wrapper">
+                    <div class="vps-banner-content">
+
+                        <!-- Icon Panel -->
+                        <div class="vps-banner-icon-wrap">
+                            <div class="vps-banner-icon-box">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 82" enable-background="new 0 0 100 82" xml:space="preserve">
+                                    <path fill="none" stroke="#FF7800" d="M61.6,41.8c16.3,9.4,30.6,17.6,30.6,17.6c2.6,1.5,2.2,4-0.7,5.7L64.8,80.6C62,82.2,57,82,53.7,80.1c0,0-7.4-4.3-16.5-9.6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#113A8F" d="M35.9,35l28.3-6.1c2-1.2,5.6-1,8,0.3l27.8,6.7c0,4.4,0,9.3,0,10.2c0.1,1.1-0.4,2.1-1.4,2.6L71.7,64.2c-2,1.2-5.6,1-8-0.3L38,49c-1.2-0.5-2-1.7-2-3C35.9,45.2,35.9,37.3,35.9,35z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#052A75" d="M37.4,33.7l26.9-15.6c2-1.2,5.6-1,8,0.3L98,33.3c2.4,1.4,2.6,3.4,0.6,4.6L71.7,53.5c-2,1.2-5.6,1-8-0.3L38,38.3C35.6,36.9,35.3,34.8,37.4,33.7z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#113A8F" d="M36.1,18.2l28.2-5.6c2-1.2,5.6-1,8,0.3l27.6,5.7c0,4.6,0,10.6,0,11.4c0,1-0.6,1.9-1.4,2.3L71.7,47.9c-2,1.2-5.6,1-8-0.3L38.1,32.7c-1.1-0.5-1.9-1.5-2-2.7C36,29.2,36,19.7,36.1,18.2z"/>
+                                    <linearGradient id="grad1" gradientUnits="userSpaceOnUse" x1="36.1174" y1="65.5" x2="99.9853" y2="65.5" gradientTransform="matrix(1 0 0 -1 0 84)">
+                                        <stop offset="0" style="stop-color:#458AFF"/>
+                                        <stop offset="1" style="stop-color:#1749AF"/>
+                                    </linearGradient>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="url(#grad1)" d="M37.5,16.4L64.4,0.8c2-1.2,5.6-1,8,0.3L98,16c2.4,1.4,2.6,3.4,0.6,4.6L71.8,36.2c-2,1.2-5.6,1-8-0.3L38.1,21C35.7,19.6,35.4,17.5,37.5,16.4z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FF7800" d="M50.2,68c2.5-1.6,2.4-1.5,4.7-3.6c0.7-0.7,1.7-1.6,2-2.3c0.6-1.7,0.9-3.5,0.9-5.3c-0.1-6.7-5.2-14.6-11-17.9c-1.2-0.7-2.6-1.2-4-1.4c-2-7.2-7-14.5-12.8-17.9c-3.6-2.1-6.8-2.4-9.2-1.1c-1.5,0.8-3.3,2.2-5.4,4c-0.4,0.2-0.6,0.6-1,0.6c-2.4-1.4-4.5-1.6-6.1-0.8c-1.4,1.1-3.7,2.4-5.8,4.2C10.3,38.5,50.2,68,50.2,68z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" stroke="#FF7800" d="M4,42.8c1.1,2.1,2.8,3.9,4.8,5.1l0.7,0.4l0.2,0.1c0,0,0.1,0,0.1,0.1l30.5,17.8l0.1,0.1l0.2,0.1l2.5,1.5c3,1.6,6.6,0.6,8.5-2.2c0.6-1.4,0.9-2.9,0.9-4.5c0-6.8-4.7-15-10.5-18.3c-1.2-0.7-2.6-1.2-4-1.4c-2-7.2-7-14.5-12.8-17.9C18.5,19.8,13,22.2,12,29.1c-0.8-0.7-1.6-1.3-2.5-1.9c-5-2.9-9-0.5-8.9,5.4C0.7,36.2,1.9,39.8,4,42.8z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FF7800" d="M24.4,53.3l1.9,1c5.7,3.1,12.2,11.7,12.2,18v6.5l-4.7,3L12.2,64.5l-2.1-8.8c1.7-1.2,3.5-2.3,5.4-3.3C17.9,51.3,21.3,51.6,24.4,53.3z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" stroke="#FF7800" stroke-linejoin="round" d="M20.1,56.3l1.8,1c5.6,3.1,11.9,11.5,11.9,17.6v6.4L8.2,67.2v-6.4C8.2,54.7,14.5,53.2,20.1,56.3z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FF7800" d="M22.9,37.7c4.2,2.4,7.7,8.1,7.7,12.9c0.1,1.6-0.5,3.2-1.6,4.4c-1.3,1-2.8,1.9-4.4,2.5c-2.2-0.6-12.4-11.4-12.8-16.1c-0.1-1.4,4.2-3.3,5.6-4.1C18.8,36.4,20.8,36.5,22.9,37.7z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" stroke="#FF7800" d="M18.7,40.8c4.1,2.3,7.5,8.1,7.5,12.7s-3.4,6.6-7.5,4.2s-7.5-8.1-7.5-12.8S14.6,38.4,18.7,40.8z"/>
+                                </svg>
+                            </div>
+                            <div class="vps-banner-badge" data-i18n="vpsPricing.bannerBadge">Cloud VPS</div>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class="vps-banner-text">
+                            <div class="vps-banner-tag">
+                                <i class="fas fa-cloud"></i>
+                                <span data-i18n="vpsPricing.bannerTag">Featured Solution</span>
+                            </div>
+                            <h3 class="vps-banner-title">
+                                <span data-i18n="vpsPricing.bannerTitle">Cloud VPS — </span><span data-i18n="vpsPricing.bannerTitleAccent">Simple Cloud Hosting Service</span>
+                            </h3>
+                            <p class="vps-banner-desc" data-i18n="vpsPricing.bannerDesc">
+                                The best platform to build your own cloud server with an easy-to-use interface and high data security at a very affordable price. You'll select your plan from there.
+                            </p>
+
+                            <!-- Stats -->
+                            <div class="vps-banner-stats">
+                                <div class="vps-stat">
+                                    <div class="vps-stat-value">99.9<span>%</span></div>
+                                    <div class="vps-stat-label" data-i18n="vpsPricing.bannerStat1">Uptime SLA</div>
+                                </div>
+                                <div class="vps-stat">
+                                    <div class="vps-stat-value">60<span>s</span></div>
+                                    <div class="vps-stat-label" data-i18n="vpsPricing.bannerStat2">Deploy Time</div>
+                                </div>
+                                <div class="vps-stat">
+                                    <div class="vps-stat-value">24<span>/7</span></div>
+                                    <div class="vps-stat-label" data-i18n="vpsPricing.bannerStat3">Support</div>
+                                </div>
+                                <div class="vps-stat">
+                                    <div class="vps-stat-value">500<span>+</span></div>
+                                    <div class="vps-stat-label" data-i18n="vpsPricing.bannerStat4">Clients</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="vps-banner-cta">
+                            <a href="#vps-section-id" class="vps-btn-primary">
+                                <span data-i18n="vpsPricing.bannerBtn1">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://my.hostorio.com/submitticket.php" class="vps-btn-secondary">
+                                <span data-i18n="vpsPricing.bannerBtn2">Support</span> <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Carousel Section -->
+<!-- Testimonial Section - Horizontal Layout -->
+<section class="testimonial-horizontal-section">
+    <div class="testimonial-horizontal-container">
+
+        <!-- Testimonial Item 1 -->
+        <div class="testimonial-horizontal-item active">
+            <div class="testimonial-horizontal-content">
+                <!-- Image Side -->
+                <div class="testimonial-image-side">
+                    <div class="testimonial-video-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/testimonials/shaidulislamrony.png" alt="Shaidul Islam Rony – VPS hosting customer review" class="testimonial-person-image">
+                        <div class="video-play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
+                                <path fill="currentColor" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="testimonial-text-side">
+                    <div class="quote-mark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+
+                    <p class="testimonial-quote" data-i18n="testimonial.item1.quote">
+                        I could <span class="highlight-text">manage</span> the hosting, domain name, and SSL certificate <span class="highlight-text">in one place</span>, which was really refreshing.
+                    </p>
+
+                    <a href="#" class="testimonial-read-more" data-i18n="testimonial.readMore">Read more</a>
+
+                    <div class="testimonial-author-section">
+                        <div class="author-details">
+                            <p class="author-name-text">Shaidul Islam Rony</p>
+                            <p class="author-site">bhrelocationinc.com</p>
+                        </div>
+
+                        <div class="carousel-navigation">
+                            <button class="carousel-btn carousel-prev" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial Item 2 -->
+        <div class="testimonial-horizontal-item">
+            <div class="testimonial-horizontal-content">
+                <!-- Image Side -->
+                <div class="testimonial-image-side">
+                    <div class="testimonial-video-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/testimonials/tutul.png" alt="Tutul – satisfied VPS hosting customer" class="testimonial-person-image">
+                        <div class="video-play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
+                                <path fill="currentColor" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="testimonial-text-side">
+                    <div class="quote-mark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+
+                    <p class="testimonial-quote" data-i18n="testimonial.item2.quote">
+                        We honestly reference <span class="highlight-text">Hostorio as the benchmark</span> for our engineers when providing support.
+                    </p>
+
+                    <a href="#" class="testimonial-read-more" data-i18n="testimonial.readMore">Read more</a>
+
+                    <div class="testimonial-author-section">
+                        <div class="author-details">
+                            <p class="author-name-text">Tutul</p>
+                            <p class="author-site">clientwebsite.com</p>
+                        </div>
+
+                        <div class="carousel-navigation">
+                            <button class="carousel-btn carousel-prev" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Support Section -->
+    <section class="support-section">
+        <div class="container-wrapper">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-main-title" data-i18n="support.sectionTitle">Customer Success Focus</h2>
+                <p class="section-subtitle" data-i18n="support.sectionSubtitle">We provide everything you need to succeed online</p>
+            </div>
+
+            <!-- Support Cards -->
+            <div class="support-cards">
+
+                <!-- Card 1 -->
+                <div class="support-card">
+                    <div class="card-image-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/support/support-hostorio.webp" alt="Onboarding Support" class="card-image">
+                        <div class="image-overlay blue-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="support.card1.title">Onboarding Support</h3>
+                        <p class="card-description" data-i18n="support.card1.desc">
+                            Don't know where to start? Our step-by-step tutorials and 24/7 support team walk you through domain setup, hosting configuration, and WordPress installation.
+                        </p>
+                        <a href="https://my.hostorio.com/submitticket.php" class="card-button" data-i18n="support.card1.btn">Get started</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="support-card">
+                    <div class="card-image-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/support/blog-hostorio.webp" alt="Discover Resources" class="card-image">
+                        <div class="image-overlay green-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="support.card2.title">Discover our Resources</h3>
+                        <p class="card-description" data-i18n="support.card2.desc">
+                            Access our resource center for hosting best practices, security tips, performance optimization guides, and industry insights.
+                        </p>
+                        <a href="https://my.hostorio.com/knowledgebase" class="card-button" data-i18n="support.card2.btn">Get learning</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="support-card">
+                    <div class="card-image-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/support/trasfer-hosting-hostorio.webp" alt="Hassle-Free Transfers" class="card-image">
+                        <div class="image-overlay orange-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="support.card3.title">Hassle-Free Transfers</h3>
+                        <p class="card-description" data-i18n="support.card3.desc">
+                            Move your domain and Hosting to Us. Switching hosts shouldn't feel like moving houses. With us, it's simple.
+                        </p>
+                        <a href="https://my.hostorio.com/cart.php?a=add&domain=transfer" class="card-button" data-i18n="support.card3.btn">Transfer today</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Main Footer -->
+    
+<?php get_footer(); ?>

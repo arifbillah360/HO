@@ -1,0 +1,1435 @@
+<?php
+/**
+ * Template Name: Student Hosting
+ * Description: Student Hosting page template for Hostorio theme.
+ *
+ * @package Hostorio
+ */
+
+// Register SEO meta and schema markup before get_header() fires wp_head
+add_action( 'wp_head', function() {
+    if ( ! defined( 'WPSEO_VERSION' ) && ! class_exists( 'RankMath' ) ) {
+        echo '<meta name="description" content="Student web hosting from ৳800/yr. SSD storage, free SSL, cPanel included. Perfect for projects &amp; portfolios. Special student discount available.">' . "\n";
+        echo '<link rel="canonical" href="https://hostorio.com/student-hosting.html">' . "\n";
+        echo '<meta name="robots" content="index, follow">' . "\n";
+        echo '<meta property="og:type" content="website">' . "\n";
+        echo '<meta property="og:title" content="🎓 Student Web Hosting – Special Discounts for Students | Hostorio">' . "\n";
+        echo '<meta property="og:description" content="Affordable web hosting designed for students. Special pricing from ৳800/yr. Perfect for school projects, portfolios &amp; learning. SSD storage, free SSL, cPanel included.">' . "\n";
+        echo '<meta property="og:image" content="https://hostorio.com/assets/images/logo/hostorio-logo.png">' . "\n";
+        echo '<meta property="og:image:width" content="1024">' . "\n";
+        echo '<meta property="og:image:height" content="239">' . "\n";
+        echo '<meta property="og:site_name" content="Hostorio">' . "\n";
+        echo '<meta property="og:locale" content="en_US">' . "\n";
+        echo '<meta property="og:url" content="https://hostorio.com/student-hosting.html">' . "\n";
+        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        echo '<meta name="twitter:site" content="@hostorio">' . "\n";
+        echo '<meta name="twitter:title" content="🎓 Student Web Hosting – Special Discounts for Students | Hostorio">' . "\n";
+        echo '<meta name="twitter:description" content="Student hosting from ৳800/yr. Affordable plans for school projects &amp; portfolios. SSD, free SSL, cPanel. Student discount.">' . "\n";
+        echo '<meta name="twitter:image" content="https://hostorio.com/assets/images/logo/hostorio-logo.png">' . "\n";
+    }
+    ?>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Hostorio",
+      "url": "https://hostorio.com",
+      "logo": "https://hostorio.com/assets/images/logo/hostorio-logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+8801779440297",
+        "contactType": "customer service",
+        "email": "mail@hostorio.com",
+        "areaServed": "BD",
+        "availableLanguage": ["English", "Bengali"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/hostorio",
+        "https://x.com/hostorio",
+        "https://www.youtube.com/@arifbillahcse",
+        "https://www.linkedin.com/company/hostorio/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Student Web Hosting",
+      "name": "Student Web Hosting Plans",
+      "description": "Special web hosting plans designed exclusively for students. Affordable pricing perfect for school projects, portfolios, and learning web development. Includes SSD storage, free SSL certificates, cPanel control panel, and 24/7 support. Student discount available on all plans.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Hostorio",
+        "url": "https://hostorio.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Bangladesh"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://hostorio.com/student-hosting.html",
+        "priceCurrency": "BDT",
+        "lowPrice": "800",
+        "highPrice": "1199",
+        "offerCount": "3",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "500",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hostorio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hosting Services",
+          "item": "https://hostorio.com/#hosting"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Student Hosting",
+          "item": "https://hostorio.com/student-hosting.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I buy student web hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's easy – browse our special student hosting plans, choose the one that fits your project needs, and click 'Order Now'. You'll get instant access to your hosting account with student-friendly pricing starting at ৳800/year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which student hosting plan should I choose?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For single projects or portfolios, SH Plan 1 is perfect. For multiple projects or learning purposes, SH Plan 2 offers more resources. Our most popular SH Plan 3 is ideal for students working on multiple websites or larger projects with unlimited features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I upgrade my student hosting package?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! As your projects grow, you can easily upgrade your student hosting package. The remaining value from your current plan will be prorated and applied to the upgraded package, so you never waste money."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer student discounts on web hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Our student hosting plans are already specially priced for students with significant discounts. Starting at just ৳800/year, these plans are designed to be affordable for students while providing professional hosting features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help me get started with student hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! Our support team is available 24/7 to help students get started. We provide easy setup guides, video tutorials, and direct support to ensure your school project or portfolio website is up and running quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is student hosting suitable for school projects and portfolios?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Student hosting is perfect for school projects, personal portfolios, learning web development, and academic websites. All plans include the tools you need: SSD storage, free SSL, cPanel, MySQL databases, and email accounts."
+          }
+        }
+      ]
+    }
+    </script>
+    <?php
+}, 1 );
+
+get_header();
+?>
+
+
+    <!-- ===========================
+         PACKAGE CHOOSER SECTION
+         =========================== -->
+    <div class="package-chooser-wrapper">
+        <!-- Background Animation -->
+        <div class="motion-background">
+            <i class="fas fa-server motion-item item-1"></i>
+            <i class="fas fa-cloud motion-item item-2"></i>
+            <i class="fas fa-database motion-item item-3"></i>
+            <i class="fas fa-shield-halved motion-item item-4"></i>
+            <i class="fas fa-rocket motion-item item-5"></i>
+            <i class="fas fa-bolt motion-item item-6"></i>
+            <i class="fas fa-globe motion-item item-7"></i>
+            <i class="fas fa-envelope motion-item item-8"></i>
+            <i class="fas fa-network-wired motion-item item-9"></i>
+            <i class="fas fa-code motion-item item-10"></i>
+            <i class="fas fa-lock motion-item item-11"></i>
+            <i class="fas fa-wifi motion-item item-12"></i>
+            <i class="fab fa-wordpress motion-item item-13"></i>
+            <i class="fas fa-briefcase motion-item item-14"></i>
+            <i class="fas fa-graduation-cap motion-item item-15"></i>
+            <i class="fas fa-chart-line motion-item item-16"></i>
+            <i class="fas fa-plug motion-item item-17"></i>
+            <i class="fas fa-sitemap motion-item item-18"></i>
+        </div>
+
+        <!-- Left Side Icon Box -->
+        <div class="side-icon-box left-side">
+            <i class="fas fa-server"></i>
+        </div>
+
+        <!-- Right Side Icon Box -->
+        <div class="side-icon-box right-side">
+            <i class="fas fa-database"></i>
+        </div>
+
+        <div class="content-container">
+            <div class="chooser-inner">
+                <h1 class="section-headline" data-i18n="studentHostingHero.headline">Affordable Web Hosting for Students</h1>
+
+                <!-- Desktop Package Grid -->
+                <div class="packages-desktop">
+                    <div class="top-packages">
+                        <a href="<?php echo esc_url( hostorio_page_url( 'web-hosting' ) ); ?>" class="package-card ">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.wordpress">Web Hosting</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'turbo-hosting' ) ); ?>" class="package-card">
+                            <span class="card-icon">🚀</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.turbo">Turbo Hosting</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'reseller-hosting' ) ); ?>" class="package-card">
+                            <span class="card-icon">🔄</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.reseller">Reseller Hosting</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'student-hosting' ) ); ?>" class="package-card highlighted">
+                            <span class="card-icon">🎓</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.student">Student Hosting</span>
+                        </a>
+                    </div>
+                    <div class="bottom-packages">
+                        <a href="<?php echo esc_url( hostorio_page_url( 'vps' ) ); ?>" class="package-card">
+                            <span class="card-icon">🖥️</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.vps">VPS</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'business-email' ) ); ?>" class="package-card">
+                            <span class="card-icon">✉️</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.email">Business Email</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'offer' ) ); ?>" class="package-card">
+                            <span class="card-icon">🌐</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.offer">Offer</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Package Dropdown -->
+                <div class="packages-mobile">
+                    <div class="mobile-chooser">
+                        <button type="button" class="chooser-button" id="mobileChooserBtn">
+                            <span class="btn-icon" id="displayIcon">⚡</span>
+                            <span class="btn-label" id="displayLabel">Web Hosting</span>
+                            <i class="fas fa-chevron-down btn-chevron" id="chevronIcon"></i>
+                        </button>
+                        <nav class="chooser-list" id="packageList">
+                            <a href="<?php echo esc_url( hostorio_page_url( 'web-hosting' ) ); ?>" class="list-option selected" data-icon="⚡" data-label="WordPress Hosting">
+                                <span class="opt-icon">⚡</span>
+                                <span class="opt-label" data-i18n="packageHero.wordpress">Web Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'turbo-hosting' ) ); ?>" class="list-option" data-icon="🚀" data-label="Turbo Hosting">
+                                <span class="opt-icon">🚀</span>
+                                <span class="opt-label" data-i18n="packageHero.turbo">Turbo Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'reseller-hosting' ) ); ?>" class="list-option" data-icon="🔄" data-label="Reseller Hosting">
+                                <span class="opt-icon">🔄</span>
+                                <span class="opt-label" data-i18n="packageHero.reseller">Reseller Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'student-hosting' ) ); ?>" class="list-option" data-icon="🎓" data-label="Student Hosting">
+                                <span class="opt-icon">🎓</span>
+                                <span class="opt-label" data-i18n="packageHero.student">Student Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'vps' ) ); ?>" class="list-option" data-icon="🖥️" data-label="VPS">
+                                <span class="opt-icon">🖥️</span>
+                                <span class="opt-label" data-i18n="packageHero.vps">VPS</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'business-email' ) ); ?>" class="list-option" data-icon="✉️" data-label="Business Email">
+                                <span class="opt-icon">✉️</span>
+                                <span class="opt-label" data-i18n="packageHero.email">Business Email</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'offer' ) ); ?>" class="list-option" data-icon="🌐" data-label="Domain">
+                                <span class="opt-icon">🌐</span>
+                                <span class="opt-label" data-i18n="packageHero.offer">Offer</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+           <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container-wrapper">
+
+            <!-- Section Header -->
+            <div class="pricing-header">
+                <h2 class="pricing-main-title" data-i18n="studentPricing.mainTitle">Our Special Student Web Hosting Plans</h2>
+                <p class="pricing-subtitle" data-i18n="studentPricing.subtitle">Affordable hosting plans designed specially for students.</p>
+
+                <!-- Billing Toggle -->
+                <div class="billing-toggle">
+                    <span class="toggle-label" data-i18n="studentPricing.billedMonthly">Billed Monthly</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="billingToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="toggle-label active" data-i18n="studentPricing.billedAnnually">Billed Annually</span>
+                    <span class="save-badge" data-i18n="studentPricing.saveBadge">Save 30%!</span>
+                </div>
+            </div>
+
+        <!-- Cloud Pricing Section -->
+        <section class="cloud-pricing-section">
+        <div class="container-wrapper">
+
+            <!-- Pricing Cards Grid -->
+            <div class="cloud-pricing-cards">
+
+                <!-- Card 1 - SH Plan 1 -->
+                <div class="cloud-card">
+                    <div class="cloud-icon">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="SH Plan 1 student hosting – affordable web hosting for students and school projects">
+                    </div>
+
+                    <h3 class="cloud-plan-name" data-i18n="studentPricing.plans.plan1.name">SH Plan 1</h3>
+                    <p class="cloud-plan-desc" data-i18n="studentPricing.plans.plan1.desc">1 GB SSD Disk | 5 GB Monthly Bandwidth</p>
+
+                    <div class="cloud-pricing" data-yearly-price="800">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="studentPricing.saveBadge">Save 30%!</span>
+                        </div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">800</span>
+                            <span class="cloud-period" data-i18n="studentPricing.perYear">/yr</span>
+                        </div>
+                    </div>
+
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>1 GB</strong> <span data-i18n="studentPricing.features.ssdDiskSpace">SSD Disk Space</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>1</strong> <span data-i18n="studentPricing.features.website">Website</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>5 GB</strong> <span data-i18n="studentPricing.features.monthlyBandwidth">Monthly Bandwidth</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.phpMysqlSupport">PHP, MySQL, Perl Support</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>1</strong> <span data-i18n="studentPricing.features.mysqlDatabase">MySQL Database</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.phpMyAdmin">phpMyAdmin</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.limited">Limited</strong> <span data-i18n="studentPricing.features.emailAccounts">E-mail Accounts</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.limited">Limited</strong> <span data-i18n="studentPricing.features.subdomains">Subdomains</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.limited">Limited</strong> <span data-i18n="studentPricing.features.ftpAccount">FTP Account</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.dnsZoneEditor">DNS Zone Editor</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.softaculous">Softaculous One-Click Installer</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="cloud-order-btn" data-i18n="studentPricing.orderNow">Order Now</a>
+
+                </div>
+
+                <!-- Card 2 - SH Plan 2 -->
+                <div class="cloud-card">
+                    <div class="cloud-icon">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="SH Plan 2 student hosting – budget-friendly hosting for student portfolios">
+                    </div>
+
+                    <h3 class="cloud-plan-name" data-i18n="studentPricing.plans.plan2.name">SH Plan 2</h3>
+                    <p class="cloud-plan-desc" data-i18n="studentPricing.plans.plan2.desc">2 GB SSD Disk Space | 15 GB Monthly Bandwidth</p>
+
+                    <div class="cloud-pricing" data-yearly-price="999">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="studentPricing.saveBadge">Save 30%!</span>
+                        </div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">999</span>
+                            <span class="cloud-period" data-i18n="studentPricing.perYear">/yr</span>
+                        </div>
+                    </div>
+
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>2 GB</strong> <span data-i18n="studentPricing.features.ssdDiskSpace">SSD Disk Space</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>1</strong> <span data-i18n="studentPricing.features.website">Website</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>15 GB</strong> <span data-i18n="studentPricing.features.monthlyBandwidth">Monthly Bandwidth</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.phpMysqlSupport">PHP, MySQL, Perl Support</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>3</strong> <span data-i18n="studentPricing.features.mysqlDatabases">MySQL Databases</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.phpMyAdmin">phpMyAdmin</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.limited">Limited</strong> <span data-i18n="studentPricing.features.emailAccounts">E-mail Accounts</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.limited">Limited</strong> <span data-i18n="studentPricing.features.subdomains">Subdomains</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.limited">Limited</strong> <span data-i18n="studentPricing.features.ftpAccount">FTP Account</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.dnsZoneEditor">DNS Zone Editor</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.softaculous">Softaculous One-Click Installer</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="cloud-order-btn" data-i18n="studentPricing.orderNow">Order Now</a>
+
+                </div>
+
+                <!-- Card 3 - SH Plan 3 (Most Popular) -->
+                <div class="cloud-card popular">
+                    <div class="cloud-popular-badge" data-i18n="studentPricing.mostPopular">Most Popular</div>
+
+                    <div class="cloud-icon">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="SH Plan 3 student hosting – most popular student web hosting with unlimited features">
+                    </div>
+
+                    <h3 class="cloud-plan-name" data-i18n="studentPricing.plans.plan3.name">SH Plan 3</h3>
+                    <p class="cloud-plan-desc" data-i18n="studentPricing.plans.plan3.desc">3 GB SSD Disk Space | 25 GB Monthly Bandwidth</p>
+
+                    <div class="cloud-pricing" data-yearly-price="1199">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="studentPricing.saveBadge">Save 30%!</span>
+                        </div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">1199</span>
+                            <span class="cloud-period" data-i18n="studentPricing.perYear">/yr</span>
+                        </div>
+                    </div>
+
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>3 GB</strong> <span data-i18n="studentPricing.features.ssdDiskSpace">SSD Disk Space</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>2</strong> <span data-i18n="studentPricing.features.website">Website</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>25 GB</strong> <span data-i18n="studentPricing.features.monthlyBandwidth">Monthly Bandwidth</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.phpMysqlSupport">PHP, MySQL, Perl Support</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.unlimited">Unlimited</strong> <span data-i18n="studentPricing.features.mysqlDatabases">MySQL Databases</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.phpMyAdmin">phpMyAdmin</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.unlimited">Unlimited</strong> <span data-i18n="studentPricing.features.emailAccounts">E-mail Accounts</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.unlimited">Unlimited</strong> <span data-i18n="studentPricing.features.subdomains">Subdomains</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong data-i18n="studentPricing.features.unlimited">Unlimited</strong> <span data-i18n="studentPricing.features.ftpAccounts">FTP Accounts</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.dnsZoneEditor">DNS Zone Editor</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="studentPricing.features.softaculous">Softaculous One-Click Installer</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="cloud-order-btn" data-i18n="studentPricing.orderNow">Order Now</a>
+
+                </div>
+
+            </div>
+
+        </div>
+        </section>
+
+        </div>
+    </section>
+
+
+
+           <!-- advanced-features-section -->
+
+    <section class="advanced-features-section">
+        <div class="container-wrapper">
+            <h2 class="section-title" data-i18n="features.sectionTitle">Enjoy all this. At no extra cost.</h2>
+
+            <div class="features-box">
+                <div class="features-columns">
+                    <!-- Column 1 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-hand-holding-dollar feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.moneyBack"><strong>30</strong> Day Money Back Guarantee</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-server feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.uptime"><strong>99.9%</strong> Server Uptime Guarantee</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-clock feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.responseTime"><strong>1</strong> Hour Response Time</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-headset feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.support247"><strong>24/7</strong> Technical Support</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-network-wired feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.dns"><strong>Clustered</strong> Failover DNS</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-linux feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.cloudLinux"><strong>CloudLinux</strong> / CageFS</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-rocket feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.litespeed"><strong>LiteSpeed</strong> Web Server</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-gauge-high feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.cpanel"><strong>Latest</strong> cPanel</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-download feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.softaculous"><strong>Softaculous</strong> Script Installer</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-shield-virus feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.malware"><strong>Malware</strong> & Exploit Scanning</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-cloudflare feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.cloudflare"><strong>CloudFlare</strong> CDN</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-sitemap feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.subdomains"><strong>Unlimited</strong> Sub Domains</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-gem feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ruby"><strong>Ruby</strong> On Rails</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-database feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.mysql"><strong>Unlimited</strong> MySQL Databases</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-folder-open feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ftp"><strong>Unlimited</strong> FTP Accounts</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-envelope feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.emailAccounts"><strong>Unlimited</strong> E-Mail Accounts</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-shield-halved feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ddos"><strong>20</strong> GBPS DDoS Protection</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-reply-all feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.autoResponders"><strong>Unlimited</strong> Auto Responders</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-ban feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.spam"><strong>Spam</strong> Protection</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-terminal feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ssh"><strong>SSH</strong> Access Available</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-node-js feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.nodejs"><strong>Node.js</strong> Version Selector</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-lock feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ssl"><strong>FREE</strong> Let's Encrypt SSL Certs</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-truck-fast feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.migration"><strong>FREE</strong> cPanel Migration</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-table feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.mariadb"><strong>Mariadb</strong> 10.x / phpMyAdmin</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-code feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.serverSide"><strong>Server</strong> Side Includes</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-image feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.curl"><strong>Curl</strong> / GD2 / ImageMagick</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-php feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.php"><strong>PHP</strong> Selector (5.6 - 8.x)</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-python feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.python"><strong>Python</strong> Version Selector</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-wordpress feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.wpManager"><strong>Wordpress</strong> Manager</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-cube feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ioncube"><strong>ionCube</strong> PHP Loader</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-chart-bar feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.awstats"><strong>Awstats</strong> & Webalizer</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-z feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.zend"><strong>Zend</strong> Guard Loader</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Web Hosting Plans Comparison Section -->
+    <section class="hosting-plans-section">
+        <div class="plans-container">
+            <div class="plans-header">
+                <h2 class="plans-title" data-i18n="comparison.title">Compare Our Student Hosting Packages</h2>
+            </div>
+
+            <div class="plans-wrapper">
+                <!-- Features Column (Left) -->
+                <div class="features-column">
+                    <div class="feature-header">
+                        <h3>&nbsp;</h3>
+                    </div>
+                    <div class="feature-list">
+                        <div class="feature-item-hosting" data-i18n="comparison.features.storage">Storage Space</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.websites">Websites Allowed</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.datacenter">Datacenter Locations</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.bandwidth">Monthly Bandwidth</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.oneClickWP">PHP / MySQL / Perl Support</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.ssl">Free and Auto SSL (https)</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.litespeedCache">LiteSpeed Cache</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.databases">MySQL Databases</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.optimized">phpMyAdmin</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.email">Email Accounts</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.subdomains">Sub Domains</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.ftp">FTP Accounts</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.webmail">Web Mail</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.cpanel">cPanel</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.php">Multiple PHP Versions</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.perl">DNS Zone Editor</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.backups">Softaculous</div>
+                        <div class="feature-item-hosting feature-item-cta">&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- Plan 1: SH Plan 1 -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">SH Plan 1</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">1 GB SSD</div>
+                        <div class="plan-feature">1</div>
+                        <div class="plan-feature">BD</div>
+                        <div class="plan-feature">5 GB</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">1</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">Limited</div>
+                        <div class="plan-feature">Limited</div>
+                        <div class="plan-feature">Limited</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-current">
+                                    <span class="price-amount">৳800/yr</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 2: SH Plan 2 -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">SH Plan 2</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">2 GB SSD</div>
+                        <div class="plan-feature">1</div>
+                        <div class="plan-feature">BD</div>
+                        <div class="plan-feature">15 GB</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">3</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">Limited</div>
+                        <div class="plan-feature">Limited</div>
+                        <div class="plan-feature">Limited</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-current">
+                                    <span class="price-amount">৳999/yr</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 3: SH Plan 3 (Most Popular) -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">SH Plan 3 ⭐</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">3 GB SSD</div>
+                        <div class="plan-feature">2</div>
+                        <div class="plan-feature">BD</div>
+                        <div class="plan-feature">25 GB</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-current">
+                                    <span class="price-amount">৳1,199/yr</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plans-footer">
+                <p class="disclaimer">*All student hosting plans are billed annually.</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Testimonial Carousel Section -->
+<!-- Testimonial Section - Horizontal Layout -->
+<section class="testimonial-horizontal-section">
+    <div class="testimonial-horizontal-container">
+
+        <!-- Testimonial Item 1 -->
+        <div class="testimonial-horizontal-item active">
+            <div class="testimonial-horizontal-content">
+                <!-- Image Side -->
+                <div class="testimonial-image-side">
+                    <div class="testimonial-video-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/testimonials/shaidulislamrony.png" alt="Shaidul Islam Rony – student hosting customer review" class="testimonial-person-image">
+                        <div class="video-play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
+                                <path fill="currentColor" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="testimonial-text-side">
+                    <div class="quote-mark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+
+                    <p class="testimonial-quote" data-i18n="testimonial.item1.quote">
+                        I could <span class="highlight-text">manage</span> the hosting, domain name, and SSL certificate <span class="highlight-text">in one place</span>, which was really refreshing.
+                    </p>
+
+                    <a href="#" class="testimonial-read-more" data-i18n="testimonial.readMore">Read more</a>
+
+                    <div class="testimonial-author-section">
+                        <div class="author-details">
+                            <p class="author-name-text">Shaidul Islam Rony</p>
+                            <p class="author-site">bhrelocationinc.com</p>
+                        </div>
+
+                        <div class="carousel-navigation">
+                            <button class="carousel-btn carousel-prev" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial Item 2 -->
+        <div class="testimonial-horizontal-item">
+            <div class="testimonial-horizontal-content">
+                <!-- Image Side -->
+                <div class="testimonial-image-side">
+                    <div class="testimonial-video-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/testimonials/tutul.png" alt="Tutul – satisfied student hosting customer" class="testimonial-person-image">
+                        <div class="video-play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
+                                <path fill="currentColor" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="testimonial-text-side">
+                    <div class="quote-mark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+
+                    <p class="testimonial-quote" data-i18n="testimonial.item2.quote">
+                        We honestly reference <span class="highlight-text">Hostorio as the benchmark</span> for our engineers when providing support.
+                    </p>
+
+                    <a href="#" class="testimonial-read-more" data-i18n="testimonial.readMore">Read more</a>
+
+                    <div class="testimonial-author-section">
+                        <div class="author-details">
+                            <p class="author-name-text">Tutul</p>
+                            <p class="author-site">clientwebsite.com</p>
+                        </div>
+
+                        <div class="carousel-navigation">
+                            <button class="carousel-btn carousel-prev" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+       <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container-wrapper">
+            <!-- Section Header -->
+            <div class="faq-header">
+                
+                <h2 class="faq-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+                <p class="faq-description" data-i18n="faq.description">Find answers to common questions about our web hosting services</p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q1.q">How can I buy web hosting?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q1.a">It's easy – just watch the video <a href="https://youtu.be/FEFNkYCxN2M" target="_blank" class="faq-link">Youtube.com/FEFNkYCxN2M</a>, choose one of the packages, and click the buy hosting button.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q2.q">Which web hosting plan do I need to choose?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q2.a">It depends on your needs, but most of our customers start with the Professional 2 GB & Cheap SSD Gold (5GB) web hosting as it offers them lots of flexibility at a great price!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q3.q">Can I upgrade hosting package?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q3.a">Yes! You can upgrade your web hosting package. For example: You buy 2 GB for 1000 tk. But you want to upgrade it to a 5GB package after 6 months. You'll get a refund of 500 tk from the old package. This 500 tk will be added to the new 5GB package.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q4.q">Can you help me to get started?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q4.a">Of course! You can join our community forum where you can find a variety of tips and tricks. <a href="#" class="faq-link">Click here</a> to join.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q5.q">Can I transfer my website to your web hosting?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q5.a">Of course! Just buy a web hosting package that interests you and let us know that you need to get your website moved to a new server. Our technicians will do it for you free of charge.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q6.q">Will you help me if I have any problem with hosting?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q6.a">Of course! We always make sure our customers don't have any problems. We will try our best. We are committed to your service. Feel free to connect with us.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact CTA -->
+            <div class="faq-cta">
+                <div class="faq-cta-content">
+                    <i class="fas fa-comments faq-cta-icon"></i>
+                    <div class="faq-cta-text">
+                        <h3 data-i18n="faq.cta.title">Still have questions?</h3>
+                        <p data-i18n="faq.cta.desc">Can't find the answer you're looking for? Please chat with our friendly team.</p>
+                    </div>
+                </div>
+                <a href="https://my.hostorio.com/submitticket.php" class="faq-cta-button" data-i18n="faq.cta.btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+       <!-- WordPress Hosting Section -->
+    <section class="wordpress-section">
+        <div class="container-wrapper">
+            <div class="wordpress-content">
+
+                <!-- Left Side - Graphic -->
+                <div class="wordpress-graphic">
+                    <!-- Browser Window -->
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                        </div>
+                        <div class="browser-content">
+                            <!-- Hero Section -->
+                            <div class="wp-hero">
+                                <h3 class="wp-blog-title" data-i18n="wordpress.blogTitle">Your Blog Title</h3>
+                            </div>
+
+                            <!-- Latest Post Section -->
+                            <div class="wp-posts-section">
+                                <p class="wp-section-title" data-i18n="wordpress.latestPost">Latest Post</p>
+                                <div class="wp-posts-grid">
+                                    <div class="wp-post-card">
+                                        <div class="wp-post-image"></div>
+                                        <div class="wp-post-lines">
+                                            <span class="line"></span>
+                                            <span class="line short"></span>
+                                        </div>
+                                    </div>
+                                    <div class="wp-post-card">
+                                        <div class="wp-post-image"></div>
+                                        <div class="wp-post-lines">
+                                            <span class="line"></span>
+                                            <span class="line short"></span>
+                                        </div>
+                                    </div>
+                                    <div class="wp-post-card add-new">
+                                        <div class="wp-post-image faded"></div>
+                                        <div class="wp-post-lines">
+                                            <span class="line faded"></span>
+                                            <span class="line short faded"></span>
+                                        </div>
+                                        <div class="add-icon">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Elements -->
+                    <div class="floating-element top-element">
+                        <div class="theme-preview">
+                            <div class="theme-grid">
+                                <div class="theme-box orange"></div>
+                                <div class="theme-box-row">
+                                    <div class="theme-box small orange"></div>
+                                    <div class="theme-box small orange"></div>
+                                </div>
+                            </div>
+                            <div class="theme-grid">
+                                <div class="theme-box gray"></div>
+                                <div class="theme-box gray"></div>
+                            </div>
+                            <div class="theme-grid">
+                                <div class="theme-box-list">
+                                    <span class="theme-line gray"></span>
+                                    <span class="theme-line gray"></span>
+                                </div>
+                                <div class="theme-box-list">
+                                    <span class="theme-line gray"></span>
+                                    <span class="theme-line gray"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating-element left-element">
+                        <div class="dashboard-menu">
+                            <div class="menu-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="3" width="7" height="7" fill="#FF7800"/>
+                                    <rect x="3" y="14" width="7" height="7" fill="#FF7800"/>
+                                    <rect x="14" y="3" width="7" height="7" fill="#FF7800"/>
+                                    <rect x="14" y="14" width="7" height="7" fill="#FF7800"/>
+                                </svg>
+                            </div>
+                            <ul class="menu-list">
+                                <li>Dashboard</li>
+                                <li>Posts</li>
+                                <li>Media</li>
+                                <li>Pages</li>
+                                <li>Comments</li>
+                                <li>Appearance</li>
+                                <li>Plugins</li>
+                                <li>Users</li>
+                                <li>Tools</li>
+                                <li>Settings</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="floating-element bottom-element">
+                        <div class="editor-toolbar">
+                            <svg width="100%" height="40" viewBox="0 0 200 40" fill="none">
+                                <circle cx="20" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="50" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="80" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="110" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="140" cy="20" r="8" fill="#0170B9"/>
+                                <circle cx="170" cy="20" r="8" fill="#0170B9"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Content -->
+                <div class="wordpress-text">
+                    <h2 class="wordpress-title" data-i18n="wordpress.title">WordPress Hosting Turbocharged</h2>
+                    <p class="wordpress-description" data-i18n="wordpress.description">
+                       WordPress powers the web, but we power WordPress. We provide a managed environment that offers the perfect balance of raw power and complete control. Whether you are a solo blogger or a large-scale agency, our infrastructure is fine-tuned to ensure your WordPress site is faster, more secure, and easier to manage than ever before.
+                    </p>
+
+                    <!-- Features List -->
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="20" fill="#FF7800" opacity="0.2"/>
+                                    <path d="M17 20L22 28L32 18" stroke="#FF7800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title" data-i18n="wordpress.feature1">1-Click Script Deployment</h3>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="20" fill="#0170B9" opacity="0.2"/>
+                                    <path d="M24 12L28 20L36 21L30 27L32 36L24 31L16 36L18 27L12 21L20 20L24 12Z" stroke="#0170B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title" data-i18n="wordpress.feature2">LiteSpeed-Optimized Stack</h3>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="20" fill="#FF7800" opacity="0.2"/>
+                                    <path d="M24 8V16M24 32V40M35 24H27M21 24H13M33 13L28 18M28 30L33 35M13 13L18 18M18 30L13 35" stroke="#FF7800" stroke-width="2.5" stroke-linecap="round"/>
+                                    <circle cx="24" cy="24" r="6" stroke="#FF7800" stroke-width="2.5"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title" data-i18n="wordpress.feature3">Proactive Malware Defense</h3>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="wordpress-cta">
+                        <a href="<?php echo esc_url( hostorio_page_url( 'web-hosting' ) ); ?>" class="cta-button" data-i18n="wordpress.cta">Get Started Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section">
+        <div class="container-wrapper">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-main-title" data-i18n="support.sectionTitle">Customer Success Focus</h2>
+                <p class="section-subtitle" data-i18n="support.sectionSubtitle">We provide everything you need to succeed online</p>
+            </div>
+
+            <!-- Support Cards -->
+            <div class="support-cards">
+
+                <!-- Card 1 -->
+                <div class="support-card">
+                    <div class="card-image-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/support/support-hostorio.webp" alt="Onboarding Support" class="card-image">
+                        <div class="image-overlay blue-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="support.card1.title">Onboarding Support</h3>
+                        <p class="card-description" data-i18n="support.card1.desc">
+                            Don't know where to start? Our step-by-step tutorials and 24/7 support team walk you through domain setup, hosting configuration, and WordPress installation.
+                        </p>
+                        <a href="https://my.hostorio.com/submitticket.php" class="card-button" data-i18n="support.card1.btn">Get started</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="support-card">
+                    <div class="card-image-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/support/blog-hostorio.webp" alt="Discover Resources" class="card-image">
+                        <div class="image-overlay green-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="support.card2.title">Discover our Resources</h3>
+                        <p class="card-description" data-i18n="support.card2.desc">
+                            Access our resource center for hosting best practices, security tips, performance optimization guides, and industry insights.
+                        </p>
+                        <a href="https://my.hostorio.com/knowledgebase" class="card-button" data-i18n="support.card2.btn">Get learning</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="support-card">
+                    <div class="card-image-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/support/trasfer-hosting-hostorio.webp" alt="Hassle-Free Transfers" class="card-image">
+                        <div class="image-overlay orange-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="support.card3.title">Hassle-Free Transfers</h3>
+                        <p class="card-description" data-i18n="support.card3.desc">
+                            Move your domain and Hosting to Us. Switching hosts shouldn't feel like moving houses. With us, it's simple.
+                        </p>
+                        <a href="https://my.hostorio.com/cart.php?a=add&domain=transfer" class="card-button" data-i18n="support.card3.btn">Transfer today</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main Footer -->
+    
+<?php get_footer(); ?>

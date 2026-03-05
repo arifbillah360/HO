@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="60" viewBox="0 0 400 60">
+  <rect x="0" y="5" width="60" height="40" rx="5" fill="#1A1F71" opacity="0.8"/>
+  <text x="30" y="30" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="10" font-weight="bold">VISA</text>
+  <rect x="70" y="5" width="60" height="40" rx="5" fill="#EB001B" opacity="0.6"/>
+  <circle cx="95" cy="25" r="12" fill="#EB001B"/>
+  <circle cx="105" cy="25" r="12" fill="#F79E1B" opacity="0.8"/>
+  <rect x="140" y="5" width="60" height="40" rx="5" fill="#006FCF" opacity="0.8"/>
+  <text x="170" y="30" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8">AMEX</text>
+  <rect x="210" y="5" width="60" height="40" rx="5" fill="#003087" opacity="0.8"/>
+  <text x="240" y="30" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="9">PayPal</text>
+  <rect x="280" y="5" width="60" height="40" rx="5" fill="#5F259F" opacity="0.8"/>
+  <text x="310" y="30" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8">bKash</text>
+  <rect x="350" y="5" width="50" height="40" rx="5" fill="#E2136E" opacity="0.8"/>
+  <text x="375" y="30" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8">Nagad</text>
+</svg>

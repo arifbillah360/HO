@@ -1,0 +1,1559 @@
+<?php
+/**
+ * Template Name: Turbo Hosting
+ * Description: Turbo Hosting page template for Hostorio theme.
+ *
+ * @package Hostorio
+ */
+
+// Register SEO meta and schema markup before get_header() fires wp_head
+add_action( 'wp_head', function() {
+    if ( ! defined( 'WPSEO_VERSION' ) && ! class_exists( 'RankMath' ) ) {
+        echo '<meta name="description" content="Turbo hosting with LiteSpeed, NVMe SSD &amp; built-in caching. Boost SEO rankings &amp; conversions. Starting ৳1199/mo. 99.9% uptime guaranteed.">' . "\n";
+        echo '<link rel="canonical" href="https://hostorio.com/turbo-hosting.html">' . "\n";
+        echo '<meta name="robots" content="index, follow">' . "\n";
+        echo '<meta property="og:type" content="website">' . "\n";
+        echo '<meta property="og:title" content="⚡ Turbo Web Hosting – Lightning-Fast LiteSpeed Performance | Hostorio">' . "\n";
+        echo '<meta property="og:description" content="Supercharge your website with turbo hosting. LiteSpeed web server, NVMe SSD storage, HTTP/3, built-in caching. Fastest hosting in Bangladesh from ৳1199/mo.">' . "\n";
+        echo '<meta property="og:image" content="https://hostorio.com/assets/images/logo/hostorio-logo.png">' . "\n";
+        echo '<meta property="og:image:width" content="1024">' . "\n";
+        echo '<meta property="og:image:height" content="239">' . "\n";
+        echo '<meta property="og:site_name" content="Hostorio">' . "\n";
+        echo '<meta property="og:locale" content="en_US">' . "\n";
+        echo '<meta property="og:url" content="https://hostorio.com/turbo-hosting.html">' . "\n";
+        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        echo '<meta name="twitter:site" content="@hostorio">' . "\n";
+        echo '<meta name="twitter:title" content="⚡ Turbo Web Hosting – Lightning-Fast LiteSpeed Performance | Hostorio">' . "\n";
+        echo '<meta name="twitter:description" content="Supercharge your website with turbo hosting. LiteSpeed, NVMe SSD, HTTP/3 &amp; caching. Bangladesh\'s fastest hosting from ৳1199/mo.">' . "\n";
+        echo '<meta name="twitter:image" content="https://hostorio.com/assets/images/logo/hostorio-logo.png">' . "\n";
+    }
+    ?>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Hostorio",
+      "url": "https://hostorio.com",
+      "logo": "https://hostorio.com/assets/images/logo/hostorio-logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+8801779440297",
+        "contactType": "customer service",
+        "email": "mail@hostorio.com",
+        "areaServed": "BD",
+        "availableLanguage": ["English", "Bengali"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/hostorio",
+        "https://x.com/hostorio",
+        "https://www.youtube.com/@arifbillahcse",
+        "https://www.linkedin.com/company/hostorio/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "High-Performance Web Hosting",
+      "name": "Turbo Web Hosting",
+      "description": "Lightning-fast turbo web hosting powered by LiteSpeed web server, NVMe SSD storage, HTTP/3 (QUIC) protocol, and built-in LSCache caching. Optimized for maximum speed, SEO performance, and conversion rates. Perfect for eCommerce sites and growing businesses.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Hostorio",
+        "url": "https://hostorio.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Bangladesh"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://hostorio.com/turbo-hosting.html",
+        "priceCurrency": "BDT",
+        "lowPrice": "14388",
+        "highPrice": "30000",
+        "offerCount": "4",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "500",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hostorio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hosting Services",
+          "item": "https://hostorio.com/#hosting"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Turbo Hosting",
+          "item": "https://hostorio.com/turbo-hosting.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I buy turbo web hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's easy – just visit hostorio.com/turbo-hosting.html, choose one of the turbo hosting packages, and click the buy hosting button. Setup is instant and your site will be live within minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which turbo hosting plan do I need to choose?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your needs. Most customers start with the Turbo Plus plan as it offers great speed features at an affordable price. For eCommerce or high-traffic sites, the Turbo Enterprise or Turbo Rapid plan is recommended."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I upgrade my turbo hosting package?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! You can upgrade your turbo hosting package at any time. The remaining value from your current plan will be prorated and applied toward the upgraded package."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help me get started with turbo hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Of course! You can join our community forum where you can find a variety of tips and tricks. Our support team is also available 24/7 to help you get started quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I transfer my existing website to your turbo hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Of course! Just buy a turbo hosting package and let us know that you need to get your website moved to the new server. Our technicians will migrate your site for free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will you help me if I have any problem with turbo hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Of course! We always make sure our customers don't have any problems. Our support team is committed to your success and available 24/7. Feel free to connect with us anytime."
+          }
+        }
+      ]
+    }
+    </script>
+    <?php
+}, 1 );
+
+get_header();
+?>
+
+
+    <!-- ===========================
+         PACKAGE CHOOSER SECTION
+         =========================== -->
+    <div class="package-chooser-wrapper">
+        <!-- Background Animation -->
+        <div class="motion-background">
+            <i class="fas fa-server motion-item item-1"></i>
+            <i class="fas fa-cloud motion-item item-2"></i>
+            <i class="fas fa-database motion-item item-3"></i>
+            <i class="fas fa-shield-halved motion-item item-4"></i>
+            <i class="fas fa-rocket motion-item item-5"></i>
+            <i class="fas fa-bolt motion-item item-6"></i>
+            <i class="fas fa-globe motion-item item-7"></i>
+            <i class="fas fa-envelope motion-item item-8"></i>
+            <i class="fas fa-network-wired motion-item item-9"></i>
+            <i class="fas fa-code motion-item item-10"></i>
+            <i class="fas fa-lock motion-item item-11"></i>
+            <i class="fas fa-wifi motion-item item-12"></i>
+            <i class="fab fa-wordpress motion-item item-13"></i>
+            <i class="fas fa-briefcase motion-item item-14"></i>
+            <i class="fas fa-graduation-cap motion-item item-15"></i>
+            <i class="fas fa-chart-line motion-item item-16"></i>
+            <i class="fas fa-plug motion-item item-17"></i>
+            <i class="fas fa-sitemap motion-item item-18"></i>
+        </div>
+
+        <!-- Left Side Icon Box -->
+        <div class="side-icon-box left-side">
+            <i class="fas fa-server"></i>
+        </div>
+
+        <!-- Right Side Icon Box -->
+        <div class="side-icon-box right-side">
+            <i class="fas fa-database"></i>
+        </div>
+
+        <div class="content-container">
+            <div class="chooser-inner">
+                <h1 class="section-headline" data-i18n="turboHostingHero.headline">Lightning-Fast Turbo Web Hosting Plans</h1>
+
+                <!-- Desktop Package Grid -->
+                <div class="packages-desktop">
+                    <div class="top-packages">
+                        <a href="<?php echo esc_url( hostorio_page_url( 'web-hosting' ) ); ?>" class="package-card ">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.wordpress">Web Hosting</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'turbo-hosting' ) ); ?>" class="package-card highlighted">
+                            <span class="card-icon">🚀</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.turbo">Turbo Hosting</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'reseller-hosting' ) ); ?>" class="package-card">
+                            <span class="card-icon">🔄</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.reseller">Reseller Hosting</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'student-hosting' ) ); ?>" class="package-card">
+                            <span class="card-icon">🎓</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.student">Student Hosting</span>
+                        </a>
+                    </div>
+                    <div class="bottom-packages">
+                        <a href="<?php echo esc_url( hostorio_page_url( 'vps' ) ); ?>" class="package-card">
+                            <span class="card-icon">🖥️</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.vps">VPS</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'business-email' ) ); ?>" class="package-card">
+                            <span class="card-icon">✉️</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.email">Business Email</span>
+                        </a>
+                        <a href="<?php echo esc_url( hostorio_page_url( 'offer' ) ); ?>" class="package-card">
+                            <span class="card-icon">🌐</span>
+                            <span class="card-title-pricing-hero" data-i18n="packageHero.offer">Offer</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Package Dropdown -->
+                <div class="packages-mobile">
+                    <div class="mobile-chooser">
+                        <button type="button" class="chooser-button" id="mobileChooserBtn">
+                            <span class="btn-icon" id="displayIcon">⚡</span>
+                            <span class="btn-label" id="displayLabel">Web Hosting</span>
+                            <i class="fas fa-chevron-down btn-chevron" id="chevronIcon"></i>
+                        </button>
+                        <nav class="chooser-list" id="packageList">
+                            <a href="<?php echo esc_url( hostorio_page_url( 'web-hosting' ) ); ?>" class="list-option selected" data-icon="⚡" data-label="WordPress Hosting">
+                                <span class="opt-icon">⚡</span>
+                                <span class="opt-label" data-i18n="packageHero.wordpress">Web Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'turbo-hosting' ) ); ?>" class="list-option" data-icon="🚀" data-label="Turbo Hosting">
+                                <span class="opt-icon">🚀</span>
+                                <span class="opt-label" data-i18n="packageHero.turbo">Turbo Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'reseller-hosting' ) ); ?>" class="list-option" data-icon="🔄" data-label="Reseller Hosting">
+                                <span class="opt-icon">🔄</span>
+                                <span class="opt-label" data-i18n="packageHero.reseller">Reseller Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'student-hosting' ) ); ?>" class="list-option" data-icon="🎓" data-label="Student Hosting">
+                                <span class="opt-icon">🎓</span>
+                                <span class="opt-label" data-i18n="packageHero.student">Student Hosting</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'vps' ) ); ?>" class="list-option" data-icon="🖥️" data-label="VPS">
+                                <span class="opt-icon">🖥️</span>
+                                <span class="opt-label" data-i18n="packageHero.vps">VPS</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'business-email' ) ); ?>" class="list-option" data-icon="✉️" data-label="Business Email">
+                                <span class="opt-icon">✉️</span>
+                                <span class="opt-label" data-i18n="packageHero.email">Business Email</span>
+                            </a>
+                            <a href="<?php echo esc_url( hostorio_page_url( 'offer' ) ); ?>" class="list-option" data-icon="🌐" data-label="Domain">
+                                <span class="opt-icon">🌐</span>
+                                <span class="opt-label" data-i18n="packageHero.offer">Offer</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+           <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container-wrapper">
+
+            <!-- Section Header -->
+            <div class="pricing-header">
+                <h2 class="pricing-main-title" data-i18n="turboPricing.mainTitle">Choose Your Turbo Web Hosting Plan</h2>
+                <p class="pricing-subtitle" data-i18n="turboPricing.subtitle">Everything you need to launch, manage, and scale your website.</p>
+
+                <!-- Billing Toggle -->
+                <div class="billing-toggle">
+                    <span class="toggle-label" data-i18n="turboPricing.billedMonthly">Billed Monthly</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="billingToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="toggle-label active" data-i18n="turboPricing.billedAnnually">Billed Annually</span>
+                    <span class="save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
+                </div>
+            </div>
+
+        <!-- Cloud Pricing Section -->
+        <section class="cloud-pricing-section" id="cloud-pricing-id">
+        <div class="container-wrapper">
+
+            <!-- Pricing Cards Grid -->
+            <div class="cloud-pricing-cards">
+
+                <!-- Card 1 - Turbo Plus -->
+                <div class="cloud-card">
+                    <div class="cloud-icon">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="Turbo Plus – fast LiteSpeed web hosting plan for beginners">
+                    </div>
+
+                    <h3 class="cloud-plan-name" data-i18n="turboPricing.plans.turboPlus.name">Turbo Plus</h3>
+                    <p class="cloud-plan-desc" data-i18n="turboPricing.plans.turboPlus.desc">Start your website or WordPress journey here.</p>
+
+                    <div class="cloud-pricing" data-yearly-price="14388">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
+                        </div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">1199</span>
+                            <span class="cloud-period" data-i18n="turboPricing.perMonth">/mo</span>
+                        </div>
+                    </div>
+
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>75 GB</strong> <span data-i18n="turboPricing.features.nvmeSpace">NVMe Space</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>250 GB</strong> <span data-i18n="turboPricing.features.bandwidth">Bandwidth</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>25</strong> <span data-i18n="turboPricing.features.hostWebsite">Host Website</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedSubDomain">Unlimited Sub Domain</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedDatabase">Unlimited Database</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedEmail">Unlimited Email</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>3</strong> <span data-i18n="turboPricing.features.coreCpu">Core CPU</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>3</strong> <span data-i18n="turboPricing.features.gbRam">GB RAM</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>75</strong> <span data-i18n="turboPricing.features.entryProcess">Entry Process</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>20</strong> <span data-i18n="turboPricing.features.mbIO">MB I/O</span></span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="cloud-order-btn" data-i18n="turboPricing.orderNow">Order Now</a>
+
+                </div>
+
+                <!-- Card 2 - Turbo Power (Recommended) -->
+                <div class="cloud-card popular">
+                    <div class="cloud-popular-badge" data-i18n="turboPricing.recommended">Recommended</div>
+
+                    <div class="cloud-icon">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="Turbo Power – high-performance SSD hosting with enhanced speed">
+                    </div>
+
+                    <h3 class="cloud-plan-name" data-i18n="turboPricing.plans.turboPower.name">Turbo Power</h3>
+                    <p class="cloud-plan-desc" data-i18n="turboPricing.plans.turboPower.desc">That little extra as your website grows, business or personal.</p>
+
+                    <div class="cloud-pricing" data-yearly-price="17988">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
+                        </div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">1499</span>
+                            <span class="cloud-period" data-i18n="turboPricing.perMonth">/mo</span>
+                        </div>
+                    </div>
+
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>100 GB</strong> <span data-i18n="turboPricing.features.nvmeSpace">NVMe Space</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>500 GB</strong> <span data-i18n="turboPricing.features.bandwidth">Bandwidth</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>50</strong> <span data-i18n="turboPricing.features.hostWebsite">Host Website</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedSubDomain">Unlimited Sub Domain</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedDatabase">Unlimited Database</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedEmail">Unlimited Email</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>4</strong> <span data-i18n="turboPricing.features.coreCpu">Core CPU</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>4</strong> <span data-i18n="turboPricing.features.gbRam">GB RAM</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>100</strong> <span data-i18n="turboPricing.features.entryProcess">Entry Process</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>30</strong> <span data-i18n="turboPricing.features.mbIO">MB I/O</span></span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="cloud-order-btn" data-i18n="turboPricing.orderNow">Order Now</a>
+
+                </div>
+
+                <!-- Card 3 - Turbo Enterprise -->
+                <div class="cloud-card">
+                    <div class="cloud-icon">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="Turbo Enterprise – ultra-fast hosting for businesses and ecommerce">
+                    </div>
+
+                    <h3 class="cloud-plan-name" data-i18n="turboPricing.plans.turboEnterprise.name">Turbo Enterprise</h3>
+                    <p class="cloud-plan-desc" data-i18n="turboPricing.plans.turboEnterprise.desc">Go further with Rapid for more power and resources.</p>
+
+                    <div class="cloud-pricing" data-yearly-price="23988">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
+                        </div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">1999</span>
+                            <span class="cloud-period" data-i18n="turboPricing.perMonth">/mo</span>
+                        </div>
+                    </div>
+
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>125 GB</strong> <span data-i18n="turboPricing.features.nvmeSpace">NVMe Space</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>1000 GB</strong> <span data-i18n="turboPricing.features.bandwidth">Bandwidth</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>75</strong> <span data-i18n="turboPricing.features.hostWebsite">Host Website</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedSubDomain">Unlimited Sub Domain</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedDatabase">Unlimited Database</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedEmail">Unlimited Email</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>6</strong> <span data-i18n="turboPricing.features.coreCpu">Core CPU</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>6</strong> <span data-i18n="turboPricing.features.gbRam">GB RAM</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>125</strong> <span data-i18n="turboPricing.features.entryProcess">Entry Process</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>50</strong> <span data-i18n="turboPricing.features.mbIO">MB I/O</span></span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="cloud-order-btn" data-i18n="turboPricing.orderNow">Order Now</a>
+
+                </div>
+
+                <!-- Card 4 - Turbo Rapid -->
+                <div class="cloud-card">
+                    <div class="cloud-icon">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/pricing/data-server.svg" alt="Turbo Rapid – maximum performance hosting for high-traffic sites">
+                    </div>
+
+                    <h3 class="cloud-plan-name" data-i18n="turboPricing.plans.turboRapid.name">Turbo Rapid</h3>
+                    <p class="cloud-plan-desc" data-i18n="turboPricing.plans.turboRapid.desc">Going beyond with expanded resources for thriving websites.</p>
+
+                    <div class="cloud-pricing" data-yearly-price="30000">
+                        <div class="cloud-price-original">
+                            <span class="orig-currency" data-orig-currency>৳</span><span class="orig-amount"></span>
+                            <span class="cloud-save-badge" data-i18n="turboPricing.saveBadge">Save 30%!</span>
+                        </div>
+                        <div class="cloud-price-current">
+                            <span class="cloud-currency" data-currency-symbol>৳</span>
+                            <span class="cloud-amount">2500</span>
+                            <span class="cloud-period" data-i18n="turboPricing.perMonth">/mo</span>
+                        </div>
+                    </div>
+
+                    <ul class="cloud-features">
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>150 GB</strong> <span data-i18n="turboPricing.features.nvmeSpace">NVMe Space</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>1000 GB</strong> <span data-i18n="turboPricing.features.bandwidth">Bandwidth</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>100</strong> <span data-i18n="turboPricing.features.hostWebsite">Host Website</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedSubDomain">Unlimited Sub Domain</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedDatabase">Unlimited Database</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-i18n="turboPricing.features.unlimitedEmail">Unlimited Email</span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>8</strong> <span data-i18n="turboPricing.features.coreCpu">Core CPU</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>8</strong> <span data-i18n="turboPricing.features.gbRam">GB RAM</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>150</strong> <span data-i18n="turboPricing.features.entryProcess">Entry Process</span></span>
+                        </li>
+                        <li>
+                            <svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" rx="3" fill="#E3F2FD"/>
+                                <path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span><strong>50</strong> <span data-i18n="turboPricing.features.mbIO">MB I/O</span></span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="cloud-order-btn" data-i18n="turboPricing.orderNow">Order Now</a>
+
+                </div>
+
+            </div>
+
+        </div>
+        </section>
+
+        </div>
+    </section>
+
+
+
+           <!-- advanced-features-section -->
+
+    <section class="advanced-features-section">
+        <div class="container-wrapper">
+            <h2 class="section-title" data-i18n="features.sectionTitle">Enjoy all this. At no extra cost.</h2>
+
+            <div class="features-box">
+                <div class="features-columns">
+                    <!-- Column 1 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-hand-holding-dollar feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.moneyBack"><strong>30</strong> Day Money Back Guarantee</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-server feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.uptime"><strong>99.9%</strong> Server Uptime Guarantee</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-clock feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.responseTime"><strong>1</strong> Hour Response Time</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-headset feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.support247"><strong>24/7</strong> Technical Support</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-network-wired feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.dns"><strong>Clustered</strong> Failover DNS</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-linux feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.cloudLinux"><strong>CloudLinux</strong> / CageFS</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-rocket feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.litespeed"><strong>LiteSpeed</strong> Web Server</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-gauge-high feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.cpanel"><strong>Latest</strong> cPanel</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-download feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.softaculous"><strong>Softaculous</strong> Script Installer</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-shield-virus feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.malware"><strong>Malware</strong> & Exploit Scanning</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-cloudflare feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.cloudflare"><strong>CloudFlare</strong> CDN</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-sitemap feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.subdomains"><strong>Unlimited</strong> Sub Domains</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-gem feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ruby"><strong>Ruby</strong> On Rails</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-database feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.mysql"><strong>Unlimited</strong> MySQL Databases</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-folder-open feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ftp"><strong>Unlimited</strong> FTP Accounts</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-envelope feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.emailAccounts"><strong>Unlimited</strong> E-Mail Accounts</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-shield-halved feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ddos"><strong>20</strong> GBPS DDoS Protection</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-reply-all feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.autoResponders"><strong>Unlimited</strong> Auto Responders</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-ban feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.spam"><strong>Spam</strong> Protection</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-terminal feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ssh"><strong>SSH</strong> Access Available</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-node-js feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.nodejs"><strong>Node.js</strong> Version Selector</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-lock feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ssl"><strong>FREE</strong> Let's Encrypt SSL Certs</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-truck-fast feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.migration"><strong>FREE</strong> cPanel Migration</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-table feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.mariadb"><strong>Mariadb</strong> 10.x / phpMyAdmin</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="feature-column">
+                        <div class="feature-row">
+                            <i class="fas fa-code feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.serverSide"><strong>Server</strong> Side Includes</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-image feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.curl"><strong>Curl</strong> / GD2 / ImageMagick</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-php feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.php"><strong>PHP</strong> Selector (5.6 - 8.x)</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-python feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.python"><strong>Python</strong> Version Selector</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fab fa-wordpress feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.wpManager"><strong>Wordpress</strong> Manager</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-cube feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.ioncube"><strong>ionCube</strong> PHP Loader</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-chart-bar feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.awstats"><strong>Awstats</strong> & Webalizer</span>
+                        </div>
+
+                        <div class="feature-row">
+                            <i class="fas fa-z feature-icon"></i>
+                            <span class="feature-label" data-i18n="features.zend"><strong>Zend</strong> Guard Loader</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Web Hosting Plans Comparison Section -->
+    <section class="hosting-plans-section">
+        <div class="plans-container">
+            <div class="plans-header">
+                <h2 class="plans-title" data-i18n="comparison.title">Compare Our Turbo Hosting Packages</h2>
+            </div>
+
+            <div class="plans-wrapper">
+                <!-- Features Column (Left) -->
+                <div class="features-column">
+                    <div class="feature-header">
+                        <h3>&nbsp;</h3>
+                    </div>
+                    <div class="feature-list">
+                        <div class="feature-item-hosting" data-i18n="comparison.features.storage">Storage Space</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.inodes">Inodes (Website Files) Allowed</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.websites">Websites Allowed</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.datacenter">Datacenter Locations</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.cpu">CPU Cores</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.ram">RAM</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.freeDomain">Free Domain Name</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.optimized">SuperHero Optimized</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.oneClickWP">1-Click WordPress Hosting</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.ssl">Free and Auto SSL (https)</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.litespeedCache">LiteSpeed Cache</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.bandwidth">Monthly Bandwidth</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.parked">Parked Domains</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.subdomains">Sub Domains</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.email">Email Accounts</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.mailbox">cPanel Mailbox Quota</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.dedicatedIP">Dedicated IP Address</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.cpanel">cPanel</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.ssh">Jailed SSH Access</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.cdn">Quic.Cloud CDN</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.ftp">Unlimited FTP Accounts</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.databases">Unlimited Databases</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.php">Multiple PHP Versions</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.perl">Perl</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.webmail">Web Mail</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.backups">Nightly/Weekly Backups</div>
+                        <div class="feature-item-hosting" data-i18n="comparison.features.emailLimit">Entry Process<br>(Limit)</div>
+                        <div class="feature-item-hosting feature-item-cta">&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- Plan 1: Turbo Plus -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Turbo Plus</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">75GB NVMe</div>
+                        <div class="plan-feature">500,000</div>
+                        <div class="plan-feature">25</div>
+                        <div class="plan-feature">BD</div>
+                        <div class="plan-feature">3</div>
+                        <div class="plan-feature">3GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature">Free LiteSpeed!</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">250 GB</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">1GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">75</div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-old">
+                                    <span class="strikethrough">৳1,713/mo</span>
+                                    <span class="save-badge">Save 30%</span>
+                                </div>
+                                <div class="price-current">
+                                    <span class="price-amount">৳1,199/mo</span>
+                                    <span class="price-period"> (৳14,388/yr)</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 2: Turbo Power -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Turbo Power</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">100GB NVMe</div>
+                        <div class="plan-feature">750,000</div>
+                        <div class="plan-feature">50</div>
+                        <div class="plan-feature">BD</div>
+                        <div class="plan-feature">4</div>
+                        <div class="plan-feature">4GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature">Free LiteSpeed!</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">500 GB</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">2GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">100</div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-old">
+                                    <span class="strikethrough">৳2,141/mo</span>
+                                    <span class="save-badge">Save 30%</span>
+                                </div>
+                                <div class="price-current">
+                                    <span class="price-amount">৳1,499/mo</span>
+                                    <span class="price-period"> (৳17,988/yr)</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 3: Turbo Enterprise -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Turbo Enterprise</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">125GB NVMe</div>
+                        <div class="plan-feature">1,000,000</div>
+                        <div class="plan-feature">75</div>
+                        <div class="plan-feature">BD</div>
+                        <div class="plan-feature">6</div>
+                        <div class="plan-feature">6GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature">Free LiteSpeed!</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">1,000 GB</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">2GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">125</div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-old">
+                                    <span class="strikethrough">৳2,856/mo</span>
+                                    <span class="save-badge">Save 30%</span>
+                                </div>
+                                <div class="price-current">
+                                    <span class="price-amount">৳1,999/mo</span>
+                                    <span class="price-period"> (৳23,988/yr)</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 4: Turbo Rapid -->
+                <div class="plan-column">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Turbo Rapid</h3>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">150GB NVMe</div>
+                        <div class="plan-feature">1,500,000</div>
+                        <div class="plan-feature">100</div>
+                        <div class="plan-feature">BD</div>
+                        <div class="plan-feature">8</div>
+                        <div class="plan-feature">8GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature">Free LiteSpeed!</div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">1,000 GB</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">Unlimited</div>
+                        <div class="plan-feature">2GB</div>
+                        <div class="plan-feature"><i class="fas fa-times"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature"><i class="fas fa-check"></i></div>
+                        <div class="plan-feature">150</div>
+                        <div class="plan-feature plan-pricing-cell">
+                            <div class="pricing-box">
+                                <div class="price-old">
+                                    <span class="strikethrough">৳3,571/mo</span>
+                                    <span class="save-badge">Save 30%</span>
+                                </div>
+                                <div class="price-current">
+                                    <span class="price-amount">৳2,500/mo</span>
+                                    <span class="price-period"> (৳30,000/yr)</span>
+                                </div>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plans-footer">
+                <p class="disclaimer">*The promotional price is for the first term only and renews at the regular rate.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- ===========================
+     ENTERPRISE SOLUTIONS SECTION
+     =========================== -->
+<section class="enterprise-solutions-wrapper">
+    <div class="max-width-container">
+        <div class="enterprise-header-area">
+            <h2 class="enterprise-main-heading" data-i18n="turboPricing.enterpriseHeading">Highly Available Enterprise Solutions</h2>
+            <p class="enterprise-intro-text">
+                We understand mission-critical systems and have designed our enterprise private cloud with a
+                number of highly available systems to ensure your business runs 24/7/365 with ease.
+            </p>
+        </div>
+
+        <div class="enterprise-features-grid">
+            <!-- Feature 1: Load Balancing -->
+            <div class="enterprise-feature-box">
+                <div class="feature-icon-wrapper">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.85046 32.562L4.10015 33.9L27.8002 47.8C29.6002 48.6 30.4002 48.6 32.2002 47.8L53.6001 35.5L56.8286 32.8087C56.8286 33.8672 56.8364 41.0002 56.8364 41.7227C56.8364 42.5547 56.3854 43.4327 55.8001 43.8L33.1002 57.1C30.9002 58.1 28.4002 58 26.4002 56.8L4.70015 44.2C3.70015 43.7 2.83643 42.6001 2.83643 41.5001C2.83643 40.9001 2.85046 34.562 2.85046 32.562Z" fill="white"></path>
+                        <path d="M48.2998 26.7L54.686 30.5303C56.6676 31.6643 56.886 33.4303 55.186 34.3303L33.0998 47.3C30.9998 48.3 28.4998 48.2 26.4998 47L4.9878 34.6086C2.9878 33.5086 2.7878 31.7086 4.4878 30.8086L11.9998 26.5" stroke="white"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.83643 18L4.30012 19.8L26.8001 33C29.1001 33.9 30.7001 34.1 32.1001 33.4L55.4001 20.1L56.8299 18.4359C56.8299 22.3359 56.8474 27.4083 56.8474 28.1083C56.8474 28.9083 56.5001 29.7 55.8001 30.1L33.1001 43.3C30.9001 44.3 28.4001 44.2 26.4001 43L4.70012 30.4C3.80012 30 2.83643 29 2.83643 28C2.83643 27.3 2.83643 19.5 2.83643 18Z" fill="white"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.41374 16.501L26.9045 3.36834C29.0045 2.36834 31.5045 2.46834 33.5045 3.66834L54.6914 16.0985C56.6914 17.1985 56.8914 18.9985 55.1914 19.8985L33.1045 32.8683C31.0045 33.8683 28.5045 33.7683 26.5045 32.5683L5.08373 20.1582C3.08373 19.0582 2.71374 17.501 4.41374 16.501Z" stroke="white"></path>
+                        <circle cx="1" cy="1" r="1" transform="matrix(0.86601 0.500028 3.18351e-05 1 19.8794 47.2205)" fill="#0F3F9E"></circle>
+                        <circle cx="1" cy="1" r="1" transform="matrix(0.86601 0.500028 3.18351e-05 1 22.5181 48.7056)" fill="#0F3F9E"></circle>
+                        <circle cx="1" cy="1" r="1" transform="matrix(0.86601 0.500028 3.18351e-05 1 25.1572 50.2056)" fill="#0F3F9E"></circle>
+                        <circle cx="1" cy="1" r="1" transform="matrix(0.86601 0.500028 3.18351e-05 1 19.8794 33.0115)" fill="#0F3F9E"></circle>
+                        <circle cx="1" cy="1" r="1" transform="matrix(0.86601 0.500028 3.18351e-05 1 22.5181 34.4968)" fill="#0F3F9E"></circle>
+                        <circle cx="1" cy="1" r="1" transform="matrix(0.86601 0.500028 3.18351e-05 1 25.1572 35.9968)" fill="#0F3F9E"></circle>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M33.5942 10.8729L40.0488 11.0691C40.1847 11.0722 40.3154 11.0882 40.4371 11.1152C40.5861 11.1481 40.7263 11.1985 40.8481 11.2663L40.8646 11.2756C40.8878 11.289 40.9101 11.3029 40.9314 11.3174C41.0089 11.3698 41.0709 11.4272 41.1175 11.4876C41.1309 11.505 41.1431 11.5227 41.1541 11.5407C41.1938 11.6057 41.2174 11.6749 41.2224 11.7466L41.5621 15.4728C41.5976 15.8628 41.0789 16.1956 40.4034 16.2161C39.7279 16.2366 39.1515 15.9371 39.1159 15.5472L38.92 13.3982L34.9852 15.6698C36.0592 16.6311 36.1908 17.8415 35.3803 18.8639C35.3934 18.8679 35.4065 18.8721 35.4195 18.8764L40.9604 20.7232L40.1862 18.6182C40.0457 18.2362 40.4682 17.8608 41.1299 17.7797C41.7916 17.6986 42.4419 17.9425 42.5823 18.3245L43.9248 21.9745C43.9521 22.0445 43.9603 22.1149 43.9511 22.1836C43.9494 22.197 43.9469 22.2103 43.9439 22.2235C43.9405 22.238 43.9363 22.2524 43.9315 22.2666C43.914 22.3174 43.887 22.3667 43.8512 22.4136C43.8331 22.4373 43.8128 22.4605 43.7903 22.4829L43.7775 22.4955C43.6906 22.5784 43.5786 22.6475 43.4504 22.7013C43.4409 22.7053 43.4314 22.7092 43.4217 22.713C43.3232 22.7519 43.2136 22.783 43.0949 22.8043L36.9482 23.9582C36.305 24.0789 35.6139 23.8758 35.4048 23.5044C35.1956 23.1331 35.5475 22.7341 36.1908 22.6134L39.7357 21.9479L34.1948 20.1011C34.0963 20.0683 34.0087 20.0287 33.9327 19.9841C31.9749 20.976 29.1329 21.0748 26.9991 20.2803L25.4345 21.1836C26.5125 22.2481 26.261 23.6379 24.6798 24.5507C22.7995 25.6362 19.751 25.6362 17.8707 24.5507C15.9904 23.4652 15.9904 21.7052 17.8707 20.6197C19.4516 19.7071 21.8583 19.5617 23.7022 20.1837L25.267 19.2804C24.0571 18.1975 24.043 16.7986 25.2246 15.7083L22.0261 12.5101L20.8735 14.5566C20.6643 14.9279 19.9733 15.1311 19.33 15.0103C18.6867 14.8896 18.3348 14.4906 18.544 14.1193L20.5427 10.5708C20.5798 10.5019 20.6339 10.4384 20.7018 10.3814C20.7875 10.3092 20.8948 10.2478 21.0166 10.1994C21.0435 10.1887 21.0712 10.1787 21.0994 10.1693C21.1277 10.1598 21.1566 10.1511 21.1862 10.1429C21.2941 10.1133 21.4063 10.0935 21.5197 10.0831C21.5521 10.0801 21.5849 10.0779 21.6179 10.0764C21.7369 10.0711 21.8588 10.0759 21.98 10.0917L28.3026 10.8667C28.9642 10.9478 29.3867 11.3232 29.2463 11.7052C29.1058 12.0871 28.4555 12.3311 27.7938 12.25L24.1475 11.803L27.0103 14.6656C28.9068 13.9632 31.3589 13.9646 33.2531 14.6698L37.1879 12.3982L33.4655 12.2851C32.79 12.2646 32.2712 11.9318 32.3068 11.5419C32.3423 11.1519 32.9188 10.8524 33.5942 10.8729ZM32.4791 18.8335C31.1795 19.5837 29.0726 19.5837 27.773 18.8335C26.4735 18.0833 26.4735 16.8669 27.773 16.1167C29.0726 15.3664 31.1795 15.3664 32.4791 16.1167C33.7786 16.8669 33.7786 18.0833 32.4791 18.8335Z" fill="#FF7800"></path>
+                    </svg>
+                </div>
+                <div class="feature-text-content">
+                    <h3 class="feature-heading-text">LiteSpeed & LSCache</h3>
+                    <p class="feature-description-text">
+                        Our LiteSpeed-powered web hosting delivers lightning-fast performance, better stability, optimal website speed and creating a superior user experience.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2: Web Server Replication -->
+            <div class="enterprise-feature-box">
+                <div class="feature-icon-wrapper">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_372_56186)">
+                            <path d="M7.22162 18.9955C6.69574 15.1601 8.67951 10.392 13.7703 7.48947C17.3306 5.45957 20.969 3.97164 29.8066 4.3644" stroke="#FF7800" stroke-width="2" stroke-linecap="round"></path>
+                            <line x1="1" y1="-1" x2="6.82351" y2="-1" transform="matrix(0.866041 0.499972 -0.866041 0.499972 1.24072 14.0403)" stroke="#FF7800" stroke-width="2" stroke-linecap="round"></line>
+                            <line x1="1" y1="-1" x2="6.82351" y2="-1" transform="matrix(-0.866041 0.499972 0.866041 0.499972 13.9155 14.0403)" stroke="#FF7800" stroke-width="2" stroke-linecap="round"></line>
+                            <path d="M31.2742 3.36585C31.5175 1.82996 32.7687 1.32028 34.2407 2.15745L53.5293 13.1275C55.2122 14.0846 56.5832 16.4475 56.5832 18.3907L56.5832 19.6971C56.5832 21.6385 55.2148 22.4187 53.5336 21.436L34.0997 10.0767C32.2331 8.98565 30.8204 6.23044 31.1289 4.2829L31.2742 3.36585Z" fill="white" stroke="white"></path>
+                            <path d="M24.4996 22.0462L24.4995 12.9823V6.83562C24.4995 6.16311 25.1305 5.41083 26.1901 6.03158L47.2622 18.0481C48.4411 18.7306 49.5076 20.3657 49.5077 21.728V45.4959C49.455 46.3932 48.7693 46.8043 48.0045 46.8864C47.514 46.9391 47.0403 46.7436 46.6116 46.4996L33.1972 38.8663" stroke="white"></path>
+                            <path d="M49.8464 21.2573L49.8464 21.2562C49.8447 20.4847 49.4349 19.8323 49.1047 19.3634C48.9042 19.0786 48.9077 18.8662 48.9739 18.7035C49.0513 18.5132 49.2566 18.2929 49.632 18.1116L53.3151 16.3331C53.8551 16.0723 54.4431 15.9661 54.9407 16.0401C55.4246 16.112 55.8127 16.349 56.042 16.7873C56.3414 17.3596 56.5132 17.976 56.5132 18.508C56.5132 18.508 56.5132 18.508 56.5132 18.508V41.4606C56.5132 41.9785 56.3551 42.2392 56.2184 42.3442C56.1 42.4352 55.8831 42.4956 55.5198 42.3312C55.4512 42.3002 55.3834 42.2663 55.3054 42.2273L55.2796 42.2144C55.1942 42.1718 55.0971 42.1237 54.9948 42.0798L51.7592 40.6921C51.5954 40.6219 51.4679 40.557 51.365 40.479C50.9549 40.1684 50.5713 39.6858 50.2899 39.1305C50.0085 38.5752 49.8478 37.9833 49.8465 37.4697C49.8465 37.4696 49.8465 37.4694 49.8465 37.4692L49.8464 21.2573Z" fill="white" stroke="white"></path>
+                            <path d="M24.7134 5.50024L31.7811 1.44916L35.7713 5.78288L32.8104 10.1114L24.7134 5.50024Z" fill="white"></path>
+                            <path d="M56.4321 42.7939L49.1085 47.0438L49.0042 38.6599L50.6115 37.5962L56.4321 42.7939Z" fill="white"></path>
+                            <circle cx="0.92674" cy="0.92674" r="0.92674" transform="matrix(0.86601 -0.500028 -3.18351e-05 1 52.208 34.7021)" fill="#0F3F9E"></circle>
+                            <circle cx="0.92674" cy="0.92674" r="0.92674" transform="matrix(0.86601 -0.500028 -3.18351e-05 1 52.208 37.4824)" fill="#0F3F9E"></circle>
+                            <circle cx="0.92674" cy="0.92674" r="0.92674" transform="matrix(0.86601 -0.500028 -3.18351e-05 1 52.208 40.2627)" fill="#0F3F9E"></circle>
+                            <path d="M9.34867 15.8286C9.61657 14.3364 10.8578 13.8566 12.309 14.6843L31.4921 25.6255C33.1733 26.5844 34.5417 28.945 34.5417 30.8863L34.5417 32.1983C34.5417 34.1397 33.1733 34.9199 31.4921 33.9372L12.14 22.6257C10.2493 21.5206 8.83059 18.7144 9.17961 16.7703L9.34867 15.8286Z" fill="white" stroke="white"></path>
+                            <path d="M2.49561 19.4974C2.49562 18.4588 3.38374 17.8571 4.55894 18.5372L25.4329 30.4914C26.6042 31.1692 27.5076 32.8189 27.5077 34.1718V57.8828C27.4496 59.1083 26.255 59.5488 25.4309 59.1142L4.618 47.3732C3.44813 46.6976 2.49884 45.0559 2.49561 43.7029V19.4974Z" stroke="white"></path>
+                            <path d="M27.8049 33.7585L27.8049 33.7574C27.8032 32.9859 27.3933 32.3335 27.0632 31.8646C26.8627 31.5799 26.8662 31.3674 26.9324 31.2048C27.0098 31.0144 27.2151 30.7941 27.5905 30.6129L31.4438 28.7522C31.9429 28.5111 32.483 28.4022 32.9413 28.4563C33.3857 28.5088 33.7395 28.709 33.9582 29.0923L34.3924 28.8445L33.9582 29.0923C34.2989 29.6894 34.5 30.3822 34.5 31.0078V53.9335C34.5 54.4459 34.3391 54.7165 34.1915 54.8305C34.061 54.9314 33.8348 54.991 33.4765 54.8309C33.4062 54.7994 33.3364 54.7646 33.2551 54.7241L33.2378 54.7155C33.1529 54.6732 33.0556 54.6249 32.9533 54.5811L29.7177 53.1934L29.5206 53.6529L29.7177 53.1934C29.5539 53.1231 29.4264 53.0582 29.3235 52.9802C28.9134 52.6696 28.5298 52.1871 28.2484 51.6318C27.967 51.0764 27.8063 50.4846 27.805 49.971C27.805 49.9708 27.805 49.9706 27.805 49.9704L27.8049 33.7585Z" fill="white" stroke="white"></path>
+                            <path d="M2.82812 17.9453L9.82901 13.9777L13.73 18.2842L10.7691 22.6127L2.82812 17.9453Z" fill="white"></path>
+                            <path d="M34.3906 55.2949L27.1533 59.4809L27.2381 51.0861L28.57 50.0972L34.3906 55.2949Z" fill="white"></path>
+                            <circle cx="0.92674" cy="0.92674" r="0.92674" transform="matrix(0.86601 -0.500028 -3.18351e-05 1 30.1665 47.2034)" fill="#0F3F9E"></circle>
+                            <circle cx="0.92674" cy="0.92674" r="0.92674" transform="matrix(0.86601 -0.500028 -3.18351e-05 1 30.1665 49.9836)" fill="#0F3F9E"></circle>
+                            <circle cx="0.92674" cy="0.92674" r="0.92674" transform="matrix(0.86601 -0.500028 -3.18351e-05 1 30.1665 52.7639)" fill="#0F3F9E"></circle>
+                            <path d="M53.9337 30.0613C54.4032 33.4538 52.6363 38.3965 48.1063 40.9903C44.3155 43.0188 38.0509 44.3794 32.2607 43.1207" stroke="#FF7800" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M58.3715 32.0199L54.7335 28.6392C54.3749 28.3059 53.8276 28.2813 53.4405 28.5811L49 32.0199" stroke="#FF7800" stroke-width="2" stroke-linecap="round"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_372_56186">
+                                <rect width="60" height="60" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="feature-text-content">
+                    <h3 class="feature-heading-text">NVMe SSD Servers</h3>
+                    <p class="feature-description-text">
+                        We use NVMe SSD Storage for high performance. SSDs provide for a 1000x increase in input/output operations as compared to regular drives.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 3: Database Replication -->
+            <div class="enterprise-feature-box">
+                <div class="feature-icon-wrapper">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M31.6997 46.2999L57.5997 31.6C57.8997 31.4 58.2997 31.1 58.2997 30.7C58.2997 30.3 57.8997 29.8 57.1997 29.4L49.9997 24.7999L31.7997 34.7999C31.7997 34.7999 29.5997 36 27.0997 34.9C24.5997 33.8 10.0997 24.7 10.0997 24.7L2.39971 30C2.09971 30.2 1.69971 30.4999 1.69971 30.9C1.69971 31.3 2.09971 31.8 2.79971 32.2L26.7997 46.0999C28.2997 46.8999 30.0997 47 31.6997 46.2999Z" fill="white"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M57.4998 39.9001L51.2998 36.3L32.0998 47.2001C31.1998 47.6 30.2998 47.8 29.3998 47.8C28.2998 47.8 27.1998 47.5 26.2998 47L8.6998 36.8L2.0998 40.5C0.699799 41.3 0.899799 42.7 2.4998 43.6L26.4998 57.5C28.0998 58.4 30.0998 58.5 31.7998 57.7001L57.7998 43C59.1998 42.2 59.0998 40.8001 57.4998 39.9001Z" fill="white"></path>
+                        <path d="M2.10014 17.5L28.1001 2.80002C29.8001 2.00002 31.8001 2.10002 33.5001 3.00002L57.5001 16.9C59.1001 17.8 59.3001 19.2 57.9001 20L31.9001 34.7C30.2001 35.5 28.2001 35.4 26.6001 34.5L2.60014 20.6C0.900142 19.7 0.800142 18.3 2.10014 17.5Z" stroke="white"></path>
+                        <path d="M10.1002 17.9001L28.7002 7.40007C29.9002 6.80007 31.3002 6.90007 32.5002 7.60007L49.6002 17.5001C50.7002 18.2001 50.8002 19.1001 49.9002 19.7001L31.3002 30.1001C30.1002 30.7001 28.7002 30.6001 27.5002 29.9001L10.4002 20.0001C9.30018 19.4001 9.20018 18.4001 10.1002 17.9001Z" stroke="#FF7800" stroke-linejoin="round" stroke-dasharray="4 4"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6001 20.5999C22.2001 20.8999 23.2001 20.6999 23.2001 20.1999V18.9999H29.3001V22.4999H27.2001C26.4001 22.4999 25.9001 23.0999 26.5001 23.4999L29.7001 25.2999C30.1001 25.4999 30.6001 25.4999 31.0001 25.2999L34.2001 23.4999C34.8001 23.0999 34.4001 22.4999 33.5001 22.5999H31.5001V19.0999H37.6001V20.2999C37.6001 20.7999 38.6001 20.9999 39.3001 20.6999L42.5001 18.8999C42.7001 18.7999 42.8001 18.5999 42.8001 18.3999C42.8001 18.2999 42.7001 18.1999 42.5001 18.0999L39.2001 15.9999C38.6001 15.6999 37.6001 15.8999 37.6001 16.3999V17.5999H31.5001V14.0999H33.6001C34.4001 14.0999 34.9001 13.4999 34.3001 13.0999L31.1001 11.2999C30.7001 11.0999 30.2001 11.0999 29.7001 11.2999L26.5001 13.0999C25.9001 13.4999 26.3001 14.0999 27.2001 14.0999H29.3001V17.5999H23.2001V16.3999C23.2001 15.8999 22.2001 15.6999 21.6001 15.9999L18.4001 17.9999C18.2001 18.0999 18.1001 18.2999 18.1001 18.4999C18.1001 18.5999 18.2001 18.6999 18.4001 18.7999L21.6001 20.5999Z" fill="#FF7800"></path>
+                    </svg>
+                </div>
+                <div class="feature-text-content">
+                    <h3 class="feature-heading-text">Quic-HTTP/3</h3>
+                    <p class="feature-description-text">
+                        HTTP/3 with Quic reduces latency and speeds up website delivery due to improved parallelization.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="enterprise-cta-area">
+            <a href="#cloud-pricing-id" class="enterprise-action-button">
+                <span>Get Start</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Carousel Section -->
+<!-- Testimonial Section - Horizontal Layout -->
+<section class="testimonial-horizontal-section">
+    <div class="testimonial-horizontal-container">
+
+        <!-- Testimonial Item 1 -->
+        <div class="testimonial-horizontal-item active">
+            <div class="testimonial-horizontal-content">
+                <!-- Image Side -->
+                <div class="testimonial-image-side">
+                    <div class="testimonial-video-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/testimonials/shaidulislamrony.png" alt="Shaidul Islam Rony – turbo hosting customer review" class="testimonial-person-image">
+                        <div class="video-play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
+                                <path fill="currentColor" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="testimonial-text-side">
+                    <div class="quote-mark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+
+                    <p class="testimonial-quote" data-i18n="testimonial.item1.quote">
+                        I could <span class="highlight-text">manage</span> the hosting, domain name, and SSL certificate <span class="highlight-text">in one place</span>, which was really refreshing.
+                    </p>
+
+                    <a href="#" class="testimonial-read-more" data-i18n="testimonial.readMore">Read more</a>
+
+                    <div class="testimonial-author-section">
+                        <div class="author-details">
+                            <p class="author-name-text">Shaidul Islam Rony</p>
+                            <p class="author-site">bhrelocationinc.com</p>
+                        </div>
+
+                        <div class="carousel-navigation">
+                            <button class="carousel-btn carousel-prev" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial Item 2 -->
+        <div class="testimonial-horizontal-item">
+            <div class="testimonial-horizontal-content">
+                <!-- Image Side -->
+                <div class="testimonial-image-side">
+                    <div class="testimonial-video-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/testimonials/tutul.png" alt="Tutul – satisfied turbo hosting customer" class="testimonial-person-image">
+                        <div class="video-play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="play-svg">
+                                <path fill="currentColor" d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="testimonial-text-side">
+                    <div class="quote-mark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+
+                    <p class="testimonial-quote" data-i18n="testimonial.item2.quote">
+                        We honestly reference <span class="highlight-text">Hostorio as the benchmark</span> for our engineers when providing support.
+                    </p>
+
+                    <a href="#" class="testimonial-read-more" data-i18n="testimonial.readMore">Read more</a>
+
+                    <div class="testimonial-author-section">
+                        <div class="author-details">
+                            <p class="author-name-text">Tutul</p>
+                            <p class="author-site">clientwebsite.com</p>
+                        </div>
+
+                        <div class="carousel-navigation">
+                            <button class="carousel-btn carousel-prev" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+       <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container-wrapper">
+            <!-- Section Header -->
+            <div class="faq-header">
+                
+                <h2 class="faq-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+                <p class="faq-description" data-i18n="faq.description">Find answers to common questions about our web hosting services</p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q1.q">How can I buy web hosting?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q1.a">It's easy – just watch the video <a href="https://youtu.be/FEFNkYCxN2M" target="_blank" class="faq-link">Youtube.com/FEFNkYCxN2M</a>, choose one of the packages, and click the buy hosting button.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q2.q">Which web hosting plan do I need to choose?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q2.a">It depends on your needs, but most of our customers start with the Professional 2 GB & Cheap SSD Gold (5GB) web hosting as it offers them lots of flexibility at a great price!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q3.q">Can I upgrade hosting package?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q3.a">Yes! You can upgrade your web hosting package. For example: You buy 2 GB for 1000 tk. But you want to upgrade it to a 5GB package after 6 months. You'll get a refund of 500 tk from the old package. This 500 tk will be added to the new 5GB package.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q4.q">Can you help me to get started?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q4.a">Of course! You can join our community forum where you can find a variety of tips and tricks. <a href="#" class="faq-link">Click here</a> to join.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q5.q">Can I transfer my website to your web hosting?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q5.a">Of course! Just buy a web hosting package that interests you and let us know that you need to get your website moved to a new server. Our technicians will do it for you free of charge.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-circle-question question-icon"></i>
+                            <h3 class="faq-question-text" data-i18n="faq.q6.q">Will you help me if I have any problem with hosting?</h3>
+                        </div>
+                        <i class="fas fa-chevron-down faq-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q6.a">Of course! We always make sure our customers don't have any problems. We will try our best. We are committed to your service. Feel free to connect with us.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact CTA -->
+            <div class="faq-cta">
+                <div class="faq-cta-content">
+                    <i class="fas fa-comments faq-cta-icon"></i>
+                    <div class="faq-cta-text">
+                        <h3 data-i18n="faq.cta.title">Still have questions?</h3>
+                        <p data-i18n="faq.cta.desc">Can't find the answer you're looking for? Please chat with our friendly team.</p>
+                    </div>
+                </div>
+                <a href="https://my.hostorio.com/submitticket.php" class="faq-cta-button" data-i18n="faq.cta.btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Support Section -->
+    <section class="support-section">
+        <div class="container-wrapper">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-main-title" data-i18n="support.sectionTitle">Customer Success Focus</h2>
+                <p class="section-subtitle" data-i18n="support.sectionSubtitle">We provide everything you need to succeed online</p>
+            </div>
+
+            <!-- Support Cards -->
+            <div class="support-cards">
+
+                <!-- Card 1 -->
+                <div class="support-card">
+                    <div class="card-image-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/support/support-hostorio.webp" alt="Onboarding Support" class="card-image">
+                        <div class="image-overlay blue-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="support.card1.title">Onboarding Support</h3>
+                        <p class="card-description" data-i18n="support.card1.desc">
+                            Don't know where to start? Our step-by-step tutorials and 24/7 support team walk you through domain setup, hosting configuration, and WordPress installation.
+                        </p>
+                        <a href="https://my.hostorio.com/submitticket.php" class="card-button" data-i18n="support.card1.btn">Get started</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="support-card">
+                    <div class="card-image-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/support/blog-hostorio.webp" alt="Discover Resources" class="card-image">
+                        <div class="image-overlay green-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="support.card2.title">Discover our Resources</h3>
+                        <p class="card-description" data-i18n="support.card2.desc">
+                            Access our resource center for hosting best practices, security tips, performance optimization guides, and industry insights.
+                        </p>
+                        <a href="https://my.hostorio.com/knowledgebase" class="card-button" data-i18n="support.card2.btn">Get learning</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="support-card">
+                    <div class="card-image-wrapper">
+                        <img src="<?php echo esc_url( HOSTORIO_URI ); ?>/assets/images/support/trasfer-hosting-hostorio.webp" alt="Hassle-Free Transfers" class="card-image">
+                        <div class="image-overlay orange-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="support.card3.title">Hassle-Free Transfers</h3>
+                        <p class="card-description" data-i18n="support.card3.desc">
+                            Move your domain and Hosting to Us. Switching hosts shouldn't feel like moving houses. With us, it's simple.
+                        </p>
+                        <a href="https://my.hostorio.com/cart.php?a=add&domain=transfer" class="card-button" data-i18n="support.card3.btn">Transfer today</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Main Footer -->
+    
+<?php get_footer(); ?>

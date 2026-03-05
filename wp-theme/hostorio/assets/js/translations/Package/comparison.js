@@ -1,0 +1,73 @@
+window.translations = window.translations || { en: {}, bn: {} };
+
+window.translations.en.comparison = {
+    title: "Compare Our Web Hosting Packages",
+    freeLitespeed: "Free LiteSpeed!",
+    unlimited: "Unlimited",
+    orderNow: "Order Now",
+    features: {
+        storage:        "Storage Space",
+        inodes:         "Inodes (Website Files) Allowed",
+        websites:       "Websites Allowed",
+        datacenter:     "Datacenter Locations",
+        cpu:            "CPU Cores",
+        ram:            "RAM",
+        freeDomain:     "Free Domain Name",
+        optimized:      "SuperHero Optimized",
+        oneClickWP:     "1-Click WordPress Hosting",
+        ssl:            "Free and Auto SSL (https)",
+        litespeedCache: "LiteSpeed Cache",
+        bandwidth:      "Monthly Bandwidth",
+        parked:         "Parked Domains",
+        subdomains:     "Sub Domains",
+        email:          "Email Accounts",
+        mailbox:        "cPanel Mailbox Quota",
+        dedicatedIP:    "Dedicated IP Address",
+        cpanel:         "cPanel",
+        ssh:            "Jailed SSH Access",
+        cdn:            "Quic.Cloud CDN",
+        ftp:            "Unlimited FTP Accounts",
+        databases:      "Unlimited Databases",
+        php:            "Multiple PHP Versions",
+        perl:           "Perl",
+        webmail:        "Web Mail",
+        backups:        "Nightly/Weekly Backups",
+        emailLimit:     "Email Sending Limit (Per Hour)"
+    }
+};
+
+window.translations.bn.comparison = {
+    title: "আমাদের ওয়েব হোস্টিং প্যাকেজ তুলনা করুন",
+    freeLitespeed: "ফ্রি LiteSpeed!",
+    unlimited: "সীমাহীন",
+    orderNow: "এখনই অর্ডার করুন",
+    features: {
+        storage:        "স্টোরেজ স্পেস",
+        inodes:         "ইনোড (ওয়েবসাইট ফাইল) অনুমোদিত",
+        websites:       "ওয়েবসাইট অনুমোদিত",
+        datacenter:     "ডেটাসেন্টার অবস্থান",
+        cpu:            "CPU কোর",
+        ram:            "র‍্যাম",
+        freeDomain:     "ফ্রি ডোমেইন নাম",
+        optimized:      "সুপারহিরো অপ্টিমাইজড",
+        oneClickWP:     "১-ক্লিক ওয়ার্ডপ্রেস হোস্টিং",
+        ssl:            "ফ্রি ও অটো SSL (https)",
+        litespeedCache: "LiteSpeed ক্যাশ",
+        bandwidth:      "মাসিক ব্যান্ডউইথ",
+        parked:         "পার্কড ডোমেইন",
+        subdomains:     "সাবডোমেইন",
+        email:          "ইমেইল অ্যাকাউন্ট",
+        mailbox:        "cPanel মেইলবক্স কোটা",
+        dedicatedIP:    "ডেডিকেটেড IP ঠিকানা",
+        cpanel:         "cPanel",
+        ssh:            "জেইলড SSH অ্যাক্সেস",
+        cdn:            "Quic.Cloud CDN",
+        ftp:            "সীমাহীন FTP অ্যাকাউন্ট",
+        databases:      "সীমাহীন ডেটাবেজ",
+        php:            "একাধিক PHP ভার্সন",
+        perl:           "Perl",
+        webmail:        "ওয়েব মেইল",
+        backups:        "রাতের/সাপ্তাহিক ব্যাকআপ",
+        emailLimit:     "ইমেইল পাঠানোর সীমা (প্রতি ঘণ্টা)"
+    }
+};
