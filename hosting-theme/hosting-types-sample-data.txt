@@ -1,0 +1,426 @@
+================================================================================
+  TURBO HOSTING PLANS (4 Plans with Product IDs)
+================================================================================
+
+Use this reference when creating Turbo Hosting plans via:
+WP Admin > Turbo Hosting > Add New
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 1: Turbo Plus (Product ID: 45)
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        Turbo Plus
+  Post Excerpt:      LiteSpeed-powered hosting with exceptional performance
+  Menu Order:        10
+
+  ACF — Basic Info:
+    plan_name:         Turbo Plus
+    plan_description:  Perfect for WordPress sites with moderate traffic
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            1200
+    price_usd:            10.92
+    price_original_bdt:   3000
+    price_original_usd:   27.30
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              150GB NVMe RAID 1
+    bandwidth:            Unlimited
+    ram:                  6 GB
+    cpu_cores:            6
+    websites_allowed:     Unlimited
+    visits_monthly:       ~200,000
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               Unlimited
+    free_domain:          (empty)
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=45
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 2: Turbo Power (Product ID: 46) ★ Most Popular
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        Turbo Power
+  Post Excerpt:      Maximum performance for high-traffic WordPress blogs
+  Menu Order:        20
+
+  ACF — Basic Info:
+    plan_name:         Turbo Power
+    plan_description:  Best-selling turbo plan for growing sites
+    is_popular:        true   ← shows "Most Popular" badge
+
+  ACF — Pricing:
+    price_bdt:            2200
+    price_usd:            20.02
+    price_original_bdt:   5500
+    price_original_usd:   50.05
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              250GB NVMe RAID 1
+    bandwidth:            Unlimited
+    ram:                  12 GB
+    cpu_cores:            12
+    websites_allowed:     Unlimited
+    visits_monthly:       ~500,000
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               Unlimited
+    free_domain:          12+ month term
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=46
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 3: Turbo Enterprise (Product ID: 48)
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        Turbo Enterprise
+  Post Excerpt:      Enterprise-grade LiteSpeed hosting for mission-critical sites
+  Menu Order:        30
+
+  ACF — Basic Info:
+    plan_name:         Turbo Enterprise
+    plan_description:  Maximum power and reliability for enterprise sites
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            3500
+    price_usd:            31.85
+    price_original_bdt:   8750
+    price_original_usd:   79.625
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              500GB NVMe RAID 1
+    bandwidth:            Unlimited
+    ram:                  24 GB
+    cpu_cores:            24
+    websites_allowed:     Unlimited
+    visits_monthly:       ~1,000,000+
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               Unlimited
+    free_domain:          Free for life
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=48
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 4: Turbo Rapid (Product ID: 49)
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        Turbo Rapid
+  Post Excerpt:      Lightning-fast hosting with premium SSD and LiteSpeed
+  Menu Order:        40
+
+  ACF — Basic Info:
+    plan_name:         Turbo Rapid
+    plan_description:  Ultra-fast performance for speed-critical applications
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            1800
+    price_usd:            16.38
+    price_original_bdt:   4500
+    price_original_usd:   40.95
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              200GB NVMe RAID 1
+    bandwidth:            Unlimited
+    ram:                  8 GB
+    cpu_cores:            8
+    websites_allowed:     Unlimited
+    visits_monthly:       ~300,000
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               Unlimited
+    free_domain:          (empty)
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=49
+    order_button_text:    Order Now
+
+
+================================================================================
+  RESELLER HOSTING PLANS (4 Plans with Product IDs)
+================================================================================
+
+Use this reference when creating Reseller Hosting plans via:
+WP Admin > Reseller Hosting > Add New
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 1: R-Starter (Product ID: 13)
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        R-Starter
+  Post Excerpt:      Perfect for starting your web hosting business
+  Menu Order:        10
+
+  ACF — Basic Info:
+    plan_name:         R-Starter
+    plan_description:  Ideal for beginning resellers
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            800
+    price_usd:            7.28
+    price_original_bdt:   2000
+    price_original_usd:   18.20
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              200GB
+    bandwidth:            5TB/month
+    ram:                  4 GB
+    cpu_cores:            4
+    websites_allowed:     Unlimited
+    visits_monthly:       (varies by reseller)
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               (varies)
+    free_domain:          (empty)
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=13
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 2: R-Standard (Product ID: 14) ★ Most Popular
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        R-Standard
+  Post Excerpt:      Best-selling reseller plan for growing businesses
+  Menu Order:        20
+
+  ACF — Basic Info:
+    plan_name:         R-Standard
+    plan_description:  Most popular reseller plan
+    is_popular:        true   ← shows "Most Popular" badge
+
+  ACF — Pricing:
+    price_bdt:            1500
+    price_usd:            13.65
+    price_original_bdt:   3750
+    price_original_usd:   34.125
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              400GB
+    bandwidth:            10TB/month
+    ram:                  8 GB
+    cpu_cores:            8
+    websites_allowed:     Unlimited
+    visits_monthly:       (varies by reseller)
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               (varies)
+    free_domain:          (empty)
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=14
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 3: R-Advanced (Product ID: 15)
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        R-Advanced
+  Post Excerpt:      Advanced features for established resellers
+  Menu Order:        30
+
+  ACF — Basic Info:
+    plan_name:         R-Advanced
+    plan_description:  For advanced reselling businesses
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            2500
+    price_usd:            22.75
+    price_original_bdt:   6250
+    price_original_usd:   56.875
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              800GB
+    bandwidth:            Unlimited
+    ram:                  16 GB
+    cpu_cores:            16
+    websites_allowed:     Unlimited
+    visits_monthly:       (varies by reseller)
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               (varies)
+    free_domain:          (empty)
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=15
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 4: R-Advanced Pro (Product ID: 59)
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        R-Advanced Pro
+  Post Excerpt:      Enterprise reseller hosting with maximum resources
+  Menu Order:        40
+
+  ACF — Basic Info:
+    plan_name:         R-Advanced Pro
+    plan_description:  Premium reseller plan for enterprise clients
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            4000
+    price_usd:            36.40
+    price_original_bdt:   10000
+    price_original_usd:   91.00
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              1500GB
+    bandwidth:            Unlimited
+    ram:                  32 GB
+    cpu_cores:            32
+    websites_allowed:     Unlimited
+    visits_monthly:       (varies by reseller)
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               (varies)
+    free_domain:          (empty)
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=59
+    order_button_text:    Order Now
+
+
+================================================================================
+  STUDENT HOSTING PLANS (3 Plans with Product IDs)
+================================================================================
+
+Use this reference when creating Student Hosting plans via:
+WP Admin > Student Hosting > Add New
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 1: SH Plan 1 (Product ID: 51)
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        SH Plan 1
+  Post Excerpt:      Budget-friendly hosting for student projects
+  Menu Order:        10
+
+  ACF — Basic Info:
+    plan_name:         SH Plan 1
+    plan_description:  Basic student hosting plan
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            150
+    price_usd:            1.365
+    price_original_bdt:   375
+    price_original_usd:   3.4125
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              10GB
+    bandwidth:            100GB/month
+    ram:                  512MB
+    cpu_cores:            1
+    websites_allowed:     1
+    visits_monthly:       ~5,000
+    databases:            1
+    email_accounts:       5
+    inodes:               50,000
+    free_domain:          .tk (free)
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=51
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 2: SH Plan 2 (Product ID: 52) ★ Most Popular
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        SH Plan 2
+  Post Excerpt:      Perfect for student portfolios and projects
+  Menu Order:        20
+
+  ACF — Basic Info:
+    plan_name:         SH Plan 2
+    plan_description:  Popular student hosting plan
+    is_popular:        true   ← shows "Most Popular" badge
+
+  ACF — Pricing:
+    price_bdt:            250
+    price_usd:            2.275
+    price_original_bdt:   625
+    price_original_usd:   5.6875
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              25GB
+    bandwidth:            250GB/month
+    ram:                  1 GB
+    cpu_cores:            2
+    websites_allowed:     3
+    visits_monthly:       ~10,000
+    databases:            3
+    email_accounts:       10
+    inodes:               100,000
+    free_domain:          .tk (free)
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=52
+    order_button_text:    Order Now
+
+
+────────────────────────────────────────────────────────────────────────────────
+PLAN 3: SH Plan 3 (Product ID: 53)
+────────────────────────────────────────────────────────────────────────────────
+
+  Post Title:        SH Plan 3
+  Post Excerpt:      Premium student hosting for advanced projects
+  Menu Order:        30
+
+  ACF — Basic Info:
+    plan_name:         SH Plan 3
+    plan_description:  Advanced student hosting plan
+    is_popular:        false
+
+  ACF — Pricing:
+    price_bdt:            400
+    price_usd:            3.64
+    price_original_bdt:   1000
+    price_original_usd:   9.10
+    discount_badge:       Save 60%
+
+  ACF — Resources:
+    storage:              50GB
+    bandwidth:            500GB/month
+    ram:                  2 GB
+    cpu_cores:            4
+    websites_allowed:     Unlimited
+    visits_monthly:       ~25,000
+    databases:            Unlimited
+    email_accounts:       Unlimited
+    inodes:               250,000
+    free_domain:          .tk (free)
+
+  ACF — Order Link:
+    order_url:            https://my.hostorio.com/cart.php?a=add&pid=53
+    order_button_text:    Order Now
