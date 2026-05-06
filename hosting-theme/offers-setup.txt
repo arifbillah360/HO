@@ -1,0 +1,179 @@
+================================================================================
+  SPECIAL OFFERS PAGE SETUP
+================================================================================
+
+Special Offers is set up as a WordPress page template with 4 promotional bundles.
+Each bundle has a different product ID combining domain + hosting.
+
+────────────────────────────────────────────────────────────────────────────────
+HOW TO CREATE THE OFFERS PAGE
+────────────────────────────────────────────────────────────────────────────────
+
+1. Go to WordPress Admin > Pages > Add New
+
+2. Enter Page Title:
+   Offers
+   (or custom title like "Special Offers" or "Limited Time Deals")
+
+3. Leave the content editor empty (or add promotional info if desired)
+
+4. In the right sidebar, find "Page Attributes" section
+
+5. Select Template dropdown and choose:
+   "Special Offers"
+
+6. Click Publish
+
+────────────────────────────────────────────────────────────────────────────────
+PROMOTIONAL BUNDLES INCLUDED (4 Tiers)
+────────────────────────────────────────────────────────────────────────────────
+
+BUNDLE 1: 2GB + .SHOP
+  Price BDT:     ৳800/month
+  Price USD:     $7.28/month
+  Hosting:       2GB SSD Storage
+  Domain:        .SHOP (1 year included)
+  Product ID:    pid=16
+  URL:           https://my.hostorio.com/cart.php?a=add&pid=16
+  Features:
+    • 2GB SSD Storage
+    • 2 Email Accounts
+    • 1 .SHOP Domain (1 year)
+    • Free SSL Certificate
+    • Free cPanel
+    • Money-Back Guarantee
+  Popular:       No
+
+
+BUNDLE 2: 5GB + XYZ ★ Most Popular
+  Price BDT:     ৳1,200/month
+  Price USD:     $10.92/month
+  Hosting:       5GB SSD Storage
+  Domain:        .XYZ (1 year included)
+  Product ID:    pid=17
+  URL:           https://my.hostorio.com/cart.php?a=add&pid=17
+  Features:
+    • 5GB SSD Storage
+    • 5 Email Accounts
+    • 1 .XYZ Domain (1 year)
+    • Free SSL Certificate
+    • Free cPanel
+    • Priority Support
+  Popular:       Yes (shows "Limited Time" badge)
+
+
+BUNDLE 3: 5GB + .COM
+  Price BDT:     ৳1,500/month
+  Price USD:     $13.65/month
+  Hosting:       5GB SSD Storage
+  Domain:        .COM (1 year included)
+  Product ID:    pid=18
+  URL:           https://my.hostorio.com/cart.php?a=add&pid=18
+  Features:
+    • 5GB SSD Storage
+    • 5 Email Accounts
+    • 1 .COM Domain (1 year)
+    • Free SSL Certificate
+    • Free cPanel
+    • Priority Support
+  Popular:       No
+
+
+BUNDLE 4: 20GB + .COM (Premium Bundle)
+  Price BDT:     ৳3,500/month
+  Price USD:     $31.85/month
+  Hosting:       20GB SSD Storage
+  Domain:        .COM (1 year included)
+  Product ID:    pid=19
+  URL:           https://my.hostorio.com/cart.php?a=add&pid=19
+  Features:
+    • 20GB SSD Storage
+    • 20 Email Accounts
+    • 1 .COM Domain (1 year)
+    • Free SSL Certificate
+    • Free cPanel
+    • 24/7 Premium Support
+  Popular:       No
+
+────────────────────────────────────────────────────────────────────────────────
+BUNDLE BENEFITS (shown on page)
+────────────────────────────────────────────────────────────────────────────────
+
+  ✓ Huge Savings (30-40% off separate pricing)
+  ✓ All-in-One (Domain + Hosting + Email)
+  ✓ Limited Time (Creates urgency)
+  ✓ Money-Back Guarantee (30 days)
+  ✓ Free Migration (Zero downtime)
+  ✓ 24/7 Support (Expert help)
+
+────────────────────────────────────────────────────────────────────────────────
+CURRENCY SWITCHING
+────────────────────────────────────────────────────────────────────────────────
+
+Offer prices support the currency switcher:
+- Users can toggle BDT ↔ USD at the top of the page
+- Prices automatically convert based on exchange rate in Theme Settings
+- Exchange rate: Settings > Hosting Theme Settings > Currency > Exchange Rate
+
+────────────────────────────────────────────────────────────────────────────────
+CUSTOMIZING OFFERS
+────────────────────────────────────────────────────────────────────────────────
+
+To modify offer bundles:
+
+1. Edit: hosting-theme/page-templates/template-offers.php
+
+2. Find the $offer_packages array (around line 52)
+
+3. Modify bundle details:
+   - 'title'       → Bundle name (e.g., "5GB + .COM")
+   - 'description' → Short description
+   - 'price_bdt'   → Price in BDT
+   - 'price_usd'   → Price in USD
+   - 'features'    → Array of feature strings
+   - 'order_url'   → Cart link with product ID
+   - 'is_popular'  → true/false for "Limited Time" badge
+
+4. Save and push changes
+
+────────────────────────────────────────────────────────────────────────────────
+MARKETING THE OFFERS PAGE
+────────────────────────────────────────────────────────────────────────────────
+
+To make the offers more visible:
+
+1. Add a link in your header navigation (header.php):
+   /offer/ or /special-offers/
+
+2. Create a banner on the homepage linking to offers
+
+3. Use in email campaigns promoting limited-time deals
+
+4. Highlight "Limited Time" badge on the most popular bundle
+
+────────────────────────────────────────────────────────────────────────────────
+EXAMPLE: Add a New BUNDLE
+────────────────────────────────────────────────────────────────────────────────
+
+If you want to add "10GB + .IO" bundle for ৳2,500/month:
+
+In page-templates/template-offers.php, add this to the $offer_packages array:
+
+    array(
+        'title'       => '10GB + .IO',
+        'description' => 'Developer bundle with premium domain',
+        'price_bdt'   => 2500,
+        'price_usd'   => 22.75,
+        'features'    => array(
+            '10GB SSD Storage',
+            '10 Email Accounts',
+            '1 .IO Domain (1 year)',
+            'Free SSL Certificate',
+            'Free cPanel',
+            'Priority Support',
+        ),
+        'order_url'   => 'https://my.hostorio.com/cart.php?a=add&pid=XX',
+        'is_popular'  => false,
+    ),
+
+Replace XX with the actual product ID from your cart system.

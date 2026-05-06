@@ -1,0 +1,123 @@
+================================================================================
+  BUSINESS EMAIL PAGE SETUP
+================================================================================
+
+Business Email is set up as a WordPress page template with 3 email packages.
+Each package has a different product ID.
+
+────────────────────────────────────────────────────────────────────────────────
+HOW TO CREATE THE BUSINESS EMAIL PAGE
+────────────────────────────────────────────────────────────────────────────────
+
+1. Go to WordPress Admin > Pages > Add New
+
+2. Enter Page Title:
+   Business Email
+
+3. Leave the content editor empty (or add additional info if desired)
+
+4. In the right sidebar, find "Page Attributes" section
+
+5. Select Template dropdown and choose:
+   "Business Email"
+
+6. Click Publish
+
+────────────────────────────────────────────────────────────────────────────────
+EMAIL PACKAGES INCLUDED (3 Tiers)
+────────────────────────────────────────────────────────────────────────────────
+
+PACKAGE 1: Starter
+  Price BDT:     ৳300/month
+  Price USD:     $2.73/month
+  Accounts:      10
+  Storage:       50GB
+  Product ID:    pid=42
+  URL:           https://my.hostorio.com/cart.php?a=add&pid=42
+  Features:
+    • 10 Email Accounts
+    • 50GB Storage
+    • IMAP/POP3 Access
+    • Webmail Interface
+    • Spam Filtering
+    • Basic Support
+  Popular:       No
+
+
+PACKAGE 2: Pro ★ Most Popular
+  Price BDT:     ৳600/month
+  Price USD:     $5.46/month
+  Accounts:      50
+  Storage:       250GB
+  Product ID:    pid=43
+  URL:           https://my.hostorio.com/cart.php?a=add&pid=43
+  Features:
+    • 50 Email Accounts
+    • 250GB Storage
+    • IMAP/POP3 Access
+    • Webmail Interface
+    • Advanced Spam Filter
+    • Priority Support
+    • Mobile Sync
+  Popular:       Yes (shows "Most Popular" badge)
+
+
+PACKAGE 3: Ultimate
+  Price BDT:     ৳1,200/month
+  Price USD:     $10.92/month
+  Accounts:      Unlimited
+  Storage:       Unlimited
+  Product ID:    pid=44
+  URL:           https://my.hostorio.com/cart.php?a=add&pid=44
+  Features:
+    • Unlimited Email Accounts
+    • Unlimited Storage
+    • IMAP/POP3 Access
+    • Advanced Webmail
+    • Enterprise Spam Filter
+    • 24/7 Premium Support
+    • Mobile Sync
+    • Archiving & Backup
+  Popular:       No
+
+────────────────────────────────────────────────────────────────────────────────
+INCLUDED FEATURES (shown on page)
+────────────────────────────────────────────────────────────────────────────────
+
+All plans include:
+  ✓ Secure & Encrypted (SSL/TLS)
+  ✓ Mobile Access (iOS, Android, Desktop)
+  ✓ Spam Protection
+  ✓ Expert Support
+  ✓ Backup & Recovery
+  ✓ Collaboration Tools
+
+────────────────────────────────────────────────────────────────────────────────
+CURRENCY SWITCHING
+────────────────────────────────────────────────────────────────────────────────
+
+Email prices support the currency switcher:
+- Users can toggle BDT ↔ USD at the top of the page
+- Prices automatically convert based on exchange rate in Theme Settings
+- Exchange rate: Settings > Hosting Theme Settings > Currency > Exchange Rate
+
+────────────────────────────────────────────────────────────────────────────────
+CUSTOMIZING EMAIL PACKAGES
+────────────────────────────────────────────────────────────────────────────────
+
+To modify email packages:
+
+1. Edit: hosting-theme/page-templates/template-business-email.php
+
+2. Find the $email_packages array (around line 48)
+
+3. Modify package details:
+   - 'title'       → Package name
+   - 'description' → Short description
+   - 'price_bdt'   → Price in BDT
+   - 'price_usd'   → Price in USD
+   - 'features'    → Array of feature strings
+   - 'order_url'   → Cart link with product ID
+   - 'is_popular'  → true/false for "Most Popular" badge
+
+4. Save and push changes
