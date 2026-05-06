@@ -1,0 +1,155 @@
+================================================================================
+  VPS HOSTING PAGE SETUP
+================================================================================
+
+VPS hosting is set up as a dedicated WordPress page template with 4 package tiers.
+All packages link to the same product ID: pid=12
+
+URL when published: /vps-hosting/ (or your custom slug)
+
+────────────────────────────────────────────────────────────────────────────────
+HOW TO CREATE THE VPS PAGE
+────────────────────────────────────────────────────────────────────────────────
+
+1. Go to WordPress Admin > Pages > Add New
+
+2. Enter Page Title:
+   VPS Hosting
+
+3. Leave the content editor empty (or add additional info if desired)
+
+4. In the right sidebar, find "Page Attributes" section
+
+5. Select Template dropdown and choose:
+   "VPS Hosting" (template-vps.php)
+
+6. Click Publish
+
+────────────────────────────────────────────────────────────────────────────────
+VPS PACKAGES INCLUDED (4 Tiers)
+────────────────────────────────────────────────────────────────────────────────
+
+All packages are hardcoded in the template with the following specs:
+
+PACKAGE 1: VPS 1GB
+  Price BDT:     ৳1,500/month
+  Price USD:     $13.65/month
+  vCores:        1
+  RAM:           1GB
+  SSD:           30GB
+  Bandwidth:     Unlimited
+  Features:      cPanel/WHM, SSL, Root Access
+  Popular:       No
+
+PACKAGE 2: VPS 2GB ★ Most Popular
+  Price BDT:     ৳2,500/month
+  Price USD:     $22.75/month
+  vCores:        2
+  RAM:           2GB
+  SSD:           60GB
+  Bandwidth:     Unlimited
+  Features:      cPanel/WHM, SSL, Root Access
+  Popular:       Yes (shows badge)
+
+PACKAGE 3: VPS 4GB
+  Price BDT:     ৳4,500/month
+  Price USD:     $40.95/month
+  vCores:        4
+  RAM:           4GB
+  SSD:           120GB
+  Bandwidth:     Unlimited
+  Features:      cPanel/WHM, SSL, Root Access
+  Popular:       No
+
+PACKAGE 4: VPS 8GB
+  Price BDT:     ৳8,000/month
+  Price USD:     $72.80/month
+  vCores:        8
+  RAM:           8GB
+  SSD:           240GB
+  Bandwidth:     Unlimited
+  Features:      cPanel/WHM, SSL, Root Access
+  Popular:       No
+
+────────────────────────────────────────────────────────────────────────────────
+ORDER URL (ALL PACKAGES)
+────────────────────────────────────────────────────────────────────────────────
+
+All VPS packages link to:
+  https://my.hostorio.com/cart.php?a=add&pid=12
+
+This is hardcoded in template-parts/vps-package.php
+
+────────────────────────────────────────────────────────────────────────────────
+INCLUDED FEATURES (shown on page)
+────────────────────────────────────────────────────────────────────────────────
+
+✓ 99.9% Uptime SLA
+✓ DDoS Protection
+✓ 24/7 Support
+✓ SSD/NVMe Storage
+✓ Full Root Access
+✓ Free Backups
+
+────────────────────────────────────────────────────────────────────────────────
+CUSTOMIZING VPS PACKAGES
+────────────────────────────────────────────────────────────────────────────────
+
+To modify VPS packages (change prices, specs, or add more tiers):
+
+1. Edit: hosting-theme/page-templates/template-vps.php
+
+2. Find the $vps_packages array (around line 94)
+
+3. Modify package details:
+   - 'title'       → Package name (e.g., "VPS 1GB")
+   - 'description' → Short description
+   - 'price_bdt'   → Price in Bangladeshi Taka
+   - 'price_usd'   → Price in US Dollars (auto-converted via exchange rate)
+   - 'features'    → Array of feature strings
+   - 'is_popular'  → true/false for "Most Popular" badge
+
+4. Save and push changes
+
+────────────────────────────────────────────────────────────────────────────────
+LINKING TO VPS PAGE FROM NAVIGATION
+────────────────────────────────────────────────────────────────────────────────
+
+The "VPS" link in the header navigation (header.php) points to:
+  home_url( '/vps-hosting/' )
+
+Make sure your page slug matches, or update the link in header.php.
+
+────────────────────────────────────────────────────────────────────────────────
+CURRENCY SWITCHING
+────────────────────────────────────────────────────────────────────────────────
+
+VPS prices support the currency switcher:
+- Users can toggle BDT ↔ USD at the top of the page
+- Prices automatically convert based on the exchange rate set in Theme Settings
+- Exchange rate: Settings > Hosting Theme Settings > Currency > Exchange Rate
+
+────────────────────────────────────────────────────────────────────────────────
+EXAMPLE: Add a New VPS Package
+────────────────────────────────────────────────────────────────────────────────
+
+If you want to add "VPS 16GB" for ৳14,000/month:
+
+In page-templates/template-vps.php, add this to the $vps_packages array:
+
+    array(
+        'title'       => 'VPS 16GB',
+        'description' => 'Enterprise-grade VPS',
+        'price_bdt'   => 14000,
+        'price_usd'   => 127.40,
+        'features'    => array(
+            '16 vCores',
+            '16GB RAM',
+            '480GB SSD',
+            'Unlimited Bandwidth',
+            'Free cPanel/WHM',
+            'Free SSL',
+            'Full Root Access',
+        ),
+        'is_popular'  => false,
+    ),
