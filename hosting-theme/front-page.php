@@ -95,12 +95,12 @@ get_header();
                         // This preserves the original design until plans are added.
                     ?>
 
-                    <!-- Static Fallback Card 1 - Starter Cloud -->
+                    <!-- Static Fallback Card 1 - Starter -->
                     <div class="cloud-card pricing-card" data-price-bdt="250" data-price-usd="2.24" data-original-bdt="980" data-original-usd="8.95">
                         <div class="cloud-icon">
-                            <img src="<?php echo esc_url( HOSTING_THEME_URI . '/assets/images/pricing/data-server.svg' ); ?>" alt="Starter Cloud">
+                            <img src="<?php echo esc_url( HOSTING_THEME_URI . '/assets/images/pricing/data-server.svg' ); ?>" alt="Starter">
                         </div>
-                        <h3 class="cloud-plan-name">Starter Cloud</h3>
+                        <h3 class="cloud-plan-name">Starter</h3>
                         <p class="cloud-plan-desc">Ideal for beginner/personal websites</p>
                         <div class="cloud-pricing">
                             <div class="cloud-price-original">
@@ -124,16 +124,16 @@ get_header();
                             <li><svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none"><rect width="16" height="16" rx="3" fill="#E3F2FD"/><path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>FREE</strong> &amp; Auto SSL Certificate</span></li>
                             <li><svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none"><rect width="16" height="16" rx="3" fill="#E3F2FD"/><path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>30-Day</strong> Money-Back</span></li>
                         </ul>
-                        <button class="cloud-order-btn"><?php hosting_pll_esc_e( 'Order Now' ); ?></button>
+                        <a href="https://my.hostorio.com/cart.php?a=add&pid=55" class="cloud-order-btn"><?php hosting_pll_esc_e( 'Order Now' ); ?></a>
                     </div>
 
-                    <!-- Static Fallback Card 2 - Turbo Cloud (Popular) -->
+                    <!-- Static Fallback Card 2 - Lite Starter (Popular) -->
                     <div class="cloud-card popular pricing-card" data-price-bdt="660" data-price-usd="5.99" data-original-bdt="2195" data-original-usd="19.95">
                         <div class="cloud-popular-badge"><?php hosting_pll_esc_e( 'Most Popular' ); ?></div>
                         <div class="cloud-icon">
-                            <img src="<?php echo esc_url( HOSTING_THEME_URI . '/assets/images/pricing/data-server.svg' ); ?>" alt="Turbo Cloud">
+                            <img src="<?php echo esc_url( HOSTING_THEME_URI . '/assets/images/pricing/data-server.svg' ); ?>" alt="Lite Starter">
                         </div>
-                        <h3 class="cloud-plan-name">Turbo Cloud</h3>
+                        <h3 class="cloud-plan-name">Lite Starter</h3>
                         <p class="cloud-plan-desc">Most popular package</p>
                         <div class="cloud-pricing">
                             <div class="cloud-price-original">
@@ -158,15 +158,15 @@ get_header();
                             <li><svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none"><rect width="16" height="16" rx="3" fill="#E3F2FD"/><path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>FREE</strong> Security Suite</span></li>
                             <li><svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none"><rect width="16" height="16" rx="3" fill="#E3F2FD"/><path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>30-Day</strong> Money-Back</span></li>
                         </ul>
-                        <button class="cloud-order-btn"><?php hosting_pll_esc_e( 'Order Now' ); ?></button>
+                        <a href="https://my.hostorio.com/cart.php?a=add&pid=56" class="cloud-order-btn"><?php hosting_pll_esc_e( 'Order Now' ); ?></a>
                     </div>
 
-                    <!-- Static Fallback Card 3 - Business Cloud -->
+                    <!-- Static Fallback Card 3 - Standard -->
                     <div class="cloud-card pricing-card" data-price-bdt="990" data-price-usd="8.99" data-original-bdt="3295" data-original-usd="29.95">
                         <div class="cloud-icon">
-                            <img src="<?php echo esc_url( HOSTING_THEME_URI . '/assets/images/pricing/data-server.svg' ); ?>" alt="Business Cloud">
+                            <img src="<?php echo esc_url( HOSTING_THEME_URI . '/assets/images/pricing/data-server.svg' ); ?>" alt="Standard">
                         </div>
-                        <h3 class="cloud-plan-name">Business Cloud</h3>
+                        <h3 class="cloud-plan-name">Standard</h3>
                         <p class="cloud-plan-desc">Ideal for eCommerce websites</p>
                         <div class="cloud-pricing">
                             <div class="cloud-price-original">
@@ -191,7 +191,7 @@ get_header();
                             <li><svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none"><rect width="16" height="16" rx="3" fill="#E3F2FD"/><path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>FREE</strong> Email Filtering</span></li>
                             <li><svg class="cloud-icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none"><rect width="16" height="16" rx="3" fill="#E3F2FD"/><path d="M5 8L7 10L11 6" stroke="#1976D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>30-Day</strong> Money-Back</span></li>
                         </ul>
-                        <button class="cloud-order-btn"><?php hosting_pll_esc_e( 'Order Now' ); ?></button>
+                        <a href="https://my.hostorio.com/cart.php?a=add&pid=57" class="cloud-order-btn"><?php hosting_pll_esc_e( 'Order Now' ); ?></a>
                     </div>
 
                     <?php endif; ?>
